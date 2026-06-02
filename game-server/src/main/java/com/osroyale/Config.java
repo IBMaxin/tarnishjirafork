@@ -133,12 +133,26 @@ public final class Config {
     public static final String POSTGRE_USER;
     public static final String POSTGRE_PASS;
 
+    public static final String VOTE_DB_URL;
+    public static final String VOTE_DB_USER;
+    public static final String VOTE_DB_PASS;
+
+    public static final String DONATION_DB_URL;
+    public static final String DONATION_DB_USER;
+    public static final String DONATION_DB_PASS;
+
+    public static final String HISCORE_DB_URL;
+    public static final String HISCORE_DB_USER;
+    public static final String HISCORE_DB_PASS;
+
     public static final int FAILED_LOGIN_ATTEMPTS;
     public static final int FAILED_LOGIN_TIMEOUT;
 
     public static final int CLIENT_VERSION;
 
     public static boolean highscoresEnabled = false;
+    public static boolean voteEnabled = false;
+    public static boolean donationsEnabled = false;
 
     public static boolean DOUBLE_EXPERIENCE = false;
 
@@ -390,6 +404,20 @@ public final class Config {
             CLIENT_VERSION = Math.toIntExact(parser.getLong("client.client_version"));
 
             highscoresEnabled = parser.getBoolean("services.highscores_enabled");
+            voteEnabled = parser.getBoolean("services.vote_enabled");
+            donationsEnabled = parser.getBoolean("services.donations_enabled");
+
+            VOTE_DB_URL = parser.getString("vote_db.vote_db_url");
+            VOTE_DB_USER = parser.getString("vote_db.vote_db_user");
+            VOTE_DB_PASS = parser.getString("vote_db.vote_db_pass");
+
+            DONATION_DB_URL = parser.getString("donation_db.donation_db_url");
+            DONATION_DB_USER = parser.getString("donation_db.donation_db_user");
+            DONATION_DB_PASS = parser.getString("donation_db.donation_db_pass");
+
+            HISCORE_DB_URL = parser.getString("hiscore_db.hiscore_db_url");
+            HISCORE_DB_USER = parser.getString("hiscore_db.hiscore_db_user");
+            HISCORE_DB_PASS = parser.getString("hiscore_db.hiscore_db_pass");
         } catch (Exception ex) {
             ex.printStackTrace();
             throw new ExceptionInInitializerError("Failed to parse config file.");

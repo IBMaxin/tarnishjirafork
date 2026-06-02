@@ -11,6 +11,8 @@ type = "LIVE"
 
 [services]
 highscores_enabled = false
+vote_enabled = false
+donations_enabled = false
 
 [client]
 client_version = 12
@@ -62,14 +64,29 @@ ip_tos = "00010000" # binary string for ToS (left 6 bits are DSCP flag, 7th bit 
 
 [website]
 website_url = "https://osroyale.com"
-forum_db_url = "jdbc:mysql://173.82.152.23:3306/osroyjs_main"
-forum_db_user = "osroyjs_game"
-forum_db_pass = "dJ$&38mGEsTB"
+forum_db_url = ""
+forum_db_user = ""
+forum_db_pass = ""
 
 [discord]
-token = "MTA0ODgxMjIxOTIxMjc2NzI0Mw.GI_zO7.IG56uU2cqwDnh-6pnYGM33sdZHcE1lsoQTmNQk"
+token = ""
 
 [postgre]
 postgre_url = ""
 postgre_user = ""
 postgre_pass = ""
+
+[vote_db]
+vote_db_url = ""
+vote_db_user = ""
+vote_db_pass = ""
+
+[donation_db]
+donation_db_url = ""
+donation_db_user = ""
+donation_db_pass = ""
+
+[hiscore_db]
+hiscore_db_url = ""
+hiscore_db_user = ""
+hiscore_db_pass = ""

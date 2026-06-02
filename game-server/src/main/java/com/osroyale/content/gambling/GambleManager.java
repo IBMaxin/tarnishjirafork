@@ -19,6 +19,9 @@ import com.osroyale.util.Utility;
 import java.util.ArrayList;
 import java.util.Objects;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class GambleManager {
 
     /**
@@ -162,7 +165,7 @@ public class GambleManager {
         Player requested = other.getGambling().getOther();
 
         if (!Objects.isNull(requested)) {
-            System.out.println("Accept...");
+            log.debug("Accept...");
             acceptRequest(player, other);
             return;
         }
@@ -172,7 +175,7 @@ public class GambleManager {
         player.send(new SendRemoveInterface());
         player.getGambling().setOther(other);
         player.getGambling().setStage(GambleStage.SENDING_OFFER);
-        System.out.println("send request...");
+        log.debug("send request...");
     }
 
     /**
@@ -189,7 +192,7 @@ public class GambleManager {
         player.getGambling().setOther(other);
 
         if (other.getGambling().getOther() != null && player.getIndex() == other.getGambling().getOther().getIndex()) {
-            System.out.println("accepted request...");
+            log.debug("accepted request...");
             open(other, player);
             open(player, other);
         }
@@ -203,7 +206,7 @@ public class GambleManager {
     public void open(Player player, Player other) {
         player.getGambling().setConfirmed(false);
         player.getGambling().setStage(GambleStage.PLACING_BET);
-        System.out.println("Open the interface for ["+String.format(player.getUsername())+"] and ["+String.format(other.getUsername())+"]...");
+        log.debug("Open the interface for ["+String.format(player.getUsername())+"] and ["+String.format(other.getUsername())+"]...");
 
         player.send(new SendInventoryInterface(INTERFACE_ID, INVENTORY_ID));
         player.send(new SendItemOnInterface(44770, player.getGambling().getContainer().toArray()));
@@ -243,8 +246,8 @@ public class GambleManager {
         player.message("You have accepted the gamble with "+String.format(other.getUsername())+".");
         other.message(String.format(player.getUsername()) + " has accepted the gamble.");
 
-        System.out.println("player: " + String.format(player.getUsername()));
-        System.out.println("other: " + String.format(other.getUsername()));
+        log.debug("player: " + String.format(player.getUsername()));
+        log.debug("other: " + String.format(other.getUsername()));
 
         if (other.getGambling().hasConfirmed()) {
             Gamble game = getGame(other, player, other.getGambling().getType());
@@ -256,7 +259,7 @@ public class GambleManager {
 
             player.getGambling().setOther(other);
 
-            System.out.println("Both confirmed start the game...");
+            log.debug("Both confirmed start the game...");
 
             start(player);
         }

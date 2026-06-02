@@ -86,7 +86,7 @@ public final class World {
 
     /** Saves all the game data. */
     public static void save() {
-        System.out.println("Saving Tarnish...");
+        logger.info("Saving Tarnish...");
         get().players.forEach(PlayerSerializer::save);
         logger.info("All players were successfully saved.");
        /* GlobalRecords.save();
@@ -111,7 +111,7 @@ public final class World {
 
     /** Shuts down the server. */
     public static void shutdown() {
-        System.out.println("shutting down...");
+        logger.info("shutting down...");
         System.exit(0);
     }
 

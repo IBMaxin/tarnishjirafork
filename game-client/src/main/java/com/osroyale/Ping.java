@@ -1,13 +1,14 @@
 package com.osroyale;
 
-
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Date;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public final class Ping {
 
     private static void getPing(String hostAddress, int port) {
@@ -15,8 +16,7 @@ public final class Ping {
         try {
             Client.ping = test(hostAddress, port);
         } catch (NumberFormatException e) {
-            System.out.println("Problem with arguments, usage: " + usage);
-            e.printStackTrace();
+            log.warn("Problem with arguments, usage: {}", usage, e);
         }
     }
 
@@ -35,7 +35,7 @@ public final class Ping {
                     try {
                         Thread.sleep(sleepMillis);
                     } catch (final InterruptedException e) {
-                        e.printStackTrace();
+                        log.warn("Ping thread interrupted", e);
                         return;
                     }
                 }
@@ -55,8 +55,7 @@ public final class Ping {
         try {
             inetAddress = InetAddress.getByName(hostAddress);
         } catch (UnknownHostException e) {
-            System.out.println("Problem, unknown host:");
-            e.printStackTrace();
+            log.error("Problem resolving host: {}", hostAddress, e);
         }
         try {
             start = new Date();
@@ -65,11 +64,9 @@ public final class Ping {
                 return (stop.getTime() - start.getTime());
             }
         } catch (IOException e1) {
-            System.out.println("Problem, a network error has occurred:");
-            e1.printStackTrace();
+            log.error("Network error while pinging host: {}", hostAddress, e1);
         } catch (IllegalArgumentException e1) {
-            System.out.println("Problem, timeout was invalid:");
-            e1.printStackTrace();
+            log.warn("Invalid timeout while pinging host: {}", hostAddress, e1);
         }
         return -1;
 
@@ -88,15 +85,13 @@ public final class Ping {
         try {
             inetAddress = InetAddress.getByName(hostAddress);
         } catch (UnknownHostException e) {
-            System.out.println("Problem, unknown host:");
-            e.printStackTrace();
+            log.error("Problem resolving host: {}:{}", hostAddress, port, e);
         }
 
         try {
             socketAddress = new InetSocketAddress(inetAddress, port);
         } catch (IllegalArgumentException e) {
-            System.out.println("Problem, port may be invalid:");
-            e.printStackTrace();
+            log.warn("Invalid port for ping: {}:{}", hostAddress, port, e);
         }
 
         try {
@@ -112,7 +107,7 @@ public final class Ping {
         try {
             sc.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            log.error("Error closing socket after ping", e);
         }
 
         return timeToRespond;

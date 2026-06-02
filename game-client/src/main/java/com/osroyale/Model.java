@@ -14,12 +14,14 @@ import net.runelite.api.model.Triangle;
 import net.runelite.api.model.Vertex;
 import net.runelite.rs.api.RSFrames;
 import net.runelite.rs.api.RSModel;
+import lombok.extern.slf4j.Slf4j;
 
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+@Slf4j
 public class Model extends Renderable implements RSModel {
 
 	public boolean DEBUG_MODELS = false;
@@ -332,7 +334,7 @@ public class Model extends Renderable implements RSModel {
 				}
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			log.error("Error constructing model from parts", e);
 		}
 	}
 
@@ -2044,7 +2046,7 @@ public class Model extends Renderable implements RSModel {
 		try {
 			this.withinObject(false, false, false,0);
 		} catch (final Exception ex) {
-			ex.printStackTrace();
+			log.error("Error in renderModel withinObject", ex);
 		}
 	}
 
@@ -2181,7 +2183,7 @@ public class Model extends Renderable implements RSModel {
 			int opcode = ObjectKeyUtil.getObjectOpcode(uid);
 			int id = ObjectKeyUtil.getObjectId(uid);
 
-			System.out.println("Render at Point , ID: "+id+" at "+x+", "+y+" = "+uid);
+			log.debug("Render at Point , ID: {} at {}, {} = {}", id, x, y, uid);
 		}
 
 		if (uid > 0 && mouseInViewport) { // var32 should replace (uid > 0) in osrs, but does not work for older maps (cox pillars "null" have menus, agility obstacles/levers don't)
@@ -2191,7 +2193,7 @@ public class Model extends Renderable implements RSModel {
 				int opcode = ObjectKeyUtil.getObjectOpcode(uid);
 				int id = ObjectKeyUtil.getObjectId(uid);
 
-				System.out.println("Render at Point Hover, ID: "+id+" at "+x+", "+y+" = "+uid);
+				log.debug("Render at Point Hover, ID: {} at {}, {} = {}", id, x, y, uid);
 			}
 
 			boolean withinBounds = false;
@@ -2301,7 +2303,7 @@ public class Model extends Renderable implements RSModel {
 				Client.instance.getDrawCallbacks().draw(this, orientation, pitchSine, pitchCos, yawSin, yawCos, offsetX, offsetY, offsetZ, uid);
 			}
 		} catch (Exception ex) {
-			ex.printStackTrace();
+			log.error("Error in renderAtPoint", ex);
 		}
 	}
 

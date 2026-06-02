@@ -1,7 +1,10 @@
 package com.osroyale;
 
+import lombok.extern.slf4j.Slf4j;
+
 import static com.osroyale.Animation.animations;
 
+@Slf4j
 public final class Graphic {
 
     public static Graphic[] graphics;
@@ -32,7 +35,7 @@ public final class Graphic {
         final Buffer buffer = new Buffer(streamLoader.getFile("spotanim.dat"));
 
         final int graphicCount = buffer.readUnsignedShort();
-        System.out.println("graphicCount=" + graphicCount);
+        log.info("graphicCount={}", graphicCount);
 
         Graphic[] graphics = Graphic.graphics;
         if (graphics == null) {

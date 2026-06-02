@@ -5,6 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class RSInterface {
 
 	public RSInterface() {
@@ -1075,14 +1078,14 @@ public class RSInterface {
 	private static void findFreeSlots() {
 		for (int i = 0; i < interfaceCache.length; i++) {
 			if (Configuration.DUMP_INTERFACES && interfaceCache[i] == null) {
-				System.out.println("free slot: " + i);
+				log.debug("free slot: {}", i);
 			}
 		}
 	}
 
 	private static RSInterface createInterface(int id) {
 		if (Configuration.DUMP_INTERFACES && interfaceCache[id] != null) {
-			System.out.println("overwritten interface: " + id);
+			log.warn("overwritten interface: {}", id);
 		}
 		RSInterface rsi = new RSInterface();
 		interfaceCache[id] = rsi;
@@ -3072,7 +3075,7 @@ public class RSInterface {
 		int new_boxes_index = 40200;
 		for(SpellData spells : SpellData.values()) {
 			if(spells.equals(SpellData.SARA_STRIKE) || spells.equals(SpellData.ZAMORAK_FLAMES) || spells.equals(SpellData.GUTHIX_CLAWS)) {
-				System.out.println("new_boxes_index: " + new_boxes_index + ", " + spells.name());
+				log.debug("new_boxes_index: {}, {}", new_boxes_index, spells.name());
 			}
 			if(spells.runes_data.length == 2 && spells.description.contains("\\n"))
 				build2RunesBoxLarge(archive, new_boxes_index, spells.runes_data, spells.level, spells.spellName, spells.description, font);

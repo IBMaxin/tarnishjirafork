@@ -1,0 +1,1074 @@
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>if "Windows_NT" == "Windows_NT" setlocal
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>set DIRNAME=C:\Users\bob\IdeaProjects\tarnishjirafork\ 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>if "C:\Users\bob\IdeaProjects\tarnishjirafork\" == "" set DIRNAME=. 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>set APP_BASE_NAME=gradlew 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>set APP_HOME=C:\Users\bob\IdeaProjects\tarnishjirafork\ 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>for %i in ("C:\Users\bob\IdeaProjects\tarnishjirafork\") do set APP_HOME=%~fi 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>set APP_HOME=C:\Users\bob\IdeaProjects\tarnishjirafork\ 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m" 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>if defined JAVA_HOME goto findJavaFromJavaHome 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>set JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-19.0.2.7-hotspot\ 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>set JAVA_EXE=C:\Program Files\Eclipse Adoptium\jdk-19.0.2.7-hotspot\/bin/java.exe 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>if exist "C:\Program Files\Eclipse Adoptium\jdk-19.0.2.7-hotspot\/bin/java.exe" goto execute 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>set CLASSPATH= 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>"C:\Program Files\Eclipse Adoptium\jdk-19.0.2.7-hotspot\/bin/java.exe" "-Xmx64m" "-Xms64m"   "-Dorg.gradle.appname=gradlew" -classpath "" -jar "C:\Users\bob\IdeaProjects\tarnishjirafork\\gradle\wrapper\gradle-wrapper.jar" :game-server:run 
+> Task :game-server:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :game-server:compileKotlin UP-TO-DATE
+> Task :game-server:compileJava UP-TO-DATE
+> Task :game-server:generateRebelMain UP-TO-DATE
+> Task :game-server:processResources UP-TO-DATE
+> Task :game-server:classes UP-TO-DATE
+
+> Task :game-server:run
+[37mJun 1,' 2026 5:35:33 com.osroyale.Starter [Starter]
+INFO: Tarnish is running (client version 12)
+[m[37mJun 1,' 2026 5:35:33 com.osroyale.Starter [Starter]
+INFO: Game Engine=Sequential
+[m[37mJun 1,' 2026 5:35:34 com.osroyale.fs.cache.decoder.ObjectDefinitionDecoder [Starter]
+INFO: Loading object definitions.
+[m[37mJun 1,' 2026 5:35:34 com.osroyale.fs.cache.decoder.ObjectDefinitionDecoder [Starter]
+INFO: Loaded 50046 object definitions.
+[m[37mJun 1,' 2026 5:35:34 com.osroyale.fs.cache.decoder.MapDefinitionDecoder [Starter]
+INFO: Loading region definitions.
+[m[37mJun 1,' 2026 5:35:34 com.osroyale.fs.cache.decoder.MapDefinitionDecoder [Starter]
+INFO: Loaded 2179 region definitions.
+[m[37mJun 1,' 2026 5:35:34 com.osroyale.fs.cache.decoder.RegionDecoder [Starter]
+INFO: Loading regional map data.
+[m[37mJun 1,' 2026 5:35:35 com.osroyale.fs.cache.decoder.RegionDecoder [Starter]
+INFO: Loaded 2179 regions, skipped 0 maps.
+[m[37mJun 1,' 2026 5:35:35 com.osroyale.fs.cache.decoder.AnimationDefinitionDecoder [Starter]
+INFO: Loading animation definitions.
+[m[37mJun 1,' 2026 5:35:36 com.osroyale.fs.cache.decoder.AnimationDefinitionDecoder [Starter]
+INFO: Loaded 10678 animation definitions.
+[m[37mJun 1,' 2026 5:35:38 com.osroyale.game.world.entity.combat.attack.listener.CombatListenerManager [Starter]
+INFO: Loaded: 60 item set combat listeners.
+[m[37mJun 1,' 2026 5:35:38 com.osroyale.game.world.entity.combat.attack.listener.CombatListenerManager [Starter]
+INFO: Loaded: 86 npc combat listeners.
+[m[37mJun 1,' 2026 5:35:38 com.osroyale.util.parser.GenericParser [Starter]
+INFO: Loaded: 3511 npc spawns.
+[m[37mJun 1,' 2026 5:35:38 com.osroyale.content.shootingstar.ShootingStar [Starter]
+INFO: Loaded Shooting Stars event.
+[m[33;1mJun 1,' 2026 5:35:39 com.osroyale.util.parser.GsonParser [pool-2-thread-11]
+WARN: json document=.\data\content\game\world.json is null
+[m[37mJun 1,' 2026 5:35:39 com.osroyale.util.parser.GenericParser [pool-2-thread-11]
+INFO: Loaded: 0 world.
+[m[37mJun 1,' 2026 5:35:40 com.osroyale.Starter [Starter]
+INFO: Startup service finished
+[m[37mJun 1,' 2026 5:35:41 com.osroyale.content.lms.loadouts.LMSLoadoutManager [Starter]
+INFO: Loaded: 3 lms loadouts.
+[m[37mJun 1,' 2026 5:35:41 com.osroyale.game.plugin.PluginManager [Starter]
+INFO: Loaded: 133 plugins.
+[m[37mJun 1,' 2026 5:35:41 com.osroyale.Starter [Starter]
+INFO: Game service started
+[m[37mJun 1,' 2026 5:35:41 com.osroyale.Starter [Starter]
+INFO: Events have been scheduled
+[mDouble Experience Job: Mon Jun 01 18:00:00 PDT 2026
+[37mJun 1,' 2026 5:35:41 com.osroyale.game.service.NetworkService [Starter]
+INFO: Starting network service on port: 43594
+[m[37mJun 1,' 2026 5:35:41 com.osroyale.game.service.NetworkService [Starter]
+INFO: Server built successfully (took 8 seconds).
+[mstarLocation.starPosition pos[x=2986, y=3599, z=0]
+[37mJun 1,' 2026 5:41:00 com.osroyale.game.world.entity.mob.player.Player [Game Thread]
+INFO: [REGISTERED]: Zezima [127.0.0.1]
+[mid: 42575
+level: 1
+data.menus[optionId].option[i].name: Bag of salt
+id: 42577
+level: 1
+data.menus[optionId].option[i].name: Ice cooler
+id: 42579
+level: 1
+data.menus[optionId].option[i].name: Spiny Helmet\n(with 5 Defence)
+id: 42581
+level: 1
+data.menus[optionId].option[i].name: Rock hammer
+id: 42583
+level: 10
+data.menus[optionId].option[i].name: Facemask
+id: 42585
+level: 15
+data.menus[optionId].option[i].name: Earmuffs
+id: 42587
+level: 25
+data.menus[optionId].option[i].name: Mirror shield\n(with 20 Defence)
+id: 42589
+level: 32
+data.menus[optionId].option[i].name: Fishing explosive
+id: 42591
+level: 33
+data.menus[optionId].option[i].name: Harpie bug lantern
+id: 42593
+level: 35
+data.menus[optionId].option[i].name: Witchwood icon
+id: 42595
+level: 37
+data.menus[optionId].option[i].name: Insulated boots
+id: 42597
+level: 42
+data.menus[optionId].option[i].name: Slayer gloves
+id: 42599
+level: 55
+data.menus[optionId].option[i].name: Leaf-bladed spear and sword\n(with 50 Attack)
+id: 42601
+level: 55
+data.menus[optionId].option[i].name: Leaf-bladed battleaxe\n(with 65 Attack)
+id: 42603
+level: 55
+data.menus[optionId].option[i].name: Broad arrow\n(with 50 Ranged)
+id: 42605
+level: 55
+data.menus[optionId].option[i].name: Broad bolts\n(with 61 Ranged)
+id: 42607
+level: 55
+data.menus[optionId].option[i].name: Slayer's staff\n(with 50 Magic)
+id: 42609
+level: 57
+data.menus[optionId].option[i].name: Fungicide spray
+id: 42611
+level: 60
+data.menus[optionId].option[i].name: Nosepeg
+RIGHT_OPTIONS_START + index: 42562
+RIGHT_OPTIONS_START + index: 42563
+RIGHT_OPTIONS_START + index: 42564
+RIGHT_OPTIONS_START + index: 42565
+RIGHT_OPTIONS_START + index: 42566
+RIGHT_OPTIONS_START + index: 42567
+RIGHT_OPTIONS_START + index: 42568
+RIGHT_OPTIONS_START + index: 42569
+RIGHT_OPTIONS_START + index: 42570
+RIGHT_OPTIONS_START + index: 42571
+RIGHT_OPTIONS_START + index: 42572
+[37mJun 1,' 2026 5:41:44 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [EnchantedGemPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 5:41:44 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [MagicButtonPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 5:41:44 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [DialogueButtonPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 5:41:44 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [SettingsButtonPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 5:41:44 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [PresetButtonPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 5:41:44 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [DestroyItemPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 5:41:44 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [TeleportButtonPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 5:41:44 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemFirstClickPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 5:41:44 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [MithrilSeedPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 5:41:44 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ObjectFirstClickPlugin, type=1]:first click object=29241
+[m[31;1mJun 1,' 2026 5:41:52 com.osroyale.net.ChannelHandler [multiThreadIoEventLoopGroup-3-3]
+ERROR: Exception caught upstream!
+[m
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:255)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1139)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:152)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:381)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:575)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:550)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:491)
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:468)
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:206)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:177)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1073)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+[37mJun 1,' 2026 5:41:53 com.osroyale.game.world.entity.mob.player.Player [Game Thread]
+INFO: [UNREGISTERED]: Zezima [127.0.0.1]
+[mFiring Double Experience job
+[37mJun 1,' 2026 6:09:23 com.osroyale.game.world.entity.mob.player.Player [Game Thread]
+INFO: [REGISTERED]: Oak [127.0.0.1]
+[m[37mJun 1,' 2026 6:09:40 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [EatFoodPlugin, type=1]:first click item=315
+[m[37mJun 1,' 2026 6:09:59 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [EnchantedGemPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:09:59 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [MagicButtonPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:09:59 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [DialogueButtonPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:09:59 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [SettingsButtonPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:09:59 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [PresetButtonPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:09:59 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [DestroyItemPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:09:59 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [TeleportButtonPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:09:59 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemFirstClickPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:09:59 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [MithrilSeedPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:09:59 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ObjectFirstClickPlugin, type=1]:first click object=29241
+[m5523
+User: OAK said:  ::master
+[37mJun 1,' 2026 6:11:39 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [EnchantedGemPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:11:39 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [MagicButtonPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:11:39 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [DialogueButtonPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:11:39 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [SettingsButtonPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:11:39 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [PresetButtonPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:11:39 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [DestroyItemPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:11:39 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [TeleportButtonPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:11:39 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemFirstClickPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:11:39 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [MithrilSeedPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:11:39 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ObjectFirstClickPlugin, type=1]:first click object=29241
+[m[37mJun 1,' 2026 6:11:48 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=2]: second item interfaceId=47551 (removeId=12926, removeSlot=15)
+[m[37mJun 1,' 2026 6:15:43 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[m[37mJun 1,' 2026 6:17:12 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=37521 (removeId=26382, removeSlot=3)
+[m[37mJun 1,' 2026 6:17:13 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=37521 (removeId=26384, removeSlot=4)
+[m[37mJun 1,' 2026 6:17:13 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=37521 (removeId=26386, removeSlot=5)
+[m[37mJun 1,' 2026 6:18:53 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=37521 (removeId=21003, removeSlot=4)
+[m[37mJun 1,' 2026 6:18:54 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=37521 (removeId=21205, removeSlot=5)
+[m[37mJun 1,' 2026 6:20:58 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=37521 (removeId=1333, removeSlot=42)
+[m[37mJun 1,' 2026 6:21:27 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [EatFoodPlugin, type=1]:first click item=2309
+[m[37mJun 1,' 2026 6:25:45 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[m[37mJun 1,' 2026 6:35:46 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[m[37mJun 1,' 2026 6:45:47 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[m[37mJun 1,' 2026 6:52:50 com.osroyale.game.world.entity.mob.player.Player [Game Thread]
+INFO: [UNREGISTERED]: Oak [127.0.0.1]
+[m[37mJun 1,' 2026 6:52:52 com.osroyale.game.world.entity.mob.player.Player [Game Thread]
+INFO: [REGISTERED]: Oak [127.0.0.1]
+[mFiring Double Experience job
+[37mJun 1,' 2026 7:00:02 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[m[37mJun 1,' 2026 7:10:03 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[m[37mJun 1,' 2026 7:20:04 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[m[37mJun 1,' 2026 7:30:05 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[mdiscord error: discord is null.
+[37mJun 1,' 2026 7:40:05 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[m[37mJun 1,' 2026 7:50:07 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[mFiring Double Experience job
+[37mJun 1,' 2026 8:00:08 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[m[31;1mJun 1,' 2026 8:03:57 com.osroyale.net.ChannelHandler [multiThreadIoEventLoopGroup-3-5]
+ERROR: Exception caught upstream!
+[m
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:255)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1139)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:152)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:381)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:575)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:550)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:491)
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:468)
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:206)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:177)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1073)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+[37mJun 1,' 2026 8:03:58 com.osroyale.game.world.entity.mob.player.Player [Game Thread]
+INFO: [UNREGISTERED]: Oak [127.0.0.1]
+[m[37mJun 1,' 2026 8:51:09 com.osroyale.game.world.entity.mob.player.Player [Game Thread]
+INFO: [REGISTERED]: Oak [127.0.0.1]
+[m[37mJun 1,' 2026 8:52:55 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=37521 (removeId=11730, removeSlot=6)
+[m[37mJun 1,' 2026 8:52:57 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=37521 (removeId=11731, removeSlot=7)
+[m[37mJun 1,' 2026 8:53:13 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [EnchantedGemPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 8:53:13 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [MagicButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 8:53:13 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [DialogueButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 8:53:13 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [SettingsButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 8:53:13 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [PresetButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 8:53:13 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [DestroyItemPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 8:53:13 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [TeleportButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 8:53:13 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemFirstClickPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 8:53:13 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [MithrilSeedPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 8:53:13 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [TradingPostButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 8:53:13 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [OpenBankObjectClickPlugin, type=1]:first click object=10583
+[mFiring Double Experience job
+[37mJun 1,' 2026 9:00:14 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[m[37mJun 1,' 2026 9:10:16 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[m[37mJun 1,' 2026 9:20:17 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[m[37mJun 1,' 2026 9:30:18 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[mdiscord error: discord is null.
+[37mJun 1,' 2026 9:40:21 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[mstarLocation.starPosition pos[x=2995, y=3911, z=0]
+[37mJun 1,' 2026 9:50:23 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[mdiscord error: discord is null.
+Firing Double Experience job
+[37mJun 1,' 2026 10:00:23 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[m[37mJun 1,' 2026 10:10:24 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[m[37mJun 1,' 2026 10:20:25 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[m[37mJun 1,' 2026 10:30:25 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[m[37mJun 1,' 2026 10:51:26 com.osroyale.game.world.entity.mob.player.Player [Game Thread]
+INFO: [UNREGISTERED]: Oak [127.0.0.1]
+[m[37mJun 1,' 2026 10:51:59 com.osroyale.game.world.entity.mob.player.Player [Game Thread]
+INFO: [REGISTERED]: Oak [127.0.0.1]
+[mid: 42575
+level: 1
+data.menus[optionId].option[i].name: Bag of salt
+id: 42577
+level: 1
+data.menus[optionId].option[i].name: Ice cooler
+id: 42579
+level: 1
+data.menus[optionId].option[i].name: Spiny Helmet\n(with 5 Defence)
+id: 42581
+level: 1
+data.menus[optionId].option[i].name: Rock hammer
+id: 42583
+level: 10
+data.menus[optionId].option[i].name: Facemask
+id: 42585
+level: 15
+data.menus[optionId].option[i].name: Earmuffs
+id: 42587
+level: 25
+data.menus[optionId].option[i].name: Mirror shield\n(with 20 Defence)
+id: 42589
+level: 32
+data.menus[optionId].option[i].name: Fishing explosive
+id: 42591
+level: 33
+data.menus[optionId].option[i].name: Harpie bug lantern
+id: 42593
+level: 35
+data.menus[optionId].option[i].name: Witchwood icon
+id: 42595
+level: 37
+data.menus[optionId].option[i].name: Insulated boots
+id: 42597
+level: 42
+data.menus[optionId].option[i].name: Slayer gloves
+id: 42599
+level: 55
+data.menus[optionId].option[i].name: Leaf-bladed spear and sword\n(with 50 Attack)
+id: 42601
+level: 55
+data.menus[optionId].option[i].name: Leaf-bladed battleaxe\n(with 65 Attack)
+id: 42603
+level: 55
+data.menus[optionId].option[i].name: Broad arrow\n(with 50 Ranged)
+id: 42605
+level: 55
+data.menus[optionId].option[i].name: Broad bolts\n(with 61 Ranged)
+id: 42607
+level: 55
+data.menus[optionId].option[i].name: Slayer's staff\n(with 50 Magic)
+id: 42609
+level: 57
+data.menus[optionId].option[i].name: Fungicide spray
+id: 42611
+level: 60
+data.menus[optionId].option[i].name: Nosepeg
+RIGHT_OPTIONS_START + index: 42562
+RIGHT_OPTIONS_START + index: 42563
+RIGHT_OPTIONS_START + index: 42564
+RIGHT_OPTIONS_START + index: 42565
+RIGHT_OPTIONS_START + index: 42566
+RIGHT_OPTIONS_START + index: 42567
+RIGHT_OPTIONS_START + index: 42568
+RIGHT_OPTIONS_START + index: 42569
+RIGHT_OPTIONS_START + index: 42570
+RIGHT_OPTIONS_START + index: 42571
+RIGHT_OPTIONS_START + index: 42572
+[37mJun 1,' 2026 10:52:14 com.osroyale.game.task.impl.PlayerSaveEvent [Game Thread]
+INFO: 1 players were saved.
+[mid: 42575
+level: 1
+data.menus[optionId].option[i].name: Gnome agility course
+id: 42577
+level: 30
+data.menus[optionId].option[i].name: Agility pyramid
+id: 42579
+level: 35
+data.menus[optionId].option[i].name: Barbarian outpost agility course
+id: 42581
+level: 48
+data.menus[optionId].option[i].name: Ape atoll agility course
+id: 42583
+level: 52
+data.menus[optionId].option[i].name: Wilderness agility course
+RIGHT_OPTIONS_START + index: 42564
+RIGHT_OPTIONS_START + index: 42565
+RIGHT_OPTIONS_START + index: 42566
+RIGHT_OPTIONS_START + index: 42567
+RIGHT_OPTIONS_START + index: 42568
+RIGHT_OPTIONS_START + index: 42569
+RIGHT_OPTIONS_START + index: 42570
+RIGHT_OPTIONS_START + index: 42571
+RIGHT_OPTIONS_START + index: 42572
+id: 42575
+level: 3
+data.menus[optionId].option[i].name: Attack potion\nGuam leaf & eye of newt
+id: 42577
+level: 5
+data.menus[optionId].option[i].name: Anti-poison potion\nMarrentill & ground unicorn horn
+id: 42579
+level: 12
+data.menus[optionId].option[i].name: Strength potion\nTarromin & limpwurt root
+id: 42581
+level: 15
+data.menus[optionId].option[i].name: Serum 207\nTarromin & ashes
+id: 42583
+level: 22
+data.menus[optionId].option[i].name: Stat restore potion\nHarralander & red spiders' eggs
+id: 42585
+level: 26
+data.menus[optionId].option[i].name: Energy potion\nHarralander & chocolate dust
+id: 42587
+level: 30
+data.menus[optionId].option[i].name: Defence potion\nRanarr weed & white berries
+id: 42589
+level: 34
+data.menus[optionId].option[i].name: Agility potion\nToadflax & toad legs
+id: 42591
+level: 38
+data.menus[optionId].option[i].name: Prayer restore potion\nRanarr weed & snape grass
+id: 42593
+level: 45
+data.menus[optionId].option[i].name: Super Attack potion\nIrit leaf & eye of newt
+id: 42595
+level: 48
+data.menus[optionId].option[i].name: Super anti-poison potion\nIrit leaf & ground unicorn horn
+id: 42597
+level: 50
+data.menus[optionId].option[i].name: Fishing potion\nAvantoe & snape grass
+id: 42599
+level: 52
+data.menus[optionId].option[i].name: Super energy potion\nAvantoe & Mort myre fungi
+id: 42601
+level: 55
+data.menus[optionId].option[i].name: Super Strength potion\nKwuarm & limpwurt root
+id: 42603
+level: 60
+data.menus[optionId].option[i].name: Weapon poison\nKwuarm & ground blue dragon scale
+id: 42605
+level: 63
+data.menus[optionId].option[i].name: Super restore potion\nSnapdragon & red spiders' eggs
+id: 42607
+level: 66
+data.menus[optionId].option[i].name: Super Defence potion\nCadantine & white berries
+id: 42609
+level: 68
+data.menus[optionId].option[i].name: Extra strong anti-poison potion\nCoconut milk, toadflax & yew roots
+id: 42611
+level: 69
+data.menus[optionId].option[i].name: Anti-firebreath potion\nLantadyme & ground blue dragon scale
+id: 42613
+level: 72
+data.menus[optionId].option[i].name: Ranging potion\nDwarf weed & wine of Zamorak
+id: 42615
+level: 73
+data.menus[optionId].option[i].name: Extra strong weapon poison potion\nCoconut milk, cactus spine & red spiders' eggs
+id: 42617
+level: 76
+data.menus[optionId].option[i].name: Magic potion\nLantadyme & potato cactus
+id: 42619
+level: 77
+data.menus[optionId].option[i].name: Stamina potion\nAmylase & super energy potion
+id: 42621
+level: 78
+data.menus[optionId].option[i].name: Zamorak brew\nTorstol & jangerberries
+id: 42623
+level: 79
+data.menus[optionId].option[i].name: Super strong anti-poison potion\nCoconut milk, irit leaf & magic tree roots
+id: 42625
+level: 81
+data.menus[optionId].option[i].name: Saradomin brew\nToadflax & crushed bird nest
+id: 42627
+level: 82
+data.menus[optionId].option[i].name: Weapon poison potion\nCoconut milk, nightshade & poison ivy\nberries
+id: 42629
+level: 90
+data.menus[optionId].option[i].name: Super combat potion\nSuper attack potion, super defence\npotion, super strength potion & torstol
+RIGHT_OPTIONS_START + index: 42561
+RIGHT_OPTIONS_START + index: 42562
+RIGHT_OPTIONS_START + index: 42563
+RIGHT_OPTIONS_START + index: 42564
+RIGHT_OPTIONS_START + index: 42565
+RIGHT_OPTIONS_START + index: 42566
+RIGHT_OPTIONS_START + index: 42567
+RIGHT_OPTIONS_START + index: 42568
+RIGHT_OPTIONS_START + index: 42569
+RIGHT_OPTIONS_START + index: 42570
+RIGHT_OPTIONS_START + index: 42571
+RIGHT_OPTIONS_START + index: 42572
+id: 42575
+level: 1
+data.menus[optionId].option[i].name: Man
+id: 42577
+level: 10
+data.menus[optionId].option[i].name: Farmer
+id: 42579
+level: 15
+data.menus[optionId].option[i].name: Female H.A.M Follower
+id: 42581
+level: 20
+data.menus[optionId].option[i].name: Male H.A.M Follower
+id: 42583
+level: 25
+data.menus[optionId].option[i].name: Warrior
+id: 42585
+level: 32
+data.menus[optionId].option[i].name: Rogue
+id: 42587
+level: 38
+data.menus[optionId].option[i].name: Master Farmer
+id: 42589
+level: 40
+data.menus[optionId].option[i].name: Guard
+id: 42591
+level: 45
+data.menus[optionId].option[i].name: Fremennik Citizen
+id: 42593
+level: 45
+data.menus[optionId].option[i].name: Beared Pollnivnian Bandit
+id: 42595
+level: 53
+data.menus[optionId].option[i].name: Desert Bandit
+id: 42597
+level: 55
+data.menus[optionId].option[i].name: Knight
+id: 42599
+level: 55
+data.menus[optionId].option[i].name: Pollnivnian Bandit
+id: 42601
+level: 65
+data.menus[optionId].option[i].name: Watchman
+id: 42603
+level: 65
+data.menus[optionId].option[i].name: Menaphite Thug
+id: 42605
+level: 70
+data.menus[optionId].option[i].name: Paladin
+id: 42607
+level: 75
+data.menus[optionId].option[i].name: Gnome
+id: 42609
+level: 80
+data.menus[optionId].option[i].name: Hero
+id: 42611
+level: 85
+data.menus[optionId].option[i].name: Elf
+RIGHT_OPTIONS_START + index: 42563
+RIGHT_OPTIONS_START + index: 42564
+RIGHT_OPTIONS_START + index: 42565
+RIGHT_OPTIONS_START + index: 42566
+RIGHT_OPTIONS_START + index: 42567
+RIGHT_OPTIONS_START + index: 42568
+RIGHT_OPTIONS_START + index: 42569
+RIGHT_OPTIONS_START + index: 42570
+RIGHT_OPTIONS_START + index: 42571
+RIGHT_OPTIONS_START + index: 42572
+id: 42575
+level: 1
+data.menus[optionId].option[i].name: Leather gloves
+id: 42577
+level: 7
+data.menus[optionId].option[i].name: Leather boots
+id: 42579
+level: 9
+data.menus[optionId].option[i].name: Leather cowl
+id: 42581
+level: 11
+data.menus[optionId].option[i].name: Leather vambraces
+id: 42583
+level: 14
+data.menus[optionId].option[i].name: Leather body
+id: 42585
+level: 15
+data.menus[optionId].option[i].name: Snail helmet
+id: 42587
+level: 18
+data.menus[optionId].option[i].name: Leather chaps
+id: 42589
+level: 28
+data.menus[optionId].option[i].name: Hard leather body
+id: 42591
+level: 38
+data.menus[optionId].option[i].name: Coif
+id: 42593
+level: 41
+data.menus[optionId].option[i].name: Studded body
+id: 42595
+level: 44
+data.menus[optionId].option[i].name: Studded chaps
+id: 42597
+level: 45
+data.menus[optionId].option[i].name: Snakeskin boots
+id: 42599
+level: 47
+data.menus[optionId].option[i].name: Snakeskin vambraces
+id: 42601
+level: 48
+data.menus[optionId].option[i].name: Snakeskin bandana
+id: 42603
+level: 51
+data.menus[optionId].option[i].name: Snakeskin chaps
+id: 42605
+level: 53
+data.menus[optionId].option[i].name: Snakeskin body
+id: 42607
+level: 55
+data.menus[optionId].option[i].name: Slayer helm
+id: 42609
+level: 57
+data.menus[optionId].option[i].name: Green dragonhide vambraces
+id: 42611
+level: 60
+data.menus[optionId].option[i].name: Green dragonhide chaps
+id: 42613
+level: 63
+data.menus[optionId].option[i].name: Green dragonhide body
+id: 42615
+level: 66
+data.menus[optionId].option[i].name: Blue dragonhide vambraces
+id: 42617
+level: 68
+data.menus[optionId].option[i].name: Blue dragonhide chaps
+id: 42619
+level: 71
+data.menus[optionId].option[i].name: Blue dragonhide body
+id: 42621
+level: 73
+data.menus[optionId].option[i].name: Red dragonhide vambraces
+id: 42623
+level: 75
+data.menus[optionId].option[i].name: Red dragonhide chaps
+id: 42625
+level: 77
+data.menus[optionId].option[i].name: Red dragonhide body
+id: 42627
+level: 79
+data.menus[optionId].option[i].name: Black dragonhide cambraces
+id: 42629
+level: 82
+data.menus[optionId].option[i].name: Black dragonhide chaps
+id: 42631
+level: 84
+data.menus[optionId].option[i].name: Black dragonhide body
+RIGHT_OPTIONS_START + index: 42565
+RIGHT_OPTIONS_START + index: 42566
+RIGHT_OPTIONS_START + index: 42567
+RIGHT_OPTIONS_START + index: 42568
+RIGHT_OPTIONS_START + index: 42569
+RIGHT_OPTIONS_START + index: 42570
+RIGHT_OPTIONS_START + index: 42571
+RIGHT_OPTIONS_START + index: 42572
+id: 42575
+level: 1
+data.menus[optionId].option[i].name: 15 Arrow shafts
+id: 42577
+level: 1
+data.menus[optionId].option[i].name: Bronze arrow
+id: 42579
+level: 15
+data.menus[optionId].option[i].name: Iron arrow
+id: 42581
+level: 30
+data.menus[optionId].option[i].name: Steel arrow
+id: 42583
+level: 45
+data.menus[optionId].option[i].name: Mithril arrow
+id: 42585
+level: 60
+data.menus[optionId].option[i].name: Adamant arrow
+id: 42587
+level: 75
+data.menus[optionId].option[i].name: Rune arrow
+id: 42589
+level: 90
+data.menus[optionId].option[i].name: Dragon arrows
+RIGHT_OPTIONS_START + index: 42565
+RIGHT_OPTIONS_START + index: 42566
+RIGHT_OPTIONS_START + index: 42567
+RIGHT_OPTIONS_START + index: 42568
+RIGHT_OPTIONS_START + index: 42569
+RIGHT_OPTIONS_START + index: 42570
+RIGHT_OPTIONS_START + index: 42571
+RIGHT_OPTIONS_START + index: 42572
+id: 42575
+level: 1
+data.menus[optionId].option[i].name: Crimson swifts (jungle)
+id: 42577
+level: 5
+data.menus[optionId].option[i].name: Golden warblers (desert)
+id: 42579
+level: 9
+data.menus[optionId].option[i].name: Copper longtails (woodland)
+id: 42581
+level: 11
+data.menus[optionId].option[i].name: Cerulean twitches (snow)
+id: 42583
+level: 19
+data.menus[optionId].option[i].name: Tropical wagtails (jungle)
+RIGHT_OPTIONS_START + index: 42568
+RIGHT_OPTIONS_START + index: 42569
+RIGHT_OPTIONS_START + index: 42570
+RIGHT_OPTIONS_START + index: 42571
+RIGHT_OPTIONS_START + index: 42572
+id: 42575
+level: 1
+data.menus[optionId].option[i].name: Garden
+id: 42577
+level: 1
+data.menus[optionId].option[i].name: Parlour
+id: 42579
+level: 5
+data.menus[optionId].option[i].name: Kitchen
+id: 42581
+level: 10
+data.menus[optionId].option[i].name: Dining room
+id: 42583
+level: 15
+data.menus[optionId].option[i].name: Workshop
+id: 42585
+level: 20
+data.menus[optionId].option[i].name: Bedroom
+id: 42587
+level: 25
+data.menus[optionId].option[i].name: Hall (skill trophies)
+id: 42589
+level: 30
+data.menus[optionId].option[i].name: Games room
+id: 42591
+level: 32
+data.menus[optionId].option[i].name: Combat room
+id: 42593
+level: 35
+data.menus[optionId].option[i].name: Hall (quest trophies)
+id: 42595
+level: 37
+data.menus[optionId].option[i].name: Menagerie
+id: 42597
+level: 40
+data.menus[optionId].option[i].name: Study
+id: 42599
+level: 42
+data.menus[optionId].option[i].name: Costume room
+id: 42601
+level: 45
+data.menus[optionId].option[i].name: Chapel
+id: 42603
+level: 50
+data.menus[optionId].option[i].name: Portal chamber
+id: 42605
+level: 55
+data.menus[optionId].option[i].name: Formal garden
+id: 42607
+level: 60
+data.menus[optionId].option[i].name: Throne room
+id: 42609
+level: 65
+data.menus[optionId].option[i].name: Oubliette
+id: 42611
+level: 70
+data.menus[optionId].option[i].name: Dungeon
+id: 42613
+level: 75
+data.menus[optionId].option[i].name: Treasure room
+RIGHT_OPTIONS_START + index: 42572
+id: 42575
+level: 1
+data.menus[optionId].option[i].name: Air runes
+id: 42577
+level: 2
+data.menus[optionId].option[i].name: Mind runes
+id: 42579
+level: 5
+data.menus[optionId].option[i].name: Water runes
+id: 42581
+level: 6
+data.menus[optionId].option[i].name: Mist runes
+id: 42583
+level: 9
+data.menus[optionId].option[i].name: Earth runes
+id: 42585
+level: 10
+data.menus[optionId].option[i].name: Dust runes
+id: 42587
+level: 13
+data.menus[optionId].option[i].name: Mud runes
+id: 42589
+level: 14
+data.menus[optionId].option[i].name: Fire runes
+id: 42591
+level: 15
+data.menus[optionId].option[i].name: Smoke runes
+id: 42593
+level: 19
+data.menus[optionId].option[i].name: Steam runes
+id: 42595
+level: 20
+data.menus[optionId].option[i].name: Body runes
+id: 42597
+level: 23
+data.menus[optionId].option[i].name: Lava runes
+id: 42599
+level: 27
+data.menus[optionId].option[i].name: Cosmic runes
+id: 42601
+level: 35
+data.menus[optionId].option[i].name: Chaos runes
+id: 42603
+level: 40
+data.menus[optionId].option[i].name: Astral runes
+id: 42605
+level: 44
+data.menus[optionId].option[i].name: Nature runes
+id: 42607
+level: 54
+data.menus[optionId].option[i].name: Law runes
+id: 42609
+level: 65
+data.menus[optionId].option[i].name: Death runes
+id: 42611
+level: 77
+data.menus[optionId].option[i].name: Blood runes
+id: 42613
+level: 90
+data.menus[optionId].option[i].name: Soul runes
+id: 42615
+level: 95
+data.menus[optionId].option[i].name: Wrath runes
+RIGHT_OPTIONS_START + index: 42562
+RIGHT_OPTIONS_START + index: 42563
+RIGHT_OPTIONS_START + index: 42564
+RIGHT_OPTIONS_START + index: 42565
+RIGHT_OPTIONS_START + index: 42566
+RIGHT_OPTIONS_START + index: 42567
+RIGHT_OPTIONS_START + index: 42568
+RIGHT_OPTIONS_START + index: 42569
+RIGHT_OPTIONS_START + index: 42570
+RIGHT_OPTIONS_START + index: 42571
+RIGHT_OPTIONS_START + index: 42572
+User: OAK said: 1  9::find ultor
+37521
+[37mJun 1,' 2026 10:54:51 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=5]: fifth item interfaceId=37521 (removeId=28307, removeSlot=2)
+[m[37mJun 1,' 2026 10:55:02 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [EnchantedGemPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:55:02 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [MagicButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:55:02 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [DialogueButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:55:02 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [SettingsButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:55:02 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [PresetButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:55:02 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [DestroyItemPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:55:02 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [TeleportButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:55:02 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemFirstClickPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:55:02 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [MithrilSeedPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:55:02 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [TradingPostButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:55:02 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [OpenBankObjectClickPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:56:08 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=2]: second item interfaceId=37521 (removeId=19547, removeSlot=98)
+[m[37mJun 1,' 2026 10:56:25 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=2]: second item interfaceId=37521 (removeId=26219, removeSlot=157)
+[m[37mJun 1,' 2026 10:56:52 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=1688 (removeId=26219, removeSlot=3)
+[m[37mJun 1,' 2026 10:56:57 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=1688 (removeId=19547, removeSlot=2)
+[mUser: OAK said: -::find vit
+[37mJun 1,' 2026 10:57:33 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=2]: second item interfaceId=37521 (removeId=22325, removeSlot=16)
+[m[37mJun 1,' 2026 10:57:49 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [EnchantedGemPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:57:49 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [MagicButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:57:49 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [DialogueButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:57:49 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [SettingsButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:57:49 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [PresetButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:57:49 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [DestroyItemPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:57:49 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [TeleportButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:57:49 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemFirstClickPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:57:49 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [MithrilSeedPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:57:49 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [TradingPostButtonPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:57:49 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [OpenBankObjectClickPlugin, type=1]:first click object=10583
+[m[37mJun 1,' 2026 10:58:08 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=5382 (removeId=11773, removeSlot=73)
+[m[37mJun 1,' 2026 10:58:09 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=5064 (removeId=11773, removeSlot=0)
+[m[37mJun 1,' 2026 10:58:10 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=5382 (removeId=13239, removeSlot=72)
+[m[37mJun 1,' 2026 10:58:11 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=5382 (removeId=6570, removeSlot=71)
+[m[37mJun 1,' 2026 10:58:21 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=5382 (removeId=11283, removeSlot=51)
+[m[37mJun 1,' 2026 10:58:27 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=5382 (removeId=26382, removeSlot=25)
+[m[37mJun 1,' 2026 10:58:29 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=5382 (removeId=26386, removeSlot=28)
+[m[37mJun 1,' 2026 10:58:30 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=5382 (removeId=26384, removeSlot=26)
+[m[37mJun 1,' 2026 10:58:33 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=5382 (removeId=26219, removeSlot=30)
+[m[37mJun 1,' 2026 10:58:34 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=5382 (removeId=22325, removeSlot=31)
+[m[37mJun 1,' 2026 10:58:39 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=5382 (removeId=21205, removeSlot=23)
+[m[37mJun 1,' 2026 10:58:44 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemContainerActionPlugin, type=1]: first item interfaceId=5382 (removeId=28307, removeSlot=27)
+[m[37mJun 1,' 2026 10:59:24 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [EnchantedGemPlugin, type=1]:first click object=18987
+[m[37mJun 1,' 2026 10:59:24 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [MagicButtonPlugin, type=1]:first click object=18987
+[m[37mJun 1,' 2026 10:59:24 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [DialogueButtonPlugin, type=1]:first click object=18987
+[m[37mJun 1,' 2026 10:59:24 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [SettingsButtonPlugin, type=1]:first click object=18987
+[m[37mJun 1,' 2026 10:59:24 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [PresetButtonPlugin, type=1]:first click object=18987
+[m[37mJun 1,' 2026 10:59:24 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [DestroyItemPlugin, type=1]:first click object=18987
+[m[37mJun 1,' 2026 10:59:24 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [TeleportButtonPlugin, type=1]:first click object=18987
+[m[37mJun 1,' 2026 10:59:24 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemFirstClickPlugin, type=1]:first click object=18987
+[m[37mJun 1,' 2026 10:59:24 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [MithrilSeedPlugin, type=1]:first click object=18987
+[m[37mJun 1,' 2026 10:59:24 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ObjectFirstClickPlugin, type=1]:first click object=18987
+[m[37mJun 1,' 2026 10:59:28 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [EnchantedGemPlugin, type=1]:first click object=1816
+[m[37mJun 1,' 2026 10:59:28 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [MagicButtonPlugin, type=1]:first click object=1816
+[m[37mJun 1,' 2026 10:59:28 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [DialogueButtonPlugin, type=1]:first click object=1816
+[m[37mJun 1,' 2026 10:59:28 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [SettingsButtonPlugin, type=1]:first click object=1816
+[m[37mJun 1,' 2026 10:59:28 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [PresetButtonPlugin, type=1]:first click object=1816
+[m[37mJun 1,' 2026 10:59:28 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [DestroyItemPlugin, type=1]:first click object=1816
+[m[37mJun 1,' 2026 10:59:28 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [TeleportButtonPlugin, type=1]:first click object=1816
+[m[37mJun 1,' 2026 10:59:28 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ItemFirstClickPlugin, type=1]:first click object=1816
+[m[37mJun 1,' 2026 10:59:28 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [MithrilSeedPlugin, type=1]:first click object=1816
+[m[37mJun 1,' 2026 10:59:28 com.osroyale.game.plugin.PluginContext [Game Thread]
+INFO: [ObjectFirstClickPlugin, type=1]:first click object=1816
+[mFiring Double Experience job
+total 1 = 3
+Safe death
+[31;1mJun 1,' 2026 11:01:03 com.osroyale.net.ChannelHandler [multiThreadIoEventLoopGroup-3-7]
+ERROR: Exception caught upstream!
+[m
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:255)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1139)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:152)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:381)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:575)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:550)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:491)
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:468)
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:206)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:177)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1073)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+[37mJun 1,' 2026 11:01:03 com.osroyale.game.world.entity.mob.player.Player [Game Thread]
+INFO: [UNREGISTERED]: Oak [127.0.0.1]
+[m
+C:\Users\bob\IdeaProjects\tarnishjirafork>if -1 EQU 0 goto mainEnd 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>rem the _cmd.exe /c_ return code! 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>set EXIT_CODE=-1 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>if -1 EQU 0 set EXIT_CODE=1 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>if not "" == "" exit -1 
+
+C:\Users\bob\IdeaProjects\tarnishjirafork>exit /b -1 

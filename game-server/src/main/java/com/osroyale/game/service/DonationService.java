@@ -1,5 +1,6 @@
 package com.osroyale.game.service;
 
+import com.osroyale.Config;
 import com.osroyale.content.dialogue.Expression;
 import com.osroyale.content.donators.DonatorBond;
 import com.osroyale.game.world.entity.mob.player.Player;
@@ -12,15 +13,17 @@ import java.util.concurrent.TimeUnit;
 
 public final class DonationService {
     private static final Logger logger = LogManager.getLogger();
-    private static final String USER = "osroyjs_exo1";
-    private static final String PASS = "3AXbU=W7IfzX";
-    private static final String CONNECTION_STRING = "jdbc:mysql://173.82.152.23:3306/osroyjs_store_2";
 
     private DonationService() {
 
     }
 
     public static void claimDonation(Player player) {
+        if (!Config.donationsEnabled || Config.DONATION_DB_URL.isEmpty()) {
+            player.dialogueFactory.sendNpcChat(5523, "Donations are currently disabled.").execute();
+            return;
+        }
+
         if (!player.databaseRequest.elapsed(1, TimeUnit.MINUTES)) {
             player.dialogueFactory.sendNpcChat(5523,"You can only check our database once every 1 minute!").execute();
             return;
@@ -35,7 +38,7 @@ public final class DonationService {
         boolean claimed = false;
         player.databaseRequest.reset();
 
-        try(Connection connection = DriverManager.getConnection(CONNECTION_STRING, USER, PASS);
+        try(Connection connection = DriverManager.getConnection(Config.DONATION_DB_URL, Config.DONATION_DB_USER, Config.DONATION_DB_PASS);
             PreparedStatement sta = connection.prepareStatement("SELECT * FROM payments WHERE player_name = ? AND status='Completed' AND claimed=0", ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE)) {
             sta.setString(1, player.getName().replace("_", " "));
 

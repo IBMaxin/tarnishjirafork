@@ -5,6 +5,7 @@ import com.osroyale.game.world.entity.mob.player.PlayerRight;
 import com.osroyale.game.world.items.ItemDefinition;
 import com.osroyale.util.RandomUtils;
 import com.osroyale.util.parser.impl.NpcDropParser;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -14,6 +15,7 @@ import java.util.List;
  *
  * @author Michael | Chex
  */
+@Slf4j
 public final class NpcDropTable {
 
     /** The npc ids that share this drop table. */
@@ -150,16 +152,16 @@ public final class NpcDropTable {
 
         NpcDropTable table = NpcDropManager.NPC_DROPS.get(npcId);
 
-        System.out.println();
-        System.out.println("Table lengths (vr, r, uc, c): ");
+        log.info("");
+        log.info("Table lengths (vr, r, uc, c): ");
         for (int index = 0; index < table.table.length - 1; index++) {
-            System.out.print(table.table[index].length + " ");
+            log.info(table.table[index].length + " ");
         }
-        System.out.println("\n");
-        System.out.println("--------------------------------------------------");
-        System.out.println("Current rolls: \t \t \t \t Custom rolls:");
+        log.info("\n");
+        log.info("--------------------------------------------------");
+        log.info("Current rolls: \t \t \t \t Custom rolls:");
         printRates(table.table, table.rollData, customRolls);
-        System.out.println();
+        log.info("");
     }
 
     private static void printRates(NpcDrop[][] tables, int[] rollData, int[] rollData2) {
@@ -170,18 +172,18 @@ public final class NpcDropTable {
             maxRoll2 += rollData2[index];
         }
 
-        System.out.println("--------------------------------------------------");
-        System.out.println("Very Rare ---- " + ((long) rollData[0] * 100_00 / maxRoll) / 100.0 + "% \t\t Very Rare ---- " + ((long) rollData2[0] * 100_00 / maxRoll2) / 100.0 + "%");
-        System.out.println("Rare --------- " + ((long) rollData[1] * 100_00 / maxRoll) / 100.0 + "% \t\t Rare --------- " + ((long) rollData2[1] * 100_00 / maxRoll2) / 100.0 + "%");
-        System.out.println("Uncommon ----- " + ((long) rollData[2] * 100_00 / maxRoll) / 100.0 + "% \t\t Uncommon ----- " + ((long) rollData2[2] * 100_00 / maxRoll2) / 100.0 + "%");
-        System.out.println("Common ------- " + ((long) rollData[3] * 100_00 / maxRoll) / 100.0 + "% \t\t Common ------- " + ((long) rollData2[3] * 100_00 / maxRoll2) / 100.0 + "%");
-        System.out.println("Empty Drop --- " + ((long) rollData[4] * 100_00 / maxRoll) / 100.0 + "% \t\t Empty Drop --- " + ((long) rollData2[4] * 100_00 / maxRoll2) / 100.0 + "%");
-        System.out.println("--------------------------------------------------");
-        System.out.println("Very Rare ---- " + ((long) rollData[0] * 100_00 / maxRoll) / tables[0].length / 100.0 + "% \t\t Very Rare ---- " + ((long) rollData2[0] * 100_00 / maxRoll2) / tables[0].length / tables[0].length / 100.0 + "%");
-        System.out.println("Rare --------- " + ((long) rollData[1] * 100_00 / maxRoll) / tables[1].length / 100.0 + "% \t\t Rare --------- " + ((long) rollData2[1] * 100_00 / maxRoll2) / tables[0].length / tables[1].length / 100.0 + "%");
-        System.out.println("Uncommon ----- " + ((long) rollData[2] * 100_00 / maxRoll) / tables[2].length / 100.0 + "% \t\t Uncommon ----- " + ((long) rollData2[2] * 100_00 / maxRoll2) / tables[0].length / tables[2].length / 100.0 + "%");
-        System.out.println("Common ------- " + ((long) rollData[3] * 100_00 / maxRoll) / tables[3].length / 100.0 + "% \t\t Common ------- " + ((long) rollData2[3] * 100_00 / maxRoll2) / tables[0].length / tables[3].length / 100.0 + "%");
-        System.out.println("--------------------------------------------------");
+        log.info("--------------------------------------------------");
+        log.info("Very Rare ---- " + ((long) rollData[0] * 100_00 / maxRoll) / 100.0 + "% \t\t Very Rare ---- " + ((long) rollData2[0] * 100_00 / maxRoll2) / 100.0 + "%");
+        log.info("Rare --------- " + ((long) rollData[1] * 100_00 / maxRoll) / 100.0 + "% \t\t Rare --------- " + ((long) rollData2[1] * 100_00 / maxRoll2) / 100.0 + "%");
+        log.info("Uncommon ----- " + ((long) rollData[2] * 100_00 / maxRoll) / 100.0 + "% \t\t Uncommon ----- " + ((long) rollData2[2] * 100_00 / maxRoll2) / 100.0 + "%");
+        log.info("Common ------- " + ((long) rollData[3] * 100_00 / maxRoll) / 100.0 + "% \t\t Common ------- " + ((long) rollData2[3] * 100_00 / maxRoll2) / 100.0 + "%");
+        log.info("Empty Drop --- " + ((long) rollData[4] * 100_00 / maxRoll) / 100.0 + "% \t\t Empty Drop --- " + ((long) rollData2[4] * 100_00 / maxRoll2) / 100.0 + "%");
+        log.info("--------------------------------------------------");
+        log.info("Very Rare ---- " + ((long) rollData[0] * 100_00 / maxRoll) / tables[0].length / 100.0 + "% \t\t Very Rare ---- " + ((long) rollData2[0] * 100_00 / maxRoll2) / tables[0].length / tables[0].length / 100.0 + "%");
+        log.info("Rare --------- " + ((long) rollData[1] * 100_00 / maxRoll) / tables[1].length / 100.0 + "% \t\t Rare --------- " + ((long) rollData2[1] * 100_00 / maxRoll2) / tables[0].length / tables[1].length / 100.0 + "%");
+        log.info("Uncommon ----- " + ((long) rollData[2] * 100_00 / maxRoll) / tables[2].length / 100.0 + "% \t\t Uncommon ----- " + ((long) rollData2[2] * 100_00 / maxRoll2) / tables[0].length / tables[2].length / 100.0 + "%");
+        log.info("Common ------- " + ((long) rollData[3] * 100_00 / maxRoll) / tables[3].length / 100.0 + "% \t\t Common ------- " + ((long) rollData2[3] * 100_00 / maxRoll2) / tables[0].length / tables[3].length / 100.0 + "%");
+        log.info("--------------------------------------------------");
     }
 
 }

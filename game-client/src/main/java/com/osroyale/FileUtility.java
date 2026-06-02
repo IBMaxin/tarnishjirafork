@@ -4,7 +4,9 @@ import java.io.*;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public final class FileUtility {
 
 	private FileUtility() {
@@ -72,7 +74,7 @@ public final class FileUtility {
 			totalWrite++;
 			completeWrite++;
 		} catch (Throwable throwable) {
-			System.out.println((new StringBuilder()).append("Write Error: ").append(name).toString());
+			log.error("Write Error: {}", name);
 		}
 	}
 

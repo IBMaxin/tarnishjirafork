@@ -3,6 +3,9 @@ package com.osroyale;
 // Jad home page: http://www.kpdus.com/jad.html
 // Decompiler options: packimports(3) 
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public final class VarBit {
 
 	public static void unpackConfig(StreamLoader streamLoader) {
@@ -39,7 +42,7 @@ public final class VarBit {
 				leastSignificantBit = stream.readUnsignedByte();
 				mostSignificantBit = stream.readUnsignedByte();
 			} else {
-				System.out.println("Unknown varbit opcode: " + opcode);
+				log.warn("Unknown varbit opcode: {}", opcode);
 			}
 		}
 	}

@@ -864,7 +864,7 @@ public class TradingPost  {
                 listing.setPrice(i+1);
                 allListings.add(listing);
                 addCounter++;
-                System.out.println("Adding listing: " + addCounter);
+                logger.debug("Adding listing: " + addCounter);
             }
         }
     }
@@ -965,11 +965,11 @@ public class TradingPost  {
                         logger.error("Failed reading listings", e);
                     }
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    logger.error("Failed to load listing file", e);
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("Failed to load all listings", e);
         }
     }
 
@@ -982,7 +982,7 @@ public class TradingPost  {
             try {
                 file.getParentFile().mkdirs();
             } catch (SecurityException e) {
-                System.out.println("Error while creating item history directory");
+                logger.error("Error while creating item history directory");
             }
         }
         try(FileWriter writer = new FileWriter(file)) {
@@ -991,7 +991,7 @@ public class TradingPost  {
             object.add("itemhistory",builder.toJsonTree(itemHistories));
             writer.write(builder.toJson(object));
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("Failed to save all item history", e);
         }
     }
 
@@ -1004,7 +1004,7 @@ public class TradingPost  {
             try {
                 file.getParentFile().mkdirs();
             } catch (SecurityException e) {
-                System.out.println("Error while creating recent item history directory");
+                logger.error("Error while creating recent item history directory");
             }
         }
         try(FileWriter writer = new FileWriter(file)) {
@@ -1013,7 +1013,7 @@ public class TradingPost  {
             object.add("recentitemhistory",builder.toJsonTree(recentlySoldItems));
             writer.write(builder.toJson(object));
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("Failed to save recent history", e);
         }
     }
 
@@ -1035,7 +1035,7 @@ public class TradingPost  {
                     }.getType());
             itemHistories.putAll(itemHistory);
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("Failed to load item history", e);
         }
     }
 
@@ -1054,7 +1054,7 @@ public class TradingPost  {
             ItemHistory[] temp = builder.fromJson(reader.get("recentitemhistory").getAsJsonArray(), ItemHistory[].class);
             recentlySoldItems.addAll(Arrays.asList(temp));
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("Failed to load recent item history", e);
         }
     }
 
@@ -1064,7 +1064,7 @@ public class TradingPost  {
                 file.getParentFile().mkdirs();
                 file.createNewFile();
             } catch (SecurityException e) {
-                System.out.println("Unable to create directory");
+                logger.error("Unable to create directory");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }

@@ -1,11 +1,13 @@
 package com.osroyale;
 
+import lombok.extern.slf4j.Slf4j;
 
 import net.runelite.api.IterableHashTable;
 import net.runelite.rs.api.RSItemComposition;
 import net.runelite.rs.api.RSIterableNodeHashTable;
 import net.runelite.rs.api.RSModel;
 
+@Slf4j
 public final class ItemDefinition implements RSItemComposition {
 
     static void nullLoader() {
@@ -99,7 +101,7 @@ public final class ItemDefinition implements RSItemComposition {
                 itemDef.itemActions = new String[]{null, "Wield", "Check", null, "Destroy"};
                 break;
             case 4151:
-                System.out.println("ZOOM:" +itemDef.modelZoom);
+                log.debug("ZOOM: {}", itemDef.modelZoom);
                 break;
             case 13191:
                 itemDef.name = "$50 Donator bond";

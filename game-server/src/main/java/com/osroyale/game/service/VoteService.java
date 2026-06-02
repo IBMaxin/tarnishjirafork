@@ -1,5 +1,6 @@
 package com.osroyale.game.service;
 
+import com.osroyale.Config;
 import com.osroyale.content.achievement.AchievementHandler;
 import com.osroyale.content.achievement.AchievementKey;
 import com.osroyale.game.world.World;
@@ -14,12 +15,14 @@ import java.util.concurrent.TimeUnit;
 public final class VoteService {
 
     private static final Logger logger = LogManager.getLogger();
-    private static final String CONNECTION_STRING = "jdbc:mysql://173.82.152.23:3306/osroyjs_vote";
-    private static final String USER = "osroyjs_exo1";
-    private static final String PASS = "3AXbU=W7IfzX";
     private static final Item REWARD = new Item(7478, 1);
 
     public static void claimReward(Player player) {
+        if (!Config.voteEnabled || Config.VOTE_DB_URL.isEmpty()) {
+            player.dialogueFactory.sendStatement("Voting is currently disabled.").execute();
+            return;
+        }
+
         if (!player.databaseRequest.elapsed(1, TimeUnit.MINUTES)) {
             player.dialogueFactory.sendStatement("You can only check our database once every 1 minute!").execute();
             return;
@@ -34,7 +37,7 @@ public final class VoteService {
         player.dialogueFactory.sendStatement("Checking request...").execute();
         player.databaseRequest.reset();
 
-        try (Connection connection = DriverManager.getConnection(CONNECTION_STRING, USER, PASS);
+        try (Connection connection = DriverManager.getConnection(Config.VOTE_DB_URL, Config.VOTE_DB_USER, Config.VOTE_DB_PASS);
              PreparedStatement sta = connection.prepareStatement("SELECT * FROM fx_votes WHERE username = ? AND claimed=0 AND callback_date IS NOT NULL", ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE)) {
 
             sta.setString(1, player.getName().replace(" ", "_"));

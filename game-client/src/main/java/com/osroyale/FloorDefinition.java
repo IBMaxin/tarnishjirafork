@@ -1,5 +1,8 @@
 package com.osroyale;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class FloorDefinition {
 
 	public static FloorDefinition[] overlays;
@@ -34,7 +37,7 @@ public class FloorDefinition {
 		final Buffer buffer = new Buffer(archive.getFile("underlays.dat"));
 
 		final int highestFileId = buffer.readUnsignedShort();
-		System.out.println("underlayAmount=" + highestFileId);
+		log.info("underlayAmount={}", highestFileId);
 		underlays = new FloorDefinition[highestFileId + 1];
 
 		for (int i = 0; i <= highestFileId; i++) {
@@ -61,7 +64,7 @@ public class FloorDefinition {
 		final Buffer buffer = new Buffer(archive.getFile("overlays.dat"));
 
 		final int highestFileId = buffer.readUnsignedShort();
-		System.out.println("overlayAmount="+highestFileId);
+		log.info("overlayAmount={}", highestFileId);
 		overlays = new FloorDefinition[highestFileId + 1];
 
 		for (int i = 0; i <= highestFileId; i++) {
@@ -119,7 +122,7 @@ public class FloorDefinition {
 			} else if (opcode == 1) {
 				rgb = (buffer.readUnsignedByte() << 16) + (buffer.readUnsignedByte() << 8) + buffer.readUnsignedByte();
 			} else {
-				System.out.println("Error unrecognised underlay code: " + opcode);
+				log.warn("Unrecognized underlay code: {}", opcode);
 			}
 		}
 	}
@@ -138,7 +141,7 @@ public class FloorDefinition {
 			} else if (opcode == 7) {
 				secondaryRgb = (buffer.readUnsignedByte() << 16) + (buffer.readUnsignedByte() << 8) + buffer.readUnsignedByte();
 			} else {
-				System.out.println("Error unrecognised overlay code: " + opcode);
+				log.warn("Unrecognized overlay code: {}", opcode);
 			}
 		}
 	}

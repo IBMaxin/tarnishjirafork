@@ -1,0 +1,51 @@
+# Cursor AI rules for Tarnish Jira Fork
+
+## Project Context
+- 2,651 Java/Kotlin source files, 30K+ JSON data files
+- JDK 21 for server, JDK 11 for client
+- Gradle multi-module: game-server, game-client
+- Always read AGENTS.md first for project map
+
+## Key Docs (read in order)
+1. AGENTS.md — project structure map
+2. docs/game-scope.md — what's in the game
+3. docs/test-plan.md — offline test strategy
+4. docs/workflows/ — how-to recipes for common tasks
+5. prompts/README.md — 24 audit/dev prompts
+6. code_index.json — instant file lookup
+
+## File Discovery
+- USE code_index.json BEFORE grepping — it maps every source file to class name
+- Check AGENTS.md for common path patterns (commands, skills, shops, NPCs)
+- 30K+ data files in game-server/data/ are mostly cache; grep there only as last resort
+- For security audit: prompts/03-security/
+- For data validation: prompts/02-data-audit/
+
+## Code Style
+- Java for core engine (com.osroyale package)
+- Kotlin for plugins (game-server/plugins/)
+- Prefer editing existing files over creating new modules
+- Content goes in plugins or content/ directory, not new top-level packages
+- Data definitions go in JSON files under game-server/data/def/
+
+## Building
+- Windows: `.\gradlew.bat :game-server:classes` — compile server
+- WSL: `./gradlew :game-server:classes`
+- Windows: `.\gradlew.bat :game-server:test` — run tests
+- WSL: `./gradlew :game-server:test`
+- Server port: 43594
+
+## Common Tasks
+- Add command: game-server/plugins/plugin/command/<Rank>CommandPlugin.java → see docs/workflows/commands.md
+- Add item click: game-server/plugins/plugin/click/item/ → see docs/workflows/plugins.md
+- Add skill: game-server/src/main/java/com/osroyale/content/skill/impl/ → see docs/workflows/skills.md
+- Add shop: game-server/data/def/store/stores.json + content/store/ → see docs/workflows/shops.md
+- Add NPC spawn: game-server/data/def/npc/npc_spawns.json → see docs/workflows/npcs.md
+- Add NPC drops: game-server/data/def/npc/npc_drops.json → see docs/workflows/npcs.md
+- Add item: game-server/data/def/item/item_definitions.json → see docs/workflows/items.md
+- Add equipment: game-server/data/def/equipment/equipment_definitions.json → see docs/workflows/items.md
+
+## Client-Server Boundary
+- Server-only: JSON data, plugins, skills, combat formulas
+- Needs client: new item models (ID > ~7K), new packet opcodes, new interfaces
+- Full guide: prompts/00-cross-cutting/client-server-boundary.md

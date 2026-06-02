@@ -1,5 +1,6 @@
 package com.osroyale.net.discord;
 
+import com.osroyale.Config;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -28,7 +29,7 @@ public class DiscordPlugin {
         }
 
         System.out.println("Initing Discord...");
-        discord = JDABuilder.createDefault(Constants.TOKEN).build();
+        discord = JDABuilder.createDefault(Config.DISCORD_TOKEN).build();
         discord.addEventListener(new BotListener());
         discord.getPresence().setActivity(Activity.playing("Tarnish"));
     }

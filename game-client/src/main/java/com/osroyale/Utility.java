@@ -14,12 +14,14 @@ import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * Handles all utility type methods for the client.
  *
  * @author Daniel
  */
+@Slf4j
 public class Utility {
 
     public static final Random RANDOM = new Random();
@@ -285,7 +287,7 @@ public class Utility {
                     Runtime.getRuntime().exec(new String[]{browser, url});
             }
         } catch (Exception e) {
-            System.out.println("Failed to open URL.");
+            log.error("Failed to open URL.");
         }
     }
 

@@ -27,6 +27,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Wintertodt {
 
     private static final int DEFAULT_DELAY = 10;
@@ -414,7 +417,7 @@ public class Wintertodt {
             if(pyro.pyroHealth <= 0) return;
 
             if(pyro.pyroSnowAttack) {
-                System.out.println("already a snow attack going for this pyro...");
+                log.warn("already a snow attack going for this pyro...");
                 return;
             }
 
@@ -631,7 +634,7 @@ public class Wintertodt {
         }
 
         if(brazier == null) {
-            System.out.println("Brazier has not been found...");
+            log.warn("Brazier has not been found...");
             return;
         }
 
@@ -658,7 +661,7 @@ public class Wintertodt {
         }
 
         if(brazier == null) {
-            System.out.println("Brazier has not been found...");
+            log.warn("Brazier has not been found...");
             return;
         }
 
@@ -710,7 +713,7 @@ public class Wintertodt {
         }
 
         if(brazier == null) {
-            System.out.println("Brazier has not been found...");
+            log.warn("Brazier has not been found...");
             return;
         }
 
@@ -784,14 +787,14 @@ public class Wintertodt {
         }
 
         if(brazier == null) {
-            System.out.println("Brazier has not been found...");
+            log.warn("Brazier has not been found...");
             return;
         }
 
         Item itemUsed = player.inventory.get(slot);
 
         if(itemUsed.getId() != REJUV_POT_4 && itemUsed.getId() != REJUV_POT_3 && itemUsed.getId() != REJUV_POT_2 && itemUsed.getId() != REJUV_POT_1) {
-            System.out.println("not a rejuv potion");
+            log.warn("not a rejuv potion");
             return;
         }
 

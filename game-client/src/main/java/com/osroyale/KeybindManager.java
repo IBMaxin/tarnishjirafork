@@ -2,9 +2,11 @@ package com.osroyale;
 
 import java.awt.event.KeyEvent;
 import java.io.*;
+import lombok.extern.slf4j.Slf4j;
 
 import static com.osroyale.Configuration.CHAR_PATH;
 
+@Slf4j
 /**
  * Handles management of custom key binds.
  *
@@ -38,13 +40,13 @@ public final class KeybindManager {
 
 	/** Handles binding the key.  */
 	public void set(int key, int value) {
-		System.out.println("Prekey: " + key);
+		log.debug("Prekey: {}", key);
 		key = fixKey(key); //Fixes keys being wonky
-		System.out.println("Setting key " + key + " to option " + value);
+		log.debug("Setting key {} to option {}", key, value);
 		value = getKey(value);
-		System.out.println("Value is actually: " + value);
+		log.debug("Value is actually: {}", value);
 		int slot = checkBind(value);
-		System.out.println("slot: " + slot);
+		log.debug("slot: {}", slot);
 
 		int old = keys[key];
 		keys[key] = value;
@@ -58,7 +60,7 @@ public final class KeybindManager {
 	}
 
 	private int fixKey(int key) {
-		System.out.println("key: " + key);
+		log.debug("key: {}", key);
 		switch (key)
 		{
 			case 7:
@@ -240,7 +242,7 @@ public final class KeybindManager {
 			}
 			output.close();
 		} catch (Exception e) {
-			e.printStackTrace();
+			log.error("Error saving keybinds", e);
 		}
 	}
 
@@ -261,7 +263,7 @@ public final class KeybindManager {
 			}
 			input.close();
 		} catch (Exception e) {
-			e.printStackTrace();
+			log.error("Error loading keybinds", e);
 		}
 	}
 }

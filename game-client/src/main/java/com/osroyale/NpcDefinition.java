@@ -1,7 +1,9 @@
 package com.osroyale;
 
+import lombok.extern.slf4j.Slf4j;
 import java.util.Arrays;
 
+@Slf4j
 public final class NpcDefinition {
 
     public static void unpackConfig(StreamLoader streamLoader) {
@@ -18,7 +20,7 @@ public final class NpcDefinition {
         buffer = new Buffer(streamLoader.getFile("npc.dat"));
         final Buffer idx = new Buffer(streamLoader.getFile("npc.idx"));
         int highestFileId = idx.readUnsignedShort();
-        System.out.println("highest NPC=" + highestFileId);
+        log.info("highest NPC={}", highestFileId);
         offsets = new int[highestFileId + 1];
         int offset = 0;
         for (int i = 0; i < highestFileId; i++) {
@@ -825,7 +827,7 @@ public final class NpcDefinition {
                     }
                 }
             } else {
-                System.out.println("Unrecognized NPC opcode " + opcode + ", last=" + lastOpcode);
+                log.warn("Unrecognized NPC opcode {}, last={}", opcode, lastOpcode);
                 return;
             }
             lastOpcode = opcode;

@@ -8,6 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class DropDefinitionDumper {
 
 	public static void main(String[] args) throws IOException {
@@ -83,27 +86,27 @@ public class DropDefinitionDumper {
 		List<ItemDrop> rare = drops.stream().filter(item -> item.rarity == Rarity.RARE).collect(Collectors.toList());
 		List<ItemDrop> very_rare = drops.stream().filter(item -> item.rarity == Rarity.VERY_RARE).collect(Collectors.toList());
 
-		System.out.println("   {");
-		System.out.println("    \"name\": \"" + name + "\",");
-		System.out.println("    \"npc\": [");
-		System.out.println("      " + npcId);
-		System.out.println("    ],");
-		System.out.println("  \"drop\": [");
+		log.info("   {");
+		log.info("    \"name\": \"" + name + "\",");
+		log.info("    \"npc\": [");
+		log.info("      " + npcId);
+		log.info("    ],");
+		log.info("  \"drop\": [");
 
 		if (!always.isEmpty()) {
 			for (int index = 0; index < always.size(); index++) {
 				ItemDrop item = always.get(index);
 
-				System.out.println("   {");
-				System.out.println("    \"id\": " + item.id + ",");
-				System.out.println("    \"minimum\": " + item.min + ",");
-				System.out.println("    \"maximum\": " + item.max + ",");
-				System.out.println("    \"chance\": " + item.rarity + "");
+				log.info("   {");
+				log.info("    \"id\": " + item.id + ",");
+				log.info("    \"minimum\": " + item.min + ",");
+				log.info("    \"maximum\": " + item.max + ",");
+				log.info("    \"chance\": " + item.rarity + "");
 
 				if (index + 1 == always.size()) {
-					System.out.println("   }");
+					log.info("   }");
 				} else {
-					System.out.println("   },");
+					log.info("   },");
 				}
 			}
 		}
@@ -112,16 +115,16 @@ public class DropDefinitionDumper {
 			for (int index = 0; index < common.size(); index++) {
 				ItemDrop item = common.get(index);
 
-				System.out.println("   {");
-				System.out.println("    \"id\": " + item.id + ",");
-				System.out.println("    \"minimum\": " + item.min + ",");
-				System.out.println("    \"maximum\": " + item.max + ",");
-				System.out.println("    \"chance\": " + item.rarity + "");
+				log.info("   {");
+				log.info("    \"id\": " + item.id + ",");
+				log.info("    \"minimum\": " + item.min + ",");
+				log.info("    \"maximum\": " + item.max + ",");
+				log.info("    \"chance\": " + item.rarity + "");
 
 				if (index + 1 == common.size() && uncommon.isEmpty() && rare.isEmpty() && very_rare.isEmpty()) {
-					System.out.println("   }");
+					log.info("   }");
 				} else {
-					System.out.println("   },");
+					log.info("   },");
 				}
 			}
 		}
@@ -130,16 +133,16 @@ public class DropDefinitionDumper {
 			for (int index = 0; index < uncommon.size(); index++) {
 				ItemDrop item = uncommon.get(index);
 
-				System.out.println("   {");
-				System.out.println("    \"id\": " + item.id + ",");
-				System.out.println("    \"minimum\": " + item.min + ",");
-				System.out.println("    \"maximum\": " + item.max + ",");
-				System.out.println("    \"chance\": " + item.rarity + "");
+				log.info("   {");
+				log.info("    \"id\": " + item.id + ",");
+				log.info("    \"minimum\": " + item.min + ",");
+				log.info("    \"maximum\": " + item.max + ",");
+				log.info("    \"chance\": " + item.rarity + "");
 
 				if (index + 1 == uncommon.size() && rare.isEmpty() && very_rare.isEmpty()) {
-					System.out.println("   }");
+					log.info("   }");
 				} else {
-					System.out.println("   },");
+					log.info("   },");
 				}
 			}
 		}
@@ -148,16 +151,16 @@ public class DropDefinitionDumper {
 			for (int index = 0; index < rare.size(); index++) {
 				ItemDrop item = rare.get(index);
 
-				System.out.println("   {");
-				System.out.println("    \"id\": " + item.id + ",");
-				System.out.println("    \"minimum\": " + item.min + ",");
-				System.out.println("    \"maximum\": " + item.max + ",");
-				System.out.println("    \"chance\": " + item.rarity + "");
+				log.info("   {");
+				log.info("    \"id\": " + item.id + ",");
+				log.info("    \"minimum\": " + item.min + ",");
+				log.info("    \"maximum\": " + item.max + ",");
+				log.info("    \"chance\": " + item.rarity + "");
 
 				if (index + 1 == rare.size() && very_rare.isEmpty()) {
-					System.out.println("   }");
+					log.info("   }");
 				} else {
-					System.out.println("   },");
+					log.info("   },");
 				}
 			}
 		}
@@ -166,22 +169,22 @@ public class DropDefinitionDumper {
 			for (int index = 0; index < very_rare.size(); index++) {
 				ItemDrop item = very_rare.get(index);
 
-				System.out.println("   {");
-				System.out.println("    \"id\": " + item.id + ",");
-				System.out.println("    \"minimum\": " + item.min + ",");
-				System.out.println("    \"maximum\": " + item.max + ",");
-				System.out.println("    \"chance\": " + item.rarity + "");
+				log.info("   {");
+				log.info("    \"id\": " + item.id + ",");
+				log.info("    \"minimum\": " + item.min + ",");
+				log.info("    \"maximum\": " + item.max + ",");
+				log.info("    \"chance\": " + item.rarity + "");
 
 				if (index + 1 == very_rare.size()) {
-					System.out.println("   }");
+					log.info("   }");
 				} else {
-					System.out.println("   },");
+					log.info("   },");
 				}
 			}
 		}
 
-		System.out.println("  ]");
-		System.out.println("},");
+		log.info("  ]");
+		log.info("},");
 
 	}
 

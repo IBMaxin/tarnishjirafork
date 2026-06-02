@@ -1,5 +1,8 @@
 package com.osroyale;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public final class Varp {
 
 	public static void unpackConfig(StreamLoader streamLoader) {
@@ -16,7 +19,7 @@ public final class Varp {
 			varps[j].readValues(stream, j);
 		}
 		if (stream.position != stream.array.length)
-			System.out.println("varptype load mismatch");
+			log.warn("varptype load mismatch");
 	}
 
 	private void readValues(Buffer stream, int i) {
@@ -46,7 +49,7 @@ public final class Varp {
 				stream.readUnsignedInt();
 			else if (j == 13) {
 			} else
-				System.out.println("Error unrecognised config code: " + j);
+				log.warn("Error unrecognised config code: {}", j);
 		} while (true);
 	}
 

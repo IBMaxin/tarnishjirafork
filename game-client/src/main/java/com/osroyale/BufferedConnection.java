@@ -4,7 +4,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 final class BufferedConnection implements Runnable {
 
 	public BufferedConnection(Socket socket1) throws IOException {
@@ -36,7 +38,7 @@ final class BufferedConnection implements Runnable {
 			if (socket != null)
 				socket.close();
 		} catch (IOException _ex) {
-			System.out.println("Error closing stream");
+			log.error("Error closing stream");
 		}
 		isWriter = false;
 		synchronized (this) {
@@ -136,13 +138,13 @@ final class BufferedConnection implements Runnable {
 	}
 
 	public void printDebug() {
-		System.out.println("dummy:" + closed);
-		System.out.println("tcycl:" + writeIndex);
-		System.out.println("tnum:" + buffIndex);
-		System.out.println("writer:" + isWriter);
-		System.out.println("ioerror:" + hasIOError);
+		log.debug("dummy: {}", closed);
+		log.debug("tcycl: {}", writeIndex);
+		log.debug("tnum: {}", buffIndex);
+		log.debug("writer: {}", isWriter);
+		log.debug("ioerror: {}", hasIOError);
 		try {
-			System.out.println("available:" + available());
+			log.debug("available: {}", available());
 		} catch (IOException _ex) {
 		}
 	}

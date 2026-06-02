@@ -22,6 +22,9 @@ kotlin {
 }
 
 dependencies {
+    compileOnly("org.projectlombok:lombok:1.18.34")
+    annotationProcessor("org.projectlombok:lombok:1.18.34")
+
     val slf4jVersion = "2.0.17"
     implementation("org.slf4j:slf4j-api:$slf4jVersion")
     runtimeOnly("org.slf4j:slf4j-simple:$slf4jVersion")
@@ -50,6 +53,8 @@ dependencies {
     implementation("de.mkammerer:argon2-jvm:2.12")
     implementation("net.openhft:affinity:3.27ea0")
     implementation("net.openhft:chronicle-threads:2.27ea0")
+
+    testImplementation("junit:junit:4.13.2")
 }
 
 sourceSets.named("main") {
@@ -63,4 +68,16 @@ tasks.withType<JavaCompile>().configureEach {
         encoding = "UTF-8"
         compilerArgs.add("--enable-preview")
     }
+}
+
+// Refresh code_index.json (for AI tooling)
+tasks.register<Exec>("refreshCodeIndex") {
+    description = "Regenerate code_index.json for AI-assisted development"
+    workingDir = rootProject.projectDir
+    commandLine("bash", "generate_index.sh")
+}
+
+// Auto-refresh index on compile
+tasks.named("compileJava") {
+    dependsOn("refreshCodeIndex")
 }

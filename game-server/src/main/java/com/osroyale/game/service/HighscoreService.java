@@ -17,16 +17,12 @@ public final class HighscoreService {
 
     private static final Logger logger = LogManager.getLogger();
 
-    private static final String CONNECTION_STRING = "jdbc:mysql://45.88.231.118:3306/hiscores";
-    private static final String USERNAME = "root";
-    private static final String PASSWORD = "bQ9R#UnPsW5^HLiU9$4LcJvE4%ZwJWLz";
-
     public static void saveHighscores(Player player) {
-        if (player == null || Config.WORLD_TYPE != WorldType.LIVE || PlayerRight.isAdministrator(player)) {
+        if (player == null || !Config.highscoresEnabled || Config.HISCORE_DB_URL.isEmpty() || PlayerRight.isAdministrator(player)) {
             return;
         }
 
-        try (Connection connection = DriverManager.getConnection(CONNECTION_STRING, USERNAME, PASSWORD);
+        try (Connection connection = DriverManager.getConnection(Config.HISCORE_DB_URL, Config.HISCORE_DB_USER, Config.HISCORE_DB_PASS);
              PreparedStatement dsta = connection.prepareStatement("DELETE FROM hs_users WHERE id = ?");
              PreparedStatement ista = connection.prepareStatement(generateQuery())) {
 

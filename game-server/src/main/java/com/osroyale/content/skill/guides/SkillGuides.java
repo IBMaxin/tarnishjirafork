@@ -7,7 +7,9 @@ import com.osroyale.net.packet.out.SendItemOnInterface;
 import com.osroyale.net.packet.out.SendScrollbar;
 import com.osroyale.net.packet.out.SendString;
 import com.osroyale.util.Utility;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class SkillGuides {
 
     public static final int INTERFACE_ID = 42550;
@@ -38,9 +40,9 @@ public class SkillGuides {
 
         for(int i = 0, id = TEXT_LAYER_START; i < length; i++, id += 2) {
             String level = data.menus[optionId].option[i].level == -1 ? "" : data.menus[optionId].option[i].level + "";
-            System.out.println("id: " + id);
-            System.out.println("level: " + level);
-            System.out.println("data.menus[optionId].option[i].name: " + data.menus[optionId].option[i].name);
+            log.debug("id: " + id);
+            log.debug("level: " + level);
+            log.debug("data.menus[optionId].option[i].name: " + data.menus[optionId].option[i].name);
             player.send(new SendString(data.menus[optionId].option[i].name, id));
             player.send(new SendString(level, id + 1));
         }
@@ -65,7 +67,7 @@ public class SkillGuides {
          * Cleans the right side
          */
         for(int index = menuLength; index < 14; index++) {
-            System.out.println("RIGHT_OPTIONS_START + index: " + (RIGHT_OPTIONS_START + index));
+            log.debug("RIGHT_OPTIONS_START + index: " + (RIGHT_OPTIONS_START + index));
             player.send(new SendString("", RIGHT_OPTIONS_START + index));
         }
         //for(int index = 2, child = RIGHT_OPTIONS_START + menuLength; index < 12; index++, child++)

@@ -4190,7 +4190,7 @@ public class Client extends GameEngine
             datainputstream.close();
             return abyte0;
         } catch (Exception e) {
-            System.out.println((new StringBuilder()).append("Read Error: ").append(s).toString());
+            log.error("Read Error: {}", s);
             return null;
         }
     }
@@ -6943,9 +6943,11 @@ public class Client extends GameEngine
     }
 
     public void processGameLoop() {
-        final FileRequests fileRequests = swiftFUP.getFileRequests();
-        if (fileRequests != null) {
-            fileRequests.processDecompressedResponses();
+        if (Configuration.USE_UPDATE_SERVER) {
+            final FileRequests fileRequests = swiftFUP.getFileRequests();
+            if (fileRequests != null) {
+                fileRequests.processDecompressedResponses();
+            }
         }
 
         callbacks.tick();
@@ -7300,7 +7302,7 @@ public class Client extends GameEngine
             isMembers = true;
             instance = this;
             if (Configuration.DEBUG_MODE) {
-                System.out.println("Client Build: " + Configuration.CLIENT_VERSION);
+                log.info("Client Build: {}", Configuration.CLIENT_VERSION);
             }
             startThread(765, 503, 206, 1);
             setMaxCanvasSize(765, 503);
@@ -8033,7 +8035,7 @@ public class Client extends GameEngine
                 Thread.sleep(50L);
                 loginRenderer.display();
                 loginRenderer.click();
-                System.out.println("Why u no load");
+                log.warn("Why u no load");
             }
 
         } catch (InterruptedException e) {
@@ -9198,7 +9200,7 @@ public class Client extends GameEngine
             int j2 = s2.indexOf(">");
             if (j2 != -1) {
                 Utility.launchURL("www.tarnishps.com");
-                System.out.println("here1");
+                log.debug("here1");
             }
         }
         if (action == 491) {
@@ -12104,7 +12106,7 @@ public class Client extends GameEngine
                     return;
                 }
             } else {
-                System.out.println("response:" + response);
+                log.info("response: {}", response);
                 loginMessage1 = "Unexpected server response";
                 loginMessage2 = "Please try using a different world.";
                 return;
@@ -12653,7 +12655,7 @@ public class Client extends GameEngine
             try {
                 Buffer b = new Buffer(streamLoader_2.getFile("osrs_sprites.dat"));
                 int spriteCount = b.readUnsignedShort();
-                System.out.println(spriteCount + " OSRS SPRITES!");
+                log.info("{} OSRS SPRITES!", spriteCount);
                 for (int i = 0; i < spriteCount; i++) {
                     int id = b.readUnsignedShort();
                     int length = b.readInt();
@@ -12844,7 +12846,7 @@ public class Client extends GameEngine
     }
 
     public void repackCacheIndex(int cacheIndex) {
-        System.out.println("Started repacking index " + cacheIndex + ".");
+        log.info("Started repacking index {}.", cacheIndex);
         int indexLength = new File(indexLocation(cacheIndex, -1)).listFiles().length;
         File[] file = new File(indexLocation(cacheIndex, -1)).listFiles();
         try {
@@ -12853,16 +12855,16 @@ public class Client extends GameEngine
                 byte[] data = fileToByteArray(cacheIndex, fileIndex);
                 if (data != null && data.length > 0) {
                     fileStores[cacheIndex].writeFile(data.length, data, fileIndex);
-                    System.out.println("Repacked " + fileIndex + ".");
+                    log.info("Repacked {}.", fileIndex);
                 } else {
-                    System.out.println("Unable to locate index " + fileIndex + ".");
+                    log.warn("Unable to locate index {}.", fileIndex);
                 }
             }
         } catch (Exception e) {
-            System.out.println("Error packing cache index " + cacheIndex + ".");
+            log.error("Error packing cache index {}.", cacheIndex);
             e.printStackTrace();
         }
-        System.out.println("Finished repacking " + cacheIndex + ".");
+        log.info("Finished repacking {}.", cacheIndex);
     }
 
     public byte[] fileToByteArray(int cacheIndex, int index) {
@@ -13871,7 +13873,7 @@ public class Client extends GameEngine
                                             spriteCache.get(198).drawSprite1((!isResized() ? 59 : x2) + 40 * i, (!isResized() ? 41 : y2), 255, true);
                                         }
                                     } catch (Exception e) {
-                                        System.out.println("Bank tab icon error: tab [" + i + "], amount [" + tabAm + "], tabAmount [" + tabAmounts[i] + "], itemSlot [" + itemSlot + "]");
+                                        log.error("Bank tab icon error: tab [{}], amount [{}], tabAmount [{}], itemSlot [{}]", i, tabAm, tabAmounts[i], itemSlot);
                                         e.printStackTrace();
                                     }
                                 }
@@ -17760,7 +17762,7 @@ public class Client extends GameEngine
                     }
                     if (hintIconType >= 2 && hintIconType <= 7) {
                         if (hintIconType == 2 || hintIconType == 7) {
-                            System.out.println("???");
+                            log.debug("???");
                             anInt937 = 64;
                             anInt938 = 64;
                         }
@@ -18256,7 +18258,7 @@ public class Client extends GameEngine
                     int modelID = incoming.readUnsignedShort();
                     RSInterface.interfaceCache[interfaceID].defaultMediaType = 1;
                     RSInterface.interfaceCache[interfaceID].mediaID = modelID;
-                    System.out.println(interfaceID + " " + modelID);
+                    log.debug("{} {}", interfaceID, modelID);
                     opcode = -1;
                     return true;
                 }
@@ -19822,7 +19824,7 @@ public class Client extends GameEngine
             } catch (UnsupportedFlavorException ex) {
                 ex.printStackTrace();
             } catch (IOException ex) {
-                System.out.println(ex);
+                log.error("Clipboard error", ex);
                 ex.printStackTrace();
             }
         }
@@ -19905,8 +19907,24 @@ public class Client extends GameEngine
     public final boolean loadData(final int indexID,
                                   final int fileID,
                                   final boolean flush) {
-        swiftFUP.getFileRequests().file(indexID + 1, fileID);
-        return true;
+        if (Configuration.USE_UPDATE_SERVER) {
+            swiftFUP.getFileRequests().file(indexID + 1, fileID);
+            return true;
+        }
+
+        final RSFileStore fileStore = fileStores[indexID + 1];
+        if (fileStore == null) {
+            return false;
+        }
+
+        final byte[] data = fileStore.readFile(fileID);
+        if (data == null) {
+            return false;
+        }
+
+        final FileResponse response = new FileResponse(FilePair.create(indexID + 1, fileID), data);
+        response.setDecompressedData(this);
+        return processOnDemandQueue(response);
     }
 
     public final boolean loadData(final int indexID,

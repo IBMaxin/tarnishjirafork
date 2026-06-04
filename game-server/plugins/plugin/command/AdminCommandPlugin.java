@@ -210,6 +210,27 @@ public class AdminCommandPlugin extends CommandExtension {
             }
         });
 
+        commands.add(new Command("maxrng", "maxrange", "maxranged") {
+            @Override
+            public void execute(Player player, CommandParser parser) {
+                addKit(player, "max ranged", MAX_RANGED_KIT);
+            }
+        });
+
+        commands.add(new Command("maxmelee") {
+            @Override
+            public void execute(Player player, CommandParser parser) {
+                addKit(player, "max melee", MAX_MELEE_KIT);
+            }
+        });
+
+        commands.add(new Command("maxmagic", "maxmage") {
+            @Override
+            public void execute(Player player, CommandParser parser) {
+                addKit(player, "max magic", MAX_MAGIC_KIT);
+            }
+        });
+
         commands.add(new Command("item", "pickup") {
             @Override
             public void execute(Player player, CommandParser parser) {
@@ -269,6 +290,68 @@ public class AdminCommandPlugin extends CommandExtension {
                 System.out.println("Your location is: " + player.getPosition() + ".");
             }
         });
+    }
+
+    private static final Item[] MAX_RANGED_KIT = {
+            new Item(27226), // Masori mask
+            new Item(27229), // Masori body
+            new Item(27232), // Masori chaps
+            new Item(22109), // Ava's assembler
+            new Item(19547), // Necklace of anguish
+            new Item(26235), // Zaryte vambraces
+            new Item(13237), // Pegasian boots
+            new Item(11771), // Archer ring (i)
+            new Item(20997), // Twisted bow
+            new Item(26374), // Zaryte crossbow
+            new Item(12926), // Toxic blowpipe
+            new Item(11212, 500), // Dragon arrows
+            new Item(9244, 500) // Dragon bolts (e)
+    };
+
+    private static final Item[] MAX_MELEE_KIT = {
+            new Item(26382), // Torva full helm
+            new Item(26384), // Torva platebody
+            new Item(26386), // Torva platelegs
+            new Item(21295), // Infernal cape
+            new Item(19553), // Amulet of torture
+            new Item(22981), // Ferocious gloves
+            new Item(13239), // Primordial boots
+            new Item(11773), // Berserker ring (i)
+            new Item(22325), // Scythe of vitur
+            new Item(22324), // Ghrazi rapier
+            new Item(11802), // Armadyl godsword
+            new Item(22322) // Avernic defender
+    };
+
+    private static final Item[] MAX_MAGIC_KIT = {
+            new Item(21018), // Ancestral hat
+            new Item(21021), // Ancestral robe top
+            new Item(21024), // Ancestral robe bottom
+            new Item(21295), // Infernal cape
+            new Item(12002), // Occult necklace
+            new Item(19544), // Tormented bracelet
+            new Item(13235), // Eternal boots
+            new Item(11770), // Seers ring (i)
+            new Item(27275), // Tumeken's shadow
+            new Item(21006), // Kodai wand
+            new Item(6889), // Mages' book
+            new Item(554, 1000), // Fire runes
+            new Item(560, 1000), // Death runes
+            new Item(565, 1000), // Blood runes
+            new Item(566, 1000) // Soul runes
+    };
+
+    private static void addKit(Player player, String name, Item[] kit) {
+        if (player.inventory.getFreeSlots() < kit.length) {
+            player.send(new SendMessage("You need " + kit.length + " free inventory slots for the " + name + " kit."));
+            return;
+        }
+
+        if (player.inventory.addAll(kit)) {
+            player.send(new SendMessage("Added " + name + " kit to your inventory."));
+        } else {
+            player.send(new SendMessage("You need inventory space for the " + name + " kit."));
+        }
     }
 
     @Override

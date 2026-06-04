@@ -46,19 +46,21 @@ Each NPC gets its own file: `game-server/data/def/npc-drops-json/{npcId}.json`
 
 ```json
 {
-  "npc": [9999],
-  "drop-type": "NORMAL",
+  "npc_id": 9999,
+  "rare_table": true,
   "drops": [
-    {"item": 4151, "min": 1, "max": 1, "chance": "ALWAYS"},
-    {"item": 995, "min": 100000, "max": 500000, "chance": "COMMON"},
-    {"item": 11732, "min": 1, "max": 1, "chance": "RARE"}
+    {"item": 4151, "minimum": 1, "maximum": 1, "type": "ALWAYS"},
+    {"item": 995, "minimum": 100000, "maximum": 500000, "type": "COMMON"},
+    {"item": 11732, "minimum": 1, "maximum": 1, "type": "RARE"}
   ]
 }
 ```
 
-Chance values: `ALWAYS`, `COMMON`, `UNCOMMON`, `RARE`, `VERY_RARE`
+Fields: `npc_id`, `rare_table`, `drops`.
 
-Drop types: `NORMAL`, `PET`, `CLUE`, `RDT`, `TERRITORY`
+Drop fields: `item` (or legacy alias `id`), `minimum`, `maximum`, `type`, optional numeric `chance`.
+
+Type values: `ALWAYS`, `COMMON`, `UNCOMMON`, `RARE`, `VERY_RARE`
 
 > **Old system:** `data/def/npc/npc_drops.json` (107K lines) — kept as reference, no longer loaded by the server.
 

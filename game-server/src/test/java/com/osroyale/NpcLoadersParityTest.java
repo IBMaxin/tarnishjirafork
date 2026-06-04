@@ -147,36 +147,21 @@ public class NpcLoadersParityTest {
     // ──────────────────────────────────────────────
 
     @Test
-    void spawns_monolithicAndPerFileHaveSameNpcIds() {
-        // Read NPC IDs from monolithic npc_spawns.json
-        Set<Integer> monolithicIds = readSpawnIdsFromMonolithic();
+    void spawns_monolithicAndPerFileHaveSameNormalizedEntries() {
+        Set<String> monolithic = readNormalizedSpawnsFromMonolithic();
+        Set<String> perFile = readNormalizedSpawnsFromPerFile();
 
-        // Read NPC IDs from per-file directory
-        Set<Integer> perFileIds = readSpawnIdsFromPerFile();
-
-        assertEquals(monolithicIds.size(), perFileIds.size(),
-                "NPC ID count mismatch: monolithic=" + monolithicIds.size()
-                        + " perFile=" + perFileIds.size());
-
-        Set<Integer> onlyInMono = new TreeSet<>(monolithicIds);
-        onlyInMono.removeAll(perFileIds);
-        Set<Integer> onlyInPerFile = new TreeSet<>(perFileIds);
-        onlyInPerFile.removeAll(monolithicIds);
+        Set<String> onlyInMono = new TreeSet<>(monolithic);
+        onlyInMono.removeAll(perFile);
+        Set<String> onlyInPerFile = new TreeSet<>(perFile);
+        onlyInPerFile.removeAll(monolithic);
 
         assertTrue(onlyInMono.isEmpty(),
-                "NPC IDs in monolithic but missing from per-file: " + onlyInMono);
+                "Normalized spawns in monolithic but missing from per-file (" + onlyInMono.size() + "):\n"
+                        + onlyInMono.stream().limit(20).collect(Collectors.joining("\n")));
         assertTrue(onlyInPerFile.isEmpty(),
-                "NPC IDs in per-file but missing from monolithic: " + onlyInPerFile);
-    }
-
-    @Test
-    void spawns_monolithicAndPerFileHaveSameTotalEntries() {
-        int monolithicCount = countSpawnEntries("data/def/npc/npc_spawns.json");
-        int perFileCount = countSpawnEntriesInDir("data/def/npc-spawns-json/");
-
-        assertEquals(monolithicCount, perFileCount,
-                "Total spawn entry count mismatch: monolithic=" + monolithicCount
-                        + " perFile=" + perFileCount);
+                "Normalized spawns in per-file but missing from monolithic (" + onlyInPerFile.size() + "):\n"
+                        + onlyInPerFile.stream().limit(20).collect(Collectors.joining("\n")));
     }
 
     // ──────────────────────────────────────────────
@@ -213,30 +198,27 @@ public class NpcLoadersParityTest {
         return result;
     }
 
-    /**
-     * Read all NPC IDs from the monolithic npc_spawns.json.
-     * Each top-level element has an "id" field.
-     */
-    private Set<Integer> readSpawnIdsFromMonolithic() {
-        Set<Integer> ids = new TreeSet<>();
+    /** Read normalized effective spawn entries from monolithic npc_spawns.json. */
+    private Set<String> readNormalizedSpawnsFromMonolithic() {
+        Set<String> spawns = new TreeSet<>();
         try (FileReader reader = new FileReader("data/def/npc/npc_spawns.json")) {
             JsonArray array = JsonParser.parseReader(reader).getAsJsonArray();
             for (JsonElement el : array) {
-                JsonObject obj = el.getAsJsonObject();
-                ids.add(obj.get("id").getAsInt());
+                JsonObject spawn = el.getAsJsonObject();
+                if (spawn.get("id").getAsInt() <= 0) {
+                    continue;
+                }
+                spawns.add(normalizeSpawn(spawn));
             }
         } catch (Exception e) {
             fail("Failed to read monolithic spawns: " + e.getMessage());
         }
-        return ids;
+        return spawns;
     }
 
-    /**
-     * Read all NPC IDs from per-file JSON directory.
-     * Each file is an array of spawn entries with "id" fields.
-     */
-    private Set<Integer> readSpawnIdsFromPerFile() {
-        Set<Integer> ids = new TreeSet<>();
+    /** Read normalized effective spawn entries from per-file NPC spawn JSONs. */
+    private Set<String> readNormalizedSpawnsFromPerFile() {
+        Set<String> spawns = new TreeSet<>();
         File dir = new File("data/def/npc-spawns-json/");
         assertTrue(dir.exists(), "npc-spawns-json/ directory does not exist");
         Gson gson = new Gson();
@@ -245,45 +227,38 @@ public class NpcLoadersParityTest {
             try (FileReader reader = new FileReader(file)) {
                 JsonObject[] entries = gson.fromJson(reader, JsonObject[].class);
                 for (JsonObject entry : entries) {
-                    ids.add(entry.get("id").getAsInt());
+                    assertTrue(entry.get("id").getAsInt() > 0,
+                            "Per-file spawn data must not contain NPC id <= 0: " + file.getName());
+                    spawns.add(normalizeSpawn(entry));
                 }
             } catch (Exception e) {
                 fail("Failed to read " + file.getName() + ": " + e.getMessage());
             }
         }
-        return ids;
+        return spawns;
     }
 
-    /**
-     * Count total spawn entries in the monolithic JSON file.
-     */
-    private int countSpawnEntries(String path) {
-        try (FileReader reader = new FileReader(path)) {
-            JsonArray array = JsonParser.parseReader(reader).getAsJsonArray();
-            return array.size();
-        } catch (Exception e) {
-            fail("Failed to count entries in " + path + ": " + e.getMessage());
-            return 0;
-        }
-    }
-
-    /**
-     * Count total spawn entries across all per-file JSONs.
-     */
-    private int countSpawnEntriesInDir(String dirPath) {
-        int total = 0;
-        File dir = new File(dirPath);
-        assertTrue(dir.exists(), dirPath + " does not exist");
-        Gson gson = new Gson();
-        for (File file : dir.listFiles()) {
-            if (!file.getName().endsWith(".json")) continue;
-            try (FileReader reader = new FileReader(file)) {
-                JsonObject[] entries = gson.fromJson(reader, JsonObject[].class);
-                total += entries.length;
-            } catch (Exception e) {
-                fail("Failed to count entries in " + file.getName() + ": " + e.getMessage());
+    private String normalizeSpawn(JsonObject obj) {
+        int id = obj.get("id").getAsInt();
+        boolean convertId = !obj.has("convert-id") || obj.get("convert-id").getAsBoolean();
+        if (convertId) {
+            int mapped = OldToNew.get(id);
+            if (mapped != -1) {
+                id = mapped;
             }
         }
-        return total;
+
+        JsonObject position = obj.getAsJsonObject("position");
+        String radius = obj.has("radius") ? obj.get("radius").getAsString() : "2";
+        String instance = obj.has("instance") ? obj.get("instance").getAsString() : "0";
+        String facing = obj.get("facing").getAsString().toUpperCase(Locale.ROOT);
+
+        return id + "|"
+                + position.get("x").getAsInt() + "|"
+                + position.get("y").getAsInt() + "|"
+                + position.get("height").getAsInt() + "|"
+                + Integer.parseInt(radius) + "|"
+                + Integer.parseInt(instance) + "|"
+                + facing;
     }
 }

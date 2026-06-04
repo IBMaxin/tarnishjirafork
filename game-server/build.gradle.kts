@@ -83,7 +83,3 @@ tasks.register<Exec>("refreshCodeIndex") {
     commandLine("bash", "generate_index.sh")
 }
 
-// Auto-refresh index on compile
-tasks.named("compileJava") {
-    dependsOn("refreshCodeIndex")
-}

@@ -9,6 +9,7 @@ import com.osroyale.game.world.entity.mob.npc.drop.NpcDropManager
 import com.osroyale.game.world.entity.mob.npc.drop.NpcDropTable
 import com.osroyale.game.world.items.ItemDefinition
 import org.jire.tarnishps.OldToNew
+import org.slf4j.LoggerFactory
 import java.io.File
 
 /**
@@ -19,6 +20,8 @@ import java.io.File
  *   { "npc_id": Int, "rare_table": Boolean, "drops": [NpcDropEntry...] }
  */
 object NpcDropFileLoader {
+
+    private val logger = LoggerFactory.getLogger(NpcDropFileLoader::class.java)
 
     /** Data class matching the per-file JSON shape for a single drop entry. */
     private data class DropEntry(
@@ -45,13 +48,11 @@ object NpcDropFileLoader {
             .create()
     ) {
         val dir = File("data/def/npc-drops-json/")
-        if (!dir.exists()) {
-            println("[NpcDropFileLoader] Directory not found: ${dir.absolutePath}")
-            return
+        if (!dir.isDirectory) {
+            throw IllegalStateException("NPC drop directory not found: ${dir.absolutePath}")
         }
 
         var loaded = 0
-        var skipped = 0
 
         for (file in dir.listFiles() ?: emptyArray()) {
             if (file.extension != "json") continue
@@ -59,16 +60,19 @@ object NpcDropFileLoader {
             try {
                 val dropFile = gson.fromJson(file.bufferedReader(), DropFile::class.java)
                 val npcId = dropFile.npc_id
-                if (npcId == 0) {
-                    skipped++
-                    continue
-                }
+                require(npcId > 0) { "npc_id must be greater than 0" }
+                require(dropFile.drops.isNotEmpty()) { "drops must not be empty" }
 
                 // Apply OldToNew mapping to NPC ID
                 val mappedNpcId = OldToNew.get(npcId).let { if (it != -1) it else npcId }
 
                 // Convert DropEntry list to NpcDrop array
                 val npcDrops = dropFile.drops.map { entry ->
+                    require(entry.item > 0) { "drop item id must be greater than 0 for npc_id=$npcId" }
+                    require(entry.minimum > 0) { "minimum must be greater than 0 for npc_id=$npcId item=${entry.item}" }
+                    require(entry.maximum >= entry.minimum) {
+                        "maximum must be greater than or equal to minimum for npc_id=$npcId item=${entry.item}"
+                    }
                     val chance = entry.chance.toInt()
                     val type = parseDropChance(entry.type)
 
@@ -149,12 +153,12 @@ object NpcDropFileLoader {
                 NpcDropManager.NPC_DROPS[mappedNpcId] = table
                 loaded++
             } catch (e: Exception) {
-                println("[NpcDropFileLoader] Error loading ${file.name}: ${e.message}")
-                skipped++
+                throw IllegalStateException("Failed to load NPC drop file ${file.path}: ${e.message}", e)
             }
         }
 
-        println("[NpcDropFileLoader] Loaded $loaded drop tables, skipped $skipped")
+        require(loaded > 0) { "No NPC drop tables were loaded from ${dir.absolutePath}" }
+        logger.info("Loaded {} NPC drop tables from {}", loaded, dir.path)
     }
 
     private fun parseDropChance(type: String): NpcDropChance {
@@ -164,7 +168,7 @@ object NpcDropFileLoader {
             "UNCOMMON" -> NpcDropChance.UNCOMMON
             "RARE" -> NpcDropChance.RARE
             "VERY_RARE" -> NpcDropChance.VERY_RARE
-            else -> NpcDropChance.UNCOMMON
+            else -> throw IllegalArgumentException("Unknown NPC drop chance type: $type")
         }
     }
 }

@@ -7,6 +7,7 @@ import com.osroyale.game.world.entity.mob.Direction
 import com.osroyale.game.world.entity.mob.npc.Npc
 import com.osroyale.game.world.position.Position
 import org.jire.tarnishps.OldToNew
+import org.slf4j.LoggerFactory
 import java.io.File
 
 /**
@@ -19,6 +20,8 @@ import java.io.File
  * An NPC ID can have multiple spawn locations (multiple entries in the array).
  */
 object NpcSpawnFileLoader {
+
+    private val logger = LoggerFactory.getLogger(NpcSpawnFileLoader::class.java)
 
     /** Data class matching the per-file JSON shape for a spawn entry. */
     private data class SpawnEntry(
@@ -45,13 +48,11 @@ object NpcSpawnFileLoader {
             .create()
     ) {
         val dir = File("data/def/npc-spawns-json/")
-        if (!dir.exists()) {
-            println("[NpcSpawnFileLoader] Directory not found: ${dir.absolutePath}")
-            return
+        if (!dir.isDirectory) {
+            throw IllegalStateException("NPC spawn directory not found: ${dir.absolutePath}")
         }
 
         var loaded = 0
-        var skipped = 0
 
         for (file in dir.listFiles() ?: emptyArray()) {
             if (file.extension != "json") continue
@@ -62,13 +63,11 @@ object NpcSpawnFileLoader {
                     file.bufferedReader(),
                     Array<SpawnEntry>::class.java
                 )
+                require(spawnArray.isNotEmpty()) { "spawn file must contain at least one entry" }
 
                 for (entry in spawnArray) {
                     var npcId = entry.id
-                    if (npcId == 0) {
-                        skipped++
-                        continue
-                    }
+                    require(npcId > 0) { "id must be greater than 0" }
 
                     // Apply OldToNew mapping (matches NpcSpawnParser logic)
                     if (entry.convertId) {
@@ -79,28 +78,29 @@ object NpcSpawnFileLoader {
                     }
 
                     // Parse position
+                    require(entry.position.x > 0 && entry.position.y > 0) {
+                        "position x and y must be greater than 0 for npc id=${entry.id}"
+                    }
                     val pos = Position(entry.position.x, entry.position.y, entry.position.height)
 
                     // Parse facing direction
-                    val facing = try {
-                        Direction.valueOf(entry.facing.uppercase())
-                    } catch (e: Exception) {
-                        Direction.SOUTH
-                    }
+                    val facing = Direction.valueOf(entry.facing.uppercase())
 
                     // Parse radius (stored as string in JSON)
-                    val radius = entry.radius.toIntOrNull() ?: 2
+                    val radius = entry.radius.toIntOrNull()
+                        ?: throw IllegalArgumentException("radius must be an integer for npc id=${entry.id}")
+                    require(radius >= 0) { "radius must not be negative for npc id=${entry.id}" }
 
                     // Create and register the NPC
                     Npc(npcId, pos, radius, entry.instance, facing).register()
                     loaded++
                 }
             } catch (e: Exception) {
-                println("[NpcSpawnFileLoader] Error loading ${file.name}: ${e.message}")
-                skipped++
+                throw IllegalStateException("Failed to load NPC spawn file ${file.path}: ${e.message}", e)
             }
         }
 
-        println("[NpcSpawnFileLoader] Loaded $loaded NPC spawns, skipped $skipped")
+        require(loaded > 0) { "No NPC spawns were loaded from ${dir.absolutePath}" }
+        logger.info("Loaded {} NPC spawns from {}", loaded, dir.path)
     }
 }

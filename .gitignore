@@ -1,2 +1,12 @@
-# Project exclude paths
+# Gradle/build output
 /.gradle/
+**/build/
+
+# Local IDE/runtime state
+/.kotlin/
+/.idea/modules/
+*.iml
+
+# Generated reports and temporary audit output
+/reconciliation-report.json
+/reports/

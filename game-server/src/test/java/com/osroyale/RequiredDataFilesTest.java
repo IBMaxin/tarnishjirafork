@@ -47,6 +47,15 @@ public final class RequiredDataFilesTest {
             "data/profile/world_profile_list.json"
     );
 
+    /** Active per-file definition directories. */
+    private static final List<String> REQUIRED_DIRECTORIES = List.of(
+            "data/def/equipment-json",
+            "data/def/items-json",
+            "data/def/monsters-json",
+            "data/def/npc-drops-json",
+            "data/def/npc-spawns-json"
+    );
+
     @Test
     public void allRequiredDataFilesExist() {
         List<String> missing = new ArrayList<>();
@@ -69,5 +78,22 @@ public final class RequiredDataFilesTest {
         assertTrue(Files.isDirectory(Path.of(DATA_DIR)),
                 "Data directory '" + DATA_DIR + "' does not exist. "
                         + "Make sure tests run from the game-server working directory.");
+    }
+
+    @Test
+    public void activePerFileDataDirectoriesExist() {
+        List<String> missing = new ArrayList<>();
+
+        for (String relativePath : REQUIRED_DIRECTORIES) {
+            Path fullPath = Path.of(relativePath);
+            if (!Files.isDirectory(fullPath)) {
+                missing.add(relativePath);
+            }
+        }
+
+        if (!missing.isEmpty()) {
+            fail("Missing active per-file data directories (" + missing.size() + "):\n  "
+                    + String.join("\n  ", missing));
+        }
     }
 }

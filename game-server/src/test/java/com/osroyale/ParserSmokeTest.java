@@ -5,8 +5,10 @@ import com.osroyale.game.world.entity.mob.npc.definition.NpcDefinition;
 import com.osroyale.game.world.entity.mob.npc.drop.NpcDropManager;
 import com.osroyale.game.world.items.ItemDefinition;
 import com.osroyale.util.parser.impl.*;
+import org.jire.tarnishps.OldToNew;
 import org.jire.tarnishps.defs.NpcDropFileLoader;
 import org.jire.tarnishps.defs.NpcSpawnFileLoader;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -32,6 +34,11 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public final class ParserSmokeTest {
 
+    @BeforeAll
+    public static void loadPrerequisites() {
+        OldToNew.load();
+    }
+
     @Test
     @Order(1)
     public void storeParserLoadsWithoutError() {
@@ -42,12 +49,24 @@ public final class ParserSmokeTest {
 
     @Test
     @Order(2)
+    public void itemDefinitionParserLoadsWithoutError() {
+        assertDoesNotThrow(() -> ItemDefinition.createParser().run());
+    }
+
+    @Test
+    @Order(3)
+    public void npcDefinitionParserLoadsWithoutError() {
+        assertDoesNotThrow(() -> NpcDefinition.createParser().run());
+    }
+
+    @Test
+    @Order(4)
     public void npcSpawnFileLoaderLoadsWithoutError() {
         assertDoesNotThrow(() -> NpcSpawnFileLoader.INSTANCE.load());
     }
 
     @Test
-    @Order(3)
+    @Order(5)
     public void npcDropFileLoaderLoadsWithoutError() {
         assertDoesNotThrow(() -> NpcDropFileLoader.INSTANCE.load());
         assertTrue(NpcDropManager.NPC_DROPS.size() > 100,
@@ -55,21 +74,9 @@ public final class ParserSmokeTest {
     }
 
     @Test
-    @Order(4)
+    @Order(6)
     public void combatProjectileParserLoadsWithoutError() {
         assertDoesNotThrow(() -> new CombatProjectileParser().run());
-    }
-
-    @Test
-    @Order(5)
-    public void itemDefinitionParserLoadsWithoutError() {
-        assertDoesNotThrow(() -> ItemDefinition.createParser().run());
-    }
-
-    @Test
-    @Order(6)
-    public void npcDefinitionParserLoadsWithoutError() {
-        assertDoesNotThrow(() -> NpcDefinition.createParser().run());
     }
 
     @Test

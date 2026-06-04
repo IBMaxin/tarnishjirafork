@@ -1,0 +1,22 @@
+{
+    "id": 3457,
+    "name": "Kamil",
+    "stand": 842,
+    "walk": 841,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Fire spells",
+    "combat_level": 154,
+    "attack_style": "Melee, Magic",
+    "attack_cooldown": 4,
+    "attack_level": 80,
+    "defence_level": 80,
+    "strength_level": 80,
+    "hitpoints_level": 130,
+    "ranged_level": 80,
+    "magic_level": 80,
+    "defence_stab": 35,
+    "defence_slash": 60,
+    "defence_crush": 35,
+    "bonus_strength": 100
+}

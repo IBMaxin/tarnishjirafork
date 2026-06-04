@@ -1,0 +1,27 @@
+{
+    "id": 10828,
+    "type": "HELM",
+    "name": "Helm of neitiznot",
+    "requirements": [
+        {
+            "level": 55,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        31,
+        29,
+        34,
+        3,
+        30,
+        3,
+        0,
+        0,
+        3
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "id": 2883,
+    "name": "Thug",
+    "stand": 808,
+    "walk": 819,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Fire spells",
+    "combat_level": 10,
+    "attack_style": "Melee (stab)",
+    "attack_cooldown": 6,
+    "attack_level": 5,
+    "defence_level": 5,
+    "strength_level": 5,
+    "hitpoints_level": 18,
+    "ranged_level": 5,
+    "magic_level": 5,
+    "defence_stab": 2,
+    "defence_slash": 3,
+    "defence_crush": 3,
+    "bonus_strength": 5
+}

@@ -1,0 +1,27 @@
+{
+    "id": 1187,
+    "type": "SHIELD",
+    "name": "Dragon sq shield",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        50,
+        52,
+        48,
+        0,
+        50,
+        0,
+        0,
+        0,
+        0
+    ]
+}

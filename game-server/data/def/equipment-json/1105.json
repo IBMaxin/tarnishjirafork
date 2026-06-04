@@ -1,0 +1,27 @@
+{
+    "id": 1105,
+    "type": "TORSO",
+    "name": "Steel chainbody",
+    "requirements": [
+        {
+            "level": 5,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -15,
+        0,
+        17,
+        25,
+        30,
+        -3,
+        19,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 7348,
+    "type": "SHIELD",
+    "name": "Rune shield (h3)",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -8,
+        -2,
+        44,
+        48,
+        46,
+        -1,
+        46,
+        0,
+        0,
+        0,
+        0
+    ]
+}

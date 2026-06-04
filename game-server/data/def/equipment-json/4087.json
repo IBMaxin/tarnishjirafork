@@ -1,0 +1,27 @@
+{
+    "id": 4087,
+    "type": "LEGS",
+    "name": "Dragon platelegs",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -21,
+        -7,
+        68,
+        66,
+        63,
+        -4,
+        65,
+        0,
+        0,
+        0,
+        0
+    ]
+}

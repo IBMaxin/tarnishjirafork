@@ -1,0 +1,27 @@
+{
+    "id": 3751,
+    "type": "HAT",
+    "name": "Berserker helm",
+    "requirements": [
+        {
+            "level": 45,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -5,
+        -5,
+        31,
+        29,
+        33,
+        0,
+        30,
+        3,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 7461,
+    "type": "GLOVES",
+    "name": "Dragon gloves",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        9,
+        9,
+        9,
+        5,
+        9,
+        9,
+        9,
+        9,
+        5,
+        9,
+        9,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 4988,
+    "type": "BODY",
+    "name": "Verac's brassard 100",
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        81,
+        95,
+        85,
+        0,
+        81,
+        0,
+        0,
+        0,
+        0
+    ]
+}

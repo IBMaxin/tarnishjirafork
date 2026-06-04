@@ -1,0 +1,20 @@
+{
+    "id": 7575,
+    "name": "Spawn",
+    "stand": 7191,
+    "walk": 7195,
+    "aggressive": true,
+    "weakness": "Magic",
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Ranged, Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 30,
+    "defence_level": 30,
+    "strength_level": 30,
+    "hitpoints_level": 15,
+    "ranged_level": 30,
+    "magic_level": 30,
+    "defence_magic": -10
+}

@@ -1,0 +1,18 @@
+{
+    "id": 4307,
+    "name": "Sea troll",
+    "stand": 3987,
+    "walk": 3984,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Magic",
+    "combat_level": 79,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 50,
+    "defence_level": 50,
+    "strength_level": 50,
+    "hitpoints_level": 80,
+    "ranged_level": 50,
+    "magic_level": 50
+}

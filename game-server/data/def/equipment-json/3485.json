@@ -1,0 +1,27 @@
+{
+    "id": 3485,
+    "type": "LEGS",
+    "name": "Gilded plateskirt",
+    "requirements": [
+        {
+            "level": 50,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -21,
+        -7,
+        51,
+        49,
+        47,
+        -4,
+        49,
+        0,
+        0,
+        0,
+        0
+    ]
+}

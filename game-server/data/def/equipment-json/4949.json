@@ -1,0 +1,30 @@
+{
+    "id": 4949,
+    "type": "LEGS",
+    "name": "Karil's leatherskirt 25",
+    "listeners": [
+        "KarilsListener"
+    ],
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -10,
+        17,
+        26,
+        20,
+        28,
+        35,
+        33,
+        0,
+        0,
+        0,
+        0
+    ]
+}

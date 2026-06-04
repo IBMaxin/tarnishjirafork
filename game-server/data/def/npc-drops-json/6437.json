@@ -1,0 +1,96 @@
+{
+  "npc_id": 6437,
+  "rare_table": false,
+  "drops": [
+    {
+      "item": 526,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "ALWAYS"
+    },
+    {
+      "item": 1173,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "COMMON"
+    },
+    {
+      "item": 1237,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 1009,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 877,
+      "minimum": 8,
+      "maximum": 8,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 555,
+      "minimum": 6,
+      "maximum": 6,
+      "type": "COMMON"
+    },
+    {
+      "item": 559,
+      "minimum": 7,
+      "maximum": 7,
+      "type": "COMMON"
+    },
+    {
+      "item": 557,
+      "minimum": 4,
+      "maximum": 4,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 995,
+      "minimum": 1,
+      "maximum": 20,
+      "type": "COMMON"
+    },
+    {
+      "item": 1438,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 1917,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 1949,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 288,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 10999,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 590,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    }
+  ]
+}

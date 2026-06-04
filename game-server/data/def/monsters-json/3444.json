@@ -1,0 +1,22 @@
+{
+    "id": 3444,
+    "name": "Lucien",
+    "stand": 6469,
+    "walk": 6468,
+    "weakness": "Magic",
+    "combat_level": 1,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "attack_level": 11,
+    "defence_level": 11,
+    "strength_level": 11,
+    "hitpoints_level": 17,
+    "ranged_level": 11,
+    "magic_level": 11,
+    "defence_stab": 6,
+    "defence_slash": 8,
+    "defence_crush": 7,
+    "defence_magic": -1,
+    "defence_ranged": 4,
+    "bonus_strength": 4
+}

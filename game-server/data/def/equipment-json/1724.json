@@ -1,0 +1,22 @@
+{
+    "id": 1724,
+    "type": "AMULET",
+    "name": "Unholy symbol",
+    "requirements": [],
+    "bonuses": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

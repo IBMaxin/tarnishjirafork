@@ -1,0 +1,22 @@
+{
+    "id": 9046,
+    "type": "WEAPON",
+    "name": "Pharaoh's sceptre (2)",
+    "requirements": [],
+    "bonuses": [
+        7,
+        -1,
+        25,
+        10,
+        0,
+        2,
+        3,
+        1,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

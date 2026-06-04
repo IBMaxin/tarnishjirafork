@@ -1,0 +1,22 @@
+{
+    "id": 616,
+    "type": "AMULET",
+    "name": "Beads of the dead",
+    "requirements": [],
+    "bonuses": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+    ]
+}

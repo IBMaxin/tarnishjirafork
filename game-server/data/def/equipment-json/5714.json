@@ -1,0 +1,27 @@
+{
+    "id": 5714,
+    "type": "WEAPON",
+    "name": "Rune spear(p+)",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        36,
+        36,
+        36,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

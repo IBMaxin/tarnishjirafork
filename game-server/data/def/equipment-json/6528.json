@@ -1,0 +1,27 @@
+{
+    "id": 6528,
+    "type": "WEAPON",
+    "name": "Tzhaar-ket-om",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 2
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        80,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        85,
+        0,
+        0,
+        0
+    ]
+}

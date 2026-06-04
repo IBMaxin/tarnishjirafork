@@ -1,0 +1,22 @@
+{
+    "id": 88,
+    "type": "BOOTS",
+    "name": "Boots of lightness",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

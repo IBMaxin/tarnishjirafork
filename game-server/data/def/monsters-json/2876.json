@@ -1,0 +1,22 @@
+{
+    "id": 2876,
+    "name": "Highwayman",
+    "stand": 808,
+    "walk": 819,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Stab",
+    "combat_level": 5,
+    "attack_style": "Melee",
+    "attack_cooldown": 6,
+    "attack_level": 2,
+    "defence_level": 2,
+    "strength_level": 2,
+    "hitpoints_level": 13,
+    "ranged_level": 2,
+    "magic_level": 2,
+    "defence_slash": 3,
+    "defence_crush": 2,
+    "defence_ranged": 2,
+    "bonus_strength": 7
+}

@@ -1,0 +1,27 @@
+{
+    "id": 10450,
+    "type": "CAPE",
+    "name": "Zamorak cloak",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3,
+        0,
+        0,
+        0,
+        3
+    ]
+}

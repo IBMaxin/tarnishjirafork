@@ -1,0 +1,31 @@
+{
+    "id": 10332,
+    "type": "LEGS",
+    "name": "3rd age range legs",
+    "requirements": [
+        {
+            "level": 45,
+            "skill": 1
+        },
+        {
+            "level": 65,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -10,
+        17,
+        31,
+        25,
+        33,
+        30,
+        31,
+        0,
+        0,
+        0,
+        0
+    ]
+}

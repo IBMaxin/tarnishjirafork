@@ -1,0 +1,42 @@
+[
+  {
+    "id": 2506,
+    "radius": "5",
+    "facing": "EAST",
+    "position": {
+      "x": 1990,
+      "y": 5190,
+      "height": 0
+    }
+  },
+  {
+    "id": 2506,
+    "radius": "5",
+    "facing": "EAST",
+    "position": {
+      "x": 1990,
+      "y": 5191,
+      "height": 0
+    }
+  },
+  {
+    "id": 2506,
+    "radius": "5",
+    "facing": "EAST",
+    "position": {
+      "x": 1994,
+      "y": 5192,
+      "height": 0
+    }
+  },
+  {
+    "id": 2506,
+    "radius": "7",
+    "facing": "SOUTH",
+    "position": {
+      "x": 2005,
+      "y": 5200,
+      "height": 0
+    }
+  }
+]

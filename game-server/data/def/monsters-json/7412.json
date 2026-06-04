@@ -1,0 +1,12 @@
+{
+    "id": 7412,
+    "name": "Chaotic death spawn",
+    "stand": 1539,
+    "walk": 1539,
+    "attackable": true,
+    "weakness": "Silverlight, Darklight, Arclight",
+    "combat_level": 215,
+    "attack_style": "Melee",
+    "attack_cooldown": 3,
+    "hitpoints_level": 50
+}

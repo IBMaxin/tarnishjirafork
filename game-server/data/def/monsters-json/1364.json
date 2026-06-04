@@ -1,0 +1,23 @@
+{
+    "id": 1364,
+    "name": "Slagilith",
+    "size": 2,
+    "stand": 1753,
+    "walk": -1,
+    "aggressive": true,
+    "weakness": "Pickaxes, Crush attacks and magic",
+    "combat_level": 1,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 120,
+    "defence_level": 120,
+    "strength_level": 120,
+    "hitpoints_level": 60,
+    "ranged_level": 120,
+    "magic_level": 120,
+    "defence_stab": 50,
+    "defence_slash": 50,
+    "defence_crush": 5,
+    "defence_magic": 5,
+    "defence_ranged": 50
+}

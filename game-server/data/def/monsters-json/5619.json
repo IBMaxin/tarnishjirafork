@@ -1,0 +1,15 @@
+{
+    "id": 5619,
+    "name": "Ghast",
+    "size": 2,
+    "stand": 1092,
+    "walk": 1091,
+    "aggressive": true,
+    "weakness": "Fire spells, Salve amulet",
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee, Crush",
+    "attack_cooldown": 4,
+    "hitpoints_level": 45
+}

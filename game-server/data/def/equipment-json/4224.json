@@ -1,0 +1,27 @@
+{
+    "id": 4224,
+    "type": "WEAPON",
+    "name": "New crystal shield",
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

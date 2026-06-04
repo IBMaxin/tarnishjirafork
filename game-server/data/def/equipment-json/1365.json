@@ -1,0 +1,27 @@
+{
+    "id": 1365,
+    "type": "WEAPON",
+    "name": "Steel battleaxe",
+    "requirements": [
+        {
+            "level": 5,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        -2,
+        16,
+        11,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        20,
+        0,
+        0,
+        0
+    ]
+}

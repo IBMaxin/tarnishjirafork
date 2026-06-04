@@ -1,0 +1,16 @@
+{
+    "id": 4505,
+    "name": "Ulfric",
+    "stand": 6126,
+    "walk": -1,
+    "aggressive": true,
+    "combat_level": 1,
+    "attack_style": "Melee (slash)",
+    "attack_cooldown": 6,
+    "attack_level": 82,
+    "defence_level": 82,
+    "strength_level": 82,
+    "hitpoints_level": 60,
+    "ranged_level": 82,
+    "magic_level": 82
+}

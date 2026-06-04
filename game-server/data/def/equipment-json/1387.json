@@ -1,0 +1,22 @@
+{
+    "id": 1387,
+    "type": "WEAPON",
+    "name": "Staff of fire",
+    "requirements": [],
+    "bonuses": [
+        3,
+        -1,
+        9,
+        10,
+        0,
+        2,
+        3,
+        1,
+        10,
+        0,
+        6,
+        0,
+        0,
+        0
+    ]
+}

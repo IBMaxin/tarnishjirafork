@@ -1,0 +1,16 @@
+{
+    "id": 4686,
+    "name": "Angry unicorn",
+    "size": 2,
+    "stand": 6374,
+    "walk": 6373,
+    "attackable": true,
+    "aggressive": true,
+    "poisonous": true,
+    "weakness": "Unknown (edit)",
+    "combat_level": 47,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Unknown (edit)",
+    "hitpoints_level": 200
+}

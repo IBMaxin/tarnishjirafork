@@ -1,0 +1,30 @@
+{
+    "id": 4928,
+    "type": "HAT",
+    "name": "Karil's coif 100",
+    "listeners": [
+        "KarilsListener"
+    ],
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -3,
+        7,
+        6,
+        9,
+        12,
+        6,
+        10,
+        0,
+        0,
+        0,
+        0
+    ]
+}

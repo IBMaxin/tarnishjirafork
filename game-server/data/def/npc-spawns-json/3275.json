@@ -1,0 +1,22 @@
+[
+  {
+    "id": 3275,
+    "radius": "0",
+    "facing": "NORTH",
+    "position": {
+      "x": 2996,
+      "y": 3382,
+      "height": 0
+    }
+  },
+  {
+    "id": 3275,
+    "radius": "6",
+    "facing": "SOUTH",
+    "position": {
+      "x": 3016,
+      "y": 3367,
+      "height": 0
+    }
+  }
+]

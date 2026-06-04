@@ -1,0 +1,22 @@
+{
+    "id": 11200,
+    "type": "HAT",
+    "name": "Dwarven helmet",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        6,
+        -2,
+        -2,
+        27,
+        28,
+        31,
+        5,
+        24,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "id": 7447,
+    "type": "WEAPON",
+    "name": "Kitchen knife",
+    "requirements": [],
+    "bonuses": [
+        25,
+        12,
+        -4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        24,
+        0,
+        0,
+        0
+    ]
+}

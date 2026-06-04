@@ -1,0 +1,22 @@
+{
+    "id": 6625,
+    "type": "LEGS",
+    "name": "White platelegs",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -21,
+        -7,
+        21,
+        20,
+        19,
+        -4,
+        20,
+        0,
+        0,
+        0,
+        1
+    ]
+}

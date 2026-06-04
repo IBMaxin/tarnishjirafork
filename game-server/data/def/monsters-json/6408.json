@@ -1,0 +1,15 @@
+{
+    "id": 6408,
+    "name": "Broodoo victim",
+    "stand": 2401,
+    "walk": 819,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Varies",
+    "combat_level": 60,
+    "attack_style": "Magic",
+    "hitpoints_level": 100,
+    "defence_stab": 20,
+    "defence_slash": 20,
+    "defence_crush": 20
+}

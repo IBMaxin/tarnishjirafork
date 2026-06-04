@@ -1,0 +1,31 @@
+{
+    "id": 26233,
+    "type": "WEAPON",
+    "name": "Ancient godsword",
+    "requirements": [
+        {
+            "level": 50,
+            "skill": 0
+        },
+        {
+            "level": 40,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        10,
+        -1,
+        40,
+        15,
+        0,
+        2,
+        3,
+        1,
+        15,
+        0,
+        50,
+        55,
+        12,
+        0
+    ]
+}

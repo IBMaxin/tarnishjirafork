@@ -1,0 +1,20 @@
+{
+    "id": 2809,
+    "name": "Cow calf",
+    "size": 2,
+    "stand": 5852,
+    "walk": 5856,
+    "attackable": true,
+    "combat_level": 2,
+    "attack_animation": 5849,
+    "block_animation": 5850,
+    "death_animation": 5851,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "hitpoints_level": 6,
+    "defence_stab": -26,
+    "defence_slash": -26,
+    "defence_crush": -26,
+    "defence_magic": -26,
+    "defence_ranged": -26
+}

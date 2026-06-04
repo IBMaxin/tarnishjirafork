@@ -1,0 +1,31 @@
+{
+    "id": 9098,
+    "type": "LEGS",
+    "name": "Lunar legs",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        },
+        {
+            "level": 65,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        7,
+        -7,
+        20,
+        19,
+        23,
+        9,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

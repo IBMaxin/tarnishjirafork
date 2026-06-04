@@ -1,0 +1,27 @@
+{
+    "id": 778,
+    "type": "GLOVES",
+    "name": "Steel gauntlets",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        8,
+        9,
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

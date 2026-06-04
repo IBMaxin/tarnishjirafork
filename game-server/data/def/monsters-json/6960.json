@@ -1,0 +1,11 @@
+{
+    "id": 6960,
+    "name": "Farmer",
+    "stand": 1728,
+    "walk": 1205,
+    "weakness": "Fire spells",
+    "combat_level": 1,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "hitpoints_level": 13
+}

@@ -1,0 +1,18 @@
+{
+    "id": 3723,
+    "name": "Vyrewatch",
+    "stand": 4702,
+    "walk": 4699,
+    "attackable": true,
+    "weakness": "Nothing",
+    "combat_level": 120,
+    "venom_immunity": true,
+    "attack_style": "Melee (Crush)",
+    "attack_cooldown": 2,
+    "attack_level": 86,
+    "defence_level": 86,
+    "strength_level": 86,
+    "hitpoints_level": 90,
+    "ranged_level": 86,
+    "magic_level": 86
+}

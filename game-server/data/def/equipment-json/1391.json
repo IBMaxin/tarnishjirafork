@@ -1,0 +1,31 @@
+{
+    "id": 1391,
+    "type": "WEAPON",
+    "name": "Battlestaff",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 0
+        },
+        {
+            "level": 20,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        7,
+        -1,
+        25,
+        10,
+        0,
+        2,
+        3,
+        1,
+        10,
+        0,
+        32,
+        0,
+        0,
+        0
+    ]
+}

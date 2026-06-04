@@ -1,0 +1,27 @@
+{
+    "id": 1327,
+    "type": "WEAPON",
+    "name": "Black scimitar",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        4,
+        19,
+        -2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        14,
+        0,
+        0,
+        0
+    ]
+}

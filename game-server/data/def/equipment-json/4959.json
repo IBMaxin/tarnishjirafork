@@ -1,0 +1,30 @@
+{
+    "id": 4959,
+    "type": "WEAPON",
+    "name": "Torag's hammers 75",
+    "listeners": [
+        "ToragsListener"
+    ],
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        -4,
+        -4,
+        85,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

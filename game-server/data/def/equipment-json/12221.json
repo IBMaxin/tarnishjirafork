@@ -1,0 +1,27 @@
+{
+    "id": 12221,
+    "type": "HAT",
+    "name": "Bronze full helm (t)",
+    "requirements": [
+        {
+            "level": 1,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        4,
+        5,
+        3,
+        -1,
+        4,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 5659,
+    "type": "WEAPON",
+    "name": "Adamant knife(p+)",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

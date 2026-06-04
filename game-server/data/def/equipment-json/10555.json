@@ -1,0 +1,27 @@
+{
+    "id": 10555,
+    "type": "LEGS",
+    "name": "Penance skirt",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -10,
+        15,
+        26,
+        21,
+        28,
+        19,
+        26,
+        0,
+        0,
+        0,
+        0
+    ]
+}

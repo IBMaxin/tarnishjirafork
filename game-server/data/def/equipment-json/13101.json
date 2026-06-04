@@ -1,0 +1,22 @@
+{
+    "id": 13101,
+    "type": "WEAPON",
+    "name": "Crystal halberd 1/10",
+    "requirements": [],
+    "bonuses": [
+        85,
+        110,
+        5,
+        -4,
+        0,
+        -1,
+        4,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

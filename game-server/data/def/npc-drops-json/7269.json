@@ -1,0 +1,46 @@
+{
+  "npc_id": 7269,
+  "rare_table": false,
+  "drops": [
+    {
+      "item": 1363,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "ALWAYS"
+    },
+    {
+      "item": 1373,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "RARE"
+    },
+    {
+      "item": 19677,
+      "minimum": 1,
+      "maximum": 1,
+      "chance": 303.33,
+      "type": "RARE"
+    },
+    {
+      "item": 19679,
+      "minimum": 1,
+      "maximum": 1,
+      "chance": 455.0,
+      "type": "RARE"
+    },
+    {
+      "item": 19681,
+      "minimum": 1,
+      "maximum": 1,
+      "chance": 455.0,
+      "type": "RARE"
+    },
+    {
+      "item": 19683,
+      "minimum": 1,
+      "maximum": 1,
+      "chance": 455.0,
+      "type": "RARE"
+    }
+  ]
+}

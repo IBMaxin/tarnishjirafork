@@ -1,0 +1,11 @@
+{
+    "id": 4763,
+    "name": "Target",
+    "size": 2,
+    "stand": 619,
+    "walk": 819,
+    "weakness": "Ranged",
+    "combat_level": 1,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4
+}

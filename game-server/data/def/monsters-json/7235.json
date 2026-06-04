@@ -1,0 +1,21 @@
+{
+    "id": 7235,
+    "name": "Berry",
+    "stand": 808,
+    "walk": 819,
+    "aggressive": true,
+    "weakness": "Slash/stab",
+    "combat_level": 1,
+    "attack_style": "Melee",
+    "attack_cooldown": 6,
+    "attack_level": 90,
+    "defence_level": 90,
+    "strength_level": 90,
+    "hitpoints_level": 90,
+    "ranged_level": 90,
+    "magic_level": 90,
+    "defence_crush": 10,
+    "defence_magic": 200,
+    "defence_ranged": 200,
+    "bonus_strength": 20
+}

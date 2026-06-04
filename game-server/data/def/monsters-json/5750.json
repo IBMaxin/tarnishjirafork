@@ -1,0 +1,12 @@
+{
+    "id": 5750,
+    "name": "Penance Runner",
+    "stand": 5099,
+    "walk": 5100,
+    "weakness": "Egg Launcher, Runner trap",
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "None",
+    "hitpoints_level": 5
+}

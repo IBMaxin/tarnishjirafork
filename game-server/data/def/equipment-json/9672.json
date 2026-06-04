@@ -1,0 +1,31 @@
+{
+    "id": 9672,
+    "type": "HAT",
+    "name": "Proselyte sallet",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 1
+        },
+        {
+            "level": 20,
+            "skill": 5
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        19,
+        21,
+        16,
+        -1,
+        19,
+        0,
+        0,
+        0,
+        0
+    ]
+}

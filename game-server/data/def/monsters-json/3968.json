@@ -1,0 +1,20 @@
+{
+    "id": 3968,
+    "name": "Echned Zekin",
+    "stand": 5538,
+    "walk": 5539,
+    "aggressive": true,
+    "weakness": "Melee, Silverlight, Darklight, Holy Water",
+    "combat_level": 187,
+    "attack_animation": 5540,
+    "block_animation": 1438,
+    "death_animation": 5542,
+    "attack_style": "Melee (slash), Magic",
+    "attack_cooldown": 5,
+    "attack_level": 168,
+    "defence_level": 168,
+    "strength_level": 168,
+    "hitpoints_level": 150,
+    "ranged_level": 168,
+    "magic_level": 168
+}

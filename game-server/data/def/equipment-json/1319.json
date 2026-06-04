@@ -1,0 +1,27 @@
+{
+    "id": 1319,
+    "type": "WEAPON",
+    "name": "Rune 2h sword",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        -4,
+        69,
+        50,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        70,
+        0,
+        0,
+        0
+    ]
+}

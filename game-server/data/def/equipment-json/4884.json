@@ -1,0 +1,30 @@
+{
+    "id": 4884,
+    "type": "HAT",
+    "name": "Dharok's helm 0",
+    "listeners": [
+        "DharokListener"
+    ],
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -3,
+        -1,
+        45,
+        48,
+        44,
+        -1,
+        51,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "id": 4153,
+    "type": "WEAPON",
+    "name": "Granite maul",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 0
+        },
+        {
+            "level": 50,
+            "skill": 2
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        81,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        79,
+        0,
+        0,
+        0
+    ]
+}

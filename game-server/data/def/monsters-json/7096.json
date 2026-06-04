@@ -1,0 +1,21 @@
+{
+    "id": 7096,
+    "name": "Tortured gorilla",
+    "size": 2,
+    "stand": 7230,
+    "walk": 7233,
+    "aggressive": true,
+    "weakness": "Melee, ranged",
+    "combat_level": 142,
+    "attack_style": "Magic, Ranged & Melee (crush)",
+    "attack_cooldown": 5,
+    "attack_level": 95,
+    "defence_level": 95,
+    "strength_level": 95,
+    "hitpoints_level": 210,
+    "ranged_level": 95,
+    "magic_level": 95,
+    "defence_magic": 25,
+    "bonus_strength": 16,
+    "ranged_strength": 16
+}

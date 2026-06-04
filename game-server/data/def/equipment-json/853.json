@@ -1,0 +1,27 @@
+{
+    "id": 853,
+    "type": "WEAPON",
+    "name": "Maple shortbow",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        29,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

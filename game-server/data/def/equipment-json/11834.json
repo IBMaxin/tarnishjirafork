@@ -1,0 +1,27 @@
+{
+    "id": 11834,
+    "type": "LEGS",
+    "name": "Bandos tassets",
+    "requirements": [
+        {
+            "level": 65,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -21,
+        -7,
+        71,
+        63,
+        66,
+        -4,
+        93,
+        2,
+        0,
+        0,
+        1
+    ]
+}

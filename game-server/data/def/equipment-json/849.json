@@ -1,0 +1,27 @@
+{
+    "id": 849,
+    "type": "WEAPON",
+    "name": "Willow shortbow",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

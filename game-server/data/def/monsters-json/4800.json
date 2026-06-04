@@ -1,0 +1,9 @@
+{
+    "id": 4800,
+    "name": "Giant Lobster",
+    "size": 2,
+    "attackable": true,
+    "stand": 6263,
+    "walk": 6264,
+    "combat_level": 45
+}

@@ -1,0 +1,27 @@
+{
+    "id": 834,
+    "type": "ARROWS",
+    "name": "Mithril javelin(p)",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        17,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

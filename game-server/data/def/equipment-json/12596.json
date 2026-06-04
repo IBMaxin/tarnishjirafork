@@ -1,0 +1,22 @@
+{
+    "id": 12596,
+    "type": "BODY",
+    "name": "Rangers' tunic",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -15,
+        15,
+        6,
+        9,
+        12,
+        6,
+        6,
+        0,
+        0,
+        0,
+        0
+    ]
+}

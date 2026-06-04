@@ -770,8 +770,8 @@
       },
       {
         "item": 565,
-        "minimum": 17,
-        "maximum": 5,
+        "minimum": 5,
+        "maximum": 17,
         "type": "UNCOMMON"
       },
       {
@@ -954,8 +954,8 @@
       },
       {
         "item": 565,
-        "minimum": 17,
-        "maximum": 5,
+        "minimum": 5,
+        "maximum": 17,
         "type": "UNCOMMON"
       },
       {
@@ -101598,7 +101598,6 @@
   },
   {
     "id": [
-      3103,
       7323
     ],
     "rare_table": false,

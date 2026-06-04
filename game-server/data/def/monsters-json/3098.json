@@ -1,0 +1,17 @@
+{
+    "id": 3098,
+    "name": "Druid",
+    "stand": 808,
+    "walk": 819,
+    "attackable": true,
+    "weakness": "Slash, Ranged",
+    "combat_level": 33,
+    "attack_style": "Melee (crush), Magic",
+    "attack_cooldown": 4,
+    "attack_level": 28,
+    "defence_level": 28,
+    "strength_level": 28,
+    "hitpoints_level": 30,
+    "ranged_level": 28,
+    "magic_level": 28
+}

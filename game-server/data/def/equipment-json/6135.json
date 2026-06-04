@@ -1,0 +1,27 @@
+{
+    "id": 6135,
+    "type": "LEGS",
+    "name": "Spined chaps",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -10,
+        8,
+        22,
+        16,
+        24,
+        8,
+        22,
+        0,
+        0,
+        0,
+        0
+    ]
+}

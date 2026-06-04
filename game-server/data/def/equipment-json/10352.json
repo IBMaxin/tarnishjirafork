@@ -1,0 +1,27 @@
+{
+    "id": 10352,
+    "type": "SHIELD",
+    "name": "3rd age kiteshield",
+    "requirements": [
+        {
+            "level": 65,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -10,
+        -4,
+        63,
+        65,
+        61,
+        -3,
+        63,
+        0,
+        0,
+        0,
+        0
+    ]
+}

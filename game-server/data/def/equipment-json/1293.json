@@ -1,0 +1,22 @@
+{
+    "id": 1293,
+    "type": "WEAPON",
+    "name": "Iron longsword",
+    "requirements": [],
+    "bonuses": [
+        6,
+        8,
+        -2,
+        0,
+        0,
+        0,
+        3,
+        2,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0
+    ]
+}

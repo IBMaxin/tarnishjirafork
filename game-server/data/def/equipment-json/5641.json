@@ -1,0 +1,27 @@
+{
+    "id": 5641,
+    "type": "WEAPON",
+    "name": "Rune dart(p++)",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

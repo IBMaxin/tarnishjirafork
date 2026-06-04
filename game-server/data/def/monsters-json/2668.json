@@ -1,0 +1,8 @@
+{
+    "id": 2668,
+    "name": "Garth",
+    "stand": 2163,
+    "walk": 2164,
+    "attackable": true,
+    "combat_level": 1
+}

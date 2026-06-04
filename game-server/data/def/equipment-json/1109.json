@@ -1,0 +1,27 @@
+{
+    "id": 1109,
+    "type": "TORSO",
+    "name": "Mithril chainbody",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -15,
+        0,
+        25,
+        35,
+        42,
+        -3,
+        19,
+        0,
+        0,
+        0,
+        0
+    ]
+}

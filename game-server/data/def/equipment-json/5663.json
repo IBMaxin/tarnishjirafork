@@ -1,0 +1,27 @@
+{
+    "id": 5663,
+    "type": "WEAPON",
+    "name": "Steel knife(p++)",
+    "requirements": [
+        {
+            "level": 5,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

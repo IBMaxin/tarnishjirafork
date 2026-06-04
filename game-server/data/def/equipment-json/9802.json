@@ -1,0 +1,22 @@
+{
+    "id": 9802,
+    "type": "CAPE",
+    "name": "Cooking cape(t)",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        9,
+        9,
+        9,
+        9,
+        0,
+        0,
+        0,
+        0
+    ]
+}

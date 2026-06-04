@@ -1,0 +1,15 @@
+{
+    "id": 1603,
+    "name": "Kolodion",
+    "stand": 808,
+    "walk": 819,
+    "aggressive": true,
+    "poisonous": true,
+    "weakness": "Magic",
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Magic",
+    "attack_cooldown": 3,
+    "hitpoints_level": 3
+}

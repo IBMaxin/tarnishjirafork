@@ -1,0 +1,22 @@
+{
+    "id": 10648,
+    "type": "CAPE",
+    "name": "Agility cape",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        9,
+        9,
+        9,
+        9,
+        0,
+        0,
+        0,
+        0
+    ]
+}

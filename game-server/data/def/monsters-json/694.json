@@ -1,0 +1,8 @@
+{
+    "id": 694,
+    "name": "Bandit",
+    "attackable": true,
+    "stand": 808,
+    "walk": 819,
+    "combat_level": 57
+}

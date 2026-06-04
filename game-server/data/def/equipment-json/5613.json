@@ -1,0 +1,22 @@
+{
+    "id": 5613,
+    "type": "LEGS",
+    "name": "Initiate cuisse",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -21,
+        -7,
+        24,
+        22,
+        20,
+        -4,
+        22,
+        0,
+        0,
+        0,
+        0
+    ]
+}

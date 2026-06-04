@@ -1,0 +1,8 @@
+{
+    "id": 8041,
+    "name": "Dog",
+    "size": 1,
+    "stand": 6561,
+    "walk": 6560,
+    "combat_level": 1
+}

@@ -1,0 +1,21 @@
+{
+    "id": 4363,
+    "name": "Ogre chieftain",
+    "size": 2,
+    "stand": 357,
+    "walk": 358,
+    "weakness": "Magic",
+    "combat_level": 81,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "attack_level": 71,
+    "defence_level": 71,
+    "strength_level": 71,
+    "hitpoints_level": 60,
+    "ranged_level": 71,
+    "magic_level": 71,
+    "defence_stab": 10,
+    "defence_slash": 21,
+    "defence_crush": 16,
+    "bonus_strength": 7
+}

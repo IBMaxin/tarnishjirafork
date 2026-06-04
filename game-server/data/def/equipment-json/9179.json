@@ -1,0 +1,27 @@
+{
+    "id": 9179,
+    "type": "WEAPON",
+    "name": "Steel crossbow",
+    "requirements": [
+        {
+            "level": 31,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        54,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

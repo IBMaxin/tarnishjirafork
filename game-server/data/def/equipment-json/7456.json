@@ -1,0 +1,27 @@
+{
+    "id": 7456,
+    "type": "GLOVES",
+    "name": "Steel gloves",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        4,
+        4,
+        4,
+        2,
+        4,
+        4,
+        4,
+        4,
+        2,
+        4,
+        4,
+        0,
+        0,
+        0
+    ]
+}

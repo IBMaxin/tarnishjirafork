@@ -1,0 +1,22 @@
+{
+    "id": 3056,
+    "type": "WEAPON",
+    "name": "Mystic lava staff",
+    "requirements": [],
+    "bonuses": [
+        10,
+        -1,
+        40,
+        10,
+        0,
+        2,
+        3,
+        1,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

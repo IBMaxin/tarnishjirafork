@@ -1,0 +1,27 @@
+{
+    "id": 9185,
+    "type": "WEAPON",
+    "name": "Rune crossbow",
+    "requirements": [
+        {
+            "level": 61,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

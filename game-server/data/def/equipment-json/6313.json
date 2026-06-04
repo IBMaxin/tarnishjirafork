@@ -1,0 +1,22 @@
+{
+    "id": 6313,
+    "type": "WEAPON",
+    "name": "Opal machete",
+    "requirements": [],
+    "bonuses": [
+        0,
+        8,
+        -2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+    ]
+}

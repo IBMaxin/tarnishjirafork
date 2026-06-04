@@ -1,0 +1,8 @@
+{
+    "id": 5723,
+    "name": "Barricade",
+    "stand": 475,
+    "walk": -1,
+    "attackable": true,
+    "combat_level": 1
+}

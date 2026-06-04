@@ -1,0 +1,34 @@
+{
+    "id": 4736,
+    "type": "BODY",
+    "name": "Karil's leathertop",
+    "listeners": [
+        "KarilsListener"
+    ],
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        },
+        {
+            "level": 70,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -15,
+        30,
+        47,
+        42,
+        50,
+        65,
+        57,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "id": 5767,
+    "name": "Penance Healer",
+    "stand": 5104,
+    "walk": 5107,
+    "aggressive": true,
+    "poisonous": true,
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Poison"
+}

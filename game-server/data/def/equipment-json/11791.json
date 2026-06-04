@@ -1,0 +1,22 @@
+{
+    "id": 11791,
+    "type": "WEAPON",
+    "name": "Staff of the dead",
+    "requirements": [],
+    "bonuses": [
+        55,
+        70,
+        0,
+        17,
+        0,
+        0,
+        3,
+        3,
+        17,
+        0,
+        50,
+        55,
+        12,
+        0
+    ]
+}

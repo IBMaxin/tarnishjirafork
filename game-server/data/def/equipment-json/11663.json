@@ -1,0 +1,51 @@
+{
+    "id": 11663,
+    "type": "HAT",
+    "name": "Void mage helm",
+    "requirements": [
+        {
+            "level": 42,
+            "skill": 0
+        },
+        {
+            "level": 42,
+            "skill": 1
+        },
+        {
+            "level": 42,
+            "skill": 2
+        },
+        {
+            "level": 42,
+            "skill": 3
+        },
+        {
+            "level": 42,
+            "skill": 4
+        },
+        {
+            "level": 22,
+            "skill": 5
+        },
+        {
+            "level": 42,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        6,
+        6,
+        6,
+        6,
+        0,
+        0,
+        0,
+        0
+    ]
+}

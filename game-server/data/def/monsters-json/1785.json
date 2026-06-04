@@ -1,0 +1,15 @@
+{
+    "id": 1785,
+    "name": "Skeleton",
+    "stand": 5483,
+    "walk": 5479,
+    "aggressive": true,
+    "weakness": "Salve amulet, Crumble Undead, Crush",
+    "combat_level": 1,
+    "attack_animation": 5485,
+    "block_animation": 5489,
+    "death_animation": 5491,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "hitpoints_level": 18
+}

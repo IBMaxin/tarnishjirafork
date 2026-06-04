@@ -1,0 +1,27 @@
+{
+    "id": 12414,
+    "type": "BODY",
+    "name": "Dragon chainbody (g)",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -15,
+        0,
+        81,
+        93,
+        98,
+        -3,
+        82,
+        0,
+        0,
+        0,
+        0
+    ]
+}

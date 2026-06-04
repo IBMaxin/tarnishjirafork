@@ -1,0 +1,27 @@
+{
+    "id": 1177,
+    "type": "SHIELD",
+    "name": "Steel sq shield",
+    "requirements": [
+        {
+            "level": 5,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        12,
+        13,
+        11,
+        0,
+        12,
+        0,
+        0,
+        0,
+        0
+    ]
+}

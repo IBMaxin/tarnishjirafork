@@ -1,0 +1,22 @@
+{
+    "id": 10956,
+    "type": "LEGS",
+    "name": "Frog-leather chaps",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -5,
+        2,
+        7,
+        7,
+        9,
+        4,
+        9,
+        0,
+        0,
+        0,
+        0
+    ]
+}

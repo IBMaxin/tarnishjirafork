@@ -1,0 +1,25 @@
+{
+    "id": 12817,
+    "type": "SHIELD",
+    "name": "Elysian spirit shield",
+    "listeners": [
+        "ElysianSpiritShieldListener"
+    ],
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        63,
+        65,
+        75,
+        2,
+        57,
+        0,
+        0,
+        0,
+        3
+    ]
+}

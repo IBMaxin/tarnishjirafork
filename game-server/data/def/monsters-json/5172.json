@@ -1,0 +1,18 @@
+{
+    "id": 5172,
+    "name": "Dwarf",
+    "stand": 101,
+    "walk": 98,
+    "weakness": "Magic",
+    "combat_level": 1,
+    "attack_style": "Melee",
+    "attack_cooldown": 5,
+    "attack_level": 8,
+    "defence_level": 8,
+    "strength_level": 8,
+    "hitpoints_level": 16,
+    "ranged_level": 8,
+    "magic_level": 8,
+    "defence_magic": 5,
+    "bonus_strength": 7
+}

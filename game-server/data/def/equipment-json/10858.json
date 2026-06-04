@@ -1,0 +1,22 @@
+{
+    "id": 10858,
+    "type": "WEAPON",
+    "name": "Shadow sword",
+    "requirements": [],
+    "bonuses": [
+        -4,
+        27,
+        21,
+        4,
+        0,
+        0,
+        0,
+        0,
+        4,
+        -1,
+        26,
+        0,
+        0,
+        0
+    ]
+}

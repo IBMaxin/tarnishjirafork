@@ -1,0 +1,22 @@
+{
+    "id": 13265,
+    "type": "WEAPON",
+    "name": "Abyssal dagger",
+    "requirements": [],
+    "bonuses": [
+        75,
+        40,
+        -4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        75,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "id": 2952,
+    "type": "WEAPON",
+    "name": "Wolfbane",
+    "requirements": [],
+    "bonuses": [
+        11,
+        5,
+        -4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        10,
+        0,
+        0,
+        5
+    ]
+}

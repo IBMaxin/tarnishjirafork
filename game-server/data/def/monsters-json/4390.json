@@ -1,0 +1,14 @@
+{
+    "id": 4390,
+    "name": "Ogre shaman",
+    "size": 2,
+    "stand": 357,
+    "walk": 358,
+    "aggressive": true,
+    "weakness": "Magic ogre potion",
+    "combat_level": 113,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Magic",
+    "attack_cooldown": 4
+}

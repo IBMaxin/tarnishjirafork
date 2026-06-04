@@ -1,0 +1,27 @@
+{
+    "id": 12637,
+    "type": "HAT",
+    "name": "Saradomin halo",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        11,
+        12,
+        10,
+        11,
+        -1,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 3478,
+    "type": "LEGS",
+    "name": "Zamorak plateskirt",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -21,
+        -7,
+        51,
+        49,
+        47,
+        -4,
+        49,
+        0,
+        0,
+        0,
+        0
+    ]
+}

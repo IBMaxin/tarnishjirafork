@@ -1,0 +1,27 @@
+{
+    "id": 11840,
+    "type": "BOOTS",
+    "name": "Dragon boots",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -3,
+        -1,
+        16,
+        17,
+        18,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 12424,
+    "type": "WEAPON",
+    "name": "3rd age bow",
+    "requirements": [
+        {
+            "level": 45,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        80,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

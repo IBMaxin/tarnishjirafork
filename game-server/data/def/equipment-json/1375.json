@@ -1,0 +1,22 @@
+{
+    "id": 1375,
+    "type": "WEAPON",
+    "name": "Bronze battleaxe",
+    "requirements": [],
+    "bonuses": [
+        -2,
+        6,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        9,
+        0,
+        0,
+        0
+    ]
+}

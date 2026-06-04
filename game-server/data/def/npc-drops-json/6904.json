@@ -1,0 +1,36 @@
+{
+  "npc_id": 6904,
+  "rare_table": false,
+  "drops": [
+    {
+      "item": 13359,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "ALWAYS"
+    },
+    {
+      "item": 13361,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "ALWAYS"
+    },
+    {
+      "item": 13360,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "ALWAYS"
+    },
+    {
+      "item": 13357,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "ALWAYS"
+    },
+    {
+      "item": 13358,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "ALWAYS"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 7376,
+    "type": "TORSO",
+    "name": "Blue d'hide body (t)",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -15,
+        20,
+        45,
+        37,
+        50,
+        30,
+        45,
+        0,
+        0,
+        0,
+        0
+    ]
+}

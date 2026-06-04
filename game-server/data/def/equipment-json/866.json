@@ -1,0 +1,27 @@
+{
+    "id": 866,
+    "type": "WEAPON",
+    "name": "Mithril knife",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        11,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0
+    ]
+}

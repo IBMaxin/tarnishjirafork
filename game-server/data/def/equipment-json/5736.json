@@ -1,0 +1,27 @@
+{
+    "id": 5736,
+    "type": "WEAPON",
+    "name": "Black spear(p++)",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        15,
+        15,
+        15,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

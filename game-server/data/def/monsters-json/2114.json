@@ -1,0 +1,8 @@
+{
+    "id": 2114,
+    "name": "Banker",
+    "stand": 808,
+    "walk": 819,
+    "attackable": true,
+    "combat_level": 1
+}

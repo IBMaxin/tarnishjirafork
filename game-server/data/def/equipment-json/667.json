@@ -1,0 +1,22 @@
+{
+    "id": 667,
+    "type": "WEAPON",
+    "name": "Blurite sword",
+    "requirements": [],
+    "bonuses": [
+        9,
+        14,
+        -2,
+        0,
+        0,
+        0,
+        3,
+        2,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0
+    ]
+}

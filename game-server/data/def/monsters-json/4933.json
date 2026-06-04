@@ -1,0 +1,13 @@
+{
+    "id": 4933,
+    "name": "Solus Dellagar",
+    "stand": 813,
+    "walk": 1205,
+    "aggressive": true,
+    "poisonous": true,
+    "weakness": "Unknown (edit)",
+    "combat_level": 1,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "hitpoints_level": 40
+}

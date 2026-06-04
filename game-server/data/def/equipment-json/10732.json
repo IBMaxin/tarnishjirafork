@@ -1,0 +1,22 @@
+{
+    "id": 10732,
+    "type": "WEAPON",
+    "name": "Rubber chicken",
+    "requirements": [],
+    "bonuses": [
+        -100,
+        -100,
+        -50,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

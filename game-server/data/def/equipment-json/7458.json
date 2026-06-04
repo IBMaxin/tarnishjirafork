@@ -1,0 +1,27 @@
+{
+    "id": 7458,
+    "type": "GLOVES",
+    "name": "Mithril gloves",
+    "requirements": [
+        {
+            "level": 1,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        6,
+        6,
+        6,
+        3,
+        6,
+        6,
+        6,
+        6,
+        3,
+        6,
+        6,
+        0,
+        0,
+        0
+    ]
+}

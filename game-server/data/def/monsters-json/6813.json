@@ -1,0 +1,17 @@
+{
+    "id": 6813,
+    "name": "Monkey Archer",
+    "stand": 1386,
+    "walk": 1380,
+    "aggressive": true,
+    "weakness": "Magic",
+    "combat_level": 86,
+    "attack_style": "Ranged",
+    "attack_cooldown": 4,
+    "attack_level": 80,
+    "defence_level": 80,
+    "strength_level": 80,
+    "hitpoints_level": 50,
+    "ranged_level": 80,
+    "magic_level": 80
+}

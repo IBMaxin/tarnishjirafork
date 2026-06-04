@@ -1,0 +1,31 @@
+{
+    "id": 9099,
+    "type": "GLOVES",
+    "name": "Lunar gloves",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        },
+        {
+            "level": 65,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        4,
+        -1,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

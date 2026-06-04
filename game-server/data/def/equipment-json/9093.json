@@ -1,0 +1,27 @@
+{
+    "id": 9093,
+    "type": "WEAPON",
+    "name": "Lunar staff - pt3",
+    "requirements": [
+        {
+            "level": 65,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

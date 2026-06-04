@@ -1,0 +1,27 @@
+{
+    "id": 1137,
+    "type": "HAT",
+    "name": "Iron med helm",
+    "requirements": [
+        {
+            "level": 1,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -3,
+        -1,
+        4,
+        5,
+        3,
+        -1,
+        4,
+        0,
+        0,
+        0,
+        0
+    ]
+}

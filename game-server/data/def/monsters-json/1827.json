@@ -1,0 +1,23 @@
+{
+    "id": 1827,
+    "name": "White Knight",
+    "stand": 2561,
+    "walk": 2562,
+    "attackable": true,
+    "weakness": "Magic",
+    "combat_level": 42,
+    "attack_style": "Melee (Slash)",
+    "attack_cooldown": 3,
+    "attack_level": 29,
+    "defence_level": 29,
+    "strength_level": 29,
+    "hitpoints_level": 52,
+    "ranged_level": 29,
+    "magic_level": 29,
+    "defence_stab": 83,
+    "defence_slash": 76,
+    "defence_crush": 70,
+    "defence_magic": -11,
+    "defence_ranged": 74,
+    "bonus_strength": 31
+}

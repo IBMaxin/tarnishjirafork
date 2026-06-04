@@ -1,0 +1,27 @@
+{
+    "id": 2493,
+    "type": "LEGS",
+    "name": "Blue d'hide chaps",
+    "requirements": [
+        {
+            "level": 50,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -10,
+        11,
+        25,
+        19,
+        27,
+        14,
+        25,
+        0,
+        0,
+        0,
+        0
+    ]
+}

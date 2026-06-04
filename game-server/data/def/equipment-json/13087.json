@@ -1,0 +1,22 @@
+{
+    "id": 13087,
+    "type": "WEAPON",
+    "name": "Crystal halberd 4/10 (i)",
+    "requirements": [],
+    "bonuses": [
+        85,
+        110,
+        5,
+        -4,
+        0,
+        -1,
+        4,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

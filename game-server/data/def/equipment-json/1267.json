@@ -1,0 +1,22 @@
+{
+    "id": 1267,
+    "type": "WEAPON",
+    "name": "Iron pickaxe",
+    "requirements": [],
+    "bonuses": [
+        5,
+        -2,
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        7,
+        0,
+        0,
+        0
+    ]
+}

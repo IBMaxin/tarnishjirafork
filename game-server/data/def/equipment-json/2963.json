@@ -1,0 +1,22 @@
+{
+    "id": 2963,
+    "type": "WEAPON",
+    "name": "Silver sickle(b)",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        5
+    ]
+}

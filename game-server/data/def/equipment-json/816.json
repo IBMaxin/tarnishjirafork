@@ -1,0 +1,27 @@
+{
+    "id": 816,
+    "type": "WEAPON",
+    "name": "Adamant dart(p)",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        11,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0
+    ]
+}

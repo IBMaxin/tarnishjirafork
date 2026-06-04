@@ -1,0 +1,27 @@
+{
+    "id": 12213,
+    "type": "SHIELD",
+    "name": "Bronze kiteshield (g)",
+    "requirements": [
+        {
+            "level": 1,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -8,
+        -2,
+        5,
+        7,
+        6,
+        -1,
+        6,
+        0,
+        0,
+        0,
+        0
+    ]
+}

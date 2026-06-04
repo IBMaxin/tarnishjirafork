@@ -1,0 +1,22 @@
+{
+    "id": 5612,
+    "type": "BODY",
+    "name": "Initiate hauberk",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -30,
+        -10,
+        46,
+        44,
+        38,
+        -6,
+        44,
+        0,
+        0,
+        0,
+        0
+    ]
+}

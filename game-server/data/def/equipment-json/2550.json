@@ -1,0 +1,25 @@
+{
+    "id": 2550,
+    "type": "RING",
+    "name": "Ring of recoil",
+    "listeners": [
+        "RingOfRecoilListener"
+    ],
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

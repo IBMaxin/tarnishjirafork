@@ -1,0 +1,124 @@
+{
+  "npc_id": 2585,
+  "rare_table": false,
+  "drops": [
+    {
+      "item": 592,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "ALWAYS"
+    },
+    {
+      "item": 1438,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 1448,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 1444,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 1440,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 1442,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 1446,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 1454,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 1452,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 1462,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "RARE"
+    },
+    {
+      "item": 1458,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "RARE"
+    },
+    {
+      "item": 5516,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "VERY_RARE"
+    },
+    {
+      "item": 5521,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 7936,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 7937,
+      "minimum": 1,
+      "maximum": 25,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 5509,
+      "minimum": 1,
+      "maximum": 1,
+      "chance": 42.0,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 5510,
+      "minimum": 1,
+      "maximum": 1,
+      "chance": 42.0,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 5512,
+      "minimum": 1,
+      "maximum": 1,
+      "chance": 42.0,
+      "type": "UNCOMMON"
+    },
+    {
+      "item": 5514,
+      "minimum": 1,
+      "maximum": 1,
+      "chance": 42.0,
+      "type": "UNCOMMON"
+    }
+  ]
+}

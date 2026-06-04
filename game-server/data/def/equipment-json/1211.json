@@ -1,0 +1,27 @@
+{
+    "id": 1211,
+    "type": "WEAPON",
+    "name": "Adamant dagger",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        15,
+        8,
+        -4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        14,
+        0,
+        0,
+        0
+    ]
+}

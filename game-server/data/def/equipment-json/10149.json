@@ -1,0 +1,22 @@
+{
+    "id": 10149,
+    "type": "WEAPON",
+    "name": "Swamp lizard",
+    "requirements": [],
+    "bonuses": [
+        0,
+        10,
+        0,
+        0,
+        20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        22,
+        0,
+        0,
+        0
+    ]
+}

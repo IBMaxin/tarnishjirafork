@@ -1,0 +1,12 @@
+{
+    "id": 2004,
+    "name": "Drake",
+    "stand": 6813,
+    "walk": 6819,
+    "weakness": "Earth spells",
+    "combat_level": 1,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "hitpoints_level": 3
+}

@@ -1,0 +1,27 @@
+{
+    "id": 1225,
+    "type": "WEAPON",
+    "name": "Mithril dagger(p)",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        11,
+        5,
+        -4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

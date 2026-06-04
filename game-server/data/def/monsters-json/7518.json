@@ -1,0 +1,16 @@
+{
+    "id": 7518,
+    "name": "Jelly",
+    "size": 2,
+    "stand": 286,
+    "walk": 283,
+    "combat_level": 1,
+    "attack_style": "Magic-based Melee",
+    "attack_cooldown": 4,
+    "attack_level": 45,
+    "defence_level": 45,
+    "strength_level": 45,
+    "hitpoints_level": 75,
+    "ranged_level": 45,
+    "magic_level": 45
+}

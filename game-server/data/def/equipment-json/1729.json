@@ -1,0 +1,22 @@
+{
+    "id": 1729,
+    "type": "AMULET",
+    "name": "Amulet of defence",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        7,
+        7,
+        7,
+        7,
+        0,
+        0,
+        0,
+        0
+    ]
+}

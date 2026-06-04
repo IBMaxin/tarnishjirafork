@@ -1,0 +1,22 @@
+{
+    "id": 12389,
+    "type": "WEAPON",
+    "name": "Gilded scimitar",
+    "requirements": [],
+    "bonuses": [
+        7,
+        45,
+        -2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        44,
+        0,
+        0,
+        0
+    ]
+}

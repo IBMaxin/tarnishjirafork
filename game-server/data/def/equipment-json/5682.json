@@ -1,0 +1,27 @@
+{
+    "id": 5682,
+    "type": "WEAPON",
+    "name": "Black dagger(p+)",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        10,
+        5,
+        -4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

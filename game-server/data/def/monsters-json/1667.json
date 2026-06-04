@@ -1,0 +1,12 @@
+{
+    "id": 1667,
+    "name": "Penance Fighter",
+    "stand": 5094,
+    "walk": 5095,
+    "aggressive": true,
+    "weakness": "Nothing",
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee"
+}

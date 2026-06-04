@@ -1,0 +1,27 @@
+{
+    "id": 6607,
+    "type": "WEAPON",
+    "name": "White longsword",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        13,
+        18,
+        -2,
+        0,
+        0,
+        0,
+        3,
+        2,
+        0,
+        0,
+        16,
+        0,
+        0,
+        1
+    ]
+}

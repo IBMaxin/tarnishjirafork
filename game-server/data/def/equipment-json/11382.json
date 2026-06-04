@@ -1,0 +1,22 @@
+{
+    "id": 11382,
+    "type": "WEAPON",
+    "name": "Bronze hasta(p+)",
+    "requirements": [],
+    "bonuses": [
+        5,
+        5,
+        5,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+    ]
+}

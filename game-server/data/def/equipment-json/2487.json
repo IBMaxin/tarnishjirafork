@@ -1,0 +1,27 @@
+{
+    "id": 2487,
+    "type": "GLOVES",
+    "name": "Blue d'hide vamb",
+    "requirements": [
+        {
+            "level": 50,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -10,
+        9,
+        4,
+        3,
+        5,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

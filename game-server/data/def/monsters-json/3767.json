@@ -1,0 +1,9 @@
+{
+    "id": 3767,
+    "name": "Old Man Ral",
+    "size": 3,
+    "stand": 808,
+    "walk": 819,
+    "attackable": true,
+    "combat_level": 1
+}

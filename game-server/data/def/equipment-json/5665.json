@@ -1,0 +1,27 @@
+{
+    "id": 5665,
+    "type": "WEAPON",
+    "name": "Black knife(p++)",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

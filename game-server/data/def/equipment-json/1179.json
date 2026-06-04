@@ -1,0 +1,27 @@
+{
+    "id": 1179,
+    "type": "SHIELD",
+    "name": "Black sq shield",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        15,
+        16,
+        14,
+        0,
+        15,
+        0,
+        0,
+        0,
+        0
+    ]
+}

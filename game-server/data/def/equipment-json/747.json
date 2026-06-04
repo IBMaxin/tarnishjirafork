@@ -1,0 +1,22 @@
+{
+    "id": 747,
+    "type": "WEAPON",
+    "name": "Glowing dagger",
+    "requirements": [],
+    "bonuses": [
+        5,
+        3,
+        -4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

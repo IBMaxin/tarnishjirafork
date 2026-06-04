@@ -1,0 +1,22 @@
+{
+    "id": 10839,
+    "type": "BOOTS",
+    "name": "Silly jester boots",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        -5,
+        0,
+        0,
+        0,
+        0
+    ]
+}

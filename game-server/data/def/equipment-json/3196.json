@@ -1,0 +1,27 @@
+{
+    "id": 3196,
+    "type": "WEAPON",
+    "name": "Black halberd",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        19,
+        25,
+        0,
+        -4,
+        0,
+        -1,
+        2,
+        3,
+        0,
+        0,
+        20,
+        0,
+        0,
+        0
+    ]
+}

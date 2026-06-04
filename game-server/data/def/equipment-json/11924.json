@@ -1,0 +1,22 @@
+{
+    "id": 11924,
+    "type": "SHIELD",
+    "name": "Malediction ward",
+    "requirements": [],
+    "bonuses": [
+        -8,
+        -8,
+        -8,
+        12,
+        -12,
+        50,
+        52,
+        48,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

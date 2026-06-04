@@ -1,0 +1,22 @@
+{
+    "id": 3201,
+    "name": "Albino bat",
+    "size": 2,
+    "stand": 4914,
+    "walk": 4913,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Crush",
+    "combat_level": 52,
+    "attack_animation": 4915,
+    "block_animation": 4916,
+    "death_animation": 4918,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "attack_level": 57,
+    "defence_level": 57,
+    "strength_level": 57,
+    "hitpoints_level": 33,
+    "ranged_level": 57,
+    "magic_level": 57
+}

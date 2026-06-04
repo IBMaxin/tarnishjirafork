@@ -1,0 +1,27 @@
+{
+    "id": 843,
+    "type": "WEAPON",
+    "name": "Oak shortbow",
+    "requirements": [
+        {
+            "level": 5,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        14,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

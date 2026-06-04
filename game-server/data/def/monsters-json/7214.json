@@ -1,0 +1,17 @@
+{
+    "id": 7214,
+    "name": "Maniacal monkey",
+    "stand": 786,
+    "walk": 7246,
+    "aggressive": true,
+    "weakness": "Magic",
+    "combat_level": 1,
+    "attack_style": "Melee (slash)",
+    "attack_cooldown": 4,
+    "attack_level": 175,
+    "defence_level": 175,
+    "strength_level": 175,
+    "hitpoints_level": 65,
+    "ranged_level": 175,
+    "magic_level": 175
+}

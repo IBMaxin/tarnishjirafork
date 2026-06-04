@@ -1,0 +1,20 @@
+{
+    "id": 3082,
+    "name": "Man",
+    "stand": 813,
+    "walk": 1146,
+    "attackable": true,
+    "combat_level": 2,
+    "attack_animation": 422,
+    "block_animation": 425,
+    "death_animation": 836,
+    "death_timer": 2,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "hitpoints_level": 7,
+    "defence_stab": -21,
+    "defence_slash": -21,
+    "defence_crush": -21,
+    "defence_magic": -21,
+    "defence_ranged": -21
+}

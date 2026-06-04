@@ -1,0 +1,19 @@
+{
+    "id": 2951,
+    "name": "Zamorak wizard",
+    "stand": 808,
+    "walk": 819,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Ranged, Melee",
+    "combat_level": 65,
+    "attack_style": "Magic",
+    "attack_cooldown": 4,
+    "attack_level": 24,
+    "defence_level": 24,
+    "strength_level": 24,
+    "hitpoints_level": 73,
+    "ranged_level": 24,
+    "magic_level": 24,
+    "defence_magic": 3
+}

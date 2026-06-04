@@ -1,0 +1,60 @@
+{
+  "npc_id": 6297,
+  "rare_table": false,
+  "drops": [
+    {
+      "id": 532,
+      "minimum": 2,
+      "maximum": 2,
+      "type": "ALWAYS"
+    },
+    {
+      "id": 11210,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "ALWAYS"
+    },
+    {
+      "id": 5331,
+      "minimum": 1,
+      "maximum": 4,
+      "type": "COMMON"
+    },
+    {
+      "id": 1623,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "id": 1619,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "UNCOMMON"
+    },
+    {
+      "id": 1603,
+      "minimum": 2,
+      "maximum": 2,
+      "type": "RARE"
+    },
+    {
+      "id": 532,
+      "minimum": 2,
+      "maximum": 2,
+      "type": "RARE"
+    },
+    {
+      "id": 10976,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "RARE"
+    },
+    {
+      "id": 10977,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "VERY_RARE"
+    }
+  ]
+}

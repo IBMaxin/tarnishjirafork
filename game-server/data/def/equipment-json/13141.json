@@ -1,0 +1,22 @@
+{
+    "id": 13141,
+    "type": "WEAPON",
+    "name": "Western banner 1",
+    "requirements": [],
+    "bonuses": [
+        12,
+        12,
+        12,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        12,
+        0,
+        0,
+        0
+    ]
+}

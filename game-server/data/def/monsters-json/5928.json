@@ -1,0 +1,21 @@
+{
+    "id": 5928,
+    "name": "Werewolf",
+    "stand": 6539,
+    "walk": 6541,
+    "weakness": "Wolfbane Dagger",
+    "combat_level": 1,
+    "attack_animation": 6536,
+    "block_animation": 6538,
+    "death_animation": 6537,
+    "death_timer": 4,
+    "attack_style": "Melee",
+    "attack_cooldown": 6,
+    "attack_level": 70,
+    "defence_level": 70,
+    "strength_level": 70,
+    "hitpoints_level": 100,
+    "ranged_level": 70,
+    "magic_level": 70,
+    "defence_magic": 60
+}

@@ -1,0 +1,23 @@
+{
+    "id": 5945,
+    "name": "Suspicious water",
+    "stand": -1,
+    "walk": -1,
+    "aggressive": true,
+    "poisonous": true,
+    "weakness": "Ranged",
+    "combat_level": 34,
+    "attack_style": "• Range, Magic Suspicious water: • Melee",
+    "attack_cooldown": 4,
+    "attack_level": 10,
+    "defence_level": 10,
+    "strength_level": 10,
+    "hitpoints_level": 100,
+    "ranged_level": 10,
+    "magic_level": 10,
+    "defence_stab": 100,
+    "defence_slash": 100,
+    "defence_crush": 100,
+    "defence_magic": 50,
+    "defence_ranged": 50
+}

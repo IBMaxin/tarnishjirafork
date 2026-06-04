@@ -1,0 +1,27 @@
+{
+    "id": 87,
+    "type": "AMULET",
+    "name": "Armadyl pendant",
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

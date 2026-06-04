@@ -1,0 +1,27 @@
+{
+    "id": 6914,
+    "type": "WEAPON",
+    "name": "Master wand",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        20,
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

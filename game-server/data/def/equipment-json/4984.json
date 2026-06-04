@@ -1,0 +1,27 @@
+{
+    "id": 4984,
+    "type": "WEAPON",
+    "name": "Verac's flail 50",
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        68,
+        -2,
+        82,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

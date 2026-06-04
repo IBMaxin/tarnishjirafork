@@ -2,6 +2,8 @@
 
 This plan is for tests we can realistically run without logging into the game client. The goal is to catch broken data, broken startup loaders, bad config drift, profile/rights mistakes, and client launch prerequisites before doing manual in-game smoke testing.
 
+→ Also see: game-scope.md for what's in the game, knowledge-bank.md for technical reference.
+
 → **Project map:** `AGENTS.md`
 → **Game scope:** [game-scope.md](game-scope.md)
 → **Docs index:** [README.md](README.md)
@@ -133,8 +135,8 @@ Required files:
 - `data/cache/main_file_cache.idx5`
 - `data/def/item/item_definitions.json`
 - `data/def/npc/npc_definitions.json`
-- `data/def/npc/npc_spawns.json`
-- `data/def/npc/npc_drops.json`
+- `data/def/npc/npc_spawns.json` (old, reference — active: `npc-spawns-json/`)
+- `data/def/npc/npc_drops.json` (old, reference — active: `npc-drops-json/`)
 - `data/def/store/stores.json`
 - `data/def/combat/projectile_definitions.json`
 - `data/io/message_sizes.json`
@@ -162,8 +164,8 @@ Useful parser calls:
 - `ItemDefinition.createParser().run()`
 - `NpcDefinition.createParser().run()`
 - `new CombatProjectileParser().run()`
-- `new NpcSpawnParser().run()`
-- `new NpcDropParser().run()`
+- `NpcSpawnFileLoader.INSTANCE.load()` ← per-file (active in Starter.java)
+- `NpcDropFileLoader.INSTANCE.load()` ← per-file (active in Starter.java)
 - `new NpcForceChatParser().run()`
 - `new StoreParser().run()`
 - `new GlobalObjectParser().run()`
@@ -237,7 +239,7 @@ game-server/src/test/java/com/osroyale/NpcSpawnDataTest.java
 Test behavior:
 
 - Load known NPC ids.
-- Load `data/def/npc/npc_spawns.json`.
+- Load `data/def/npc/npc_spawns.json` (old, reference only — active loader reads from `npc-spawns-json/`).
 - Assert each spawn references a known NPC id.
 - Assert positions have sane x/y/height values.
 
@@ -256,7 +258,7 @@ game-server/src/test/java/com/osroyale/NpcDropDataTest.java
 Test behavior:
 
 - Load known NPC ids and item ids.
-- Load `data/def/npc/npc_drops.json`.
+- Load `data/def/npc/npc_drops.json` (old, reference only — active loader reads from `npc-drops-json/`).
 - Assert each drop table references known NPC ids.
 - Assert dropped item ids exist.
 - Assert drop amounts and weights are positive where required.
@@ -503,3 +505,17 @@ Offline testing is in a strong place when:
 - `:game-server:classes` and `:game-client:classes` both pass.
 - A manual boot smoke script can prove server startup and port listening.
 - The plan clearly marks client-login-only behavior as manual/integration territory.
+
+## In-Game Smoke Test
+
+Once logged in as Admin (Oak):
+
+1. Login as Oak, confirm admin crown
+2. Try owner command → confirm blocked (Oak is not owner)
+3. `::spawnitem 315` — eat shrimp, verify healing
+4. `::teleport` home, donor zone
+5. Kill low-level NPC, check drops
+6. Open shop, buy item, sell item
+7. Try one skill: fish, mine, woodcut, cook
+8. Enter and exit one minigame
+9. Logout, restart server, login — verify persistence

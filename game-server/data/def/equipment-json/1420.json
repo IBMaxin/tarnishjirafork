@@ -1,0 +1,22 @@
+{
+    "id": 1420,
+    "type": "WEAPON",
+    "name": "Iron mace",
+    "requirements": [],
+    "bonuses": [
+        4,
+        -2,
+        9,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        0,
+        0,
+        1
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "id": 4091,
+    "type": "BODY",
+    "name": "Mystic robe top",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 1
+        },
+        {
+            "level": 40,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        20,
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

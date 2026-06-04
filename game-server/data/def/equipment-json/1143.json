@@ -1,0 +1,27 @@
+{
+    "id": 1143,
+    "type": "HAT",
+    "name": "Mithril med helm",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -3,
+        -1,
+        10,
+        11,
+        9,
+        -1,
+        10,
+        0,
+        0,
+        0,
+        0
+    ]
+}

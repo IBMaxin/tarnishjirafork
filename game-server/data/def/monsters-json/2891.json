@@ -1,0 +1,8 @@
+{
+    "id": 2891,
+    "name": "Necromancer",
+    "attackable": true,
+    "stand": 808,
+    "walk": 819,
+    "combat_level": 26
+}

@@ -1,0 +1,22 @@
+{
+    "id": 7453,
+    "type": "GLOVES",
+    "name": "Hardleather gloves",
+    "requirements": [],
+    "bonuses": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+    ]
+}

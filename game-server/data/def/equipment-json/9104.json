@@ -1,0 +1,31 @@
+{
+    "id": 9104,
+    "type": "RING",
+    "name": "Lunar ring",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        },
+        {
+            "level": 65,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

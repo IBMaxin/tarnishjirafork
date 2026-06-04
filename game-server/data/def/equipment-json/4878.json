@@ -1,0 +1,30 @@
+{
+    "id": 4878,
+    "type": "LEGS",
+    "name": "Ahrim's robeskirt 0",
+    "listeners": [
+        "AhrimsListener"
+    ],
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        22,
+        -7,
+        33,
+        30,
+        36,
+        22,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

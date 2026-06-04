@@ -1,0 +1,31 @@
+{
+    "id": 7398,
+    "type": "LEGS",
+    "name": "Enchanted robe",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 1
+        },
+        {
+            "level": 40,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

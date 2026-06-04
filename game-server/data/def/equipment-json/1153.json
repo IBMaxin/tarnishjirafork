@@ -1,0 +1,27 @@
+{
+    "id": 1153,
+    "type": "MASK",
+    "name": "Iron full helm",
+    "requirements": [
+        {
+            "level": 1,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        6,
+        7,
+        5,
+        -1,
+        6,
+        0,
+        0,
+        0,
+        0
+    ]
+}

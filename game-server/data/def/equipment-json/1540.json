@@ -1,0 +1,22 @@
+{
+    "id": 1540,
+    "type": "SHIELD",
+    "name": "Anti-dragon shield",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        9,
+        8,
+        2,
+        8,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "id": 11721,
+    "type": "WEAPON",
+    "name": "Iron pickaxe (nz)",
+    "requirements": [],
+    "bonuses": [
+        5,
+        -2,
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        7,
+        0,
+        0,
+        0
+    ]
+}

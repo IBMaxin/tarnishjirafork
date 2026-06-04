@@ -1,0 +1,31 @@
+{
+    "id": 10342,
+    "type": "HAT",
+    "name": "3rd age mage hat",
+    "requirements": [
+        {
+            "level": 65,
+            "skill": 1
+        },
+        {
+            "level": 65,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

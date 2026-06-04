@@ -1,0 +1,27 @@
+{
+    "id": 6324,
+    "type": "LEGS",
+    "name": "Snakeskin chaps",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -5,
+        6,
+        8,
+        8,
+        10,
+        4,
+        10,
+        0,
+        0,
+        0,
+        0
+    ]
+}

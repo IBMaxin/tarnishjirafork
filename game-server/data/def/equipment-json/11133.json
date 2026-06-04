@@ -1,0 +1,22 @@
+{
+    "id": 11133,
+    "type": "GLOVES",
+    "name": "Regen bracelet",
+    "requirements": [],
+    "bonuses": [
+        8,
+        8,
+        8,
+        3,
+        7,
+        6,
+        6,
+        6,
+        3,
+        6,
+        0,
+        0,
+        0,
+        0
+    ]
+}

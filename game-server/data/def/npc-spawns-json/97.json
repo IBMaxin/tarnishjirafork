@@ -1,0 +1,92 @@
+[
+  {
+    "id": 97,
+    "radius": "2",
+    "facing": "NORTH",
+    "position": {
+      "x": 1686,
+      "y": 10062,
+      "height": 0
+    }
+  },
+  {
+    "id": 97,
+    "radius": "2",
+    "facing": "NORTH",
+    "position": {
+      "x": 1690,
+      "y": 10064,
+      "height": 0
+    }
+  },
+  {
+    "id": 97,
+    "radius": "2",
+    "facing": "NORTH",
+    "position": {
+      "x": 1688,
+      "y": 10061,
+      "height": 0
+    }
+  },
+  {
+    "id": 97,
+    "radius": "2",
+    "facing": "NORTH",
+    "position": {
+      "x": 1689,
+      "y": 10065,
+      "height": 0
+    }
+  },
+  {
+    "id": 97,
+    "radius": "2",
+    "facing": "NORTH",
+    "position": {
+      "x": 1695,
+      "y": 10064,
+      "height": 0
+    }
+  },
+  {
+    "id": 97,
+    "radius": "2",
+    "facing": "NORTH",
+    "position": {
+      "x": 1691,
+      "y": 10063,
+      "height": 0
+    }
+  },
+  {
+    "id": 97,
+    "radius": "2",
+    "facing": "NORTH",
+    "position": {
+      "x": 1696,
+      "y": 10063,
+      "height": 0
+    }
+  },
+  {
+    "id": 97,
+    "radius": "2",
+    "facing": "NORTH",
+    "position": {
+      "x": 1690,
+      "y": 10063,
+      "height": 0
+    }
+  },
+  {
+    "id": 97,
+    "radius": "2",
+    "facing": "NORTH",
+    "position": {
+      "x": 1688,
+      "y": 10060,
+      "height": 0
+    }
+  }
+]

@@ -1,0 +1,22 @@
+{
+    "id": 11787,
+    "type": "WEAPON",
+    "name": "Steam battlestaff",
+    "requirements": [],
+    "bonuses": [
+        7,
+        -1,
+        28,
+        10,
+        0,
+        2,
+        3,
+        1,
+        10,
+        0,
+        35,
+        0,
+        0,
+        0
+    ]
+}

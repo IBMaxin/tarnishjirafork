@@ -1,0 +1,27 @@
+{
+    "id": 857,
+    "type": "WEAPON",
+    "name": "Yew shortbow",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        47,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

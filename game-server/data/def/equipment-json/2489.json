@@ -1,0 +1,27 @@
+{
+    "id": 2489,
+    "type": "GLOVES",
+    "name": "Red d'hide vamb",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -10,
+        10,
+        5,
+        4,
+        6,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "id": 13119,
+    "type": "SHIELD",
+    "name": "Falador shield 3",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -8,
+        -2,
+        18,
+        22,
+        20,
+        -1,
+        20,
+        0,
+        0,
+        0,
+        4
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 12416,
+    "type": "LEGS",
+    "name": "Dragon plateskirt (g)",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -21,
+        -7,
+        68,
+        66,
+        63,
+        -4,
+        65,
+        0,
+        0,
+        0,
+        0
+    ]
+}

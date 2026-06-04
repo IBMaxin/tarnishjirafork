@@ -1,0 +1,27 @@
+{
+    "id": 1099,
+    "type": "LEGS",
+    "name": "Green d'hide chaps",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -10,
+        8,
+        22,
+        16,
+        24,
+        8,
+        22,
+        0,
+        0,
+        0,
+        0
+    ]
+}

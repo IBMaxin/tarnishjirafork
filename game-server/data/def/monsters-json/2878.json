@@ -1,0 +1,21 @@
+{
+    "id": 2878,
+    "name": "Chaos druid",
+    "stand": 808,
+    "walk": 819,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Ranged",
+    "combat_level": 13,
+    "attack_animation": 377,
+    "block_animation": 388,
+    "death_animation": 836,
+    "attack_style": "• Melee (crush) • Magic (Confuse)",
+    "attack_cooldown": 4,
+    "attack_level": 8,
+    "defence_level": 8,
+    "strength_level": 8,
+    "hitpoints_level": 20,
+    "ranged_level": 8,
+    "magic_level": 8
+}

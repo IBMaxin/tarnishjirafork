@@ -1,0 +1,16 @@
+{
+    "id": 7134,
+    "name": "Monkey guard",
+    "stand": 1386,
+    "walk": 1380,
+    "aggressive": true,
+    "combat_level": 86,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 130,
+    "defence_level": 130,
+    "strength_level": 130,
+    "hitpoints_level": 130,
+    "ranged_level": 130,
+    "magic_level": 130
+}

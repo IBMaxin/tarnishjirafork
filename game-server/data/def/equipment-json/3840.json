@@ -1,0 +1,22 @@
+{
+    "id": 3840,
+    "type": "SHIELD",
+    "name": "Holy book",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        8,
+        8,
+        8,
+        8,
+        0,
+        0,
+        0,
+        5
+    ]
+}

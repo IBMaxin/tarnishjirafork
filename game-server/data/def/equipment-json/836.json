@@ -1,0 +1,27 @@
+{
+    "id": 836,
+    "type": "ARROWS",
+    "name": "Rune javelin(p)",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        38,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

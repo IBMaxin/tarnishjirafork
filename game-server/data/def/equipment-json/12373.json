@@ -1,0 +1,22 @@
+{
+    "id": 12373,
+    "type": "WEAPON",
+    "name": "Dragon cane",
+    "requirements": [],
+    "bonuses": [
+        42,
+        -2,
+        60,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        55,
+        0,
+        0,
+        5
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 12006,
+    "type": "WEAPON",
+    "name": "Abyssal tentacle",
+    "requirements": [
+        {
+            "level": 75,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        0,
+        93,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        86,
+        0,
+        0,
+        0
+    ]
+}

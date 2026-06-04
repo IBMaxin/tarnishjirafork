@@ -1,0 +1,15 @@
+{
+    "id": 3290,
+    "name": "Frog",
+    "stand": 1796,
+    "walk": 1797,
+    "combat_level": 1,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "attack_level": 4,
+    "defence_level": 4,
+    "strength_level": 4,
+    "hitpoints_level": 8,
+    "ranged_level": 4,
+    "magic_level": 4
+}

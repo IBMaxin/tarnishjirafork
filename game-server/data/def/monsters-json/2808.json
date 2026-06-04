@@ -1,0 +1,22 @@
+{
+    "id": 2808,
+    "name": "Cow",
+    "size": 2,
+    "stand": 5852,
+    "walk": 5848,
+    "attackable": true,
+    "combat_level": 2,
+    "attack_animation": 5849,
+    "block_animation": 5850,
+    "death_animation": 5851,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "hitpoints_level": 8,
+    "defence_stab": -21,
+    "defence_slash": -21,
+    "defence_crush": -21,
+    "defence_magic": -21,
+    "defence_ranged": -21
+}

@@ -1,0 +1,27 @@
+{
+    "id": 3204,
+    "type": "WEAPON",
+    "name": "Dragon halberd",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        70,
+        95,
+        0,
+        -4,
+        0,
+        -1,
+        4,
+        5,
+        0,
+        0,
+        89,
+        0,
+        0,
+        0
+    ]
+}

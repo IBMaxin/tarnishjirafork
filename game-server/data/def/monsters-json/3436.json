@@ -1,0 +1,22 @@
+{
+    "id": 3436,
+    "name": "Tyras guard",
+    "stand": 813,
+    "walk": 1205,
+    "weakness": "Magic",
+    "combat_level": 1,
+    "attack_style": "Melee",
+    "attack_cooldown": 5,
+    "attack_level": 95,
+    "defence_level": 95,
+    "strength_level": 95,
+    "hitpoints_level": 110,
+    "ranged_level": 95,
+    "magic_level": 95,
+    "defence_stab": 87,
+    "defence_slash": 84,
+    "defence_crush": 76,
+    "defence_magic": -10,
+    "defence_ranged": 79,
+    "bonus_strength": 30
+}

@@ -1,0 +1,31 @@
+{
+    "id": 9101,
+    "type": "CAPE",
+    "name": "Lunar cape",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        },
+        {
+            "level": 65,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+    ]
+}

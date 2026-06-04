@@ -1,0 +1,27 @@
+{
+    "id": 11117,
+    "type": "GLOVES",
+    "name": "Dragon bracelet",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "id": 5506,
+    "name": "Mummy",
+    "size": 2,
+    "stand": 6856,
+    "walk": -1,
+    "aggressive": true,
+    "weakness": "Salve amulet (e), Stab, Fire spells, Ranged",
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "hitpoints_level": 6
+}

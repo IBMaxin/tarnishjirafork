@@ -1,0 +1,22 @@
+{
+    "id": 10644,
+    "type": "CAPE",
+    "name": "Magic cape",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        9,
+        9,
+        9,
+        9,
+        0,
+        0,
+        0,
+        0
+    ]
+}

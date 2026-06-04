@@ -1,0 +1,27 @@
+{
+    "id": 1424,
+    "type": "WEAPON",
+    "name": "Steel mace",
+    "requirements": [
+        {
+            "level": 5,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        7,
+        -2,
+        13,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        11,
+        0,
+        0,
+        2
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 12369,
+    "type": "HAT",
+    "name": "Mithril dragon mask",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

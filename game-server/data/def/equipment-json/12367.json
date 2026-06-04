@@ -1,0 +1,27 @@
+{
+    "id": 12367,
+    "type": "HAT",
+    "name": "Steel dragon mask",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

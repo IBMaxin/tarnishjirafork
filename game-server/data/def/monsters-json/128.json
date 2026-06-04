@@ -1,0 +1,23 @@
+{
+    "id": 128,
+    "name": "Kalphite Queen",
+    "stand": -1,
+    "walk": -1,
+    "aggressive": true,
+    "weakness": "Crush attacks, Keris",
+    "combat_level": 1,
+    "venom_immunity": true,
+    "attack_style": "Melee (stab), Ranged, Magic",
+    "attack_cooldown": 4,
+    "attack_level": 300,
+    "defence_level": 300,
+    "strength_level": 300,
+    "hitpoints_level": 255,
+    "ranged_level": 300,
+    "magic_level": 300,
+    "defence_stab": 50,
+    "defence_slash": 50,
+    "defence_crush": 10,
+    "defence_magic": 100,
+    "defence_ranged": 100
+}

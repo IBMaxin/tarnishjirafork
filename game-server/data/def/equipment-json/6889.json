@@ -1,0 +1,27 @@
+{
+    "id": 6889,
+    "type": "SHIELD",
+    "name": "Mage's book",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 1173,
+    "type": "SHIELD",
+    "name": "Bronze sq shield",
+    "requirements": [
+        {
+            "level": 1,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        5,
+        6,
+        4,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "id": 2499,
+    "type": "BODY",
+    "name": "Blue d'hide body",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        },
+        {
+            "level": 50,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -15,
+        20,
+        45,
+        37,
+        50,
+        30,
+        45,
+        0,
+        0,
+        0,
+        0
+    ]
+}

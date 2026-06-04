@@ -1,0 +1,27 @@
+{
+    "id": 1377,
+    "type": "WEAPON",
+    "name": "Dragon battleaxe",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        -2,
+        70,
+        65,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        85,
+        0,
+        0,
+        0
+    ]
+}

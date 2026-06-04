@@ -1,0 +1,27 @@
+{
+    "id": 861,
+    "type": "WEAPON",
+    "name": "Magic shortbow",
+    "requirements": [
+        {
+            "level": 50,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        69,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "id": 4042,
+    "name": "Pirate",
+    "stand": 813,
+    "walk": 1205,
+    "aggressive": true,
+    "weakness": "Wind spells",
+    "combat_level": 1,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "hitpoints_level": 2
+}

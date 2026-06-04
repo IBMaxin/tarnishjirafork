@@ -1,0 +1,27 @@
+{
+    "id": 859,
+    "type": "WEAPON",
+    "name": "Magic longbow",
+    "requirements": [
+        {
+            "level": 50,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        69,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

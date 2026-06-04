@@ -1,0 +1,27 @@
+{
+    "id": 1343,
+    "type": "WEAPON",
+    "name": "Mithril warhammer",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        -4,
+        -4,
+        25,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0,
+        0
+    ]
+}

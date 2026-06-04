@@ -1,0 +1,18 @@
+{
+    "id": 4971,
+    "name": "Khazard warlord",
+    "stand": 808,
+    "walk": 819,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Magic",
+    "combat_level": 112,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "attack_level": 78,
+    "defence_level": 78,
+    "strength_level": 78,
+    "hitpoints_level": 170,
+    "ranged_level": 78,
+    "magic_level": 78
+}

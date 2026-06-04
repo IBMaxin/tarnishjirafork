@@ -1,0 +1,142 @@
+[
+  {
+    "id": 100,
+    "radius": "5",
+    "facing": "NORTH",
+    "position": {
+      "x": 2666,
+      "y": 3713,
+      "height": 0
+    }
+  },
+  {
+    "id": 100,
+    "radius": "5",
+    "facing": "NORTH",
+    "position": {
+      "x": 2668,
+      "y": 3716,
+      "height": 0
+    }
+  },
+  {
+    "id": 100,
+    "radius": "5",
+    "facing": "NORTH",
+    "position": {
+      "x": 2671,
+      "y": 3714,
+      "height": 0
+    }
+  },
+  {
+    "id": 100,
+    "radius": "5",
+    "facing": "NORTH",
+    "position": {
+      "x": 2676,
+      "y": 3718,
+      "height": 0
+    }
+  },
+  {
+    "id": 100,
+    "radius": "5",
+    "facing": "NORTH",
+    "position": {
+      "x": 2680,
+      "y": 3714,
+      "height": 0
+    }
+  },
+  {
+    "id": 100,
+    "radius": "5",
+    "facing": "NORTH",
+    "position": {
+      "x": 2682,
+      "y": 3719,
+      "height": 0
+    }
+  },
+  {
+    "id": 100,
+    "radius": "5",
+    "facing": "NORTH",
+    "position": {
+      "x": 2684,
+      "y": 3715,
+      "height": 0
+    }
+  },
+  {
+    "id": 100,
+    "radius": "5",
+    "facing": "NORTH",
+    "position": {
+      "x": 2686,
+      "y": 3724,
+      "height": 0
+    }
+  },
+  {
+    "id": 100,
+    "radius": "5",
+    "facing": "NORTH",
+    "position": {
+      "x": 2682,
+      "y": 3726,
+      "height": 0
+    }
+  },
+  {
+    "id": 100,
+    "radius": "5",
+    "facing": "NORTH",
+    "position": {
+      "x": 2684,
+      "y": 3730,
+      "height": 0
+    }
+  },
+  {
+    "id": 100,
+    "radius": "5",
+    "facing": "NORTH",
+    "position": {
+      "x": 2679,
+      "y": 3730,
+      "height": 0
+    }
+  },
+  {
+    "id": 100,
+    "radius": "5",
+    "facing": "NORTH",
+    "position": {
+      "x": 2676,
+      "y": 3731,
+      "height": 0
+    }
+  },
+  {
+    "id": 100,
+    "radius": "5",
+    "facing": "NORTH",
+    "position": {
+      "x": 2672,
+      "y": 3727,
+      "height": 0
+    }
+  },
+  {
+    "id": 100,
+    "radius": "5",
+    "facing": "NORTH",
+    "position": {
+      "x": 2671,
+      "y": 3729,
+      "height": 0
+    }
+  }
+]

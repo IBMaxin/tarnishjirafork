@@ -1,0 +1,17 @@
+{
+    "id": 4186,
+    "name": "Locust",
+    "stand": 2012,
+    "walk": 2011,
+    "attackable": true,
+    "aggressive": true,
+    "combat_level": 18,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 18,
+    "defence_level": 18,
+    "strength_level": 18,
+    "hitpoints_level": 27,
+    "ranged_level": 18,
+    "magic_level": 18
+}

@@ -1,0 +1,22 @@
+{
+    "id": 11375,
+    "type": "WEAPON",
+    "name": "Adamant hasta",
+    "requirements": [],
+    "bonuses": [
+        24,
+        24,
+        24,
+        0,
+        0,
+        -6,
+        -7,
+        -5,
+        0,
+        -6,
+        28,
+        0,
+        0,
+        0
+    ]
+}

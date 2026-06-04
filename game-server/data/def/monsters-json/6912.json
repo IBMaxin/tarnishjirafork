@@ -1,0 +1,18 @@
+{
+    "id": 6912,
+    "name": "Soldier (tier 5)",
+    "stand": 808,
+    "walk": 819,
+    "combat_level": 99,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 85,
+    "defence_level": 85,
+    "strength_level": 85,
+    "hitpoints_level": 90,
+    "ranged_level": 85,
+    "magic_level": 85,
+    "bonus_strength": 5
+}

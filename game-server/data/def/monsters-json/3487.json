@@ -1,0 +1,9 @@
+{
+    "id": 3487,
+    "name": "Temple guardian",
+    "size": 2,
+    "attackable": true,
+    "stand": 17,
+    "walk": 16,
+    "combat_level": 30
+}

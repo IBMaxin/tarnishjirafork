@@ -1,0 +1,27 @@
+{
+    "id": 1133,
+    "type": "TORSO",
+    "name": "Studded body",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -4,
+        8,
+        18,
+        25,
+        22,
+        8,
+        25,
+        0,
+        0,
+        0,
+        0
+    ]
+}

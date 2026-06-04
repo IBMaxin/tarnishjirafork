@@ -1,0 +1,27 @@
+{
+    "id": 21028,
+    "type": "WEAPON",
+    "name": "Dragon harpoon",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        38,
+        32,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        42,
+        0,
+        0,
+        0
+    ]
+}

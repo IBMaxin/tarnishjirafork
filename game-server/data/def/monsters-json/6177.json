@@ -1,0 +1,22 @@
+{
+    "id": 6177,
+    "name": "Scion",
+    "size": 2,
+    "stand": 7125,
+    "walk": 7124,
+    "aggressive": true,
+    "weakness": "Magic",
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Ranged, Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 90,
+    "defence_level": 90,
+    "strength_level": 90,
+    "hitpoints_level": 50,
+    "ranged_level": 90,
+    "magic_level": 90,
+    "defence_magic": -10,
+    "ranged_strength": 30
+}

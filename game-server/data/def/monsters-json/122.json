@@ -1,0 +1,19 @@
+{
+    "id": 122,
+    "name": "Basilisk",
+    "stand": -1,
+    "walk": -1,
+    "weakness": "Crush, Ranged",
+    "combat_level": 1,
+    "attack_style": "Melee (slash)",
+    "attack_cooldown": 4,
+    "attack_level": 45,
+    "defence_level": 45,
+    "strength_level": 45,
+    "hitpoints_level": 75,
+    "ranged_level": 45,
+    "magic_level": 45,
+    "defence_stab": 20,
+    "defence_slash": 20,
+    "defence_magic": 20
+}

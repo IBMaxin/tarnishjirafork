@@ -1,0 +1,22 @@
+{
+    "id": 7809,
+    "type": "WEAPON",
+    "name": "Anger spear",
+    "requirements": [],
+    "bonuses": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

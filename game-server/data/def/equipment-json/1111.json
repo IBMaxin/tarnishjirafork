@@ -1,0 +1,27 @@
+{
+    "id": 1111,
+    "type": "TORSO",
+    "name": "Adamant chainbody",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -15,
+        0,
+        36,
+        50,
+        61,
+        -3,
+        38,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 1317,
+    "type": "WEAPON",
+    "name": "Adamant 2h sword",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        -4,
+        43,
+        30,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        44,
+        0,
+        0,
+        0
+    ]
+}

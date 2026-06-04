@@ -1,0 +1,15 @@
+{
+    "id": 5933,
+    "name": "Sand Crab",
+    "stand": 1310,
+    "walk": 1311,
+    "attackable": true,
+    "aggressive": true,
+    "combat_level": 15,
+    "attack_animation": 1312,
+    "block_animation": 1314,
+    "death_animation": 1314,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "hitpoints_level": 60
+}

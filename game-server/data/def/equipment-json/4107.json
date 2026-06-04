@@ -1,0 +1,31 @@
+{
+    "id": 4107,
+    "type": "BOOTS",
+    "name": "Mystic boots (dark)",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 1
+        },
+        {
+            "level": 40,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

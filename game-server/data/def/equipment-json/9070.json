@@ -1,0 +1,22 @@
+{
+    "id": 9070,
+    "type": "BODY",
+    "name": "Moonclan armour",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        5,
+        -10,
+        5,
+        5,
+        5,
+        5,
+        -10,
+        0,
+        0,
+        0,
+        0
+    ]
+}

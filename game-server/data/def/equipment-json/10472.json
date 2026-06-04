@@ -1,0 +1,27 @@
+{
+    "id": 10472,
+    "type": "AMULET",
+    "name": "Guthix stole",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

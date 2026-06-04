@@ -1,0 +1,31 @@
+{
+    "id": 3387,
+    "type": "BODY",
+    "name": "Splitbark body",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        },
+        {
+            "level": 40,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        10,
+        -10,
+        36,
+        26,
+        42,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

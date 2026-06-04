@@ -1,0 +1,19 @@
+{
+    "id": 2693,
+    "name": "Chicken",
+    "stand": 5386,
+    "walk": 5385,
+    "attackable": true,
+    "combat_level": 1,
+    "attack_animation": 5387,
+    "block_animation": 5388,
+    "death_animation": 5389,
+    "attack_style": "Melee (stab)",
+    "attack_cooldown": 4,
+    "hitpoints_level": 3,
+    "defence_stab": -42,
+    "defence_slash": -42,
+    "defence_crush": -42,
+    "defence_magic": -42,
+    "defence_ranged": -42
+}

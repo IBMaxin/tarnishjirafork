@@ -1,0 +1,22 @@
+{
+    "id": 801,
+    "type": "WEAPON",
+    "name": "Iron thrownaxe",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        0,
+        0
+    ]
+}

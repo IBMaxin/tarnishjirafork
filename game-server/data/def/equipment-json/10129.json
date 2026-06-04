@@ -1,0 +1,22 @@
+{
+    "id": 10129,
+    "type": "WEAPON",
+    "name": "Barb-tail harpoon",
+    "requirements": [],
+    "bonuses": [
+        9,
+        4,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 1295,
+    "type": "WEAPON",
+    "name": "Steel longsword",
+    "requirements": [
+        {
+            "level": 5,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        9,
+        14,
+        -2,
+        0,
+        0,
+        0,
+        3,
+        2,
+        0,
+        0,
+        16,
+        0,
+        0,
+        0
+    ]
+}

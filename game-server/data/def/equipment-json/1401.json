@@ -1,0 +1,27 @@
+{
+    "id": 1401,
+    "type": "WEAPON",
+    "name": "Mystic fire staff",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        10,
+        -1,
+        40,
+        10,
+        0,
+        2,
+        3,
+        1,
+        10,
+        0,
+        50,
+        0,
+        0,
+        0
+    ]
+}

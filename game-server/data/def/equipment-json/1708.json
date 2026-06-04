@@ -1,0 +1,22 @@
+{
+    "id": 1708,
+    "type": "AMULET",
+    "name": "Amulet of glory(2)",
+    "requirements": [],
+    "bonuses": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        3,
+        3,
+        3,
+        3,
+        3,
+        6,
+        0,
+        0,
+        3
+    ]
+}

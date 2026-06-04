@@ -1,0 +1,18 @@
+{
+    "id": 2850,
+    "name": "Mammoth",
+    "size": 3,
+    "stand": 306,
+    "walk": 303,
+    "aggressive": true,
+    "weakness": "Magic attacks",
+    "combat_level": 1,
+    "attack_style": "Melee",
+    "attack_cooldown": 6,
+    "attack_level": 60,
+    "defence_level": 60,
+    "strength_level": 60,
+    "hitpoints_level": 130,
+    "ranged_level": 60,
+    "magic_level": 60
+}

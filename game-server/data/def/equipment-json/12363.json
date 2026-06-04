@@ -1,0 +1,27 @@
+{
+    "id": 12363,
+    "type": "HAT",
+    "name": "Bronze dragon mask",
+    "requirements": [
+        {
+            "level": 1,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

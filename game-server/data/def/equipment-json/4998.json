@@ -1,0 +1,27 @@
+{
+    "id": 4998,
+    "type": "LEGS",
+    "name": "Verac's plateskirt 0",
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -21,
+        -7,
+        85,
+        82,
+        83,
+        0,
+        84,
+        0,
+        0,
+        0,
+        0
+    ]
+}

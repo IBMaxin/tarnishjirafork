@@ -1,0 +1,22 @@
+{
+    "id": 11711,
+    "type": "WEAPON",
+    "name": "Magic secateurs (nz)",
+    "requirements": [],
+    "bonuses": [
+        7,
+        9,
+        -5,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+    ]
+}

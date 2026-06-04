@@ -1,0 +1,27 @@
+{
+    "id": 4129,
+    "type": "BOOTS",
+    "name": "Adamant boots",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -3,
+        -1,
+        10,
+        11,
+        12,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+    ]
+}

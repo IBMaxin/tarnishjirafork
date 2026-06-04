@@ -1,0 +1,22 @@
+{
+    "id": 12263,
+    "type": "WEAPON",
+    "name": "Armadyl crozier",
+    "requirements": [],
+    "bonuses": [
+        7,
+        -1,
+        25,
+        10,
+        0,
+        2,
+        3,
+        1,
+        10,
+        0,
+        32,
+        0,
+        0,
+        6
+    ]
+}

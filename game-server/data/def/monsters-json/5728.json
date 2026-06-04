@@ -1,0 +1,15 @@
+{
+    "id": 5728,
+    "name": "Imp",
+    "stand": 171,
+    "walk": 168,
+    "combat_level": 1,
+    "attack_style": "Melee (stab)",
+    "attack_cooldown": 4,
+    "hitpoints_level": 8,
+    "defence_stab": -42,
+    "defence_slash": -42,
+    "defence_crush": -42,
+    "defence_magic": -42,
+    "defence_ranged": -42
+}

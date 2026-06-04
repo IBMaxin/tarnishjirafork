@@ -1,0 +1,30 @@
+{
+    "id": 11676,
+    "type": "HAT",
+    "name": "Void melee helm",
+    "listeners": [
+        "VoidKnightListener"
+    ],
+    "requirements": [
+        {
+            "level": 42,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        6,
+        6,
+        6,
+        6,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "id": 9674,
+    "type": "BODY",
+    "name": "Proselyte hauberk",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 1
+        },
+        {
+            "level": 20,
+            "skill": 5
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -30,
+        -10,
+        65,
+        63,
+        55,
+        -6,
+        63,
+        0,
+        0,
+        0,
+        0
+    ]
+}

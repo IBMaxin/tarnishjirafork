@@ -1,0 +1,31 @@
+{
+    "id": 9096,
+    "type": "HAT",
+    "name": "Lunar helm",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        },
+        {
+            "level": 65,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        3,
+        -2,
+        8,
+        7,
+        10,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

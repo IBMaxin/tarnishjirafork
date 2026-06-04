@@ -1,0 +1,9 @@
+{
+    "id": 5915,
+    "name": "Respiratory system",
+    "size": 2,
+    "stand": 7105,
+    "walk": 7103,
+    "attackable": true,
+    "combat_level": 1
+}

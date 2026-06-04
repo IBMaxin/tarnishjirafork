@@ -1,0 +1,8 @@
+{
+    "id": 6868,
+    "name": "Soldier",
+    "attackable": true,
+    "stand": 2561,
+    "walk": 2562,
+    "combat_level": 45
+}

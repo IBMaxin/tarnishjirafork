@@ -1,0 +1,27 @@
+{
+    "id": 8841,
+    "type": "WEAPON",
+    "name": "Void knight mace",
+    "requirements": [
+        {
+            "level": 42,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        22,
+        0,
+        41,
+        8,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        38,
+        0,
+        0,
+        6
+    ]
+}

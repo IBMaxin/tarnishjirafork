@@ -1,0 +1,27 @@
+{
+    "id": 3176,
+    "type": "WEAPON",
+    "name": "Dragon spear(kp)",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        55,
+        55,
+        55,
+        0,
+        0,
+        5,
+        5,
+        5,
+        5,
+        5,
+        0,
+        0,
+        0,
+        0
+    ]
+}

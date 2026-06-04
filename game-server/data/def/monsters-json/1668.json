@@ -1,0 +1,12 @@
+{
+    "id": 1668,
+    "name": "Penance Ranger",
+    "stand": 5393,
+    "walk": 5394,
+    "aggressive": true,
+    "weakness": "Varies",
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Ranged"
+}

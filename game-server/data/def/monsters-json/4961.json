@@ -1,0 +1,8 @@
+{
+    "id": 4961,
+    "name": "Ranger",
+    "stand": 2728,
+    "walk": 819,
+    "attackable": true,
+    "combat_level": 1
+}

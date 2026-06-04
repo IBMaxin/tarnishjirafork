@@ -1,0 +1,27 @@
+{
+    "id": 1257,
+    "type": "WEAPON",
+    "name": "Mithril spear(p)",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        17,
+        17,
+        17,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

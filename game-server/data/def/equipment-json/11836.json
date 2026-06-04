@@ -1,0 +1,27 @@
+{
+    "id": 11836,
+    "type": "BOOTS",
+    "name": "Bandos boots",
+    "requirements": [
+        {
+            "level": 65,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -5,
+        -3,
+        17,
+        18,
+        19,
+        0,
+        15,
+        0,
+        0,
+        0,
+        1
+    ]
+}

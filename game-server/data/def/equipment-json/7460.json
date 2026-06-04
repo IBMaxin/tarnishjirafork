@@ -1,0 +1,27 @@
+{
+    "id": 7460,
+    "type": "GLOVES",
+    "name": "Rune gloves",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        8,
+        8,
+        8,
+        4,
+        8,
+        8,
+        8,
+        8,
+        4,
+        8,
+        8,
+        0,
+        0,
+        0
+    ]
+}

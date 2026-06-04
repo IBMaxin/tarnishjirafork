@@ -1,0 +1,15 @@
+{
+    "id": 6656,
+    "name": "Kraken",
+    "stand": 3989,
+    "walk": 3989,
+    "weakness": "Magic",
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Magic",
+    "attack_cooldown": 4,
+    "hitpoints_level": 255,
+    "defence_magic": 130,
+    "defence_ranged": 300
+}

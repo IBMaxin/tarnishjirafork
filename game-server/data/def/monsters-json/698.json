@@ -1,0 +1,21 @@
+{
+    "id": 698,
+    "name": "Ice troll",
+    "stand": 286,
+    "walk": 283,
+    "aggressive": true,
+    "weakness": "Magic, stab/crush",
+    "combat_level": 1,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 100,
+    "defence_level": 100,
+    "strength_level": 100,
+    "hitpoints_level": 100,
+    "ranged_level": 100,
+    "magic_level": 100,
+    "defence_stab": 30,
+    "defence_slash": 60,
+    "defence_crush": 30,
+    "bonus_strength": 60
+}

@@ -1,0 +1,27 @@
+{
+    "id": 7390,
+    "type": "BODY",
+    "name": "Blue wizard robe (g)",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

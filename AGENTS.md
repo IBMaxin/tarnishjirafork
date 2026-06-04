@@ -4,6 +4,7 @@ AI agent instructions for this codebase. Read this first before making any chang
 
 → **Docs index:** [docs/README.md](docs/README.md)
 → **Game scope:** [docs/game-scope.md](docs/game-scope.md)
+→ **Knowledge bank:** [docs/knowledge-bank.md](docs/knowledge-bank.md)
 → **Test plan:** [docs/test-plan.md](docs/test-plan.md)
 → **Prompt pack:** [prompts/README.md](prompts/README.md)
 → **Workflows:** [docs/workflows/](docs/workflows/README.md)

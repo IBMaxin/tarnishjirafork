@@ -1,0 +1,22 @@
+{
+    "id": 12436,
+    "type": "AMULET",
+    "name": "Amulet of fury (or)",
+    "requirements": [],
+    "bonuses": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        15,
+        15,
+        15,
+        15,
+        15,
+        8,
+        0,
+        0,
+        5
+    ]
+}

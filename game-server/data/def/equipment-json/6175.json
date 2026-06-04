@@ -1,0 +1,22 @@
+{
+    "id": 6175,
+    "type": "HAT",
+    "name": "Rock-shell helm",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        30,
+        32,
+        27,
+        -1,
+        30,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "id": 6130,
+    "type": "LEGS",
+    "name": "Rock-shell legs",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -21,
+        -7,
+        51,
+        49,
+        47,
+        -4,
+        49,
+        0,
+        0,
+        0,
+        0
+    ]
+}

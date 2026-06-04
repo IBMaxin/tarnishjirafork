@@ -1,0 +1,112 @@
+[
+    {
+        "id": 0,
+        "position": {
+            "x": 3229,
+            "y": 3455,
+            "height": 0
+        },
+        "facing": "NORTH",
+        "radius": 0
+    },
+    {
+        "id": 0,
+        "position": {
+            "x": 3005,
+            "y": 3370,
+            "height": 0
+        },
+        "facing": "NORTH",
+        "radius": 0
+    },
+    {
+        "id": 0,
+        "position": {
+            "x": 3233,
+            "y": 3317,
+            "height": 0
+        },
+        "facing": "WEST",
+        "radius": 0
+    },
+    {
+        "id": 0,
+        "position": {
+            "x": 3189,
+            "y": 3234,
+            "height": 0
+        },
+        "facing": "SOUTH",
+        "radius": 0
+    },
+    {
+        "id": 0,
+        "position": {
+            "x": 2934,
+            "y": 3442,
+            "height": 0
+        },
+        "facing": "SOUTH",
+        "radius": 0
+    },
+    {
+        "id": 0,
+        "position": {
+            "x": 2815,
+            "y": 3466,
+            "height": 0
+        },
+        "facing": "WEST",
+        "radius": 0
+    },
+    {
+        "id": 0,
+        "position": {
+            "x": 2856,
+            "y": 3435,
+            "height": 0
+        },
+        "facing": "SOUTH",
+        "radius": 0
+    },
+    {
+        "id": 0,
+        "position": {
+            "x": 2672,
+            "y": 3381,
+            "height": 0
+        },
+        "facing": "SOUTH",
+        "radius": 0
+    },
+    {
+        "id": 0,
+        "position": {
+            "x": 2571,
+            "y": 3106,
+            "height": 0
+        },
+        "facing": "WEST",
+        "radius": 0
+    },
+    {
+        "id": 0,
+        "position": {
+            "x": 2613,
+            "y": 3226,
+            "height": 0
+        },
+        "facing": "EAST",
+        "radius": 0
+    },
+    {
+        "id": 0,
+        "position": {
+            "x": 2487,
+            "y": 3183,
+            "height": 0
+        },
+        "facing": "SOUTH",
+        "radius": 0
+    }
+]

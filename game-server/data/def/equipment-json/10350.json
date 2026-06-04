@@ -1,0 +1,27 @@
+{
+    "id": 10350,
+    "type": "HAT",
+    "name": "3rd age full helmet",
+    "requirements": [
+        {
+            "level": 65,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -5,
+        -2,
+        47,
+        49,
+        43,
+        -3,
+        48,
+        0,
+        0,
+        0,
+        0
+    ]
+}

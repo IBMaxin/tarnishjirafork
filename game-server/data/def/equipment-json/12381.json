@@ -1,0 +1,27 @@
+{
+    "id": 12381,
+    "type": "BODY",
+    "name": "Black d'hide body (g)",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -15,
+        30,
+        55,
+        47,
+        60,
+        50,
+        55,
+        0,
+        0,
+        0,
+        0
+    ]
+}

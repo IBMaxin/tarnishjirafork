@@ -1,0 +1,15 @@
+{
+    "id": 3617,
+    "name": "Ghost",
+    "stand": 5543,
+    "walk": 5543,
+    "aggressive": true,
+    "weakness": "Magic",
+    "combat_level": 95,
+    "attack_animation": 5532,
+    "block_animation": 5533,
+    "death_animation": 5534,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "hitpoints_level": 2
+}

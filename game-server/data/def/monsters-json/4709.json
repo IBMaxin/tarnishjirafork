@@ -1,0 +1,20 @@
+{
+    "id": 4709,
+    "name": "The Shaikahan",
+    "size": 3,
+    "stand": 1198,
+    "walk": 1197,
+    "aggressive": true,
+    "weakness": "Karambwan-poisoned spears or hastae",
+    "combat_level": 83,
+    "attack_style": "Melee (slash)",
+    "attack_cooldown": 4,
+    "attack_level": 80,
+    "defence_level": 80,
+    "strength_level": 80,
+    "hitpoints_level": 100,
+    "ranged_level": 80,
+    "magic_level": 80,
+    "defence_magic": 10000,
+    "defence_ranged": 10000
+}

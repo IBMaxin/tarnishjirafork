@@ -1,0 +1,27 @@
+{
+    "id": 10619,
+    "type": "BODY",
+    "name": "Initiate hauberk",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -30,
+        -10,
+        46,
+        44,
+        38,
+        -6,
+        44,
+        0,
+        0,
+        0,
+        0
+    ]
+}

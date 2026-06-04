@@ -1,0 +1,13 @@
+{
+    "id": 1206,
+    "name": "Clivet",
+    "stand": 808,
+    "walk": 819,
+    "attackable": true,
+    "weakness": "Slash",
+    "combat_level": 13,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "hitpoints_level": 25
+}

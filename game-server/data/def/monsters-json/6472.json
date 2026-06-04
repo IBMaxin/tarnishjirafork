@@ -1,0 +1,20 @@
+{
+    "id": 6472,
+    "name": "Terror dog",
+    "size": 2,
+    "stand": 5623,
+    "walk": 5622,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Magic",
+    "combat_level": 110,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 90,
+    "defence_level": 90,
+    "strength_level": 90,
+    "hitpoints_level": 82,
+    "ranged_level": 90,
+    "magic_level": 90,
+    "bonus_strength": 10
+}

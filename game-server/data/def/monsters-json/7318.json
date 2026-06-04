@@ -1,0 +1,9 @@
+{
+    "id": 7318,
+    "name": "Bear",
+    "size": 5,
+    "attackable": true,
+    "stand": 4919,
+    "walk": 4923,
+    "combat_level": 360
+}

@@ -1,0 +1,9 @@
+{
+    "id": 7533,
+    "name": "<col=00ffff>Abyssal portal</col>",
+    "size": 4,
+    "attackable": true,
+    "stand": -1,
+    "walk": -1,
+    "combat_level": 1
+}

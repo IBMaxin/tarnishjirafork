@@ -1,0 +1,27 @@
+{
+    "id": 1347,
+    "type": "WEAPON",
+    "name": "Rune warhammer",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        -4,
+        -4,
+        53,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        48,
+        0,
+        0,
+        0
+    ]
+}

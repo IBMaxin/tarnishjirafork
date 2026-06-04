@@ -1,0 +1,20 @@
+{
+    "id": 9,
+    "name": "Twig",
+    "stand": -1,
+    "walk": -1,
+    "weakness": "Stab, Range",
+    "combat_level": 1,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 6,
+    "attack_level": 90,
+    "defence_level": 90,
+    "strength_level": 90,
+    "hitpoints_level": 90,
+    "ranged_level": 90,
+    "magic_level": 90,
+    "defence_crush": 10,
+    "defence_magic": 200,
+    "defence_ranged": 200,
+    "bonus_strength": 20
+}

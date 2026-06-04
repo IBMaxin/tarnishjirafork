@@ -1,0 +1,9 @@
+{
+    "id": 4697,
+    "name": "Hopeless beast",
+    "size": 2,
+    "attackable": true,
+    "stand": 3822,
+    "walk": 3825,
+    "combat_level": 71
+}

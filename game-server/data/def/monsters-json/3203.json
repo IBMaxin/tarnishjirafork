@@ -1,0 +1,15 @@
+{
+    "id": 3203,
+    "name": "Giant mosquito",
+    "stand": 2395,
+    "walk": 2396,
+    "attackable": true,
+    "weakness": "Ranged",
+    "combat_level": 13,
+    "attack_style": "Melee",
+    "hitpoints_level": 15,
+    "defence_stab": 2,
+    "defence_slash": 2,
+    "defence_crush": 5,
+    "defence_magic": 2
+}

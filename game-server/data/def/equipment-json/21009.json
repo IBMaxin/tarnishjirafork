@@ -1,0 +1,27 @@
+{
+    "id": 21009,
+    "type": "WEAPON",
+    "name": "Dragon sword",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        65,
+        55,
+        -2,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        63,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "id": 10340,
+    "type": "LEGS",
+    "name": "3rd age robe",
+    "requirements": [
+        {
+            "level": 65,
+            "skill": 1
+        },
+        {
+            "level": 65,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        19,
+        0,
+        0,
+        0,
+        0,
+        19,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 11335,
+    "type": "MASK",
+    "name": "Dragon full helm",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        45,
+        48,
+        41,
+        -1,
+        46,
+        0,
+        0,
+        0,
+        0
+    ]
+}

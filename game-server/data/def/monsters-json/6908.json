@@ -1,0 +1,19 @@
+{
+    "id": 6908,
+    "name": "Soldier (tier 3)",
+    "stand": 808,
+    "walk": 819,
+    "combat_level": 58,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee (stab)",
+    "attack_cooldown": 5,
+    "attack_level": 50,
+    "defence_level": 50,
+    "strength_level": 50,
+    "hitpoints_level": 55,
+    "ranged_level": 50,
+    "magic_level": 50,
+    "defence_ranged": -1,
+    "bonus_strength": 8
+}

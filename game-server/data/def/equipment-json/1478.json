@@ -1,0 +1,22 @@
+{
+    "id": 1478,
+    "type": "AMULET",
+    "name": "Amulet of accuracy",
+    "requirements": [],
+    "bonuses": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

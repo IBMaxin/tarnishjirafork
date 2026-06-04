@@ -1,0 +1,22 @@
+{
+    "id": 10641,
+    "type": "CAPE",
+    "name": "Defence cape",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        9,
+        9,
+        9,
+        9,
+        0,
+        0,
+        0,
+        0
+    ]
+}

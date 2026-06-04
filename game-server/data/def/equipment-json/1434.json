@@ -1,0 +1,27 @@
+{
+    "id": 1434,
+    "type": "WEAPON",
+    "name": "Dragon mace",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        40,
+        -2,
+        60,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        55,
+        0,
+        0,
+        5
+    ]
+}

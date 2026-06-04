@@ -1,0 +1,31 @@
+{
+    "id": 19930,
+    "type": "BOOTS",
+    "name": "Armadyl d'hide boots",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        },
+        {
+            "level": 70,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -10,
+        7,
+        4,
+        4,
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        1
+    ]
+}

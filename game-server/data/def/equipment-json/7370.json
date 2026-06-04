@@ -1,0 +1,27 @@
+{
+    "id": 7370,
+    "type": "TORSO",
+    "name": "Green d'hide body (g)",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -15,
+        15,
+        40,
+        32,
+        45,
+        20,
+        40,
+        0,
+        0,
+        0,
+        0
+    ]
+}

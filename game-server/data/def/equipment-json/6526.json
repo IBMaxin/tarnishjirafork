@@ -1,0 +1,31 @@
+{
+    "id": 6526,
+    "type": "WEAPON",
+    "name": "Toktz-mej-tal",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 0
+        },
+        {
+            "level": 60,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        15,
+        -1,
+        55,
+        15,
+        0,
+        10,
+        15,
+        5,
+        15,
+        0,
+        55,
+        0,
+        0,
+        5
+    ]
+}

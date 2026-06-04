@@ -1,0 +1,11 @@
+{
+    "id": 2232,
+    "name": "Black Guard Berserker",
+    "stand": 101,
+    "walk": 98,
+    "weakness": "Wind spells",
+    "combat_level": 1,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "attack_cooldown": 3
+}

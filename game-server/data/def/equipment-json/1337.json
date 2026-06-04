@@ -1,0 +1,22 @@
+{
+    "id": 1337,
+    "type": "WEAPON",
+    "name": "Bronze warhammer",
+    "requirements": [],
+    "bonuses": [
+        -4,
+        -4,
+        10,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0
+    ]
+}

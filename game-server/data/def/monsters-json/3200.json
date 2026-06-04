@@ -1,0 +1,8 @@
+{
+    "id": 3200,
+    "name": "Monkey",
+    "attackable": true,
+    "stand": 222,
+    "walk": 219,
+    "combat_level": 3
+}

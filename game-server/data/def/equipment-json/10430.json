@@ -1,0 +1,27 @@
+{
+    "id": 10430,
+    "type": "BODY",
+    "name": "Blue elegant skirt",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

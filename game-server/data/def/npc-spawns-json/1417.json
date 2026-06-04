@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1417,
+    "radius": "0",
+    "facing": "SOUTH",
+    "position": {
+      "x": 3069,
+      "y": 3416,
+      "height": 0
+    }
+  },
+  {
+    "id": 1417,
+    "radius": "10",
+    "facing": "SOUTH",
+    "position": {
+      "x": 3019,
+      "y": 3432,
+      "height": 0
+    }
+  },
+  {
+    "id": 1417,
+    "radius": "4",
+    "facing": "WEST",
+    "position": {
+      "x": 3039,
+      "y": 3420,
+      "height": 0
+    }
+  },
+  {
+    "id": 1417,
+    "radius": "18",
+    "facing": "NORTH",
+    "position": {
+      "x": 2966,
+      "y": 3443,
+      "height": 0
+    }
+  }
+]

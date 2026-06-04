@@ -1,0 +1,31 @@
+{
+    "id": 10330,
+    "type": "BODY",
+    "name": "3rd age range top",
+    "requirements": [
+        {
+            "level": 45,
+            "skill": 1
+        },
+        {
+            "level": 65,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -15,
+        30,
+        55,
+        47,
+        60,
+        60,
+        55,
+        0,
+        0,
+        0,
+        0
+    ]
+}

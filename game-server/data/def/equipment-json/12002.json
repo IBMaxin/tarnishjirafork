@@ -1,0 +1,25 @@
+{
+    "id": 12002,
+    "type": "AMULET",
+    "name": "Occult necklace",
+    "listeners": [
+        "OccultNecklaceListener"
+    ],
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        2
+    ]
+}

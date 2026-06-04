@@ -1,0 +1,22 @@
+{
+    "id": 7668,
+    "type": "WEAPON",
+    "name": "Gadderhammer",
+    "requirements": [],
+    "bonuses": [
+        -4,
+        -4,
+        35,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        35,
+        0,
+        0,
+        0
+    ]
+}

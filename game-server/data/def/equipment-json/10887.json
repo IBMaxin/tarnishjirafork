@@ -1,0 +1,31 @@
+{
+    "id": 10887,
+    "type": "WEAPON",
+    "name": "Barrelchest anchor",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 0
+        },
+        {
+            "level": 40,
+            "skill": 2
+        }
+    ],
+    "bonuses": [
+        -2,
+        10,
+        92,
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0,
+        100,
+        0,
+        0,
+        0
+    ]
+}

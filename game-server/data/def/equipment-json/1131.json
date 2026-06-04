@@ -1,0 +1,27 @@
+{
+    "id": 1131,
+    "type": "TORSO",
+    "name": "Hardleather body",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -4,
+        8,
+        12,
+        15,
+        18,
+        6,
+        15,
+        0,
+        0,
+        0,
+        0
+    ]
+}

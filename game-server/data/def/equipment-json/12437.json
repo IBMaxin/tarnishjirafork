@@ -1,0 +1,27 @@
+{
+    "id": 12437,
+    "type": "CAPE",
+    "name": "3rd age cloak",
+    "requirements": [
+        {
+            "level": 45,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        9,
+        9,
+        9,
+        9,
+        0,
+        0,
+        0,
+        5
+    ]
+}

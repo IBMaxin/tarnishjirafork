@@ -1,0 +1,22 @@
+{
+    "id": 4072,
+    "type": "SHIELD",
+    "name": "Decorative shield",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -8,
+        -2,
+        27,
+        31,
+        29,
+        -1,
+        29,
+        0,
+        0,
+        0,
+        0
+    ]
+}

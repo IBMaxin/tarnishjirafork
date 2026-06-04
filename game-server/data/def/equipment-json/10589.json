@@ -1,0 +1,27 @@
+{
+    "id": 10589,
+    "type": "HAT",
+    "name": "Granite helm",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -9,
+        -7,
+        31,
+        33,
+        29,
+        -1,
+        39,
+        0,
+        0,
+        0,
+        0
+    ]
+}

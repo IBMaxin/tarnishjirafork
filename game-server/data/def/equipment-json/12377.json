@@ -1,0 +1,22 @@
+{
+    "id": 12377,
+    "type": "WEAPON",
+    "name": "Adamant cane",
+    "requirements": [],
+    "bonuses": [
+        13,
+        -2,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        23,
+        0,
+        0,
+        3
+    ]
+}

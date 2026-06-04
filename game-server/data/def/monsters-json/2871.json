@@ -1,0 +1,13 @@
+{
+    "id": 2871,
+    "name": "Mugger",
+    "stand": 808,
+    "walk": 819,
+    "attackable": true,
+    "aggressive": true,
+    "combat_level": 6,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "hitpoints_level": 8
+}

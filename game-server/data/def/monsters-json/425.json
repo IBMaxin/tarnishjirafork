@@ -1,0 +1,8 @@
+{
+    "id": 425,
+    "name": "Smoke devil",
+    "attackable": true,
+    "stand": 1556,
+    "walk": 1554,
+    "combat_level": 93
+}

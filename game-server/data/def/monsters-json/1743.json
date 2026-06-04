@@ -1,0 +1,11 @@
+{
+    "id": 1743,
+    "name": "Void Knight",
+    "size": 3,
+    "attackable": true,
+    "retaliate": false,
+    "stand": 813,
+    "walk": 1205,
+    "respawn": -1,
+    "combat_level": 1
+}

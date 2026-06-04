@@ -1,0 +1,27 @@
+{
+    "id": 11907,
+    "type": "WEAPON",
+    "name": "Trident of the seas",
+    "requirements": [
+        {
+            "level": 75,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        15,
+        0,
+        2,
+        3,
+        1,
+        15,
+        0,
+        50,
+        55,
+        12,
+        0
+    ]
+}

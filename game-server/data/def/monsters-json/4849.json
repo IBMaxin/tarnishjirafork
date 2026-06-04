@@ -1,0 +1,21 @@
+{
+    "id": 4849,
+    "name": "Culinaromancer",
+    "stand": 3365,
+    "walk": 3365,
+    "aggressive": true,
+    "combat_level": 1,
+    "attack_style": "Melee and Magic",
+    "attack_cooldown": 4,
+    "attack_level": 100,
+    "defence_level": 100,
+    "strength_level": 100,
+    "hitpoints_level": 150,
+    "ranged_level": 100,
+    "magic_level": 100,
+    "defence_stab": -10,
+    "defence_slash": -10,
+    "defence_crush": -10,
+    "defence_magic": -10,
+    "defence_ranged": -10
+}

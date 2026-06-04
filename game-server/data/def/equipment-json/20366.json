@@ -1,0 +1,27 @@
+{
+    "id": 20366,
+    "type": "AMULET",
+    "name": "Amulet of torture (or)",
+    "requirements": [
+        {
+            "level": 75,
+            "skill": 3
+        }
+    ],
+    "bonuses": [
+        15,
+        15,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        2
+    ]
+}

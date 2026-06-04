@@ -1,0 +1,27 @@
+{
+    "id": 1121,
+    "type": "BODY",
+    "name": "Mithril platebody",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -30,
+        -10,
+        46,
+        44,
+        38,
+        -6,
+        44,
+        0,
+        0,
+        0,
+        0
+    ]
+}

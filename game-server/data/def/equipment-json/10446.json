@@ -1,0 +1,27 @@
+{
+    "id": 10446,
+    "type": "CAPE",
+    "name": "Saradomin cloak",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3,
+        0,
+        0,
+        0,
+        3
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "id": 21024,
+    "type": "LEGS",
+    "name": "Ancestral robe bottom",
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 6
+        },
+        {
+            "level": 65,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        26,
+        -7,
+        27,
+        24,
+        30,
+        20,
+        0,
+        0,
+        0,
+        2,
+        0
+    ]
+}

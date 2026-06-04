@@ -1,0 +1,31 @@
+{
+    "id": 21003,
+    "type": "WEAPON",
+    "name": "Elder maul",
+    "requirements": [
+        {
+            "level": 75,
+            "skill": 0
+        },
+        {
+            "level": 75,
+            "skill": 2
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        135,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        147,
+        0,
+        0,
+        0
+    ]
+}

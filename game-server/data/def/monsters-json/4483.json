@@ -1,0 +1,23 @@
+{
+    "id": 4483,
+    "name": "Gadderanks",
+    "stand": 2065,
+    "walk": 2064,
+    "weakness": "Magic",
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 20,
+    "defence_level": 20,
+    "strength_level": 20,
+    "hitpoints_level": 20,
+    "ranged_level": 20,
+    "magic_level": 20,
+    "defence_stab": 10,
+    "defence_slash": 10,
+    "defence_crush": 10,
+    "defence_magic": 10,
+    "defence_ranged": 10
+}

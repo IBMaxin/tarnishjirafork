@@ -1,0 +1,27 @@
+{
+    "id": 833,
+    "type": "ARROWS",
+    "name": "Steel javelin(p)",
+    "requirements": [
+        {
+            "level": 5,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

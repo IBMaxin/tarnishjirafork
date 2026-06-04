@@ -1,0 +1,22 @@
+{
+    "id": 10620,
+    "type": "BODY",
+    "name": "Proselyte hauberk",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -30,
+        -10,
+        65,
+        63,
+        55,
+        -6,
+        63,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 4119,
+    "type": "BOOTS",
+    "name": "Bronze boots",
+    "requirements": [
+        {
+            "level": 1,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -3,
+        -1,
+        1,
+        2,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

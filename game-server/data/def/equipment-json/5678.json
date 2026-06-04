@@ -1,0 +1,27 @@
+{
+    "id": 5678,
+    "type": "WEAPON",
+    "name": "Rune dagger(p+)",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        25,
+        12,
+        -4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

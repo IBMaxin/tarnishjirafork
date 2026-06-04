@@ -1,0 +1,22 @@
+{
+    "id": 777,
+    "type": "GLOVES",
+    "name": "Chaos gauntlets",
+    "requirements": [],
+    "bonuses": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        8,
+        9,
+        7,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+    ]
+}

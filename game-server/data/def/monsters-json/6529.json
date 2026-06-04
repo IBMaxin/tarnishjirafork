@@ -1,0 +1,19 @@
+{
+    "id": 6529,
+    "name": "Vampire",
+    "stand": 808,
+    "walk": 819,
+    "aggressive": true,
+    "weakness": "Magic, Holy symbol",
+    "combat_level": 72,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee (slash)",
+    "attack_cooldown": 4,
+    "attack_level": 60,
+    "defence_level": 60,
+    "strength_level": 60,
+    "hitpoints_level": 40,
+    "ranged_level": 60,
+    "magic_level": 60
+}

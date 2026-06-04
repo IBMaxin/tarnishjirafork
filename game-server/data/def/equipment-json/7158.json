@@ -1,0 +1,27 @@
+{
+    "id": 7158,
+    "type": "WEAPON",
+    "name": "Dragon 2h sword",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        -4,
+        92,
+        80,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        93,
+        0,
+        0,
+        0
+    ]
+}

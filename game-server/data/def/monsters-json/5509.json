@@ -1,0 +1,16 @@
+{
+    "id": 5509,
+    "name": "Goblin",
+    "size": 2,
+    "stand": 6859,
+    "walk": -1,
+    "weakness": "Water spells",
+    "combat_level": 1,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "defence_stab": -15,
+    "defence_slash": -15,
+    "defence_crush": -15,
+    "defence_magic": -15,
+    "defence_ranged": -15
+}

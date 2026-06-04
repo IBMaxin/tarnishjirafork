@@ -1,0 +1,12 @@
+{
+    "id": 3202,
+    "name": "Crab",
+    "stand": 3424,
+    "walk": 3426,
+    "weakness": "Brine sabre",
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "attack_cooldown": 4
+}

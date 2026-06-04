@@ -1,0 +1,27 @@
+{
+    "id": 8848,
+    "type": "SHIELD",
+    "name": "Mithril defender",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        11,
+        10,
+        9,
+        -3,
+        -2,
+        11,
+        10,
+        9,
+        -3,
+        -2,
+        3,
+        0,
+        0,
+        0
+    ]
+}

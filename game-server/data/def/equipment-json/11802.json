@@ -1,0 +1,27 @@
+{
+    "id": 11802,
+    "type": "WEAPON",
+    "name": "Armadyl godsword",
+    "requirements": [
+        {
+            "level": 75,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        0,
+        132,
+        80,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        132,
+        0,
+        0,
+        8
+    ]
+}

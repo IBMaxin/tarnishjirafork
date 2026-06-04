@@ -1,0 +1,22 @@
+{
+    "id": 1756,
+    "name": "Void Knight",
+    "stand": 813,
+    "walk": 1205,
+    "attackable": true,
+    "retaliate": false,
+    "aggressive": false,
+    "respawn": -1,
+    "combat_level": 99,
+    "attack_animation": 65535,
+    "block_animation": 65535,
+    "death_animation": 65535,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "hitpoints_level": 200,
+    "attack_level": 50,
+    "defence_level": 50,
+    "strength_level": 50
+}

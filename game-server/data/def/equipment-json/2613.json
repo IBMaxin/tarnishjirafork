@@ -1,0 +1,27 @@
+{
+    "id": 2613,
+    "type": "HAT",
+    "name": "Adamant full helm (g)",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        19,
+        21,
+        16,
+        -1,
+        19,
+        0,
+        0,
+        0,
+        0
+    ]
+}

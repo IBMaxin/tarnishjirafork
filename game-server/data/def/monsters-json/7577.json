@@ -1,0 +1,8 @@
+{
+    "id": 7577,
+    "name": "Jewelled Crab (red)",
+    "stand": 1310,
+    "walk": 1311,
+    "attackable": true,
+    "combat_level": 1
+}

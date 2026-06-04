@@ -1,0 +1,13 @@
+{
+  "npc_id": 2480,
+  "rare_table": false,
+  "drops": [
+    {
+      "item": 13459,
+      "minimum": 1,
+      "maximum": 1,
+      "chance": 25.0,
+      "type": "UNCOMMON"
+    }
+  ]
+}

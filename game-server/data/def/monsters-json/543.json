@@ -1,0 +1,16 @@
+{
+    "id": 543,
+    "name": "Monk",
+    "stand": 5877,
+    "walk": 5876,
+    "weakness": "Magic",
+    "combat_level": 1,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "attack_level": 2,
+    "defence_level": 2,
+    "strength_level": 2,
+    "hitpoints_level": 15,
+    "ranged_level": 2,
+    "magic_level": 2
+}

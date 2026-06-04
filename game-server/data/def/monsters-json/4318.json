@@ -1,0 +1,16 @@
+{
+    "id": 4318,
+    "name": "Skeleton Mage",
+    "stand": -1,
+    "walk": -1,
+    "weakness": "Melee/Ranged",
+    "combat_level": 1,
+    "attack_style": "Magic, melee",
+    "attack_cooldown": 4,
+    "attack_level": 14,
+    "defence_level": 14,
+    "strength_level": 14,
+    "hitpoints_level": 17,
+    "ranged_level": 14,
+    "magic_level": 14
+}

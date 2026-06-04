@@ -1,0 +1,27 @@
+{
+    "id": 10499,
+    "type": "CAPE",
+    "name": "Ava's accumulator",
+    "requirements": [
+        {
+            "level": 50,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        1,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

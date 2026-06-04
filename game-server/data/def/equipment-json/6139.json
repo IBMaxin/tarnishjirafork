@@ -1,0 +1,27 @@
+{
+    "id": 6139,
+    "type": "BODY",
+    "name": "Skeletal top",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        8,
+        -10,
+        35,
+        25,
+        42,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

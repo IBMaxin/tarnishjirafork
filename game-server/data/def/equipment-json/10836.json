@@ -1,0 +1,22 @@
+{
+    "id": 10836,
+    "type": "HAT",
+    "name": "Silly jester hat",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        -5,
+        0,
+        0,
+        0,
+        0
+    ]
+}

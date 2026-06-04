@@ -1,0 +1,15 @@
+{
+    "id": 1337,
+    "name": "Seagull",
+    "stand": 6815,
+    "walk": 6819,
+    "attackable": true,
+    "combat_level": 2,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "defence_stab": -42,
+    "defence_slash": -42,
+    "defence_crush": -42,
+    "defence_magic": -42,
+    "defence_ranged": -42
+}

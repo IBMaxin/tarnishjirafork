@@ -1,0 +1,13 @@
+{
+    "id": 4687,
+    "name": "Sir Tiffy Cashien",
+    "size": 2,
+    "stand": 6374,
+    "walk": 6373,
+    "attackable": false,
+    "aggressive": false,
+    "poisonous": false,
+    "combat_level": 1,
+    "poison_immunity": false,
+    "venom_immunity": false
+}

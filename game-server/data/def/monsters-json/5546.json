@@ -1,0 +1,17 @@
+{
+    "id": 5546,
+    "name": "Jeff",
+    "stand": 3862,
+    "walk": 189,
+    "weakness": "Earth spells",
+    "combat_level": 1,
+    "venom_immunity": true,
+    "attack_style": "Melee (Crush)",
+    "attack_cooldown": 4,
+    "hitpoints_level": 7,
+    "defence_stab": -10,
+    "defence_slash": -10,
+    "defence_crush": -10,
+    "defence_magic": -10,
+    "defence_ranged": -10
+}

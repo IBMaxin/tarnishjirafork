@@ -1,0 +1,22 @@
+{
+    "id": 1110,
+    "name": "Guard",
+    "stand": 808,
+    "walk": 819,
+    "weakness": "Magic, None",
+    "combat_level": 1,
+    "attack_style": "Melee, Magic",
+    "attack_cooldown": 4,
+    "attack_level": 18,
+    "defence_level": 18,
+    "strength_level": 18,
+    "hitpoints_level": 40,
+    "ranged_level": 18,
+    "magic_level": 18,
+    "defence_stab": 18,
+    "defence_slash": 25,
+    "defence_crush": 19,
+    "defence_magic": -4,
+    "defence_ranged": 20,
+    "bonus_strength": 5
+}

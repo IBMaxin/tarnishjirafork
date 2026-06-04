@@ -1,0 +1,34 @@
+{
+    "id": 4718,
+    "type": "WEAPON",
+    "name": "Dharok's greataxe",
+    "listeners": [
+        "DharokListener"
+    ],
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 0
+        },
+        {
+            "level": 70,
+            "skill": 2
+        }
+    ],
+    "bonuses": [
+        0,
+        103,
+        95,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        105,
+        0,
+        0,
+        0
+    ]
+}

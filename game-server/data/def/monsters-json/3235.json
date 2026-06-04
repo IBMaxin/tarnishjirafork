@@ -1,0 +1,11 @@
+{
+    "id": 3235,
+    "name": "Spider",
+    "stand": 6247,
+    "walk": 6248,
+    "weakness": "Crush",
+    "combat_level": 1,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "hitpoints_level": 2
+}

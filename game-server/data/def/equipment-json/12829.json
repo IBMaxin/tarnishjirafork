@@ -1,0 +1,22 @@
+{
+    "id": 12829,
+    "type": "SHIELD",
+    "name": "Spirit shield",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        39,
+        41,
+        50,
+        1,
+        45,
+        0,
+        0,
+        0,
+        1
+    ]
+}

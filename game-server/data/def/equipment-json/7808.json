@@ -1,0 +1,22 @@
+{
+    "id": 7808,
+    "type": "WEAPON",
+    "name": "Anger mace",
+    "requirements": [],
+    "bonuses": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+    ]
+}

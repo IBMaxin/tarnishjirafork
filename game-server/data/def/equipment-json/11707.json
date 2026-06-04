@@ -1,0 +1,22 @@
+{
+    "id": 11707,
+    "type": "WEAPON",
+    "name": "Cursed goblin hammer",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -2,
+        -1,
+        -1,
+        0,
+        -2,
+        1,
+        0,
+        0,
+        0
+    ]
+}

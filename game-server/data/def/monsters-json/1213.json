@@ -1,0 +1,8 @@
+{
+    "id": 1213,
+    "name": "General Khazard",
+    "stand": 808,
+    "walk": 819,
+    "attackable": true,
+    "combat_level": 112
+}

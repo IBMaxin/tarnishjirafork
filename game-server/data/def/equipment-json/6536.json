@@ -1,0 +1,27 @@
+{
+    "id": 6536,
+    "type": "SHIELD",
+    "name": "Toktz-ket-xil",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -12,
+        -8,
+        40,
+        42,
+        38,
+        0,
+        65,
+        0,
+        0,
+        0,
+        0
+    ]
+}

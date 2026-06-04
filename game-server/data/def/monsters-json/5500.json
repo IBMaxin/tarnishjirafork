@@ -1,0 +1,13 @@
+{
+    "id": 5500,
+    "name": "Pheasant",
+    "stand": 2370,
+    "walk": 2369,
+    "attackable": true,
+    "weakness": "All attacks",
+    "combat_level": 3,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "N/A (No retaliation)",
+    "hitpoints_level": 5
+}

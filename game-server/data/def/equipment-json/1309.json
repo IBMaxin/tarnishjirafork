@@ -1,0 +1,22 @@
+{
+    "id": 1309,
+    "type": "WEAPON",
+    "name": "Iron 2h sword",
+    "requirements": [],
+    "bonuses": [
+        -4,
+        13,
+        10,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        14,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 1259,
+    "type": "WEAPON",
+    "name": "Adamant spear(p)",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        24,
+        24,
+        24,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

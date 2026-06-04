@@ -1,0 +1,27 @@
+{
+    "id": 8752,
+    "type": "SHIELD",
+    "name": "Steel kiteshield",
+    "requirements": [
+        {
+            "level": 5,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -8,
+        -2,
+        13,
+        15,
+        14,
+        -1,
+        14,
+        0,
+        0,
+        0,
+        0
+    ]
+}

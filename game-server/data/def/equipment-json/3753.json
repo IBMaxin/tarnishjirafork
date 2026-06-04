@@ -1,0 +1,27 @@
+{
+    "id": 3753,
+    "type": "HAT",
+    "name": "Warrior helm",
+    "requirements": [
+        {
+            "level": 45,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        5,
+        0,
+        -5,
+        -5,
+        31,
+        33,
+        29,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0
+    ]
+}

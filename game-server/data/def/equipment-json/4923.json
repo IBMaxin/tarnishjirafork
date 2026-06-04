@@ -1,0 +1,30 @@
+{
+    "id": 4923,
+    "type": "LEGS",
+    "name": "Guthan's chainskirt 75",
+    "listeners": [
+        "GuthansListener"
+    ],
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -14,
+        -7,
+        75,
+        72,
+        73,
+        -4,
+        82,
+        0,
+        0,
+        0,
+        0
+    ]
+}

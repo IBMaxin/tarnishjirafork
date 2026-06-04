@@ -1,0 +1,22 @@
+{
+    "id": 10491,
+    "type": "WEAPON",
+    "name": "Blessed axe",
+    "requirements": [],
+    "bonuses": [
+        -2,
+        12,
+        10,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        13,
+        0,
+        0,
+        2
+    ]
+}

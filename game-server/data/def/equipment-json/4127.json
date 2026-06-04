@@ -1,0 +1,27 @@
+{
+    "id": 4127,
+    "type": "BOOTS",
+    "name": "Mithril boots",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -3,
+        -1,
+        8,
+        9,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

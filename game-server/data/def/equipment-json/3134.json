@@ -1,0 +1,22 @@
+{
+    "id": 3134,
+    "type": "SHIELD",
+    "name": "Granite shield",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -12,
+        -8,
+        40,
+        42,
+        38,
+        0,
+        65,
+        0,
+        0,
+        0,
+        0
+    ]
+}

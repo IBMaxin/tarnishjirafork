@@ -1,0 +1,31 @@
+{
+    "id": 21000,
+    "type": "SHIELD",
+    "name": "Twisted buckler",
+    "requirements": [
+        {
+            "level": 75,
+            "skill": 4
+        },
+        {
+            "level": 75,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        -7,
+        -8,
+        -7,
+        -10,
+        18,
+        22,
+        24,
+        22,
+        26,
+        58,
+        0,
+        0,
+        0,
+        0
+    ]
+}

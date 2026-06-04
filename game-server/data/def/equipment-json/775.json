@@ -1,0 +1,22 @@
+{
+    "id": 775,
+    "type": "GLOVES",
+    "name": "Cooking gauntlets",
+    "requirements": [],
+    "bonuses": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        8,
+        9,
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

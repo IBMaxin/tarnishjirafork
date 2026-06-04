@@ -1,0 +1,16 @@
+{
+    "id": 318,
+    "name": "Dark core",
+    "stand": 1688,
+    "walk": 2417,
+    "aggressive": true,
+    "weakness": "Magic",
+    "combat_level": 1,
+    "attack_style": "N/A",
+    "hitpoints_level": 25,
+    "defence_stab": 10,
+    "defence_slash": 10,
+    "defence_crush": 10,
+    "defence_magic": -5,
+    "defence_ranged": 10
+}

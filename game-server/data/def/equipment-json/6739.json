@@ -1,0 +1,27 @@
+{
+    "id": 6739,
+    "type": "WEAPON",
+    "name": "Dragon axe",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        -2,
+        38,
+        32,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        42,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "id": 10646,
+    "type": "CAPE",
+    "name": "Hunter cape",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        9,
+        9,
+        9,
+        9,
+        0,
+        0,
+        0,
+        0
+    ]
+}

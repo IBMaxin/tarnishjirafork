@@ -1,0 +1,23 @@
+{
+    "id": 817,
+    "name": "Elvarg",
+    "size": 4,
+    "stand": 90,
+    "walk": 79,
+    "aggressive": true,
+    "weakness": "Stab, Ranged",
+    "combat_level": 83,
+    "attack_style": "Melee, Magic, and Dragonfire",
+    "attack_cooldown": 4,
+    "attack_level": 70,
+    "defence_level": 70,
+    "strength_level": 70,
+    "hitpoints_level": 80,
+    "ranged_level": 70,
+    "magic_level": 70,
+    "defence_stab": 20,
+    "defence_slash": 40,
+    "defence_crush": 40,
+    "defence_magic": 30,
+    "defence_ranged": 20
+}

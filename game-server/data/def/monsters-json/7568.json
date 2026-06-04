@@ -1,0 +1,9 @@
+{
+    "id": 7568,
+    "name": "<col=00ffff>Glowing crystal</col>",
+    "size": 4,
+    "attackable": true,
+    "stand": -1,
+    "walk": -1,
+    "combat_level": 1
+}

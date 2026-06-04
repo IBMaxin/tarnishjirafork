@@ -1,0 +1,27 @@
+{
+    "id": 12219,
+    "type": "LEGS",
+    "name": "Bronze plateskirt (t)",
+    "requirements": [
+        {
+            "level": 1,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -21,
+        -7,
+        8,
+        7,
+        6,
+        -4,
+        7,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "id": 8878,
+    "type": "WEAPON",
+    "name": "Bone dagger (p++)",
+    "requirements": [],
+    "bonuses": [
+        5,
+        3,
+        -4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "id": 6910,
+    "name": "Soldier (tier 4)",
+    "stand": 813,
+    "walk": 1205,
+    "weakness": "Crush",
+    "combat_level": 70,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 5,
+    "attack_level": 60,
+    "defence_level": 60,
+    "strength_level": 60,
+    "hitpoints_level": 65,
+    "ranged_level": 60,
+    "magic_level": 60,
+    "defence_stab": 1,
+    "defence_slash": 1,
+    "bonus_strength": 8
+}

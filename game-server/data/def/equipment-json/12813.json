@@ -1,0 +1,22 @@
+{
+    "id": 12813,
+    "type": "HAT",
+    "name": "Ultimate ironman helm",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        6,
+        7,
+        5,
+        -1,
+        6,
+        0,
+        0,
+        0,
+        0
+    ]
+}

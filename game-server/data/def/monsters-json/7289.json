@@ -1,0 +1,20 @@
+{
+    "id": 7289,
+    "name": "Dark Ankou",
+    "stand": 808,
+    "walk": 819,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Magic",
+    "combat_level": 95,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 70,
+    "defence_level": 70,
+    "strength_level": 70,
+    "hitpoints_level": 60,
+    "ranged_level": 70,
+    "magic_level": 70
+}

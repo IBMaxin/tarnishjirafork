@@ -1,0 +1,22 @@
+{
+    "id": 13239,
+    "type": "BOOTS",
+    "name": "Primordial boots",
+    "requirements": [],
+    "bonuses": [
+        2,
+        2,
+        3,
+        -4,
+        -1,
+        22,
+        22,
+        22,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+    ]
+}

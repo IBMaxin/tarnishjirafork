@@ -1,0 +1,22 @@
+{
+    "id": 13112,
+    "type": "LEGS",
+    "name": "Morytania legs 1",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -21,
+        -7,
+        11,
+        10,
+        10,
+        -4,
+        10,
+        0,
+        0,
+        0,
+        0
+    ]
+}

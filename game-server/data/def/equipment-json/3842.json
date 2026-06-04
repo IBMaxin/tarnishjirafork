@@ -1,0 +1,22 @@
+{
+    "id": 3842,
+    "type": "SHIELD",
+    "name": "Unholy book",
+    "requirements": [],
+    "bonuses": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5
+    ]
+}

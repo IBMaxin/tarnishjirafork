@@ -1,0 +1,18 @@
+{
+    "id": 3199,
+    "name": "Snake",
+    "stand": 277,
+    "walk": 274,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Earth spells",
+    "combat_level": 35,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "attack_level": 5,
+    "defence_level": 5,
+    "strength_level": 5,
+    "hitpoints_level": 6,
+    "ranged_level": 5,
+    "magic_level": 5
+}

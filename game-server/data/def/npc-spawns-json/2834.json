@@ -1,0 +1,172 @@
+[
+  {
+    "id": 2834,
+    "radius": "5",
+    "facing": "WEST",
+    "position": {
+      "x": 3084,
+      "y": 3959,
+      "height": 0
+    }
+  },
+  {
+    "id": 2834,
+    "radius": "5",
+    "facing": "NORTH",
+    "position": {
+      "x": 3081,
+      "y": 3957,
+      "height": 0
+    }
+  },
+  {
+    "id": 2834,
+    "radius": "5",
+    "facing": "EAST",
+    "position": {
+      "x": 3087,
+      "y": 3952,
+      "height": 0
+    }
+  },
+  {
+    "id": 2834,
+    "radius": "5",
+    "facing": "WEST",
+    "position": {
+      "x": 3077,
+      "y": 3956,
+      "height": 0
+    }
+  },
+  {
+    "id": 2834,
+    "radius": "5",
+    "facing": "SOUTH",
+    "position": {
+      "x": 3080,
+      "y": 3961,
+      "height": 0
+    }
+  },
+  {
+    "id": 2834,
+    "radius": "4",
+    "facing": "NORTH",
+    "position": {
+      "x": 2756,
+      "y": 3415,
+      "height": 0
+    }
+  },
+  {
+    "id": 2834,
+    "radius": "8",
+    "facing": "WEST",
+    "position": {
+      "x": 2755,
+      "y": 3400,
+      "height": 0
+    }
+  },
+  {
+    "id": 2834,
+    "radius": "1",
+    "facing": "NORTH",
+    "position": {
+      "x": 2757,
+      "y": 3401,
+      "height": 0
+    }
+  },
+  {
+    "id": 2834,
+    "radius": "7",
+    "facing": "SOUTH",
+    "position": {
+      "x": 2907,
+      "y": 9830,
+      "height": 0
+    }
+  },
+  {
+    "id": 2834,
+    "radius": "0",
+    "facing": "SOUTH",
+    "position": {
+      "x": 2902,
+      "y": 9829,
+      "height": 0
+    }
+  },
+  {
+    "id": 2834,
+    "radius": "4",
+    "facing": "EAST",
+    "position": {
+      "x": 2908,
+      "y": 9838,
+      "height": 0
+    }
+  },
+  {
+    "id": 2834,
+    "radius": "6",
+    "facing": "EAST",
+    "position": {
+      "x": 2921,
+      "y": 9832,
+      "height": 0
+    }
+  },
+  {
+    "id": 2834,
+    "radius": "1",
+    "facing": "SOUTH",
+    "position": {
+      "x": 2909,
+      "y": 9835,
+      "height": 0
+    }
+  },
+  {
+    "id": 2834,
+    "radius": "5",
+    "facing": "NORTH",
+    "position": {
+      "x": 2917,
+      "y": 9831,
+      "height": 0
+    }
+  },
+  {
+    "id": 2834,
+    "radius": "1",
+    "facing": "NORTH",
+    "position": {
+      "x": 2920,
+      "y": 9829,
+      "height": 0
+    }
+  },
+  {
+    "id": 2834,
+    "radius": "2",
+    "facing": "NORTH",
+    "position": {
+      "x": 2921,
+      "y": 9836,
+      "height": 0
+    }
+  },
+  {
+    "id": 2834,
+    "radius": "0",
+    "facing": "WEST",
+    "position": {
+      "x": 2932,
+      "y": 9826,
+      "height": 0
+    }
+  }
+]

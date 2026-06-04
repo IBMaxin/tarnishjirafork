@@ -1,0 +1,27 @@
+{
+    "id": 5646,
+    "type": "ARROWS",
+    "name": "Adamant javelin(p+)",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        24,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

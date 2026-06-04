@@ -1,0 +1,22 @@
+{
+    "id": 9006,
+    "type": "BOOTS",
+    "name": "Fighting boots",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -3,
+        -1,
+        1,
+        2,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

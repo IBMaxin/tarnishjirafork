@@ -1,0 +1,27 @@
+{
+    "id": 11828,
+    "type": "BODY",
+    "name": "Armadyl chestplate",
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        -7,
+        -7,
+        -7,
+        -15,
+        33,
+        56,
+        48,
+        61,
+        70,
+        57,
+        0,
+        0,
+        0,
+        0
+    ]
+}

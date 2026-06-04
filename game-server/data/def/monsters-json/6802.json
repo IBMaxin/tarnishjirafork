@@ -1,0 +1,8 @@
+{
+    "id": 6802,
+    "name": "Combat Test",
+    "attackable": true,
+    "stand": 808,
+    "walk": 819,
+    "combat_level": 12500
+}

@@ -1,0 +1,27 @@
+{
+    "id": 11830,
+    "type": "LEGS",
+    "name": "Armadyl chainskirt",
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        -6,
+        -6,
+        -6,
+        -10,
+        20,
+        32,
+        26,
+        34,
+        40,
+        33,
+        0,
+        0,
+        0,
+        0
+    ]
+}

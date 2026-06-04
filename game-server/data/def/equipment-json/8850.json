@@ -1,0 +1,31 @@
+{
+    "id": 8850,
+    "type": "SHIELD",
+    "name": "Rune defender",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 0
+        },
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        20,
+        19,
+        18,
+        -3,
+        -2,
+        20,
+        19,
+        18,
+        -3,
+        -2,
+        5,
+        0,
+        0,
+        0
+    ]
+}

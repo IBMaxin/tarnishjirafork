@@ -1,0 +1,27 @@
+{
+    "id": 2669,
+    "type": "BODY",
+    "name": "Guthix platebody",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -30,
+        -10,
+        82,
+        80,
+        72,
+        -6,
+        80,
+        0,
+        0,
+        0,
+        1
+    ]
+}

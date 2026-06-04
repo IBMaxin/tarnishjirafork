@@ -1,0 +1,22 @@
+{
+    "id": 3748,
+    "type": "HAT",
+    "name": "Fremennik helm",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        19,
+        21,
+        16,
+        -1,
+        19,
+        0,
+        0,
+        0,
+        0
+    ]
+}

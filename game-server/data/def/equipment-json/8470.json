@@ -1,0 +1,27 @@
+{
+    "id": 8470,
+    "type": "HAT",
+    "name": "Rune heraldic helm",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

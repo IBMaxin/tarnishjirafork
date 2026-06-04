@@ -1,0 +1,18 @@
+{
+  "npc_id": 5128,
+  "rare_table": false,
+  "drops": [
+    {
+      "item": 1985,
+      "minimum": 1,
+      "maximum": 1,
+      "type": "COMMON"
+    },
+    {
+      "item": 995,
+      "minimum": 3,
+      "maximum": 237,
+      "type": "COMMON"
+    }
+  ]
+}

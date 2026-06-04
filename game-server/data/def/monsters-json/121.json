@@ -1,0 +1,19 @@
+{
+    "id": 121,
+    "name": "Cockatrice",
+    "stand": -1,
+    "walk": -1,
+    "weakness": "Crush, Ranged",
+    "combat_level": 1,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "attack_level": 37,
+    "defence_level": 37,
+    "strength_level": 37,
+    "hitpoints_level": 37,
+    "ranged_level": 37,
+    "magic_level": 37,
+    "defence_stab": 10,
+    "defence_slash": 10,
+    "defence_magic": 10
+}

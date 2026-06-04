@@ -1,0 +1,27 @@
+{
+    "id": 3486,
+    "type": "HAT",
+    "name": "Gilded full helm",
+    "requirements": [
+        {
+            "level": 50,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        30,
+        32,
+        27,
+        -1,
+        30,
+        0,
+        0,
+        0,
+        0
+    ]
+}

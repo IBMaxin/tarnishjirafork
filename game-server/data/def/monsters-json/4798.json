@@ -1,0 +1,15 @@
+{
+    "id": 4798,
+    "name": "Slug Prince",
+    "size": 2,
+    "stand": 4828,
+    "walk": 4821,
+    "aggressive": true,
+    "weakness": "Crush",
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "hitpoints_level": 70
+}

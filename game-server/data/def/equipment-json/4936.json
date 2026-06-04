@@ -1,0 +1,30 @@
+{
+    "id": 4936,
+    "type": "WEAPON",
+    "name": "Karil's crossbow 50",
+    "listeners": [
+        "KarilsListener"
+    ],
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        84,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

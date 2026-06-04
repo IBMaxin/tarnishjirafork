@@ -1,0 +1,8 @@
+{
+    "id": 2830,
+    "name": "Leprechaun",
+    "stand": 195,
+    "walk": 189,
+    "attackable": true,
+    "combat_level": 12
+}

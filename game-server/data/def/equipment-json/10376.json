@@ -1,0 +1,27 @@
+{
+    "id": 10376,
+    "type": "GLOVES",
+    "name": "Guthix bracers",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -10,
+        11,
+        6,
+        5,
+        7,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

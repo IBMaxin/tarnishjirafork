@@ -1,0 +1,22 @@
+{
+    "id": 13108,
+    "type": "WEAPON",
+    "name": "Wilderness sword 1",
+    "requirements": [],
+    "bonuses": [
+        6,
+        4,
+        -2,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        7,
+        0,
+        0,
+        0
+    ]
+}

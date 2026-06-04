@@ -1,0 +1,27 @@
+{
+    "id": 6603,
+    "type": "WEAPON",
+    "name": "White magic staff",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        2,
+        -1,
+        10,
+        10,
+        0,
+        2,
+        3,
+        1,
+        10,
+        0,
+        7,
+        0,
+        0,
+        1
+    ]
+}

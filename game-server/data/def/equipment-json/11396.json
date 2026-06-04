@@ -1,0 +1,22 @@
+{
+    "id": 11396,
+    "type": "WEAPON",
+    "name": "Steel hasta(p+)",
+    "requirements": [],
+    "bonuses": [
+        12,
+        12,
+        12,
+        0,
+        0,
+        -3,
+        -3,
+        -3,
+        0,
+        -3,
+        0,
+        0,
+        0,
+        0
+    ]
+}

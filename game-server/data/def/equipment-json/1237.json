@@ -1,0 +1,22 @@
+{
+    "id": 1237,
+    "type": "WEAPON",
+    "name": "Bronze spear",
+    "requirements": [],
+    "bonuses": [
+        5,
+        5,
+        5,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 3749,
+    "type": "HAT",
+    "name": "Archer helm",
+    "requirements": [
+        {
+            "level": 45,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        -5,
+        -5,
+        -5,
+        -5,
+        6,
+        6,
+        8,
+        10,
+        6,
+        6,
+        0,
+        0,
+        0,
+        0
+    ]
+}

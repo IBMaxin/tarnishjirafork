@@ -1,0 +1,17 @@
+{
+    "id": 2144,
+    "name": "Big frog",
+    "stand": 1796,
+    "walk": 1797,
+    "attackable": true,
+    "weakness": "Slash",
+    "combat_level": 10,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "attack_level": 6,
+    "defence_level": 6,
+    "strength_level": 6,
+    "hitpoints_level": 18,
+    "ranged_level": 6,
+    "magic_level": 6
+}

@@ -1,0 +1,27 @@
+{
+    "id": 1426,
+    "type": "WEAPON",
+    "name": "Black mace",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        8,
+        -2,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        13,
+        0,
+        0,
+        2
+    ]
+}

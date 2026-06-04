@@ -1,0 +1,17 @@
+{
+    "id": 7322,
+    "name": "Wild dog",
+    "stand": 6561,
+    "walk": 6560,
+    "attackable": true,
+    "weakness": "Magic",
+    "combat_level": 63,
+    "attack_style": "Melee (stab)",
+    "attack_cooldown": 4,
+    "attack_level": 54,
+    "defence_level": 54,
+    "strength_level": 54,
+    "hitpoints_level": 62,
+    "ranged_level": 54,
+    "magic_level": 54
+}

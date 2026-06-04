@@ -1,0 +1,27 @@
+{
+    "id": 1430,
+    "type": "WEAPON",
+    "name": "Adamant mace",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        13,
+        -2,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        23,
+        0,
+        0,
+        3
+    ]
+}

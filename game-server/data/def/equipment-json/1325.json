@@ -1,0 +1,27 @@
+{
+    "id": 1325,
+    "type": "WEAPON",
+    "name": "Steel scimitar",
+    "requirements": [
+        {
+            "level": 5,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        3,
+        15,
+        -2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        14,
+        0,
+        0,
+        0
+    ]
+}

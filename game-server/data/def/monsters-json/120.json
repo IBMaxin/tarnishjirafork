@@ -1,0 +1,19 @@
+{
+    "id": 120,
+    "name": "Crawling hand",
+    "stand": 1588,
+    "walk": 1589,
+    "weakness": "Salve amulet",
+    "combat_level": 1,
+    "attack_animation": 1592,
+    "block_animation": 1591,
+    "death_animation": 1590,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 4,
+    "defence_level": 4,
+    "strength_level": 4,
+    "hitpoints_level": 16,
+    "ranged_level": 4,
+    "magic_level": 4
+}

@@ -1,0 +1,14 @@
+{
+    "id": 5868,
+    "name": "Summoned Soul",
+    "attackable": true,
+    "stand": 8526,
+    "walk": 8527,
+    "attack_style": "Range",
+    "combat_level": 96,
+    "hitpoints_level": 1000,
+    "attack_cooldown": 4,
+    "attack_animation": 8529,
+    "block_animation": -1,
+    "death_animation": -1
+}

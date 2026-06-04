@@ -1,0 +1,8 @@
+{
+    "id": 2250,
+    "name": "Dagannoth",
+    "attackable": true,
+    "stand": 1338,
+    "walk": 1339,
+    "combat_level": 88
+}

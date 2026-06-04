@@ -1,0 +1,14 @@
+{
+    "id": 4321,
+    "name": "Renegade knight",
+    "stand": 6927,
+    "walk": 6928,
+    "aggressive": true,
+    "weakness": "Unknown (edit)",
+    "combat_level": 37,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "hitpoints_level": 50
+}

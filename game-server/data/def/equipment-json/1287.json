@@ -1,0 +1,27 @@
+{
+    "id": 1287,
+    "type": "WEAPON",
+    "name": "Adamant sword",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        23,
+        18,
+        -2,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        24,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 12327,
+    "type": "BODY",
+    "name": "Red d'hide body (g)",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -15,
+        25,
+        50,
+        42,
+        55,
+        40,
+        50,
+        0,
+        0,
+        0,
+        0
+    ]
+}

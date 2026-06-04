@@ -1,0 +1,27 @@
+{
+    "id": 1285,
+    "type": "WEAPON",
+    "name": "Mithril sword",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        16,
+        11,
+        -2,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        17,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "id": 12490,
+    "type": "GLOVES",
+    "name": "Ancient bracers",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -10,
+        11,
+        6,
+        5,
+        7,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

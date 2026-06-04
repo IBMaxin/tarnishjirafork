@@ -1,0 +1,27 @@
+{
+    "id": 20997,
+    "type": "WEAPON",
+    "name": "Twisted bow",
+    "requirements": [
+        {
+            "level": 75,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        70,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0
+    ]
+}

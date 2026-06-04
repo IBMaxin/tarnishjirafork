@@ -1,0 +1,27 @@
+{
+    "id": 1103,
+    "type": "TORSO",
+    "name": "Bronze chainbody",
+    "requirements": [
+        {
+            "level": 1,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -15,
+        0,
+        7,
+        11,
+        13,
+        -3,
+        9,
+        0,
+        0,
+        0,
+        0
+    ]
+}

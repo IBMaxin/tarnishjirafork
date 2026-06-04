@@ -1,114 +1,53 @@
-# Vorkath — "Not Reachable" Fix
+# Vorkath — "Not Reachable" Fix (COMPLETED 2025-06-02)
 
 ## Root Cause
 
-Pathfinding fails because the **TraversalMap has no data** for the Vorkath arena region. This is a 317-format cache — OSRS Zeah maps (where Vorkath lives) aren't in the cache. Both `dijkstraPath` and `simplePath` return no path → `"I can't reach that!"` → `walkTo` callback never fires → `VorkathActivity.clickNpc` never runs.
+Pathfinding fails because the **TraversalMap has no data** for the Vorkath arena region (Zeah maps not in 317-format cache). `dijkstraPath` and `simplePath` both return no path → "I can't reach that!" → interaction blocked.
 
-The chain:
+## Files Changed (5 files)
 
-```
-FirstNpcOptionEvent.handleNpc()
-  → player.walkTo(npc)  ← THIS FAILS (no TraversalMap data)
-  → callback never fires
-  → VorkathActivity.clickNpc never reached
-```
+### 1. `FirstNpcOptionEvent.kt` — Poke/Wake bypass
+Added NPC 8059 check. Bypasses `walkTo`, routes through `EventDispatcher` directly. Falls back to `publishToPluginManager` if player not in activity.
+- Import added: `com.osroyale.content.event.EventDispatcher`
 
----
+### 2. `NpcFirstClickPlugin.java` — Activity creation fallback  
+Added `case 8059` — creates `VorkathActivity` when player clicks dormant Vorkath and isn't already in an activity.
+- Imports added: `VorkathActivity`, `ActivityType`
 
-## Fix: Bypass walkTo for Vorkath NPCs
+### 3. `Teleport.java` — Teleport inside arena
+Moved Vorkath teleport from (2276,4036) to (2272,4059) — inside `inVorkath` bounds.
 
-Same pattern as banker NPC 394 which already short-circuits walkTo in `FirstNpcOptionEvent`.
+### 4. `AttackNpcEvent.kt` — Attack bypass
+Moves player adjacent to Vorkath's 8x8 bounding box, then delays `combat.attack()` by 2 ticks.
+- **Why delayed:** `player.move()` calls `getCombat().reset()`. Attacking same tick = target wiped. 2-tick delay ensures position syncs and move lock expires.
+- Imports added: `Position`, `Utility`, `abs`, `World`
 
-### File 1: `game-server/src/main/kotlin/org/jire/tarnishps/event/npc/FirstNpcOptionEvent.kt`
+### 5. `MagicOnNpcEvent.kt` — Magic attack bypass  
+Same pattern as AttackNpcEvent — move adjacent + delayed attack.
+- Imports added: `Position`, `Utility`, `abs`
 
-**BEFORE (lines 12-17):**
-```kotlin
-    override fun handleNpc(player: Player, npc: Npc) {
-        if (npc.id == 394 && player.position.isWithinDistance(npc.position, 2)) {
-            publishToPluginManager(player, npc)
-        } else {
-            super.handleNpc(player, npc)
-        }
-    }
-```
+## Results
 
-**AFTER:**
-```kotlin
-    override fun handleNpc(player: Player, npc: Npc) {
-        if (npc.id == 394 && player.position.isWithinDistance(npc.position, 2)) {
-            publishToPluginManager(player, npc)
-        } else if (npc.id == 8059 && player.position.isWithinDistance(npc.position, 15)) {
-            // Vorkath dormant: bypass walkTo — TraversalMap has no Zeah map data
-            val interactionEvent = createInteractionEvent(npc)
-            if (interactionEvent == null || !EventDispatcher.execute(player, interactionEvent)) {
-                publishToPluginManager(player, npc)
-            }
-        } else {
-            super.handleNpc(player, npc)
-        }
-    }
-```
+- ✅ Poke (wake Vorkath) — works
+- ✅ Ranged attack — works
+- ✅ Magic attack — works  
+- ⚠️ Melee attack — does not work (likely Vorkath combat strategy design, not pathfinding)
 
-**Why:** `EventDispatcher.execute()` routes directly to `VorkathActivity.clickNpc` (via `player.inActivity()` → activity's `onEvent`) without needing pathfinding. Distance check (15 tiles) covers the whole arena.
+## Architecture note
 
-**Imports needed:** None — `EventDispatcher` already imported in `NpcOptionEvent.kt` parent class.
+Vorkath has three separate interaction paths, each needing its own bypass:
 
----
-
-### File 2: `game-server/plugins/plugin/click/npc/NpcFirstClickPlugin.java`
-
-**Add Vorkath case in the switch (before default, after line 444):**
-
-```java
-            case 8059: {
-                // Dormant Vorkath - create activity if player entered via teleport
-                if (!player.inActivity(ActivityType.VORKATH)) {
-                    VorkathActivity.create(player);
-                }
-                return true;
-            }
-```
-
-**Imports needed:**
-```java
-import com.osroyale.content.activity.impl.VorkathActivity;
-import com.osroyale.content.activity.ActivityType;
-```
-
-**Why:** Fallback for when player teleports directly into arena without going through crevice. Plugin creates the VorkathActivity so the next click works through the activity chain.
-
----
-
-## File 3: Check — `game-server/src/main/java/com/osroyale/content/teleport/Teleport.java` (optional)
-
-**Line 85 — current teleport position:**
-```java
-VORKATH("Vorkath", TeleportType.BOSS_KILLING, new Position(2276, 4036, 0), ...)
-```
-
-This is outside `inVorkath` bounds (Y=4036 < min Y=4053). Consider changing to inside the arena:
-```java
-VORKATH("Vorkath", TeleportType.BOSS_KILLING, new Position(2272, 4059, 0), ...)
-```
-
-But with the File 2 fix above, the teleport position doesn't matter — clicking NPC 8059 creates the activity regardless.
-
----
+| Action | Event class | Original path | Bypass |
+|--------|-------------|---------------|--------|
+| Poke | FirstNpcOptionEvent | walkTo → callback → EventDispatcher | Direct EventDispatcher |
+| Attack | AttackNpcEvent | combat.attack → Waypoint → findRoute | Move adjacent + delayed attack |
+| Magic | MagicOnNpcEvent | combat.attack → Waypoint → findRoute | Move adjacent + delayed attack |
 
 ## Verification
 
 ```
-::tele 2272 4059
-# walk near Vorkath if not already close
-# click dormant Vorkath (NPC 8059)
-# → wake-up animation plays
-# → transforms to 8060
-# → Vorkath attacks (aggressive=true)
-# → fight!
+::tele vorkath
+cross crevice (object 31990)    # creates VorkathActivity
+poke dormant Vorkath (8059)     # wake animation → transforms to 8060
+click Attack / cast spell       # snap adjacent → fight
 ```
-
-### Regression checks:
-- Click Vorkath from across arena → works (15 tile distance check)
-- `::tele` out during fight → `onRegionChange` cleanup fires
-- Logout mid-fight, re-login → `setActivity()` recreates dormant → click to re-engage
-- Kill Vorkath → 10-tick respawn → dormant NPC reappears → click to re-engage

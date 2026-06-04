@@ -1,0 +1,12 @@
+{
+    "id": 7066,
+    "name": "Wizard",
+    "stand": 1350,
+    "walk": 819,
+    "weakness": "Ranged",
+    "combat_level": 1,
+    "venom_immunity": true,
+    "attack_style": "Magic",
+    "attack_cooldown": 3,
+    "hitpoints_level": 14
+}

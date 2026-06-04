@@ -1,0 +1,22 @@
+{
+    "id": 10083,
+    "type": "GLOVES",
+    "name": "Red spiky vambs",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -10,
+        10,
+        5,
+        4,
+        6,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

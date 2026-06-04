@@ -1,0 +1,27 @@
+{
+    "id": 814,
+    "type": "WEAPON",
+    "name": "Steel dart(p)",
+    "requirements": [
+        {
+            "level": 5,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "id": 2186,
+    "name": "TzHaar-Ket",
+    "stand": 2603,
+    "walk": 2601,
+    "weakness": "Magic",
+    "combat_level": 1,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 140,
+    "defence_level": 140,
+    "strength_level": 140,
+    "hitpoints_level": 140,
+    "ranged_level": 140,
+    "magic_level": 140
+}

@@ -1,0 +1,13 @@
+{
+    "id": 1869,
+    "name": "Evil Chicken",
+    "stand": 2298,
+    "walk": 2297,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Melee, ranged",
+    "combat_level": 159,
+    "attack_style": "Magic",
+    "attack_cooldown": 4,
+    "hitpoints_level": 120
+}

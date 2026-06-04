@@ -82,7 +82,7 @@ public enum Teleport {
     DAGGANOTHS("Dagannoth", TeleportType.BOSS_KILLING, new Position(1912, 4367, 0), false, new int[]{6731, 6737, 6733}, "", ""),
     LIZARD_SHAMAN("Lizard Shaman", TeleportType.BOSS_KILLING, new Position(1454, 3690, 0), false, new int[]{-1, 13576}, "This teleport is safe!", ""),
     CERBERUS("Cerberus", TeleportType.BOSS_KILLING, new Position(1310, 1268, 0), false, new int[]{13227, 13229, 13231}, "The king of the hell hounds.", "Level 91 slayer is required to fight this beast."),
-    VORKATH("Vorkath", TeleportType.BOSS_KILLING, new Position(2276, 4036, 0), false, new int[]{11286, 21992, 22006}, "Vorkath, the Dragon King.", "Do you have what it takes to defeat him?"),
+    VORKATH("Vorkath", TeleportType.BOSS_KILLING, new Position(2272, 4059, 0), false, new int[]{11286, 21992, 22006}, "Vorkath, the Dragon King.", "Do you have what it takes to defeat him?"),
     SKOTIZO("Skotizo", TeleportType.BOSS_KILLING, new Position(2272, 5662, 0), false, new int[]{}, "", ""),
 
 //    CERBERUS("Cerberus", TeleportType.BOSS_KILLING, new Position(2872, 9847, 0), 1500, false, "", ""),

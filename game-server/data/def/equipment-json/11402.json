@@ -1,0 +1,22 @@
+{
+    "id": 11402,
+    "type": "WEAPON",
+    "name": "Mithril hasta(kp)",
+    "requirements": [],
+    "bonuses": [
+        17,
+        17,
+        17,
+        0,
+        0,
+        -5,
+        -5,
+        -4,
+        0,
+        -5,
+        0,
+        0,
+        0,
+        0
+    ]
+}

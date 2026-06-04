@@ -1,0 +1,27 @@
+{
+    "id": 12269,
+    "type": "AMULET",
+    "name": "Bandos stole",
+    "requirements": [
+        {
+            "level": 65,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

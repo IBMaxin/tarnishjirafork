@@ -1,0 +1,27 @@
+{
+    "id": 13652,
+    "type": "WEAPON",
+    "name": "Dragon claws",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        41,
+        57,
+        -4,
+        0,
+        0,
+        13,
+        26,
+        7,
+        0,
+        0,
+        56,
+        0,
+        0,
+        0
+    ]
+}

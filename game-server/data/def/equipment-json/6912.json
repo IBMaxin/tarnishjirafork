@@ -1,0 +1,27 @@
+{
+    "id": 6912,
+    "type": "WEAPON",
+    "name": "Teacher wand",
+    "requirements": [
+        {
+            "level": 55,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

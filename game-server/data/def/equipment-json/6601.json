@@ -1,0 +1,27 @@
+{
+    "id": 6601,
+    "type": "WEAPON",
+    "name": "White mace",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        8,
+        -2,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        13,
+        0,
+        0,
+        3
+    ]
+}

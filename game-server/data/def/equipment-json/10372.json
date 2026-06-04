@@ -1,0 +1,27 @@
+{
+    "id": 10372,
+    "type": "LEGS",
+    "name": "Zamorak chaps",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -10,
+        17,
+        31,
+        25,
+        33,
+        28,
+        31,
+        0,
+        0,
+        0,
+        0
+    ]
+}

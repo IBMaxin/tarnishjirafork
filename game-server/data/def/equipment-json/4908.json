@@ -1,0 +1,30 @@
+{
+    "id": 4908,
+    "type": "HAT",
+    "name": "Guthan's helm 0",
+    "listeners": [
+        "GuthansListener"
+    ],
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        55,
+        58,
+        54,
+        -1,
+        62,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 6522,
+    "type": "WEAPON",
+    "name": "Toktz-xil-ul",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        69,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        49,
+        0,
+        0
+    ]
+}

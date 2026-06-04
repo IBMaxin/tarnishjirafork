@@ -1,0 +1,30 @@
+{
+    "id": 4872,
+    "type": "BODY",
+    "name": "Ahrim's robetop 0",
+    "listeners": [
+        "AhrimsListener"
+    ],
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        30,
+        -10,
+        52,
+        37,
+        63,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

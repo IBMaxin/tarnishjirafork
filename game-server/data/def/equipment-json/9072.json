@@ -1,0 +1,22 @@
+{
+    "id": 9072,
+    "type": "GLOVES",
+    "name": "Moonclan gloves",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        2,
+        -5,
+        2,
+        2,
+        2,
+        2,
+        -5,
+        0,
+        0,
+        0,
+        0
+    ]
+}

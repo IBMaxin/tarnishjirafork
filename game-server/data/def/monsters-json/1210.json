@@ -1,0 +1,20 @@
+{
+    "id": 1210,
+    "name": "Khazard Guard",
+    "stand": 808,
+    "walk": 819,
+    "attackable": true,
+    "combat_level": 23,
+    "attack_style": "Melee (slash)",
+    "attack_cooldown": 4,
+    "attack_level": 18,
+    "defence_level": 18,
+    "strength_level": 18,
+    "hitpoints_level": 25,
+    "ranged_level": 18,
+    "magic_level": 18,
+    "defence_stab": 35,
+    "defence_slash": 29,
+    "defence_crush": 21,
+    "bonus_strength": 14
+}

@@ -1,0 +1,22 @@
+{
+    "id": 11369,
+    "type": "WEAPON",
+    "name": "Iron hasta",
+    "requirements": [],
+    "bonuses": [
+        8,
+        8,
+        8,
+        0,
+        0,
+        -2,
+        -2,
+        -2,
+        0,
+        -2,
+        10,
+        0,
+        0,
+        0
+    ]
+}

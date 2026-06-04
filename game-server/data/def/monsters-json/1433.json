@@ -1,0 +1,17 @@
+{
+    "id": 1433,
+    "name": "Gnome guard",
+    "stand": 195,
+    "walk": 189,
+    "weakness": "Stab",
+    "combat_level": 1,
+    "attack_style": "Slash",
+    "attack_cooldown": 4,
+    "attack_level": 17,
+    "defence_level": 17,
+    "strength_level": 17,
+    "hitpoints_level": 31,
+    "ranged_level": 17,
+    "magic_level": 17,
+    "bonus_strength": 13
+}

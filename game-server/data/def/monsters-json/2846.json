@@ -1,0 +1,8 @@
+{
+    "id": 2846,
+    "name": "Skavid",
+    "stand": 257,
+    "walk": 254,
+    "attackable": true,
+    "combat_level": 2
+}

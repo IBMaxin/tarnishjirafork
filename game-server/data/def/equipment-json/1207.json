@@ -1,0 +1,27 @@
+{
+    "id": 1207,
+    "type": "WEAPON",
+    "name": "Steel dagger",
+    "requirements": [
+        {
+            "level": 5,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        8,
+        4,
+        -4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        7,
+        0,
+        0,
+        0
+    ]
+}

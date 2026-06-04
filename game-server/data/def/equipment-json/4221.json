@@ -1,0 +1,27 @@
+{
+    "id": 4221,
+    "type": "WEAPON",
+    "name": "Crystal bow 3/10",
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        72,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        56,
+        0,
+        0
+    ]
+}

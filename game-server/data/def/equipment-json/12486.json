@@ -1,0 +1,27 @@
+{
+    "id": 12486,
+    "type": "HAT",
+    "name": "Bandos full helm",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        30,
+        32,
+        27,
+        -1,
+        30,
+        0,
+        0,
+        0,
+        1
+    ]
+}

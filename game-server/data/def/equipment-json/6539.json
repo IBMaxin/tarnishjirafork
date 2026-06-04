@@ -1,0 +1,22 @@
+{
+    "id": 6539,
+    "type": "WEAPON",
+    "name": "Tzhaar-ket-em",
+    "requirements": [],
+    "bonuses": [
+        -4,
+        -4,
+        62,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

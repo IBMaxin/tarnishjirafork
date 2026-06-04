@@ -28342,28 +28342,6 @@
     ]
   },
   {
-    "id": 6208,
-    "type": "AMULET",
-    "name": "Man speak amulet",
-    "requirements": [],
-    "bonuses": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ]
-  },
-  {
     "id": 6215,
     "type": "SHIELD",
     "name": "Broodoo shield (10)",

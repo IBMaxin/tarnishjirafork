@@ -1,0 +1,22 @@
+{
+    "id": 1203,
+    "type": "WEAPON",
+    "name": "Iron dagger",
+    "requirements": [],
+    "bonuses": [
+        5,
+        3,
+        -4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        4,
+        0,
+        0,
+        0
+    ]
+}

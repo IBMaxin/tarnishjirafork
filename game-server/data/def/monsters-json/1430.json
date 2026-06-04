@@ -1,0 +1,12 @@
+{
+    "id": 1430,
+    "name": "Shipyard worker",
+    "stand": 808,
+    "walk": 819,
+    "weakness": "Slash",
+    "combat_level": 1,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "hitpoints_level": 10
+}

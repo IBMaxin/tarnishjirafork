@@ -1,0 +1,22 @@
+{
+    "id": 5670,
+    "type": "WEAPON",
+    "name": "Bronze dagger(p+)",
+    "requirements": [],
+    "bonuses": [
+        4,
+        2,
+        -4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

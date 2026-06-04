@@ -1,0 +1,27 @@
+{
+    "id": 12205,
+    "type": "BODY",
+    "name": "Bronze platebody (g)",
+    "requirements": [
+        {
+            "level": 1,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -30,
+        -10,
+        15,
+        14,
+        9,
+        -6,
+        14,
+        0,
+        0,
+        0,
+        0
+    ]
+}

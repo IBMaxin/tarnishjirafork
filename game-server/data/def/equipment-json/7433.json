@@ -1,0 +1,22 @@
+{
+    "id": 7433,
+    "type": "WEAPON",
+    "name": "Wooden spoon",
+    "requirements": [],
+    "bonuses": [
+        4,
+        5,
+        -2,
+        0,
+        0,
+        0,
+        3,
+        2,
+        0,
+        0,
+        7,
+        0,
+        0,
+        0
+    ]
+}

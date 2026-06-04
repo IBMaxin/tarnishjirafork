@@ -1,0 +1,15 @@
+{
+    "id": 491,
+    "name": "Cave kraken",
+    "size": 2,
+    "stand": 3989,
+    "walk": 3989,
+    "attackable": true,
+    "weakness": "Magic",
+    "combat_level": 127,
+    "attack_style": "Magic",
+    "attack_cooldown": 6,
+    "hitpoints_level": 125,
+    "defence_magic": -63,
+    "defence_ranged": 100
+}

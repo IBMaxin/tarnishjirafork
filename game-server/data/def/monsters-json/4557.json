@@ -1,0 +1,15 @@
+{
+    "id": 4557,
+    "name": "Holthion",
+    "size": 3,
+    "stand": 66,
+    "walk": 63,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Silverlight/Darklight",
+    "combat_level": 91,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "hitpoints_level": 87
+}

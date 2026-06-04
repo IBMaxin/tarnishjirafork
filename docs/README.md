@@ -17,8 +17,10 @@
 
 | Doc | Content |
 |-----|---------|
-| [game-scope.md](game-scope.md) | What's in the game, what's verified, what needs in-game testing |
+| [game-scope.md](game-scope.md) | Game inventory — what exists, activities, skills, economy, commands |
+| [feature-inventory.md](feature-inventory.md) | Fuller code-grounded inventory of bosses, shops, donor systems, broadcasts, custom systems |
 | [test-plan.md](test-plan.md) | Offline test strategy, current baseline, test expansion plan |
+| [feature-integrity-test-suite.md](feature-integrity-test-suite.md) | Plan for offline tests covering shops, drops, spawns, commands, broadcasts, donor systems |
 
 ### Workflows
 

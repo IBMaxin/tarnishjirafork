@@ -1,0 +1,22 @@
+{
+    "id": 13237,
+    "type": "BOOTS",
+    "name": "Pegasian boots",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -12,
+        12,
+        5,
+        5,
+        5,
+        5,
+        5,
+        0,
+        0,
+        0,
+        0
+    ]
+}

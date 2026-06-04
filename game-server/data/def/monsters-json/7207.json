@@ -1,0 +1,11 @@
+{
+    "id": 7207,
+    "name": "Sandy rocks",
+    "stand": 1315,
+    "walk": 1311,
+    "aggressive": true,
+    "combat_level": 1,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "hitpoints_level": 60
+}

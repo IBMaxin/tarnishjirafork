@@ -1,0 +1,31 @@
+{
+    "id": 805,
+    "type": "WEAPON",
+    "name": "Rune thrownaxe",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 0
+        },
+        {
+            "level": 40,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        26,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        0
+    ]
+}

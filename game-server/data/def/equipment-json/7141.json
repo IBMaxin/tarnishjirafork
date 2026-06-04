@@ -1,0 +1,22 @@
+{
+    "id": 7141,
+    "type": "WEAPON",
+    "name": "Harry's cutlass",
+    "requirements": [],
+    "bonuses": [
+        3,
+        14,
+        0,
+        -5,
+        0,
+        4,
+        4,
+        4,
+        0,
+        0,
+        22,
+        0,
+        0,
+        0
+    ]
+}

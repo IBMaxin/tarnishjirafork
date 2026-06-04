@@ -1,0 +1,30 @@
+{
+    "id": 4860,
+    "type": "HAT",
+    "name": "Ahrim's hood 0",
+    "listeners": [
+        "AhrimsListener"
+    ],
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        6,
+        -2,
+        15,
+        13,
+        16,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

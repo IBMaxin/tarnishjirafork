@@ -106751,6 +106751,14 @@
     "equipment-slot": "GLOVES"
   },
   {
+    "id": 13361,
+    "name": "Shayzien platebody (1)",
+    "low-alch": 16,
+    "high-alch": 24,
+    "base-value": 40,
+    "equipment-slot": "BODY"
+  },
+  {
     "id": 13682,
     "name": "Lynch's Ankou Boots",
     "low-alch": 16,

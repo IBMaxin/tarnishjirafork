@@ -1,0 +1,30 @@
+{
+    "id": 4972,
+    "type": "LEGS",
+    "name": "Torag's platelegs 50",
+    "listeners": [
+        "ToragsListener"
+    ],
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -21,
+        -7,
+        85,
+        82,
+        83,
+        -4,
+        92,
+        0,
+        0,
+        0,
+        0
+    ]
+}

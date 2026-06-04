@@ -1,0 +1,22 @@
+{
+    "id": 7457,
+    "type": "GLOVES",
+    "name": "Black gloves",
+    "requirements": [],
+    "bonuses": [
+        5,
+        5,
+        5,
+        3,
+        5,
+        5,
+        5,
+        5,
+        3,
+        5,
+        5,
+        0,
+        0,
+        0
+    ]
+}

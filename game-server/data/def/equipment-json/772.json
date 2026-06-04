@@ -1,0 +1,22 @@
+{
+    "id": 772,
+    "type": "WEAPON",
+    "name": "Dramen staff",
+    "requirements": [],
+    "bonuses": [
+        -1,
+        -1,
+        10,
+        10,
+        0,
+        2,
+        3,
+        1,
+        10,
+        0,
+        10,
+        0,
+        0,
+        0
+    ]
+}

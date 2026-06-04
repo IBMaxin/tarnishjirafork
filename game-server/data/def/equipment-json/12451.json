@@ -1,0 +1,27 @@
+{
+    "id": 12451,
+    "type": "BODY",
+    "name": "Black wizard robe (t)",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

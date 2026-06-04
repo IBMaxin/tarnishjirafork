@@ -1,0 +1,27 @@
+{
+    "id": 6133,
+    "type": "BODY",
+    "name": "Spined body",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -15,
+        15,
+        40,
+        32,
+        45,
+        20,
+        40,
+        0,
+        0,
+        0,
+        0
+    ]
+}

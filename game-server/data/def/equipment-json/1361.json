@@ -1,0 +1,27 @@
+{
+    "id": 1361,
+    "type": "WEAPON",
+    "name": "Black axe",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        -2,
+        10,
+        8,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        12,
+        0,
+        0,
+        0
+    ]
+}

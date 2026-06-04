@@ -1,0 +1,20 @@
+{
+    "id": 123,
+    "name": "Kurask",
+    "stand": -1,
+    "walk": -1,
+    "aggressive": true,
+    "weakness": "Leaf-bladed weapons, (Amethyst) Broad bolts/arrows, Magic Dart",
+    "combat_level": 1,
+    "poison_immunity": true,
+    "attack_style": "Melee (Crush)",
+    "attack_cooldown": 4,
+    "attack_level": 105,
+    "defence_level": 105,
+    "strength_level": 105,
+    "hitpoints_level": 103,
+    "ranged_level": 105,
+    "magic_level": 105,
+    "defence_slash": 20,
+    "defence_crush": 20
+}

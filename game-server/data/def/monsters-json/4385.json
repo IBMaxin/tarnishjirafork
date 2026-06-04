@@ -1,0 +1,23 @@
+{
+    "id": 4385,
+    "name": "Blue dragon",
+    "size": 4,
+    "stand": 90,
+    "walk": 79,
+    "aggressive": true,
+    "weakness": "Stab, ranged",
+    "combat_level": 27,
+    "attack_style": "Melee (slash), Dragonfire (Magic)",
+    "attack_cooldown": 4,
+    "attack_level": 95,
+    "defence_level": 95,
+    "strength_level": 95,
+    "hitpoints_level": 105,
+    "ranged_level": 95,
+    "magic_level": 95,
+    "defence_stab": 50,
+    "defence_slash": 70,
+    "defence_crush": 70,
+    "defence_magic": 60,
+    "defence_ranged": 50
+}

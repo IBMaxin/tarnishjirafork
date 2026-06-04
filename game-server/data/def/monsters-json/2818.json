@@ -1,0 +1,12 @@
+{
+    "id": 2818,
+    "name": "Rooster",
+    "stand": 2298,
+    "walk": 2297,
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "hitpoints_level": 5
+}

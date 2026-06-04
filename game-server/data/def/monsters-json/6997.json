@@ -1,0 +1,18 @@
+{
+    "id": 6997,
+    "name": "Dark wizard",
+    "stand": 808,
+    "walk": 819,
+    "aggressive": true,
+    "weakness": "Range",
+    "combat_level": 1,
+    "venom_immunity": true,
+    "attack_style": "Magic",
+    "attack_cooldown": 4,
+    "attack_level": 2,
+    "defence_level": 2,
+    "strength_level": 2,
+    "ranged_level": 2,
+    "magic_level": 2,
+    "defence_magic": 3
+}

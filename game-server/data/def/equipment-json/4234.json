@@ -1,0 +1,27 @@
+{
+    "id": 4234,
+    "type": "WEAPON",
+    "name": "Crystal shield 1/10",
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

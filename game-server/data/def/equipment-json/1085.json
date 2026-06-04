@@ -1,0 +1,27 @@
+{
+    "id": 1085,
+    "type": "LEGS",
+    "name": "Mithril plateskirt",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -21,
+        -7,
+        24,
+        22,
+        20,
+        -4,
+        22,
+        0,
+        0,
+        0,
+        0
+    ]
+}

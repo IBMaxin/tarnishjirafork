@@ -1,0 +1,27 @@
+{
+    "id": 6141,
+    "type": "LEGS",
+    "name": "Skeletal bottoms",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        6,
+        -7,
+        22,
+        20,
+        24,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

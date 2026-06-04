@@ -1,0 +1,27 @@
+{
+    "id": 1428,
+    "type": "WEAPON",
+    "name": "Mithril mace",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        11,
+        -2,
+        18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        16,
+        0,
+        0,
+        3
+    ]
+}

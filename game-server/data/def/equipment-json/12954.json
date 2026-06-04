@@ -1,0 +1,31 @@
+{
+    "id": 12954,
+    "type": "SHIELD",
+    "name": "Dragon defender",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 0
+        },
+        {
+            "level": 60,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        25,
+        24,
+        23,
+        -3,
+        -2,
+        25,
+        24,
+        23,
+        -3,
+        -2,
+        6,
+        0,
+        0,
+        0
+    ]
+}

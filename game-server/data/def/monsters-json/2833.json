@@ -1,0 +1,8 @@
+{
+    "id": 2833,
+    "name": "Troll",
+    "attackable": true,
+    "stand": 286,
+    "walk": 283,
+    "combat_level": 69
+}

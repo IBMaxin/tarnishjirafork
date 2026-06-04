@@ -1,0 +1,27 @@
+{
+    "id": 6330,
+    "type": "GLOVES",
+    "name": "Snakeskin vambraces",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -5,
+        6,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

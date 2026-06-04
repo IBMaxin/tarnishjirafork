@@ -1,0 +1,22 @@
+{
+    "id": 12601,
+    "type": "RING",
+    "name": "Ring of the gods",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3
+    ]
+}

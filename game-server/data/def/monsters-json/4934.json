@@ -1,0 +1,23 @@
+{
+    "id": 4934,
+    "name": "Black Knight",
+    "stand": 808,
+    "walk": 819,
+    "aggressive": true,
+    "weakness": "Magic, Crush",
+    "combat_level": 1,
+    "attack_style": "Melee",
+    "attack_cooldown": 5,
+    "attack_level": 25,
+    "defence_level": 25,
+    "strength_level": 25,
+    "hitpoints_level": 42,
+    "ranged_level": 25,
+    "magic_level": 25,
+    "defence_stab": 73,
+    "defence_slash": 76,
+    "defence_crush": 70,
+    "defence_magic": -11,
+    "defence_ranged": 72,
+    "bonus_strength": 16
+}

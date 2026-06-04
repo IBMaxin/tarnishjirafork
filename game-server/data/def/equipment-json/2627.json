@@ -1,0 +1,27 @@
+{
+    "id": 2627,
+    "type": "HAT",
+    "name": "Rune full helm (t)",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        30,
+        32,
+        27,
+        -1,
+        30,
+        0,
+        0,
+        0,
+        0
+    ]
+}

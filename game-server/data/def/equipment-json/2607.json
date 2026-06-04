@@ -1,0 +1,27 @@
+{
+    "id": 2607,
+    "type": "BODY",
+    "name": "Adamant platebody (g)",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -30,
+        -10,
+        65,
+        63,
+        55,
+        -6,
+        63,
+        0,
+        0,
+        0,
+        0
+    ]
+}

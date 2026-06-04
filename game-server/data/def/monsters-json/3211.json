@@ -1,0 +1,19 @@
+{
+    "id": 3211,
+    "name": "Cave horror",
+    "size": 2,
+    "stand": 4231,
+    "walk": 4236,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Ranged",
+    "combat_level": 80,
+    "attack_style": "Magic-based Melee",
+    "attack_cooldown": 4,
+    "attack_level": 77,
+    "defence_level": 77,
+    "strength_level": 77,
+    "hitpoints_level": 55,
+    "ranged_level": 77,
+    "magic_level": 77
+}

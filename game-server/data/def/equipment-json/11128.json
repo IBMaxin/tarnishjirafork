@@ -1,0 +1,30 @@
+{
+    "id": 11128,
+    "type": "AMULET",
+    "name": "Berserker necklace",
+    "listeners": [
+        "BerserkerNecklaceListener"
+    ],
+    "requirements": [
+        {
+            "level": 45,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        -10,
+        -10,
+        -10,
+        0,
+        0,
+        -20,
+        -20,
+        -20,
+        -20,
+        -20,
+        7,
+        0,
+        0,
+        3
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "id": 2888,
+    "name": "Tribesman",
+    "stand": 813,
+    "walk": 819,
+    "attackable": true,
+    "aggressive": true,
+    "poisonous": true,
+    "weakness": "Unknown (edit)",
+    "combat_level": 32,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee (Stab)",
+    "hitpoints_level": 40
+}

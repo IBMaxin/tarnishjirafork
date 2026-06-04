@@ -1,0 +1,27 @@
+{
+    "id": 1215,
+    "type": "WEAPON",
+    "name": "Dragon dagger",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        40,
+        25,
+        -4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        40,
+        0,
+        0,
+        0
+    ]
+}

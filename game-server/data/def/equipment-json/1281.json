@@ -1,0 +1,27 @@
+{
+    "id": 1281,
+    "type": "WEAPON",
+    "name": "Steel sword",
+    "requirements": [
+        {
+            "level": 5,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        11,
+        8,
+        2,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        12,
+        0,
+        0,
+        0
+    ]
+}

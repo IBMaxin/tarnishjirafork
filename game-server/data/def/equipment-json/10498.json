@@ -1,0 +1,27 @@
+{
+    "id": 10498,
+    "type": "CAPE",
+    "name": "Ava's attractor",
+    "requirements": [
+        {
+            "level": 50,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

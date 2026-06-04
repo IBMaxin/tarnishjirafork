@@ -1,0 +1,27 @@
+{
+    "id": 19547,
+    "type": "AMULET",
+    "name": "Necklace of anguish",
+    "requirements": [
+        {
+            "level": 75,
+            "skill": 3
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        2
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "id": 10338,
+    "type": "BODY",
+    "name": "3rd age robe top",
+    "requirements": [
+        {
+            "level": 65,
+            "skill": 1
+        },
+        {
+            "level": 65,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        24,
+        0,
+        0,
+        0,
+        0,
+        24,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

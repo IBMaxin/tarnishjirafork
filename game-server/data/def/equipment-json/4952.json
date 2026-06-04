@@ -1,0 +1,30 @@
+{
+    "id": 4952,
+    "type": "HAT",
+    "name": "Torag's helm 100",
+    "listeners": [
+        "ToragsListener"
+    ],
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        55,
+        58,
+        54,
+        -1,
+        62,
+        0,
+        0,
+        0,
+        0
+    ]
+}

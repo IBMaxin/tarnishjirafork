@@ -1,0 +1,22 @@
+{
+    "id": 3259,
+    "name": "Market Guard",
+    "stand": 808,
+    "walk": 819,
+    "attackable": true,
+    "combat_level": 20,
+    "attack_style": "Melee (Crush)",
+    "attack_cooldown": 3,
+    "attack_level": 40,
+    "defence_level": 40,
+    "strength_level": 40,
+    "hitpoints_level": 50,
+    "ranged_level": 40,
+    "magic_level": 40,
+    "defence_stab": 50,
+    "defence_slash": 50,
+    "defence_crush": 50,
+    "defence_magic": 50,
+    "defence_ranged": 50,
+    "bonus_strength": 40
+}

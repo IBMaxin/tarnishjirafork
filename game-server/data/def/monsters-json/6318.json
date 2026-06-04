@@ -1,0 +1,19 @@
+{
+    "id": 6318,
+    "name": "Nezikchened (hard)",
+    "size": 3,
+    "stand": 66,
+    "walk": 63,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Melee, Silverlight, Darklight, Holy Water",
+    "combat_level": 295,
+    "attack_style": "Melee (slash), Magic",
+    "attack_cooldown": 5,
+    "attack_level": 168,
+    "defence_level": 168,
+    "strength_level": 168,
+    "hitpoints_level": 150,
+    "ranged_level": 168,
+    "magic_level": 168
+}

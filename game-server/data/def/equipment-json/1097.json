@@ -1,0 +1,22 @@
+{
+    "id": 1097,
+    "type": "LEGS",
+    "name": "Studded chaps",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -5,
+        6,
+        15,
+        16,
+        17,
+        6,
+        16,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 1151,
+    "type": "HAT",
+    "name": "Black med helm",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -3,
+        -1,
+        9,
+        10,
+        8,
+        -1,
+        9,
+        0,
+        0,
+        0,
+        0
+    ]
+}

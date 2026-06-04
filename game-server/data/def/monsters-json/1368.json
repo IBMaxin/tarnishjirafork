@@ -1,0 +1,17 @@
+{
+    "id": 1368,
+    "name": "Air elemental",
+    "stand": 1039,
+    "walk": 1039,
+    "attackable": true,
+    "weakness": "Slash",
+    "combat_level": 34,
+    "attack_style": "Stab",
+    "attack_cooldown": 4,
+    "attack_level": 20,
+    "defence_level": 20,
+    "strength_level": 20,
+    "hitpoints_level": 30,
+    "ranged_level": 20,
+    "magic_level": 20
+}

@@ -1,0 +1,22 @@
+{
+    "id": 35,
+    "type": "WEAPON",
+    "name": "Excalibur",
+    "requirements": [],
+    "bonuses": [
+        20,
+        29,
+        -2,
+        0,
+        0,
+        0,
+        3,
+        2,
+        1,
+        0,
+        25,
+        0,
+        0,
+        0
+    ]
+}

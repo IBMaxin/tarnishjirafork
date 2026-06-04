@@ -1,0 +1,21 @@
+{
+    "id": 3482,
+    "name": "Count Draynor",
+    "size": 2,
+    "stand": -1,
+    "walk": -1,
+    "aggressive": true,
+    "weakness": "Magic",
+    "combat_level": 34,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "attack_level": 25,
+    "defence_level": 25,
+    "strength_level": 25,
+    "hitpoints_level": 35,
+    "ranged_level": 25,
+    "magic_level": 25,
+    "defence_stab": 2,
+    "defence_slash": 1,
+    "defence_crush": 3
+}

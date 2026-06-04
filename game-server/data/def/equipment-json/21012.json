@@ -1,0 +1,27 @@
+{
+    "id": 21012,
+    "type": "WEAPON",
+    "name": "Dragon hunter crossbow",
+    "requirements": [
+        {
+            "level": 65,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        95,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

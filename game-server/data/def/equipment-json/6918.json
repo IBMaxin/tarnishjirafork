@@ -1,0 +1,31 @@
+{
+    "id": 6918,
+    "type": "HAT",
+    "name": "Infinity hat",
+    "requirements": [
+        {
+            "level": 25,
+            "skill": 1
+        },
+        {
+            "level": 50,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

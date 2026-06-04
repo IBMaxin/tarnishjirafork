@@ -1,0 +1,22 @@
+{
+    "id": 13197,
+    "type": "HAT",
+    "name": "Tanzanite helm",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -5,
+        -5,
+        52,
+        55,
+        58,
+        0,
+        50,
+        5,
+        0,
+        0,
+        0
+    ]
+}

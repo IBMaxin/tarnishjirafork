@@ -1,0 +1,27 @@
+{
+    "id": 13331,
+    "type": "CAPE",
+    "name": "Saradomin max cape",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        10,
+        0,
+        1,
+        1,
+        2,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

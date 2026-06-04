@@ -1,0 +1,22 @@
+{
+    "id": 5611,
+    "type": "HAT",
+    "name": "Initiate sallet",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        13,
+        14,
+        11,
+        -1,
+        13,
+        0,
+        0,
+        0,
+        0
+    ]
+}

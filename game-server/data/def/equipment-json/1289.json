@@ -1,0 +1,22 @@
+{
+    "id": 1289,
+    "type": "WEAPON",
+    "name": "Rune sword",
+    "requirements": [],
+    "bonuses": [
+        38,
+        26,
+        -2,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        39,
+        0,
+        0,
+        0
+    ]
+}

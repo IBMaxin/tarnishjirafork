@@ -1,0 +1,22 @@
+{
+    "id": 7449,
+    "type": "WEAPON",
+    "name": "Meat tenderiser",
+    "requirements": [],
+    "bonuses": [
+        -4,
+        -4,
+        53,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        48,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 9183,
+    "type": "WEAPON",
+    "name": "Adamant crossbow",
+    "requirements": [
+        {
+            "level": 46,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        78,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

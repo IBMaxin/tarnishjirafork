@@ -1,0 +1,22 @@
+{
+    "id": 12000,
+    "type": "WEAPON",
+    "name": "Mystic smoke staff",
+    "requirements": [],
+    "bonuses": [
+        10,
+        -1,
+        40,
+        10,
+        0,
+        2,
+        3,
+        1,
+        10,
+        0,
+        50,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 6609,
+    "type": "WEAPON",
+    "name": "White 2h sword",
+    "requirements": [
+        {
+            "level": 10,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        -4,
+        27,
+        21,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        26,
+        0,
+        0,
+        1
+    ]
+}

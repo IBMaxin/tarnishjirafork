@@ -1,0 +1,31 @@
+{
+    "id": 6920,
+    "type": "BOOTS",
+    "name": "Infinity boots",
+    "requirements": [
+        {
+            "level": 25,
+            "skill": 1
+        },
+        {
+            "level": 50,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

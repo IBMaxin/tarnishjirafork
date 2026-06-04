@@ -1,0 +1,13 @@
+{
+    "id": 4864,
+    "name": "Jubbly bird",
+    "size": 3,
+    "stand": 6807,
+    "walk": 6807,
+    "weakness": "Stab",
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "None",
+    "hitpoints_level": 21
+}

@@ -1,0 +1,27 @@
+{
+    "id": 1199,
+    "type": "SHIELD",
+    "name": "Adamant kiteshield",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -8,
+        -2,
+        27,
+        31,
+        29,
+        -1,
+        29,
+        0,
+        0,
+        0,
+        0
+    ]
+}

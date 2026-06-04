@@ -1,0 +1,14 @@
+{
+    "id": 5041,
+    "name": "Suit of armour",
+    "stand": 3282,
+    "walk": 819,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Unknown (edit)",
+    "combat_level": 19,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Unknown (edit)",
+    "hitpoints_level": 27
+}

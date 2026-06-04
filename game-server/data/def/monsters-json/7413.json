@@ -1,0 +1,8 @@
+{
+    "id": 7413,
+    "name": "Count Check",
+    "stand": 808,
+    "walk": 819,
+    "attackable": true,
+    "combat_level": 1
+}

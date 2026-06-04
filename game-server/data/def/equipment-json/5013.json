@@ -1,0 +1,22 @@
+{
+    "id": 5013,
+    "type": "HAT",
+    "name": "Mining helmet",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -3,
+        -1,
+        4,
+        5,
+        3,
+        -1,
+        4,
+        0,
+        0,
+        0,
+        0
+    ]
+}

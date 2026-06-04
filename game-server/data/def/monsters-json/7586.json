@@ -1,0 +1,20 @@
+{
+    "id": 7586,
+    "name": "Icefiend",
+    "stand": 1578,
+    "walk": 1579,
+    "weakness": "Fire spells, Crush",
+    "combat_level": 1,
+    "attack_animation": 1582,
+    "block_animation": 1581,
+    "death_animation": 1580,
+    "venom_immunity": true,
+    "attack_style": "Magic",
+    "attack_cooldown": 6,
+    "attack_level": 10,
+    "defence_level": 10,
+    "strength_level": 10,
+    "hitpoints_level": 15,
+    "ranged_level": 10,
+    "magic_level": 10
+}

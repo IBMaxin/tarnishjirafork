@@ -1,11 +1,6 @@
-# Game Scope
+# Game Inventory
 
-What's in the codebase. Source presence ≠ runtime function — everything here is a candidate for testing, not a guarantee.
-
-→ **Read first:** `AGENTS.md` for project structure, build commands, and file discovery.
-→ **Verify with:** `prompts/` for systematic audit prompts.
-→ **How-to guides:** [workflows/](workflows/README.md) — add commands, items, NPCs, shops, skills.
-→ **Test strategy:** [test-plan.md](test-plan.md)
+Game inventory — what exists, what's verified. Source presence ≠ runtime function.
 
 ---
 
@@ -13,9 +8,8 @@ What's in the codebase. Source presence ≠ runtime function — everything here
 
 - Fork: `https://github.com/IBMaxin/tarnishjirafork.git`
 - Upstream: `https://github.com/Jire/tarnish`
-- Client: runs without SwiftFUP using local cache at `%USERPROFILE%\.tarnish\cache`
+- Client: runs without SwiftFUP using local cache at `%USERPROFILE%\\.tarnish\\cache`
 - Server boot: `Startup service finished` → `Loaded: 133 plugins` → `Server built successfully`
-- Tests: `Zezima` = OWNER, `Oak` = ADMINISTRATOR
 
 ---
 
@@ -93,65 +87,9 @@ Commands are in `plugins/plugin/command/<Rank>CommandPlugin.java`:
 
 ---
 
-## Offline Verification
+## Cache Files
 
-What can be checked without logging into the game client.
-
-### Build & Test
-
-**Windows:**
-```powershell
-.\gradlew.bat :game-server:classes
-.\gradlew.bat :game-client:classes
-.\gradlew.bat :game-server:test
-```
-
-**WSL/Linux:**
-```bash
-./gradlew :game-server:classes
-./gradlew :game-client:classes
-./gradlew :game-server:test
-```
-
-→ Prompts: `prompts/01-build-verify/compile.md`, `test.md`
-
-### Server Smoke
-
-Start server and watch for:
-```
-Startup service finished
-Loaded: 133 plugins
-Server built successfully
-```
-
-**Windows:** `.\gradlew.bat :game-server:run`
-**WSL:** `./gradlew :game-server:run`
-
-Verify port: `Test-NetConnection localhost -Port 43594` (Windows) / `nc -zv localhost 43594` (WSL)
-
-→ Prompt: `prompts/01-build-verify/server-smoke.md`
-
-### Profile Rights
-
-Check `data/profile/save/Zezima.json` and `Oak.json`:
-- Zezima → `player-rights: OWNER`
-- Oak → `player-rights: ADMINISTRATOR`, not OWNER
-
-→ Prompt: `prompts/02-data-audit/profile-rights.md`
-
-### Data File Sanity
-
-Parse all JSON under `data/def/`:
-- `stores.json` (75 KB)
-- `npc_spawns.json` (515 KB)
-- `npc_drops.json` (1.9 MB)
-- `item_definitions.json` (2.8 MB)
-
-→ Prompts: `prompts/02-data-audit/json-parse.md`, `item-consistency.md`, `npc-consistency.md`
-
-### Cache Files
-
-Client cache at `%USERPROFILE%\.tarnish\cache\`:
+Client cache at `%USERPROFILE%\\.tarnish\\cache\\`:
 ```
 main_file_cache.dat
 main_file_cache.idx0 .. idx5
@@ -177,22 +115,6 @@ These require logging in with a client:
 - Dialogue and interface behavior
 - Pathing, clipping, doors, ladders, objects
 - Account persistence after logout/restart
-
----
-
-## In-Game Smoke Checklist
-
-Once logged in as Admin:
-
-1. Login as Oak, confirm admin crown
-2. Try owner command → confirm blocked (Oak is not owner)
-3. `::spawnitem 315` — eat shrimp, verify healing
-4. `::teleport` home, donor zone
-5. Kill low-level NPC, check drops
-6. Open shop, buy item, sell item
-7. Try one skill: fish, mine, woodcut, cook
-8. Enter and exit one minigame
-9. Logout, restart server, login — verify persistence
 
 ---
 

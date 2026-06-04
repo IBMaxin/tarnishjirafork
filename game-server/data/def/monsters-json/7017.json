@@ -1,0 +1,23 @@
+{
+    "id": 7017,
+    "name": "Kourend head guard",
+    "stand": 808,
+    "walk": 819,
+    "attackable": true,
+    "weakness": "Magic",
+    "combat_level": 84,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 73,
+    "defence_level": 73,
+    "strength_level": 73,
+    "hitpoints_level": 86,
+    "ranged_level": 73,
+    "magic_level": 73,
+    "defence_stab": 16,
+    "defence_slash": 16,
+    "defence_crush": 18,
+    "defence_magic": -12,
+    "defence_ranged": 27,
+    "bonus_strength": 15
+}

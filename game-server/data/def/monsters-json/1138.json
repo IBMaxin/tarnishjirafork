@@ -1,0 +1,15 @@
+{
+    "id": 1138,
+    "name": "Man",
+    "stand": 808,
+    "walk": 819,
+    "combat_level": 1,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "hitpoints_level": 7,
+    "defence_stab": -21,
+    "defence_slash": -21,
+    "defence_crush": -21,
+    "defence_magic": -21,
+    "defence_ranged": -21
+}

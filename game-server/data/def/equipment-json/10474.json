@@ -1,0 +1,27 @@
+{
+    "id": 10474,
+    "type": "AMULET",
+    "name": "Zamorak stole",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

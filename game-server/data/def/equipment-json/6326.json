@@ -1,0 +1,27 @@
+{
+    "id": 6326,
+    "type": "HAT",
+    "name": "Snakeskin bandana",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -5,
+        4,
+        2,
+        4,
+        4,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+    ]
+}

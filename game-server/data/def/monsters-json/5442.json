@@ -1,0 +1,13 @@
+{
+    "id": 5442,
+    "name": "Security Guard",
+    "stand": 808,
+    "walk": 819,
+    "aggressive": true,
+    "weakness": "Magic, Ranged, Stab",
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "hitpoints_level": 250
+}

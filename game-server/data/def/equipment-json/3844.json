@@ -1,0 +1,22 @@
+{
+    "id": 3844,
+    "type": "SHIELD",
+    "name": "Book of balance",
+    "requirements": [],
+    "bonuses": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        5
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "id": 1063,
+    "name": "Angry giant rat",
+    "size": 2,
+    "stand": 4932,
+    "walk": 4931,
+    "attackable": true,
+    "aggressive": true,
+    "poisonous": true,
+    "weakness": "Unknown (edit)",
+    "combat_level": 45,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "hitpoints_level": 200
+}

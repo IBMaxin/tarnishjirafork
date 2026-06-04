@@ -1,0 +1,27 @@
+{
+    "id": 4212,
+    "type": "WEAPON",
+    "name": "New crystal bow",
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        70,
+        0,
+        0
+    ]
+}

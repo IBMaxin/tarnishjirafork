@@ -1,0 +1,11 @@
+{
+    "id": 4618,
+    "name": "Rat",
+    "stand": 2704,
+    "walk": 2703,
+    "weakness": "Fire spells",
+    "combat_level": 1,
+    "attack_style": "Melee",
+    "attack_cooldown": 4,
+    "hitpoints_level": 2
+}

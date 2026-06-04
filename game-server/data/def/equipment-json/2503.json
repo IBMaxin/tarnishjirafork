@@ -1,0 +1,31 @@
+{
+    "id": 2503,
+    "type": "TORSO",
+    "name": "Black d'hide body",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        },
+        {
+            "level": 70,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -15,
+        30,
+        55,
+        47,
+        60,
+        50,
+        55,
+        0,
+        0,
+        0,
+        0
+    ]
+}

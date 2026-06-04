@@ -1,0 +1,27 @@
+{
+    "id": 10551,
+    "type": "BODY",
+    "name": "Fighter torso",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -40,
+        0,
+        62,
+        85,
+        62,
+        -10,
+        67,
+        4,
+        0,
+        0,
+        0
+    ]
+}

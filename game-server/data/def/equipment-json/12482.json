@@ -1,0 +1,27 @@
+{
+    "id": 12482,
+    "type": "LEGS",
+    "name": "Bandos platelegs",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -21,
+        -7,
+        51,
+        49,
+        47,
+        -4,
+        49,
+        0,
+        0,
+        0,
+        1
+    ]
+}

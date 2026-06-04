@@ -1,0 +1,27 @@
+{
+    "id": 6910,
+    "type": "WEAPON",
+    "name": "Apprentice wand",
+    "requirements": [
+        {
+            "level": 50,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

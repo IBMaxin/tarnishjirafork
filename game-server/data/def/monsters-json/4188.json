@@ -1,0 +1,17 @@
+{
+    "id": 4188,
+    "name": "Plague frog",
+    "stand": 1018,
+    "walk": 1021,
+    "attackable": true,
+    "aggressive": true,
+    "combat_level": 11,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 10,
+    "defence_level": 10,
+    "strength_level": 10,
+    "hitpoints_level": 10,
+    "ranged_level": 10,
+    "magic_level": 10
+}

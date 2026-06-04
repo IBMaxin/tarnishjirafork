@@ -1,0 +1,31 @@
+{
+    "id": 1399,
+    "type": "WEAPON",
+    "name": "Earth battlestaff",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 0
+        },
+        {
+            "level": 20,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        7,
+        -1,
+        28,
+        10,
+        0,
+        2,
+        3,
+        1,
+        10,
+        0,
+        35,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": 12498,
+    "type": "GLOVES",
+    "name": "Bandos bracers",
+    "requirements": [
+        {
+            "level": 65,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -10,
+        11,
+        6,
+        5,
+        7,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "id": 6633,
+    "type": "SHIELD",
+    "name": "White kiteshield",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -8,
+        -2,
+        17,
+        19,
+        18,
+        -1,
+        18,
+        0,
+        0,
+        0,
+        1
+    ]
+}

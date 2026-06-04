@@ -1,0 +1,22 @@
+{
+    "id": 11120,
+    "type": "GLOVES",
+    "name": "Combat bracelet(3)",
+    "requirements": [],
+    "bonuses": [
+        7,
+        7,
+        7,
+        3,
+        7,
+        5,
+        5,
+        5,
+        3,
+        5,
+        0,
+        0,
+        0,
+        0
+    ]
+}

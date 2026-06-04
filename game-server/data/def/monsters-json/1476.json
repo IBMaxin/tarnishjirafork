@@ -1,0 +1,12 @@
+{
+    "id": 1476,
+    "name": "Chompy bird",
+    "stand": 6768,
+    "walk": 6768,
+    "weakness": "Arrows",
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "none",
+    "hitpoints_level": 10
+}

@@ -1,0 +1,27 @@
+{
+    "id": 8712,
+    "type": "HAT",
+    "name": "Steel heraldic helm",
+    "requirements": [
+        {
+            "level": 5,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

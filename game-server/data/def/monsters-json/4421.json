@@ -1,0 +1,13 @@
+{
+    "id": 4421,
+    "name": "Undead cow",
+    "size": 2,
+    "stand": 5852,
+    "walk": 5848,
+    "weakness": "Salve amulet",
+    "combat_level": 2,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Melee",
+    "hitpoints_level": 8
+}

@@ -1,0 +1,30 @@
+{
+    "id": 4864,
+    "type": "WEAPON",
+    "name": "Ahrim's staff 50",
+    "listeners": [
+        "AhrimsListener"
+    ],
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 6
+        }
+    ],
+    "bonuses": [
+        12,
+        -1,
+        62,
+        15,
+        0,
+        3,
+        2,
+        5,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

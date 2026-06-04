@@ -1,0 +1,27 @@
+{
+    "id": 11667,
+    "type": "AMULET",
+    "name": "Void seal(7)",
+    "requirements": [
+        {
+            "level": 42,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+    ]
+}

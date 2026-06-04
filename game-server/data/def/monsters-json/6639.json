@@ -1,0 +1,20 @@
+{
+    "id": 6639,
+    "name": "Smoke Devil",
+    "stand": 1829,
+    "walk": 1828,
+    "weakness": "Melee/Ranged",
+    "combat_level": 1,
+    "poison_immunity": true,
+    "venom_immunity": true,
+    "attack_style": "Magical ranged",
+    "attack_cooldown": 4,
+    "attack_level": 130,
+    "defence_level": 130,
+    "strength_level": 130,
+    "hitpoints_level": 185,
+    "ranged_level": 130,
+    "magic_level": 130,
+    "defence_magic": 600,
+    "defence_ranged": 44
+}

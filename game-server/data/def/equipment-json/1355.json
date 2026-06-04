@@ -1,0 +1,27 @@
+{
+    "id": 1355,
+    "type": "WEAPON",
+    "name": "Mithril axe",
+    "requirements": [
+        {
+            "level": 20,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        -2,
+        12,
+        10,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        13,
+        0,
+        0,
+        0
+    ]
+}

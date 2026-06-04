@@ -1,0 +1,13 @@
+[
+  {
+    "id": 963,
+    "radius": "4",
+    "facing": "NORTH",
+    "position": {
+      "x": 3485,
+      "y": 9509,
+      "height": 0
+    },
+    "convert-id": false
+  }
+]

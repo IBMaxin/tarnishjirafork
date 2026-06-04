@@ -1,7 +1,9 @@
 package plugin.click.npc;
 
+import com.osroyale.content.activity.ActivityType;
 import com.osroyale.content.activity.impl.magearena.MageArena;
 import com.osroyale.content.activity.impl.recipefordisaster.RecipeForDisaster;
+import com.osroyale.content.activity.impl.VorkathActivity;
 import com.osroyale.content.activity.panel.ActivityPanel;
 import com.osroyale.content.dialogue.DialogueFactory;
 import com.osroyale.content.dialogue.Expression;
@@ -442,6 +444,13 @@ public class NpcFirstClickPlugin extends PluginContext {
                 player.dialogueFactory.sendOption("Yes", () -> player.send(new SendMessage("Tutorial coming soon.")), "No", () -> player.dialogueFactory.clear());
                 player.dialogueFactory.execute();
                 break;
+
+            case 8059:
+                // Dormant Vorkath - create activity if player entered via teleport
+                if (!player.inActivity(ActivityType.VORKATH)) {
+                    VorkathActivity.create(player);
+                }
+                return true;
 
             default:
                 player.dialogueFactory.sendNpcChat(id, Expression.ANNOYED, "Please go away I'm busy.").execute();

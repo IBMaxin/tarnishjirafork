@@ -1,0 +1,22 @@
+{
+    "id": 1731,
+    "type": "AMULET",
+    "name": "Amulet of power",
+    "requirements": [],
+    "bonuses": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        0,
+        0,
+        1
+    ]
+}

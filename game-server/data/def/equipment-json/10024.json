@@ -1,0 +1,22 @@
+{
+    "id": 10024,
+    "type": "WEAPON",
+    "name": "Falconer's glove",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

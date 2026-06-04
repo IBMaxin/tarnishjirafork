@@ -1,0 +1,21 @@
+{
+    "id": 3102,
+    "name": "Barbarian",
+    "stand": 808,
+    "walk": 819,
+    "attackable": true,
+    "weakness": "Earth spells",
+    "combat_level": 8,
+    "attack_style": "Melee/Ranged",
+    "attack_cooldown": 4,
+    "attack_level": 7,
+    "defence_level": 7,
+    "strength_level": 7,
+    "ranged_level": 7,
+    "magic_level": 7,
+    "defence_slash": 2,
+    "defence_crush": 2,
+    "defence_magic": -3,
+    "defence_ranged": 2,
+    "bonus_strength": 15
+}

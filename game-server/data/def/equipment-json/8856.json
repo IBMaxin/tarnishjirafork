@@ -1,0 +1,22 @@
+{
+    "id": 8856,
+    "type": "SHIELD",
+    "name": "Defensive shield",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -6,
+        -2,
+        8,
+        9,
+        7,
+        0,
+        7,
+        0,
+        0,
+        0,
+        0
+    ]
+}

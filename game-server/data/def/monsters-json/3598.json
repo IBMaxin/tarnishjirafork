@@ -1,0 +1,18 @@
+{
+    "id": 3598,
+    "name": "Frogeel",
+    "size": 2,
+    "stand": 5839,
+    "walk": 5840,
+    "attackable": true,
+    "aggressive": true,
+    "combat_level": 103,
+    "attack_style": "Melee (Slash)",
+    "attack_cooldown": 4,
+    "attack_level": 89,
+    "defence_level": 89,
+    "strength_level": 89,
+    "hitpoints_level": 90,
+    "ranged_level": 89,
+    "magic_level": 89
+}

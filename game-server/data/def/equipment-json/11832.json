@@ -1,0 +1,27 @@
+{
+    "id": 11832,
+    "type": "BODY",
+    "name": "Bandos chestplate",
+    "requirements": [
+        {
+            "level": 65,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -15,
+        -10,
+        98,
+        93,
+        105,
+        -6,
+        133,
+        4,
+        0,
+        0,
+        1
+    ]
+}

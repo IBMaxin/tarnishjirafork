@@ -1,0 +1,27 @@
+{
+    "id": 22804,
+    "type": "WEAPON",
+    "name": "Dragon knife",
+    "requirements": [
+        {
+            "level": 60,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        28,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        30,
+        0,
+        0
+    ]
+}

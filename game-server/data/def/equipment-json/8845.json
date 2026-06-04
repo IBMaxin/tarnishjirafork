@@ -1,0 +1,27 @@
+{
+    "id": 8845,
+    "type": "SHIELD",
+    "name": "Iron defender",
+    "requirements": [
+        {
+            "level": 1,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        5,
+        4,
+        3,
+        -3,
+        -2,
+        5,
+        4,
+        3,
+        -3,
+        -2,
+        0,
+        0,
+        0,
+        0
+    ]
+}

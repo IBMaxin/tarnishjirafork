@@ -1,0 +1,22 @@
+{
+    "id": 4000,
+    "name": "Mouse",
+    "stand": 242,
+    "walk": 239,
+    "aggressive": true,
+    "weakness": "Stab attacks",
+    "combat_level": 1,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 80,
+    "defence_level": 80,
+    "strength_level": 80,
+    "hitpoints_level": 70,
+    "ranged_level": 80,
+    "magic_level": 80,
+    "defence_stab": 30,
+    "defence_slash": 55,
+    "defence_crush": 65,
+    "defence_magic": 50,
+    "defence_ranged": 60
+}

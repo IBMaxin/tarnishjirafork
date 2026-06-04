@@ -1,0 +1,17 @@
+{
+    "id": 129,
+    "name": "Tentacle",
+    "stand": 3617,
+    "walk": 3617,
+    "aggressive": true,
+    "weakness": "Poison",
+    "combat_level": 1,
+    "attack_style": "Melee, Crush",
+    "attack_cooldown": 4,
+    "attack_level": 76,
+    "defence_level": 76,
+    "strength_level": 76,
+    "hitpoints_level": 75,
+    "ranged_level": 76,
+    "magic_level": 76
+}

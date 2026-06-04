@@ -1,0 +1,30 @@
+{
+    "id": 4726,
+    "type": "WEAPON",
+    "name": "Guthan's warspear",
+    "listeners": [
+        "GuthansListener"
+    ],
+    "requirements": [
+        {
+            "level": 70,
+            "skill": 0
+        }
+    ],
+    "bonuses": [
+        75,
+        75,
+        75,
+        0,
+        0,
+        7,
+        7,
+        7,
+        0,
+        0,
+        75,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "id": 3055,
+    "type": "WEAPON",
+    "name": "Lava battlestaff",
+    "requirements": [],
+    "bonuses": [
+        7,
+        -1,
+        28,
+        10,
+        0,
+        2,
+        3,
+        1,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "id": 21018,
+    "type": "HAT",
+    "name": "Ancestral hat",
+    "requirements": [
+        {
+            "level": 75,
+            "skill": 4
+        },
+        {
+            "level": 65,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        8,
+        -2,
+        12,
+        11,
+        13,
+        5,
+        0,
+        0,
+        0,
+        2,
+        0
+    ]
+}

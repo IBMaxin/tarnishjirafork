@@ -1,0 +1,27 @@
+{
+    "id": 1083,
+    "type": "LEGS",
+    "name": "Steel plateskirt",
+    "requirements": [
+        {
+            "level": 5,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -21,
+        -7,
+        17,
+        16,
+        15,
+        -4,
+        16,
+        0,
+        0,
+        0,
+        0
+    ]
+}

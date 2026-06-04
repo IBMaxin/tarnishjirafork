@@ -1,0 +1,31 @@
+{
+    "id": 21015,
+    "type": "WEAPON",
+    "name": "Dinh's bulwark",
+    "requirements": [
+        {
+            "level": 75,
+            "skill": 0
+        },
+        {
+            "level": 75,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        110,
+        0,
+        0,
+        141,
+        145,
+        145,
+        18,
+        148,
+        38,
+        0,
+        0,
+        0
+    ]
+}

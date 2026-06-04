@@ -1,0 +1,22 @@
+{
+    "id": 12902,
+    "type": "WEAPON",
+    "name": "Toxic staff (uncharged)",
+    "requirements": [],
+    "bonuses": [
+        55,
+        70,
+        0,
+        17,
+        0,
+        0,
+        3,
+        2,
+        17,
+        0,
+        55,
+        70,
+        0,
+        0
+    ]
+}

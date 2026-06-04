@@ -1,0 +1,27 @@
+{
+    "id": 868,
+    "type": "WEAPON",
+    "name": "Rune knife",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 4
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        24,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "id": 7570,
+    "name": "<col=00ffff>Guardian</col>",
+    "size": 2,
+    "attackable": true,
+    "stand": 7526,
+    "walk": 7526,
+    "combat_level": 1
+}

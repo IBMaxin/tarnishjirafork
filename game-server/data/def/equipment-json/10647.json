@@ -1,0 +1,22 @@
+{
+    "id": 10647,
+    "type": "CAPE",
+    "name": "Hitpoints cape",
+    "requirements": [],
+    "bonuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        9,
+        9,
+        9,
+        9,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "id": 3208,
+    "name": "Jungle horror",
+    "size": 2,
+    "stand": 4231,
+    "walk": 4236,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Stab, Ranged",
+    "combat_level": 70,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 70,
+    "defence_level": 70,
+    "strength_level": 70,
+    "hitpoints_level": 45,
+    "ranged_level": 70,
+    "magic_level": 70
+}

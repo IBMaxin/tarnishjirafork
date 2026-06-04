@@ -1,0 +1,27 @@
+{
+    "id": 4131,
+    "type": "BOOTS",
+    "name": "Rune boots",
+    "requirements": [
+        {
+            "level": 40,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -3,
+        -1,
+        12,
+        13,
+        14,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+    ]
+}

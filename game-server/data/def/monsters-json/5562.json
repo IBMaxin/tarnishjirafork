@@ -1,0 +1,23 @@
+{
+    "id": 5562,
+    "name": "Angry barbarian spirit",
+    "stand": 6729,
+    "walk": 6730,
+    "attackable": true,
+    "aggressive": true,
+    "weakness": "Magic",
+    "combat_level": 166,
+    "attack_style": "Melee (crush)",
+    "attack_cooldown": 4,
+    "attack_level": 140,
+    "defence_level": 140,
+    "strength_level": 140,
+    "hitpoints_level": 190,
+    "ranged_level": 140,
+    "magic_level": 140,
+    "defence_slash": 3,
+    "defence_crush": 2,
+    "defence_magic": -3,
+    "defence_ranged": 2,
+    "bonus_strength": 15
+}

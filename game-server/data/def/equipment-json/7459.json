@@ -1,0 +1,27 @@
+{
+    "id": 7459,
+    "type": "GLOVES",
+    "name": "Adamant gloves",
+    "requirements": [
+        {
+            "level": 30,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        7,
+        7,
+        7,
+        4,
+        7,
+        7,
+        7,
+        7,
+        4,
+        7,
+        7,
+        0,
+        0,
+        0
+    ]
+}

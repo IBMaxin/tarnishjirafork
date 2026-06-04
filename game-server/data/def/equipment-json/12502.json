@@ -1,0 +1,27 @@
+{
+    "id": 12502,
+    "type": "LEGS",
+    "name": "Bandos chaps",
+    "requirements": [
+        {
+            "level": 65,
+            "skill": 1
+        }
+    ],
+    "bonuses": [
+        0,
+        0,
+        0,
+        -10,
+        17,
+        31,
+        25,
+        33,
+        28,
+        31,
+        0,
+        0,
+        0,
+        0
+    ]
+}

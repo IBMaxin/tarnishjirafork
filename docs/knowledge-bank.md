@@ -18,6 +18,8 @@
 | Server port | 43594 |
 | Startup signals | `Startup service finished` → `Loaded: 133 plugins` → `Server built successfully` |
 | Game testing | Manual in-game after changes (login with client) |
+| Pre-live plan | `pre-live-fix-plan.md` (Phase 1 in progress) |
+| Unzip.java | Removed: dead code, no callers |
 
 ---
 
@@ -317,3 +319,160 @@ Cleanest data file — 0 errors found.
 | `Starter.java` | Server entry point, calls all parser `.run()` methods |
 
 **All under:** `game-server/src/main/java/com/osroyale/`
+
+---
+
+## 11. Privileges, Commands, and Player State
+
+### Rank hierarchy
+
+| Enum value | Display | Notes |
+|------------|---------|-------|
+| `OWNER` | Owner | Treat as top-tier privilege. |
+| `DEVELOPER` | Developer | `isDeveloper()` = owner OR developer. |
+| `MANAGER` | Manager | `isManager()` = dev/owner OR manager. |
+| `ADMINISTRATOR` | Administrator | `isAdministrator()` = manager OR admin. |
+| `MODERATOR` | Moderator | `isModerator()` = admin OR moderator. |
+| `HELPER` | Helper | `isHelper()` = moderator OR helper. |
+| `DONATOR` | Donator | Donor tiers derived from `player.donation.getSpent()` thresholds. |
+| `IRONMAN` / `ULTIMATE_IRONMAN` / `HARDCORE_IRONMAN` | Ironman | Gated separately for ironman rules. |
+
+Owner and Auto-inheritance rule: most `is*(player)` helpers already include the higher ranks. For new command gates, use the most specific helper that matches the intent (e.g. `isManager(player)` for staff tools, `isModerator(player)` for moderation tools).
+
+### Command plugin gating
+
+- Each command plugin ends with `canAccess(Player player)` which returns the minimum rank needed.
+- Managers/Admins/Owners are expected to have staff commands there; lower tiers get their own plugins.
+- `OwnerCommandPlugin` is effectively staff + superadmin tools; make sure Owner/Admin both see the commands they need.
+
+### Slayer / task manipulation
+
+- Slayer state lives on `player.slayer`: `task`, `amount`, `points`, `blocked`, `unlocked`.
+- Existing staff commands: `::removeslayertask` / `::removetask` (ManagerCommandPlugin).
+- Want: `::settask <SlayerTask enum name>`, `::taskamount <amount>`, `::addtaskamount <amount>` — these should check `isManager(player)`.
+- Slayer task names map to `com.osroyale.content.skill.impl.slayer.SlayerTask` enum.
+
+### Points / currencies
+
+- `player.points`: slayer points.
+- `player.donation`: a helper object with `setCredits(int)` and `getSpent()`.
+- `player.votePoints`: vote points.
+- `player.pestPoints`: pest control points.
+- `player.skillingPoints`: general skilling points.
+- Admin already has `::points` which sets all currencies to high values. Add finer commands like `::setpoints <type> <amount>` if needed.
+
+### Teleports/boss entry
+### Kroken/Zulrah entry (fixed)
+- `Teleport.KRAKEN` teleports to `(2276, 10000, 0)`. Actual instance starts on object click `537` in `ObjectFirstClickPlugin`.
+- Object `537` now has a proper `break;` and no longer falls through into `case 10068` (Zulrah).
+- Zulrah entry remains on object `10068` and auto-creates `ZulrahActivity`.
+- Verified in-game: Kraken entrance now correctly enters Kraken fight.
+
+### Commands discovery path for future work
+
+Most activity entry points are in `game-server/plugins/plugin/click/object/ObjectFirstClickPlugin.java` under `firstClickObject()`. Typed activity controllers are under `game-server/src/main/java/com/osroyale/content/activity/impl/`.
+
+### Player state fields commonly needed by admin tools
+
+- `player.right` → current `PlayerRight`.
+- `player.slayer` → slayer task + points.
+- `player.donation` → donation credits + helper for rank checks.
+- `player.votePoints`, `player.pestPoints`, `player.skillingPoints`.
+- `player.bank`, `player.inventory`, `player.equipment` for item spawn/wipe.
+
+### Staff command index by plugin
+
+- `OwnerCommandPlugin` (`canAccess`: `OWNER` exactly) — superadmin/audit/ban/promote/spawn tools.
+- `AdminCommandPlugin` (`canAccess`: `isAdministrator(player)`) — shared staff tools; also usable by Manager and Owner.
+- `ManagerCommandPlugin` (`canAccess`: `isManager(player)`) — promotion and slayer task tools; also usable by Admin and Owner.
+- `ModeratorCommandPlugin`, `HelperCommandPlugin`, `DonatorCommandPlugin` exist as separate tiers when needed.
+
+New practical staff commands added:
+- `::settask <SlayerTask>` — set your own task by enum name.
+- `::taskamount <amount>` — set your own task amount.
+- `::addtaskamount <amount>` — add to your own task amount.
+- `::removetask` / `::removeslayertask` — clear your own task.
+
+---
+
+## 13. Admin / Owner / Manager Command Registry
+
+### `OwnerCommandPlugin`
+
+Access: `player.right == OWNER`.
+
+| Command | Aliases | Notes |
+|---------|---------|-------|
+| `::ban` | | Bans named online player |
+| `::unban` | | Unbans by username |
+| `::ipban` | | IP-bans online player's host |
+| `::ipmute` | | IP-mutes online player |
+| `::unipmute` | | Removes IP-mute |
+| `::kill` | | Kills named player |
+| `::giveitem` / `::gi` | | Give item to named player |
+| `::giveexp` / `::giveexperience` | | Grant 1.5M XP in a skill to named player |
+| `::settitle` | | Set title for named player |
+| `::setpt` / `::setplaytime` | | Set playtime for named player |
+| `::setrank` / `::giverank` / `::rank` | | Promote named player to Ironman/Ultimate/Hardcore/Manager/Developer |
+| `::checkaccs` | | Show accounts sharing the same host as the selected player |
+| `::bombs` | | Visual effect debug |
+| `::bloodmoneychest` | | Force-spawn blood money chest |
+| `::resetplayer` | | Reset named player skills/inventory/equipment/bank |
+| `::doubleexp` | | Toggle global double XP |
+| `::wildplayers` | | List wilderness players |
+| `::randomevent` | | Trigger MimeEvent for named player |
+| `::alltome` | | Teleport all non-bot players to you |
+| `::fight` | | Spawn/command two NPCs to fight |
+| `::pnpc` | | Transform yourself into an NPC |
+| `::spawnnpc` | | Spawn NPC under your feet and append to `npc_spawns.json` |
+| `::item` / `::pickup` | | Spawn item into inventory |
+| `::find` / `::give` | | Search item definitions by name and open result interface |
+| `::pos` / `::mypos` / `::coords` | | Print your current position |
+
+### `AdminCommandPlugin`
+
+Access: `isAdministrator(player)`. Inherited by Manager and Owner.
+
+| Command | Aliases | Notes |
+|---------|---------|-------|
+| `::points` | | Set many currencies at once |
+| `::demote` | | Demote named player to `PLAYER` |
+| `::save` / `::saveworld` / `::savegame` | | Flush world state |
+| `::bank` | | Open your bank |
+| `::move` | | Teleport by delta |
+| `::tele` | | Teleport by absolute coords |
+| `::spellbook` | | Swap spellbook |
+| `::starterbank` | | Reset bank to starter loadout |
+| `::bigbank` | | Reset bank to large preset |
+| `::maxrng` / `::maxrange` / `::maxranged` | | Fill inventory with max ranged kit |
+| `::maxmelee` | | Fill inventory with max melee kit |
+| `::maxmagic` / `::maxmage` | | Fill inventory with max magic kit |
+
+Targets: commands with self-only behavior vs named targets varies by implementation.
+
+### `ManagerCommandPlugin`
+
+Access: `isManager(player)`. Inherited by Admin and Owner.
+
+| Command | Aliases | Notes |
+|---------|---------|-------|
+| `::broadcast` | | Server-wide announcement |
+| `::discord` | | Discord bridge message stub |
+| `::promote` | | Promote named player to Helper/Moderator/Admin |
+| `::master` | | Max all skills |
+| `::removeslayertask` / `::removetask` | | Clear named player's slayer task |
+| `::settask` | | Set your slayer task by `SlayerTask` enum name |
+| `::taskamount` | | Set your slayer task amount |
+| `::addtaskamount` | | Add to your slayer task amount |
+
+---
+
+## 12. Editor / Build Preferences
+
+- Server build: `.\gradlew.bat :game-server:classes`
+- Client build: `.\gradlew.bat :game-client:classes`
+- Tests: `.\gradlew.bat :game-server:test`
+- Run server: `.\gradlew.bat :game-server:run`
+- No loose files outside intended directory structure. Scripts go in `scripts/<purpose>/`.
+- Keep old files after migration swaps until verified in-game.
+- Scripts that write files should always include a `--dry-run` mode.

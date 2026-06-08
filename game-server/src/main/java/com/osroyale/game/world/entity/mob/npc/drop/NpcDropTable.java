@@ -4,7 +4,7 @@ import com.osroyale.game.world.entity.mob.player.Player;
 import com.osroyale.game.world.entity.mob.player.PlayerRight;
 import com.osroyale.game.world.items.ItemDefinition;
 import com.osroyale.util.RandomUtils;
-import com.osroyale.util.parser.impl.NpcDropParser;
+import org.jire.tarnishps.defs.NpcDropFileLoader;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.LinkedList;
@@ -148,7 +148,9 @@ public final class NpcDropTable {
         };
 
         ItemDefinition.createParser().run();
-        new NpcDropParser().run();
+        log.info("Loading NPC drop tables via NpcDropFileLoader...");
+        NpcDropFileLoader.load();
+        log.info("Loaded {} NPC drop tables", NpcDropManager.NPC_DROPS.size());
 
         NpcDropTable table = NpcDropManager.NPC_DROPS.get(npcId);
 

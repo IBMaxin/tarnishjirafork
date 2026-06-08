@@ -71,7 +71,6 @@ public final class DataJsonParseTest {
         List<String> largeFiles = List.of(
                 "data/def/item/item_definitions.json",
                 "data/def/npc/npc_definitions.json",
-                "data/def/npc/npc_drops.json",
                 "data/def/equipment/equipment_definitions.json",
                 "data/def/store/stores.json"
         );

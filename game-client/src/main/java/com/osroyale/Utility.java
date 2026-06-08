@@ -29,7 +29,10 @@ public class Utility {
     public static final Path CACHE_DIRECTORY = Path.of(System.getProperty("user.home"), Configuration.CACHE_NAME);
 
     public static String findcachedir() {
-
+        String custom = System.getProperty("tarnish.cache.dir");
+        if (custom != null && !custom.isEmpty()) {
+            return custom.endsWith("/") || custom.endsWith("\\") ? custom : custom + File.separator;
+        }
 
         return RuneLite.CACHE_DIR.getAbsolutePath() + "/";
     }

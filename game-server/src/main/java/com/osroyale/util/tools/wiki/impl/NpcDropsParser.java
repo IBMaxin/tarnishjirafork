@@ -6,7 +6,9 @@ import com.google.gson.JsonObject;
 import com.osroyale.game.world.entity.mob.npc.definition.NpcDefinition;
 import com.osroyale.game.world.entity.mob.npc.drop.NpcDropManager;
 import com.osroyale.game.world.items.ItemDefinition;
-import com.osroyale.util.parser.impl.NpcDropParser;
+import org.jire.tarnishps.defs.NpcDropFileLoader;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.osroyale.util.tools.wiki.parser.WikiTable;
 import com.osroyale.util.tools.wiki.parser.WikiTableParser;
 import org.jsoup.nodes.Document;
@@ -17,6 +19,7 @@ import java.util.*;
 
 public class NpcDropsParser extends WikiTableParser {
 
+    private static final Logger log = LoggerFactory.getLogger(NpcDropsParser.class);
     private static final Map<String, ItemDefinition> itemByName = new HashMap<>();
 
     private NpcDropsParser() {
@@ -35,7 +38,8 @@ public class NpcDropsParser extends WikiTableParser {
 
         LinkedListMultimap<String, NpcDefinition> byName = LinkedListMultimap.create();
         NpcDefinition.createParser().run();
-        new NpcDropParser().run();
+        log.info("Loading NPC drop tables via NpcDropFileLoader for wiki scraping...");
+        NpcDropFileLoader.load();
 
         for (NpcDefinition definition : NpcDefinition.DEFINITIONS) {
             if (definition == null || definition.getName() == null || definition.getName().equals("null")) {

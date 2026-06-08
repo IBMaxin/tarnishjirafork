@@ -25,7 +25,8 @@ public enum ActivityType {
     WARRIOR_GUILD(false),
     CERBERUS(true),
     GODWARS(false),
-    RANDOM_EVENT(false);
+    RANDOM_EVENT(false),
+    ARAXXOR(true);
 
     final boolean record;
     private static final List<ActivityType> RECORDABLE = new LinkedList<>();

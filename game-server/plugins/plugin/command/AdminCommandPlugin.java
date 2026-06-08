@@ -21,15 +21,20 @@ import com.osroyale.net.packet.out.SendMessage;
 import com.osroyale.net.packet.out.SendScrollbar;
 import com.osroyale.net.packet.out.SendString;
 import com.osroyale.util.MessageColor;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class AdminCommandPlugin extends CommandExtension {
+
+    private static final Logger logger = LoggerFactory.getLogger(AdminCommandPlugin.class);
 
     @Override
     public void register() {
@@ -48,29 +53,48 @@ public class AdminCommandPlugin extends CommandExtension {
                     Npc npc = new Npc(id, player.getPosition(), Config.NPC_WALKING_RADIUS, Mob.DEFAULT_INSTANCE, Direction.NORTH);
                     npc.register();
                     npc.locking.lock(LockType.MASTER);
-                    Path path = Paths.get("./data/def/npc/npc_spawns.json");
+
+                    Gson gson = new GsonBuilder().setPrettyPrinting().create();
+                    File spawnFile = new File("data/def/npc-spawns-json", id + ".json");
 
                     try {
-                        if (!Files.exists(path)) {
-                            Files.createFile(path);
+                        JsonArray spawns;
+                        if (spawnFile.exists()) {
+                            spawns = gson.fromJson(new FileReader(spawnFile), JsonArray.class);
+                            if (spawns == null) {
+                                spawns = new JsonArray();
+                            }
+                        } else {
+                            spawns = new JsonArray();
                         }
-                        FileWriter fileWriter = new FileWriter(path.toFile(), true);
-                        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-                        bufferedWriter.write("  {");
-                        bufferedWriter.write("    \"id\": " + id + ",");
-                        bufferedWriter.write("    \"radius\": \"" + Config.NPC_WALKING_RADIUS + "\",");
-                        bufferedWriter.write("    \"facing\": \"NORTH\",");
-                        bufferedWriter.write("    \"position\": {");
-                        bufferedWriter.write("      \"x\": " + player.getPosition().getX() + ",");
-                        bufferedWriter.write("      \"y\": " + player.getPosition().getY() + ",");
-                        bufferedWriter.write("      \"height\": " + player.getPosition().getHeight() + "");
-                        bufferedWriter.write("    }");
-                        bufferedWriter.write("  },");
-                        bufferedWriter.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
+
+                        JsonObject entry = new JsonObject();
+                        entry.addProperty("id", id);
+                        entry.addProperty("radius", String.valueOf(Config.NPC_WALKING_RADIUS));
+                        entry.addProperty("facing", "NORTH");
+                        entry.addProperty("convert-id", true);
+                        entry.addProperty("instance", 0);
+
+                        JsonObject pos = new JsonObject();
+                        pos.addProperty("x", player.getPosition().getX());
+                        pos.addProperty("y", player.getPosition().getY());
+                        pos.addProperty("height", player.getPosition().getHeight());
+                        entry.add("position", pos);
+
+                        spawns.add(entry);
+
+                        try (FileWriter writer = new FileWriter(spawnFile)) {
+                            gson.toJson(spawns, writer);
+                        }
+
+                        logger.info("Saved NPC spawn {} at ({}, {}, {}) to {}.json",
+                                id, player.getPosition().getX(), player.getPosition().getY(),
+                                player.getPosition().getHeight(), id);
+                        player.send(new SendMessage("NPC " + id + " spawned and saved to per-file."));
+                    } catch (Exception e) {
+                        logger.error("Failed to save NPC spawn to {}", spawnFile, e);
+                        player.send(new SendMessage("Failed to save spawn: " + e.getMessage()));
                     }
-                    player.send(new SendMessage("Npc " + id + " has been spawned."));
                 }
             }
         });

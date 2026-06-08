@@ -93,7 +93,7 @@ public class RuneLiteModule extends AbstractModule
 		}
 
 		// bind runtime config
-		RuntimeConfig runtimeConfig = configSupplier.get();
+		RuntimeConfig runtimeConfig = ((RuntimeConfigLoader) configSupplier).tryGet();
 		if (runtimeConfig != null && runtimeConfig.getProps() != null)
 		{
 			for (Map.Entry<String, ?> entry : runtimeConfig.getProps().entrySet())
@@ -148,7 +148,8 @@ public class RuneLiteModule extends AbstractModule
 	@DoNotRename
 	RuntimeConfig provideRuntimeConfig()
 	{
-		return configSupplier.get();
+		RuntimeConfig config = ((RuntimeConfigLoader) configSupplier).tryGet();
+		return config != null ? config : new RuntimeConfig();
 	}
 
 	@Provides

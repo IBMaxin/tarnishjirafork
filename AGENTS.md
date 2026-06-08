@@ -68,6 +68,33 @@ nc -zv localhost 43594
 ```
 ```
 
+## Running the client locally
+
+The client expects its cache files in `~/.tarnish/cache/`. For development you can copy the server cache:
+
+```powershell
+# PowerShell
+Copy-Item -Path "game-server\data\cache\*" -Destination "$env:USERPROFILE\.tarnish\cache" -Force
+```
+
+Or specify a custom cache directory when launching the client:
+
+```bash
+# Bash (WSL/Linux)
+java -Dtarnish.cache.dir=../game-server/data/cache -jar game-client/build/libs/Tarnish.jar
+```
+
+If you use the Gradle `:game-client:run` task, add the JVM arg:
+
+```gradle
+// In game-client/build.gradle.kts
+tasks.named<JavaExec>("run") {
+    jvmArgs = listOf("-Dtarnish.cache.dir=../game-server/data/cache")
+}
+```
+
+Now the client will load the required assets and start correctly.
+
 ## File Discovery — USE code_index.json FIRST
 
 Before grepping the filesystem, check `code_index.json` in the repo root. It maps every source file path to its class name. This is 100x faster than ripgrep/find for finding "where is X defined?"

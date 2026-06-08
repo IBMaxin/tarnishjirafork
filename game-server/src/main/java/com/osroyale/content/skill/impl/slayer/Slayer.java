@@ -245,7 +245,7 @@ public class Slayer {
 
     /** Handles purchasing items from the slayer shop. */
     public void store(int slot, int amount, boolean value) {
-        if (slot < 0 && slot > STORE_ITEMS.length) {
+        if (slot < 0 || slot >= STORE_ITEMS.length) {
             return;
         }
 

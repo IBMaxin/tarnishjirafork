@@ -82,7 +82,12 @@ public abstract class CommandExtension extends PluginContext {
             try {
                 command.execute(player, parser);
             } catch (Exception ex) {
-                // but dont care about the exception
+                logger.error(String.format(
+                        "Command execution failed: player=%s command=%s args=%s extension=%s",
+                        player.getName(),
+                        parser.getCommand(),
+                        parser.toString(),
+                        this.getClass().getSimpleName()), ex);
             }
 
             return true;

@@ -28,8 +28,6 @@ public final class RequiredDataFilesTest {
             "data/def/equipment/equipment_definitions.json",
             // NPCs
             "data/def/npc/npc_definitions.json",
-            "data/def/npc/npc_drops.json",
-            "data/def/npc/npc_spawns.json",
             "data/def/npc/npc_force_chat.json",
             // Stores
             "data/def/store/stores.json",

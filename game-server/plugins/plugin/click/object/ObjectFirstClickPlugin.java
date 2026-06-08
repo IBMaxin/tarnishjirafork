@@ -818,6 +818,7 @@ public class ObjectFirstClickPlugin extends PluginContext {
                     player.send(new SendMessage("You need a slayer task to enter this cave."));
                     break;
                 }
+                break;
             case 10068: //Zulrah Entrance
                     player.move(new Position(2268, 3069, 0));
                     World.schedule(8, () -> ZulrahActivity.create(player));

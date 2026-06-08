@@ -1,6 +1,7 @@
 package com.osroyale.game.world.entity.mob.npc;
 
 import com.osroyale.game.world.entity.combat.strategy.CombatStrategy;
+import com.osroyale.game.world.entity.combat.strategy.npc.NpcMeleeStrategy;
 import com.osroyale.game.world.entity.combat.strategy.npc.boss.*;
 import com.osroyale.game.world.entity.combat.strategy.npc.boss.armadyl.FlightKilisa;
 import com.osroyale.game.world.entity.combat.strategy.npc.boss.armadyl.FlockleaderGeerin;
@@ -55,6 +56,7 @@ public class NpcUtility {
             5862,  /* Cerberus */
             2205,  /* Commander Zilyana */
             8060, /* Vorkath */
+            11176, /* Araxxor */
             KalphiteQueen.PHASE2_ID // only phase 2, since "killing" phase 1 doesn't count
     };
 
@@ -111,6 +113,8 @@ public class NpcUtility {
         put(6767, LizardShaman::new);
         put(5862, Cerberus::new);
         put(8060, Vorkath::new);
+        put(11175, NpcMeleeStrategy::get);
+        put(11176, Araxxor::new);
         put(8064, StoneGuardian::new);
         put(8065, StoneGuardian::new);
         put(8066, StoneGuardian::new);

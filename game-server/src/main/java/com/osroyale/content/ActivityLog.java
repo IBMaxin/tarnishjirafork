@@ -38,6 +38,7 @@ public enum ActivityLog {
     KRIL_TSUTSAROTH,
     KREE_ARRA,
     CERBERUS,
+    ARAXXOR,
 
     /* Regular monsters */
     SKELETAL_WYVERN,

@@ -1,0 +1,124 @@
+﻿To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.2/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :game-server:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :game-server:compileKotlin UP-TO-DATE
+> Task :game-server:compileJava UP-TO-DATE
+> Task :game-server:generateRebelMain UP-TO-DATE
+> Task :game-server:processResources UP-TO-DATE
+> Task :game-server:classes UP-TO-DATE
+
+> Task :game-server:run
+[37mJun 7,' 2026 9:27:23 com.osroyale.Starter [Starter]
+INFO: Tarnish is running (client version 12)
+[m[37mJun 7,' 2026 9:27:23 com.osroyale.Starter [Starter]
+INFO: Game Engine=Sequential
+[m[37mJun 7,' 2026 9:27:24 com.osroyale.fs.cache.decoder.ObjectDefinitionDecoder [Starter]
+INFO: Loading object definitions.
+[m[37mJun 7,' 2026 9:27:24 com.osroyale.fs.cache.decoder.ObjectDefinitionDecoder [Starter]
+INFO: Loaded 50046 object definitions.
+[m[37mJun 7,' 2026 9:27:24 com.osroyale.fs.cache.decoder.MapDefinitionDecoder [Starter]
+INFO: Loading region definitions.
+[m[37mJun 7,' 2026 9:27:24 com.osroyale.fs.cache.decoder.MapDefinitionDecoder [Starter]
+INFO: Loaded 2179 region definitions.
+[m[37mJun 7,' 2026 9:27:24 com.osroyale.fs.cache.decoder.RegionDecoder [Starter]
+INFO: Loading regional map data.
+.\gradlew.bat : [main] INFO com.osroyale.Main - Starting OS Royale server...
+At line:1 char:1
++ .\gradlew.bat :game-server:run --no-daemon 2>&1 | Out-File -FilePath  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([main] INFO com...oyale server...:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[m[37mJun 7,' 2026 9:27:25 com.osroyale.fs.cache.decoder.RegionDecoder [Starter]
+INFO: Loaded 2179 regions, skipped 0 maps.
+[m[37mJun 7,' 2026 9:27:25 com.osroyale.fs.cache.decoder.AnimationDefinitionDecoder [Starter]
+INFO: Loading animation definitions.
+[m[37mJun 7,' 2026 9:27:25 com.osroyale.fs.cache.decoder.AnimationDefinitionDecoder [Starter]
+INFO: Loaded 10678 animation definitions.
+[m[37mJun 7,' 2026 9:27:28 com.osroyale.game.world.entity.combat.attack.listener.CombatListenerManager [Starter]
+INFO: Loaded: 60 item set combat listeners.
+[m[37mJun 7,' 2026 9:27:28 com.osroyale.game.world.entity.combat.attack.listener.CombatListenerManager [Starter]
+INFO: Loaded: 86 npc combat listeners.
+[Starter] INFO org.jire.tarnishps.defs.NpcSpawnFileLoader - Loaded 3436 NPC spawns from data\def\npc-spawns-json
+[Starter] INFO org.jire.tarnishps.defs.NpcDropFileLoader - Loaded 1780 NPC drop tables from data\def\npc-drops-json
+[m[37mJun 7,' 2026 9:27:29 com.osroyale.content.shootingstar.ShootingStar [Starter]
+INFO: Loaded Shooting Stars event.
+[m[33;1mJun 7,' 2026 9:27:29 com.osroyale.util.parser.GsonParser [pool-2-thread-11]
+WARN: json document=.\data\content\game\world.json is null
+[m[37mJun 7,' 2026 9:27:29 com.osroyale.util.parser.GenericParser [pool-2-thread-11]
+INFO: Loaded: 0 world.
+[m[37mJun 7,' 2026 9:27:29 com.osroyale.Starter [Starter]
+INFO: Startup service finished
+[m[37mJun 7,' 2026 9:27:31 com.osroyale.content.lms.loadouts.LMSLoadoutManager [Starter]
+INFO: Loaded: 3 lms loadouts.
+[m[37mJun 7,' 2026 9:27:31 com.osroyale.game.plugin.PluginManager [Starter]
+INFO: Loaded: 134 plugins.
+[m[37mJun 7,' 2026 9:27:31 com.osroyale.Starter [Starter]
+INFO: Game service started
+[m[37mJun 7,' 2026 9:27:31 com.osroyale.Starter [Starter]
+INFO: Events have been scheduled
+[Game Thread] INFO net.openhft.affinity.AffinityLock - Assigning cpu 11 to Thread[#146,Game Thread,10,main] on thread 
+id 3096
+[Game Thread] WARN net.openhft.affinity.impl.WindowsJNAAffinity - Tried to set affinity to {11} but was {0, 1, 2, 3, 
+4, 5, 6, 7, 8, 9, 10, 11} you may have insufficient access rights
+[Starter] INFO org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+[Starter] INFO org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: Starter
+[Starter] INFO org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class 
+org.quartz.core.SchedulerSignalerImpl
+[Starter] INFO org.quartz.core.QuartzScheduler - Quartz Scheduler v2.5.0 created.
+[Starter] INFO org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+[Starter] INFO org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.5.0) 
+'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[Starter] INFO org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from 
+default resource file in Quartz package: 'quartz.properties'
+[Starter] INFO org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.5.0
+[mDouble Experience Job: Sun Jun 07 22:00:00 PDT 2026
+[Starter] INFO org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[37mJun 7,' 2026 9:27:31 com.osroyale.game.service.NetworkService [Starter]
+INFO: Starting network service on port: 43594
+[m[37mJun 7,' 2026 9:27:31 com.osroyale.game.service.NetworkService [Starter]
+INFO: Server built successfully (took 7 seconds).
+[mstarLocation.starPosition pos[x=3566, y=3297, z=0]
+Firing Double Experience job
+[37mJun 7,' 2026 10:02:24 com.osroyale.game.world.entity.mob.player.Player [Game Thread]
+INFO: [REGISTERED]: Zezima [127.0.0.1]
+[m[ButtonClickPacketListener]: button=5620
+total 1 = 3
+total 1 = 3
+total 1 = 3
+[31;1mJun 7,' 2026 10:03:32 com.osroyale.net.ChannelHandler [multiThreadIoEventLoopGroup-3-3]
+ERROR: Exception caught upstream!
+[m
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:255)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1139)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:152)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:381)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:575)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:550)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:491)
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:468)
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:206)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:177)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1073)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+total 1 = 3
+total 1 = 3
+total 1 = 3
+total 1 = 3
+[37mJun 7,' 2026 10:03:45 com.osroyale.game.world.entity.mob.player.Player [Game Thread]
+INFO: [UNREGISTERED]: Zezima [127.0.0.1]
+[m

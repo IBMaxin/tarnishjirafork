@@ -93,6 +93,64 @@ public class ManagerCommandPlugin extends CommandExtension {
             }
         });
 
+        commands.add(new Command("settask") {
+            @Override
+            public void execute(Player player, CommandParser parser) {
+                if (!parser.hasNext()) {
+                    player.message("Use: ::settask <task>");
+                    return;
+                }
+                String raw = parser.nextLine().toUpperCase();
+                if (raw.startsWith("KRAKEN")) {
+                    player.slayer.setTask(null);
+                    player.slayer.setAmount(0);
+                    player.message("Your slayer task was reset.");
+                    return;
+                }
+                try {
+                    com.osroyale.content.skill.impl.slayer.SlayerTask task =
+                            com.osroyale.content.skill.impl.slayer.SlayerTask.valueOf(raw);
+                    World.search(player.getUsername()).ifPresent(other -> {
+                        other.slayer.setTask(task);
+                        other.message("Your slayer task was set to " + task.getName() + ".");
+                    });
+                } catch (IllegalArgumentException ex) {
+                    player.message("Unknown task name. Use the SlayerTask enum, e.g. ::settask ZULRAH.");
+                }
+            }
+        });
+
+        commands.add(new Command("taskamount") {
+            @Override
+            public void execute(Player player, CommandParser parser) {
+                if (!parser.hasNext()) {
+                    player.message("Use: ::taskamount <amount>");
+                    return;
+                }
+                int amount = Math.max(0, Integer.parseInt(parser.nextString()));
+                World.search(player.getUsername()).ifPresent(other -> {
+                    other.slayer.setAmount(amount);
+                    other.message("Task amount set to " + amount + ".");
+                });
+            }
+        });
+
+        commands.add(new Command("addtaskamount") {
+            @Override
+            public void execute(Player player, CommandParser parser) {
+                if (!parser.hasNext()) {
+                    player.message("Use: ::addtaskamount <amount>");
+                    return;
+                }
+                int amount = Math.max(0, Integer.parseInt(parser.nextString()));
+                World.search(player.getUsername()).ifPresent(other -> {
+                    int next = Math.max(0, other.slayer.getAmount() + amount);
+                    other.slayer.setAmount(next);
+                    other.message("Task amount increased to " + next + ".");
+                });
+            }
+        });
+
     }
 
     @Override

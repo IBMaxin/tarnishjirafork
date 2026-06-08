@@ -82,9 +82,9 @@ Goal: add behavioral coverage for plugin system, combat primitives, and utilitie
 
 | # | Task | Status |
 |---|------|--------|
-| C1 | `PluginDiscoveryTest` — `PluginManager.load("plugin")`, assert ≥100 loaded | Pending |
-| C2 | `PluginContextDispatchTest` — verify each event type routes to correct handler | Pending |
-| C3 | Expand `CommandExtensionErrorLoggingTest` — command lookup, exception handling | Pending |
+| C1 | `PluginDiscoveryTest` — `PluginManager.load("plugin")`, assert ≥100 loaded | Done |
+| C2 | `PluginContextDispatchTest` — verify each event type routes to correct handler (31 tests, full subtype coverage) | Done |
+| C3 | Expand `CommandExtensionErrorLoggingTest` — command lookup, exception handling, duplicate detection, canAccess gating | Pending |
 
 ### Phase D — Slayer Bug Fix
 

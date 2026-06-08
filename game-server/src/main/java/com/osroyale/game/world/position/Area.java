@@ -184,6 +184,10 @@ public abstract class Area {
         return inArea(entity, new Position(2257, 4053, entity.getHeight()), new Position(2288, 4079, entity.getHeight()));
     }
 
+    public static boolean inAraxxor(Interactable entity) {
+        return inArea(entity, new Position(3185, 3385, entity.getHeight()), new Position(3215, 3415, entity.getHeight()));
+    }
+
     public static boolean inKingBlackDragon(Interactable entity) {
         for (Area zone : KBD) {
             if (zone.inArea(entity.getPosition())) {
@@ -387,7 +391,7 @@ public abstract class Area {
                 || inCyclops(mob) || inDuelArena(mob) || inDuelArenaLobby(mob) || inFightCaves(mob) || inDuelObsticleArena(mob)
                 || inGnomeCourse(mob) || inGodwars(mob) || inGodwarsChambers(mob) || inInferno(mob) || inKingBlackDragon(mob)
                 || inkolodionArena(mob) || inKraken(mob) || inLMSBuilding(mob) || inPestControl(mob)  || inRFD(mob)
-                || inVorkath(mob) || inVorkath(mob) || inWilderness(mob) || inZulrah(mob) || inLMSGame(mob) || inLMSLobby(mob);
+                || inVorkath(mob) || inAraxxor(mob) || inWilderness(mob) || inZulrah(mob) || inLMSGame(mob) || inLMSLobby(mob);
          }
 
 

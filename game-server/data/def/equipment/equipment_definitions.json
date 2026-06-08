@@ -10746,7 +10746,9 @@
     "id": 2550,
     "type": "RING",
     "name": "Ring of recoil",
-    "listeners": [ "RingOfRecoilListener" ],
+    "listeners": [
+      "RingOfRecoilListener"
+    ],
     "requirements": [],
     "bonuses": [
       0,
@@ -10967,7 +10969,9 @@
     "id": 2570,
     "type": "RING",
     "name": "Ring of life",
-    "listeners": [ "RingOfLifeListener" ],
+    "listeners": [
+      "RingOfLifeListener"
+    ],
     "requirements": [],
     "bonuses": [
       0,
@@ -17673,13 +17677,11 @@
       0,
       0,
       100,
-
       0,
       0,
       0,
       0,
       0,
-
       0,
       70,
       0,
@@ -17702,13 +17704,11 @@
       0,
       0,
       100,
-
       0,
       0,
       0,
       0,
       0,
-
       0,
       70,
       0,
@@ -17731,13 +17731,11 @@
       0,
       0,
       96,
-
       0,
       0,
       0,
       0,
       0,
-
       0,
       68,
       0,
@@ -17760,13 +17758,11 @@
       0,
       0,
       92,
-
       0,
       0,
       0,
       0,
       0,
-
       0,
       66,
       0,
@@ -17789,13 +17785,11 @@
       0,
       0,
       88,
-
       0,
       0,
       0,
       0,
       0,
-
       0,
       64,
       0,
@@ -17818,13 +17812,11 @@
       0,
       0,
       84,
-
       0,
       0,
       0,
       0,
       0,
-
       0,
       62,
       0,
@@ -17847,13 +17839,11 @@
       0,
       0,
       80,
-
       0,
       0,
       0,
       0,
       0,
-
       0,
       60,
       0,
@@ -17876,13 +17866,11 @@
       0,
       0,
       76,
-
       0,
       0,
       0,
       0,
       0,
-
       0,
       58,
       0,
@@ -17905,13 +17893,11 @@
       0,
       0,
       72,
-
       0,
       0,
       0,
       0,
       0,
-
       0,
       56,
       0,
@@ -17934,13 +17920,11 @@
       0,
       0,
       68,
-
       0,
       0,
       0,
       0,
       0,
-
       0,
       54,
       0,
@@ -17963,13 +17947,11 @@
       0,
       0,
       64,
-
       0,
       0,
       0,
       0,
       0,
-
       0,
       52,
       0,
@@ -20256,7 +20238,9 @@
     "id": 4708,
     "type": "HAT",
     "name": "Ahrim's hood",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20288,7 +20272,9 @@
     "id": 4710,
     "type": "WEAPON",
     "name": "Ahrim's staff",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20316,7 +20302,9 @@
     "id": 4712,
     "type": "BODY",
     "name": "Ahrim's robetop",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20348,7 +20336,9 @@
     "id": 4714,
     "type": "LEGS",
     "name": "Ahrim's robeskirt",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20380,7 +20370,9 @@
     "id": 4716,
     "type": "HAT",
     "name": "Dharok's helm",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20408,7 +20400,9 @@
     "id": 4718,
     "type": "WEAPON",
     "name": "Dharok's greataxe",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20440,7 +20434,9 @@
     "id": 4720,
     "type": "BODY",
     "name": "Dharok's platebody",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20468,7 +20464,9 @@
     "id": 4722,
     "type": "LEGS",
     "name": "Dharok's platelegs",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20496,7 +20494,9 @@
     "id": 4724,
     "type": "HAT",
     "name": "Guthan's helm",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20524,7 +20524,9 @@
     "id": 4726,
     "type": "WEAPON",
     "name": "Guthan's warspear",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20552,7 +20554,9 @@
     "id": 4728,
     "type": "BODY",
     "name": "Guthan's platebody",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20580,7 +20584,9 @@
     "id": 4730,
     "type": "LEGS",
     "name": "Guthan's chainskirt",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20608,7 +20614,9 @@
     "id": 4732,
     "type": "HAT",
     "name": "Karil's coif",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20640,7 +20648,9 @@
     "id": 4734,
     "type": "WEAPON",
     "name": "Karil's crossbow",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20668,7 +20678,9 @@
     "id": 4736,
     "type": "BODY",
     "name": "Karil's leathertop",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20700,7 +20712,9 @@
     "id": 4738,
     "type": "LEGS",
     "name": "Karil's leatherskirt",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20754,7 +20768,9 @@
     "id": 4745,
     "type": "HAT",
     "name": "Torag's helm",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20782,7 +20798,9 @@
     "id": 4747,
     "type": "WEAPON",
     "name": "Torag's hammers",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20810,7 +20828,9 @@
     "id": 4749,
     "type": "BODY",
     "name": "Torag's platebody",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -20838,7 +20858,9 @@
     "id": 4751,
     "type": "LEGS",
     "name": "Torag's platelegs",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21150,7 +21172,9 @@
     "id": 4856,
     "type": "HAT",
     "name": "Ahrim's hood 100",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21182,7 +21206,9 @@
     "id": 4857,
     "type": "HAT",
     "name": "Ahrim's hood 75",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21214,7 +21240,9 @@
     "id": 4858,
     "type": "HAT",
     "name": "Ahrim's hood 50",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21246,7 +21274,9 @@
     "id": 4859,
     "type": "HAT",
     "name": "Ahrim's hood 25",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21278,7 +21308,9 @@
     "id": 4860,
     "type": "HAT",
     "name": "Ahrim's hood 0",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21306,7 +21338,9 @@
     "id": 4862,
     "type": "WEAPON",
     "name": "Ahrim's staff 100",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21334,7 +21368,9 @@
     "id": 4863,
     "type": "WEAPON",
     "name": "Ahrim's staff 75",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21362,7 +21398,9 @@
     "id": 4864,
     "type": "WEAPON",
     "name": "Ahrim's staff 50",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21390,7 +21428,9 @@
     "id": 4865,
     "type": "WEAPON",
     "name": "Ahrim's staff 25",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21418,7 +21458,9 @@
     "id": 4868,
     "type": "BODY",
     "name": "Ahrim's robetop 100",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21450,7 +21492,9 @@
     "id": 4869,
     "type": "BODY",
     "name": "Ahrim's robetop 75",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21482,7 +21526,9 @@
     "id": 4870,
     "type": "BODY",
     "name": "Ahrim's robetop 50",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21514,7 +21560,9 @@
     "id": 4871,
     "type": "BODY",
     "name": "Ahrim's robetop 25",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21546,7 +21594,9 @@
     "id": 4872,
     "type": "BODY",
     "name": "Ahrim's robetop 0",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21574,7 +21624,9 @@
     "id": 4874,
     "type": "LEGS",
     "name": "Ahrim's robeskirt 100",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21606,7 +21658,9 @@
     "id": 4875,
     "type": "LEGS",
     "name": "Ahrim's robeskirt 75",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21638,7 +21692,9 @@
     "id": 4876,
     "type": "LEGS",
     "name": "Ahrim's robeskirt 50",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21670,7 +21726,9 @@
     "id": 4877,
     "type": "LEGS",
     "name": "Ahrim's robeskirt 25",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21702,7 +21760,9 @@
     "id": 4878,
     "type": "LEGS",
     "name": "Ahrim's robeskirt 0",
-    "listeners": [ "AhrimsListener" ],
+    "listeners": [
+      "AhrimsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21730,7 +21790,9 @@
     "id": 4880,
     "type": "HAT",
     "name": "Dharok's helm 100",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21758,7 +21820,9 @@
     "id": 4881,
     "type": "HAT",
     "name": "Dharok's helm 75",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21786,7 +21850,9 @@
     "id": 4882,
     "type": "HAT",
     "name": "Dharok's helm 50",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21814,7 +21880,9 @@
     "id": 4883,
     "type": "HAT",
     "name": "Dharok's helm 25",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21842,7 +21910,9 @@
     "id": 4884,
     "type": "HAT",
     "name": "Dharok's helm 0",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21870,7 +21940,9 @@
     "id": 4886,
     "type": "WEAPON",
     "name": "Dharok's greataxe 100",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21902,7 +21974,9 @@
     "id": 4887,
     "type": "WEAPON",
     "name": "Dharok's greataxe 75",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21934,7 +22008,9 @@
     "id": 4888,
     "type": "WEAPON",
     "name": "Dharok's greataxe 50",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21966,7 +22042,9 @@
     "id": 4889,
     "type": "WEAPON",
     "name": "Dharok's greataxe 25",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -21998,7 +22076,9 @@
     "id": 4892,
     "type": "BODY",
     "name": "Dharok's platebody 100",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22026,7 +22106,9 @@
     "id": 4893,
     "type": "BODY",
     "name": "Dharok's platebody 75",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22054,7 +22136,9 @@
     "id": 4894,
     "type": "BODY",
     "name": "Dharok's platebody 50",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22082,7 +22166,9 @@
     "id": 4895,
     "type": "BODY",
     "name": "Dharok's platebody 25",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22110,7 +22196,9 @@
     "id": 4896,
     "type": "BODY",
     "name": "Dharok's platebody 0",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22138,7 +22226,9 @@
     "id": 4898,
     "type": "LEGS",
     "name": "Dharok's platelegs 100",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22166,7 +22256,9 @@
     "id": 4899,
     "type": "LEGS",
     "name": "Dharok's platelegs 75",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22194,7 +22286,9 @@
     "id": 4900,
     "type": "LEGS",
     "name": "Dharok's platelegs 50",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22222,7 +22316,9 @@
     "id": 4901,
     "type": "LEGS",
     "name": "Dharok's platelegs 25",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22250,7 +22346,9 @@
     "id": 4902,
     "type": "LEGS",
     "name": "Dharok's platelegs 0",
-    "listeners": [ "DharokListener" ],
+    "listeners": [
+      "DharokListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22278,7 +22376,9 @@
     "id": 4904,
     "type": "HAT",
     "name": "Guthan's helm 100",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22306,7 +22406,9 @@
     "id": 4905,
     "type": "HAT",
     "name": "Guthan's helm 75",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22334,7 +22436,9 @@
     "id": 4906,
     "type": "HAT",
     "name": "Guthan's helm 50",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22362,7 +22466,9 @@
     "id": 4907,
     "type": "HAT",
     "name": "Guthan's helm 25",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22390,7 +22496,9 @@
     "id": 4908,
     "type": "HAT",
     "name": "Guthan's helm 0",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22418,7 +22526,9 @@
     "id": 4910,
     "type": "WEAPON",
     "name": "Guthan's warspear 100",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22446,7 +22556,9 @@
     "id": 4911,
     "type": "WEAPON",
     "name": "Guthan's warspear 75",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22474,7 +22586,9 @@
     "id": 4912,
     "type": "WEAPON",
     "name": "Guthan's warspear 50",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22502,7 +22616,9 @@
     "id": 4913,
     "type": "WEAPON",
     "name": "Guthan's warspear 25",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22530,7 +22646,9 @@
     "id": 4916,
     "type": "BODY",
     "name": "Guthan's platebody 100",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22558,7 +22676,9 @@
     "id": 4917,
     "type": "BODY",
     "name": "Guthan's platebody 75",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22586,7 +22706,9 @@
     "id": 4918,
     "type": "BODY",
     "name": "Guthan's platebody 50",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22614,7 +22736,9 @@
     "id": 4919,
     "type": "BODY",
     "name": "Guthan's platebody 25",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22642,7 +22766,9 @@
     "id": 4920,
     "type": "BODY",
     "name": "Guthan's platebody 0",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22670,7 +22796,9 @@
     "id": 4922,
     "type": "LEGS",
     "name": "Guthan's chainskirt 100",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22698,7 +22826,9 @@
     "id": 4923,
     "type": "LEGS",
     "name": "Guthan's chainskirt 75",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22726,7 +22856,9 @@
     "id": 4924,
     "type": "LEGS",
     "name": "Guthan's chainskirt 50",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22754,7 +22886,9 @@
     "id": 4925,
     "type": "LEGS",
     "name": "Guthan's chainskirt 25",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22782,7 +22916,9 @@
     "id": 4926,
     "type": "LEGS",
     "name": "Guthan's chainskirt 0",
-    "listeners": [ "GuthansListener" ],
+    "listeners": [
+      "GuthansListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22810,7 +22946,9 @@
     "id": 4928,
     "type": "HAT",
     "name": "Karil's coif 100",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22838,7 +22976,9 @@
     "id": 4929,
     "type": "HAT",
     "name": "Karil's coif 75",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22866,7 +23006,9 @@
     "id": 4930,
     "type": "HAT",
     "name": "Karil's coif 50",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22894,7 +23036,9 @@
     "id": 4931,
     "type": "HAT",
     "name": "Karil's coif 25",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22922,7 +23066,9 @@
     "id": 4932,
     "type": "HAT",
     "name": "Karil's coif 0",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22950,7 +23096,9 @@
     "id": 4934,
     "type": "WEAPON",
     "name": "Karil's crossbow 100",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -22978,7 +23126,9 @@
     "id": 4935,
     "type": "WEAPON",
     "name": "Karil's crossbow 75",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23006,7 +23156,9 @@
     "id": 4936,
     "type": "WEAPON",
     "name": "Karil's crossbow 50",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23034,7 +23186,9 @@
     "id": 4937,
     "type": "WEAPON",
     "name": "Karil's crossbow 25",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23062,7 +23216,9 @@
     "id": 4940,
     "type": "BODY",
     "name": "Karil's leathertop 100",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23090,7 +23246,9 @@
     "id": 4941,
     "type": "BODY",
     "name": "Karil's leathertop 75",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23118,7 +23276,9 @@
     "id": 4942,
     "type": "BODY",
     "name": "Karil's leathertop 50",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23146,7 +23306,9 @@
     "id": 4943,
     "type": "BODY",
     "name": "Karil's leathertop 25",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23174,7 +23336,9 @@
     "id": 4944,
     "type": "BODY",
     "name": "Karil's leathertop 0",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23202,7 +23366,9 @@
     "id": 4946,
     "type": "LEGS",
     "name": "Karil's leatherskirt 100",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23230,7 +23396,9 @@
     "id": 4947,
     "type": "LEGS",
     "name": "Karil's leatherskirt 75",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23258,7 +23426,9 @@
     "id": 4948,
     "type": "LEGS",
     "name": "Karil's leatherskirt 50",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23286,7 +23456,9 @@
     "id": 4949,
     "type": "LEGS",
     "name": "Karil's leatherskirt 25",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23314,7 +23486,9 @@
     "id": 4950,
     "type": "LEGS",
     "name": "Karil's leatherskirt 0",
-    "listeners": [ "KarilsListener" ],
+    "listeners": [
+      "KarilsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23342,7 +23516,9 @@
     "id": 4952,
     "type": "HAT",
     "name": "Torag's helm 100",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23370,7 +23546,9 @@
     "id": 4953,
     "type": "HAT",
     "name": "Torag's helm 75",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23398,7 +23576,9 @@
     "id": 4954,
     "type": "HAT",
     "name": "Torag's helm 50",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23426,7 +23606,9 @@
     "id": 4955,
     "type": "HAT",
     "name": "Torag's helm 25",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23454,7 +23636,9 @@
     "id": 4956,
     "type": "HAT",
     "name": "Torag's helm 0",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23482,7 +23666,9 @@
     "id": 4958,
     "type": "WEAPON",
     "name": "Torag's hammers 100",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23510,7 +23696,9 @@
     "id": 4959,
     "type": "WEAPON",
     "name": "Torag's hammers 75",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23538,7 +23726,9 @@
     "id": 4960,
     "type": "WEAPON",
     "name": "Torag's hammers 50",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23566,7 +23756,9 @@
     "id": 4961,
     "type": "WEAPON",
     "name": "Torag's hammers 25",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23594,7 +23786,9 @@
     "id": 4964,
     "type": "BODY",
     "name": "Torag's platebody 100",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23622,7 +23816,9 @@
     "id": 4965,
     "type": "BODY",
     "name": "Torag's platebody 75",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23650,7 +23846,9 @@
     "id": 4966,
     "type": "BODY",
     "name": "Torag's platebody 50",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23678,7 +23876,9 @@
     "id": 4967,
     "type": "BODY",
     "name": "Torag's platebody 25",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23706,7 +23906,9 @@
     "id": 4968,
     "type": "BODY",
     "name": "Torag's platebody 0",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23734,7 +23936,9 @@
     "id": 4970,
     "type": "LEGS",
     "name": "Torag's platelegs 100",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23762,7 +23966,9 @@
     "id": 4971,
     "type": "LEGS",
     "name": "Torag's platelegs 75",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23790,7 +23996,9 @@
     "id": 4972,
     "type": "LEGS",
     "name": "Torag's platelegs 50",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23818,7 +24026,9 @@
     "id": 4973,
     "type": "LEGS",
     "name": "Torag's platelegs 25",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -23846,7 +24056,9 @@
     "id": 4974,
     "type": "LEGS",
     "name": "Torag's platelegs 0",
-    "listeners": [ "ToragsListener" ],
+    "listeners": [
+      "ToragsListener"
+    ],
     "requirements": [
       {
         "level": 70,
@@ -37900,7 +38112,9 @@
     "id": 8839,
     "type": "BODY",
     "name": "Void knight top",
-    "listeners": [ "VoidKnightListener" ],
+    "listeners": [
+      "VoidKnightListener"
+    ],
     "requirements": [
       {
         "level": 42,
@@ -37952,7 +38166,9 @@
     "id": 8840,
     "type": "LEGS",
     "name": "Void knight robe",
-    "listeners": [ "VoidKnightListener" ],
+    "listeners": [
+      "VoidKnightListener"
+    ],
     "requirements": [
       {
         "level": 42,
@@ -38031,7 +38247,9 @@
     "id": 8842,
     "type": "GLOVES",
     "name": "Void knight gloves",
-    "listeners": [ "VoidKnightListener" ],
+    "listeners": [
+      "VoidKnightListener"
+    ],
     "requirements": [
       {
         "level": 42,
@@ -48275,7 +48493,9 @@
     "id": 10611,
     "type": "BODY",
     "name": "Void knight top",
-    "listeners": [ "VoidKnightListener" ],
+    "listeners": [
+      "VoidKnightListener"
+    ],
     "requirements": [
       {
         "level": 42,
@@ -52373,7 +52593,9 @@
     "id": 11090,
     "type": "AMULET",
     "name": "Phoenix necklace",
-    "listeners": [ "PhoenixNecklaceListener" ],
+    "listeners": [
+      "PhoenixNecklaceListener"
+    ],
     "requirements": [],
     "bonuses": [
       0,
@@ -52819,7 +53041,9 @@
     "id": 11128,
     "type": "AMULET",
     "name": "Berserker necklace",
-    "listeners": [ "BerserkerNecklaceListener" ],
+    "listeners": [
+      "BerserkerNecklaceListener"
+    ],
     "requirements": [
       {
         "level": 45,
@@ -54365,7 +54589,9 @@
     "id": 11664,
     "type": "HAT",
     "name": "Void ranger helm",
-    "listeners": [ "VoidKnightListener" ],
+    "listeners": [
+      "VoidKnightListener"
+    ],
     "requirements": [
       {
         "level": 42,
@@ -54417,7 +54643,9 @@
     "id": 11665,
     "type": "HAT",
     "name": "Void melee helm",
-    "listeners": [ "VoidKnightListener" ],
+    "listeners": [
+      "VoidKnightListener"
+    ],
     "requirements": [
       {
         "level": 42,
@@ -54685,7 +54913,9 @@
     "id": 11674,
     "type": "HAT",
     "name": "Void mage helm",
-    "listeners": [ "VoidKnightListener" ],
+    "listeners": [
+      "VoidKnightListener"
+    ],
     "requirements": [
       {
         "level": 42,
@@ -54713,7 +54943,9 @@
     "id": 11675,
     "type": "HAT",
     "name": "Void ranger helm",
-    "listeners": [ "VoidKnightListener" ],
+    "listeners": [
+      "VoidKnightListener"
+    ],
     "requirements": [
       {
         "level": 42,
@@ -54741,7 +54973,9 @@
     "id": 11676,
     "type": "HAT",
     "name": "Void melee helm",
-    "listeners": [ "VoidKnightListener" ],
+    "listeners": [
+      "VoidKnightListener"
+    ],
     "requirements": [
       {
         "level": 42,
@@ -57584,7 +57818,9 @@
     "id": 12002,
     "type": "AMULET",
     "name": "Occult necklace",
-    "listeners": [ "OccultNecklaceListener" ],
+    "listeners": [
+      "OccultNecklaceListener"
+    ],
     "requirements": [],
     "bonuses": [
       0,
@@ -62673,7 +62909,9 @@
     "id": 12817,
     "type": "SHIELD",
     "name": "Elysian spirit shield",
-    "listeners": [ "ElysianSpiritShieldListener" ],
+    "listeners": [
+      "ElysianSpiritShieldListener"
+    ],
     "requirements": [],
     "bonuses": [
       0,
@@ -65737,7 +65975,10 @@
     "type": "AMULET",
     "name": "Necklace of anguish",
     "requirements": [
-      { "level": 75, "skill": 3 }
+      {
+        "level": 75,
+        "skill": 3
+      }
     ],
     "bonuses": [
       0,
@@ -65745,13 +65986,11 @@
       0,
       0,
       15,
-
       0,
       0,
       0,
       0,
       0,
-
       0,
       5,
       0,
@@ -66252,13 +66491,11 @@
       15,
       0,
       0,
-
       0,
       0,
       0,
       0,
       0,
-
       10,
       0,
       0,
@@ -66281,13 +66518,11 @@
       15,
       0,
       0,
-
       0,
       0,
       0,
       0,
       0,
-
       10,
       0,
       0,
@@ -66346,6 +66581,64 @@
       30,
       0,
       0
+    ]
+  },
+  {
+    "id": 28007,
+    "type": "WEAPON",
+    "name": "Noxious halberd",
+    "requirements": [
+      {
+        "level": 80,
+        "skill": 0
+      },
+      {
+        "level": 80,
+        "skill": 2
+      }
+    ],
+    "bonuses": [
+      60,
+      90,
+      85,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      95,
+      0,
+      0,
+      2
+    ]
+  },
+  {
+    "id": 28008,
+    "type": "AMULET",
+    "name": "Amulet of rancour",
+    "requirements": [
+      {
+        "level": 75,
+        "skill": 3
+      }
+    ],
+    "bonuses": [
+      15,
+      15,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      12,
+      0,
+      0,
+      2
     ]
   }
 ]

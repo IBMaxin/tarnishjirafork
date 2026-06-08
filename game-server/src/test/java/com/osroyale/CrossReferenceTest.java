@@ -7,6 +7,7 @@ import com.google.gson.JsonParser;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
@@ -100,19 +101,28 @@ public final class CrossReferenceTest {
 
     @Test
     public void npcSpawnsReferenceValidNpcIds() throws IOException {
-        JsonArray spawns;
-        try (var reader = new FileReader("data/def/npc/npc_spawns.json")) {
-            spawns = JsonParser.parseReader(reader).getAsJsonArray();
+        List<String> errors = new ArrayList<>();
+        File spawnDir = new File("data/def/npc-spawns-json");
+        File[] spawnFiles = spawnDir.listFiles((dir, name) -> name.endsWith(".json"));
+
+        if (spawnFiles == null || spawnFiles.length == 0) {
+            fail("No NPC spawn files found in " + spawnDir);
         }
 
-        List<String> errors = new ArrayList<>();
-        for (JsonElement sElem : spawns) {
-            JsonObject spawn = sElem.getAsJsonObject();
-            int id = spawn.get("id").getAsInt();
-
-            if (!knownNpcIds.contains(id)) {
-                errors.add("NPC spawn references unknown NPC ID " + id
-                        + " at position " + spawn.getAsJsonObject("position"));
+        for (File file : spawnFiles) {
+            try (var reader = new FileReader(file)) {
+                JsonArray entries = JsonParser.parseReader(reader).getAsJsonArray();
+                for (JsonElement eElem : entries) {
+                    JsonObject entry = eElem.getAsJsonObject();
+                    int id = entry.get("id").getAsInt();
+                    if (!knownNpcIds.contains(id)) {
+                        errors.add("NPC spawn references unknown NPC ID " + id
+                                + " in " + file.getName() + " at position "
+                                + entry.getAsJsonObject("position"));
+                    }
+                }
+            } catch (Exception e) {
+                errors.add("Failed to parse " + file.getName() + ": " + e.getMessage());
             }
         }
 
@@ -126,63 +136,51 @@ public final class CrossReferenceTest {
 
     @Test
     public void npcDropsReferenceValidIds() throws IOException {
-        JsonArray dropTables;
-        try (var reader = new FileReader("data/def/npc/npc_drops.json")) {
-            dropTables = JsonParser.parseReader(reader).getAsJsonArray();
+        List<String> errors = new ArrayList<>();
+        File dropDir = new File("data/def/npc-drops-json");
+        File[] dropFiles = dropDir.listFiles((dir, name) -> name.endsWith(".json"));
+
+        if (dropFiles == null || dropFiles.length == 0) {
+            fail("No NPC drop files found in " + dropDir);
         }
 
-        List<String> errors = new ArrayList<>();
-        Set<Integer> checkedDropTables = new HashSet<>();
+        for (File file : dropFiles) {
+            try (var reader = new FileReader(file)) {
+                JsonObject dropTable = JsonParser.parseReader(reader).getAsJsonObject();
+                int npcId = dropTable.get("npc_id").getAsInt();
 
-        for (JsonElement dtElem : dropTables) {
-            JsonObject dropTable = dtElem.getAsJsonObject();
-            JsonArray npcIds = dropTable.getAsJsonArray("id");
-            JsonArray drops  = dropTable.getAsJsonArray("drops");
-
-            // Record which drop tables we've checked (dedup by NPC id set)
-            int thisTableId = npcIds.get(0).getAsInt();
-            if (!checkedDropTables.add(thisTableId)) continue;
-
-            // Validate each NPC ID in the drop table
-            for (JsonElement nidElem : npcIds) {
-                int npcId = nidElem.getAsInt();
                 if (!knownNpcIds.contains(npcId)) {
-                    errors.add("NPC drop table references unknown NPC ID " + npcId);
+                    errors.add("NPC drop table references unknown NPC ID " + npcId
+                            + " in " + file.getName());
                 }
-            }
 
-            // Validate each drop entry
-            for (JsonElement dElem : drops) {
-                JsonObject drop = dElem.getAsJsonObject();
-                // Drops inconsistently use "item" or "id" as the field name
-                int itemId;
-                if (drop.has("item")) {
-                    itemId = drop.get("item").getAsInt();
-                } else if (drop.has("id")) {
-                    itemId = drop.get("id").getAsInt();
-                } else {
-                    errors.add("NPC drop table " + thisTableId
-                            + " has a drop entry with neither 'item' nor 'id' field: " + drop);
-                    continue;
+                JsonArray drops = dropTable.getAsJsonArray("drops");
+                for (JsonElement dElem : drops) {
+                    JsonObject drop = dElem.getAsJsonObject();
+                    int itemId = drop.has("item") ? drop.get("item").getAsInt()
+                            : drop.get("id").getAsInt();
+                    if (!knownItemIds.contains(itemId)) {
+                        errors.add("NPC drop table " + npcId
+                                + " references unknown item ID " + itemId
+                                + " in " + file.getName());
+                    }
+                    int minimum = drop.get("minimum").getAsInt();
+                    int maximum = drop.get("maximum").getAsInt();
+                    if (minimum < 0) {
+                        errors.add("NPC drop table " + npcId + " item " + itemId
+                                + " has negative minimum: " + minimum);
+                    }
+                    if (maximum < 0) {
+                        errors.add("NPC drop table " + npcId + " item " + itemId
+                                + " has negative maximum: " + maximum);
+                    }
+                    if (minimum > maximum) {
+                        errors.add("NPC drop table " + npcId + " item " + itemId
+                                + " has min(" + minimum + ") > max(" + maximum + ")");
+                    }
                 }
-                if (!knownItemIds.contains(itemId)) {
-                    errors.add("NPC drop table " + thisTableId
-                            + " references unknown item ID " + itemId);
-                }
-                int minimum = drop.get("minimum").getAsInt();
-                int maximum = drop.get("maximum").getAsInt();
-                if (minimum < 0) {
-                    errors.add("NPC drop table " + thisTableId
-                            + " item " + itemId + " has negative minimum: " + minimum);
-                }
-                if (maximum < 0) {
-                    errors.add("NPC drop table " + thisTableId
-                            + " item " + itemId + " has negative maximum: " + maximum);
-                }
-                if (minimum > maximum) {
-                    errors.add("NPC drop table " + thisTableId
-                            + " item " + itemId + " has min(" + minimum + ") > max(" + maximum + ")");
-                }
+            } catch (Exception e) {
+                errors.add("Failed to parse " + file.getName() + ": " + e.getMessage());
             }
         }
 

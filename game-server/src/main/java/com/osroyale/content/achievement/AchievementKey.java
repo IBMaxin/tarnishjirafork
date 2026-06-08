@@ -28,6 +28,7 @@ public enum AchievementKey {
     ZULRAH,
     KING_BLACK_DRAGON,
     REVS,
+    ARAXXOR,
 
     /** Skilling */
     HIGH_ALCHEMY,

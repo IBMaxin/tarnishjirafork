@@ -90,6 +90,10 @@ public enum AchievementList {
     KILL_250_REVS("Kill 250 revenants", 250, REVS, PVM, 10000),
     KILL_500_REVS("Kill 500 revenants", 500, REVS, PVM, 10000),
     KILL_1000_REVS("Kill 1000 revenants", 1000, REVS, PVM, 10000),
+    KILL_10_ARAXXOR("Kill Araxxor 10 times", 10, ARAXXOR, PVM, 1000),
+    KILL_50_ARAXXOR("Kill Araxxor 50 times", 50, ARAXXOR, PVM, 3000),
+    KILL_150_ARAXXOR("Kill Araxxor 150 times", 150, ARAXXOR, PVM, 6000),
+    KILL_500_ARAXXOR("Kill Araxxor 500 times", 500, ARAXXOR, PVM, 10000),
 
     /** Skilling achievements */
     MAX_1_SKILL("Achieve level 99 in 1 skill", 1, SKILL_MASTERY, SKILLING, 2000),

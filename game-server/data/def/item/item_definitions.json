@@ -643,8 +643,8 @@
     "base-value": 5
   },
   {
-  "id": 80,
-  "name": "Abyssal whip (starter)",
+    "id": 80,
+    "name": "Abyssal whip (starter)",
     "noted-id": 4152,
     "low-alch": 0,
     "high-alch": 0,
@@ -660,7 +660,7 @@
     "attack-slash": 82,
     "bonus-strength": 82
   },
-   {
+  {
     "id": 81,
     "name": "Armadyl godsword (starter)",
     "two-handed": true,
@@ -4011,7 +4011,7 @@
   {
     "id": 456,
     "name": "Scorpion cage",
-    "destroy-message": "• You will need to speak to Thormac to get another cage. •You will need to speak to Thormac to get another cage and will have to recapture (all) the scorpion(s).",
+    "destroy-message": "\u00e2\u20ac\u00a2 You will need to speak to Thormac to get another cage. \u00e2\u20ac\u00a2You will need to speak to Thormac to get another cage and will have to recapture (all) the scorpion(s).",
     "low-alch": 4,
     "high-alch": 6,
     "base-value": 10
@@ -4019,7 +4019,7 @@
   {
     "id": 457,
     "name": "Scorpion cage",
-    "destroy-message": "• You will need to speak to Thormac to get another cage. •You will need to speak to Thormac to get another cage and will have to recapture (all) the scorpion(s).",
+    "destroy-message": "\u00e2\u20ac\u00a2 You will need to speak to Thormac to get another cage. \u00e2\u20ac\u00a2You will need to speak to Thormac to get another cage and will have to recapture (all) the scorpion(s).",
     "low-alch": 4,
     "high-alch": 6,
     "base-value": 10
@@ -4027,7 +4027,7 @@
   {
     "id": 458,
     "name": "Scorpion cage",
-    "destroy-message": "• You will need to speak to Thormac to get another cage. •You will need to speak to Thormac to get another cage and will have to recapture (all) the scorpion(s).",
+    "destroy-message": "\u00e2\u20ac\u00a2 You will need to speak to Thormac to get another cage. \u00e2\u20ac\u00a2You will need to speak to Thormac to get another cage and will have to recapture (all) the scorpion(s).",
     "low-alch": 4,
     "high-alch": 6,
     "base-value": 10
@@ -4035,7 +4035,7 @@
   {
     "id": 459,
     "name": "Scorpion cage",
-    "destroy-message": "• You will need to speak to Thormac to get another cage. •You will need to speak to Thormac to get another cage and will have to recapture (all) the scorpion(s).",
+    "destroy-message": "\u00e2\u20ac\u00a2 You will need to speak to Thormac to get another cage. \u00e2\u20ac\u00a2You will need to speak to Thormac to get another cage and will have to recapture (all) the scorpion(s).",
     "low-alch": 4,
     "high-alch": 6,
     "base-value": 10
@@ -4043,7 +4043,7 @@
   {
     "id": 460,
     "name": "Scorpion cage",
-    "destroy-message": "• You will need to speak to Thormac to get another cage. •You will need to speak to Thormac to get another cage and will have to recapture (all) the scorpion(s).",
+    "destroy-message": "\u00e2\u20ac\u00a2 You will need to speak to Thormac to get another cage. \u00e2\u20ac\u00a2You will need to speak to Thormac to get another cage and will have to recapture (all) the scorpion(s).",
     "low-alch": 4,
     "high-alch": 6,
     "base-value": 10
@@ -4051,7 +4051,7 @@
   {
     "id": 461,
     "name": "Scorpion cage",
-    "destroy-message": "• You will need to speak to Thormac to get another cage. •You will need to speak to Thormac to get another cage and will have to recapture (all) the scorpion(s).",
+    "destroy-message": "\u00e2\u20ac\u00a2 You will need to speak to Thormac to get another cage. \u00e2\u20ac\u00a2You will need to speak to Thormac to get another cage and will have to recapture (all) the scorpion(s).",
     "low-alch": 4,
     "high-alch": 6,
     "base-value": 10
@@ -4059,7 +4059,7 @@
   {
     "id": 462,
     "name": "Scorpion cage",
-    "destroy-message": "• You will need to speak to Thormac to get another cage. •You will need to speak to Thormac to get another cage and will have to recapture (all) the scorpion(s).",
+    "destroy-message": "\u00e2\u20ac\u00a2 You will need to speak to Thormac to get another cage. \u00e2\u20ac\u00a2You will need to speak to Thormac to get another cage and will have to recapture (all) the scorpion(s).",
     "low-alch": 4,
     "high-alch": 6,
     "base-value": 10
@@ -4067,7 +4067,7 @@
   {
     "id": 463,
     "name": "Scorpion cage",
-    "destroy-message": "• You will need to speak to Thormac to get another cage. •You will need to speak to Thormac to get another cage and will have to recapture (all) the scorpion(s).",
+    "destroy-message": "\u00e2\u20ac\u00a2 You will need to speak to Thormac to get another cage. \u00e2\u20ac\u00a2You will need to speak to Thormac to get another cage and will have to recapture (all) the scorpion(s).",
     "low-alch": 4,
     "high-alch": 6,
     "base-value": 10
@@ -5764,7 +5764,7 @@
   },
   {
     "id": 671,
-	"tradeable": false,
+    "tradeable": false,
     "name": "Baby Darth"
   },
   {
@@ -23320,7 +23320,7 @@
   },
   {
     "id": 2528,
-	"tradeable": false,
+    "tradeable": false,
     "name": "Genie lamp"
   },
   {
@@ -40107,7 +40107,8 @@
     "defence-crush": 2,
     "defence-magic": 15,
     "bonus-strength": 68
-  },{
+  },
+  {
     "id": 4710,
     "name": "Ahrim's staff",
     "destroy-message": "Drop (If you drop this item it will break. Are you sure you want to drop it?)",
@@ -42979,7 +42980,7 @@
     "high-alch": 270,
     "base-value": 450,
     "street-value": 450,
-	"equipment-slot": "BODY"
+    "equipment-slot": "BODY"
   },
   {
     "id": 5031,
@@ -42999,7 +43000,7 @@
     "high-alch": 360,
     "base-value": 600,
     "street-value": 600,
-	"equipment-slot": "BODY"
+    "equipment-slot": "BODY"
   },
   {
     "id": 5033,
@@ -43019,7 +43020,7 @@
     "high-alch": 375,
     "base-value": 625,
     "street-value": 625,
-	"equipment-slot": "BODY"
+    "equipment-slot": "BODY"
   },
   {
     "id": 5035,
@@ -43143,7 +43144,7 @@
     "high-alch": 210,
     "base-value": 350,
     "street-value": 350,
-	"equipment-slot": "LEGS"
+    "equipment-slot": "LEGS"
   },
   {
     "id": 5049,
@@ -43163,7 +43164,7 @@
     "high-alch": 330,
     "base-value": 550,
     "street-value": 550,
-	"equipment-slot": "LEGS"
+    "equipment-slot": "LEGS"
   },
   {
     "id": 5051,
@@ -43183,7 +43184,7 @@
     "high-alch": 375,
     "base-value": 625,
     "street-value": 625,
-	"equipment-slot": "LEGS"
+    "equipment-slot": "LEGS"
   },
   {
     "id": 5053,
@@ -53355,7 +53356,7 @@
   {
     "id": 6529,
     "name": "Tokkul",
-	"tradeable": false,
+    "tradeable": false,
     "stackable": true
   },
   {
@@ -55694,7 +55695,6 @@
   {
     "id": 6806,
     "name": "Custom title scroll"
-
   },
   {
     "id": 6807,
@@ -55714,7 +55714,7 @@
     "street-value": 44609,
     "weight": 15.0,
     "equipment-slot": "LEGS",
-	"req-defence": 50,
+    "req-defence": 50,
     "attack-magic": -31,
     "attack-ranged": -18,
     "defence-stab": 43,
@@ -56948,8 +56948,6 @@
   },
   {
     "id": 7058,
-
-
     "name": "Mushroom potato",
     "noted-id": 7059,
     "low-alch": 18,
@@ -74654,7 +74652,7 @@
     "defence-crush": 5000,
     "defence-magic": 5000,
     "defence-ranged": 5000,
-    "bonus-strength":5000,
+    "bonus-strength": 5000,
     "bonus-prayer": 5000
   },
   {
@@ -74792,7 +74790,6 @@
     "base-value": 99000,
     "weight": 0.4,
     "equipment-slot": "CAPE"
-
   },
   {
     "id": 9757,
@@ -75508,7 +75505,7 @@
   },
   {
     "id": 9813,
-	"tradeable": false,
+    "tradeable": false,
     "name": "Quest point cape",
     "low-alch": 39600,
     "high-alch": 59400,
@@ -75517,7 +75514,7 @@
   },
   {
     "id": 9814,
-	"tradeable": false,
+    "tradeable": false,
     "name": "Quest point hood",
     "equipment-slot": "FACE"
   },
@@ -82342,7 +82339,7 @@
     "street-value": 60398,
     "weight": 22.0,
     "equipment-slot": "BODY",
-	"req-defence": 50,
+    "req-defence": 50,
     "attack-magic": -22,
     "attack-ranged": -5,
     "defence-stab": 87,
@@ -91573,8 +91570,8 @@
     "run-animation": 1210,
     "equipment-slot": "WEAPON",
     "weapon-interface": "STAFF",
-	"req-attack": 75,
-	"req-magic": 75,
+    "req-attack": 75,
+    "req-magic": 75,
     "attack-stab": 55,
     "attack-slash": 70,
     "attack-magic": 17,
@@ -91726,13 +91723,13 @@
     "base-value": 1250000,
     "street-value": 3155661,
     "weight": 10.0,
-        "block-animation": 7056,
+    "block-animation": 7056,
     "stand-animation": 7053,
     "walk-animation": 7052,
     "run-animation": 7043,
     "equipment-slot": "WEAPON",
     "weapon-interface": "GODSWORD_SWORD",
-	"req-attack": 75,
+    "req-attack": 75,
     "attack-slash": 132,
     "attack-crush": 80,
     "bonus-strength": 132,
@@ -91763,9 +91760,9 @@
     "walk-animation": 7052,
     "run-animation": 7043,
     "equipment-slot": "WEAPON",
-        "block-animation": 7056,
+    "block-animation": 7056,
     "weapon-interface": "GODSWORD_SWORD",
-	"req-attack": 75,
+    "req-attack": 75,
     "attack-slash": 132,
     "attack-crush": 80,
     "bonus-strength": 132,
@@ -91792,13 +91789,13 @@
     "base-value": 1250000,
     "street-value": 3446582,
     "weight": 10.0,
-        "block-animation": 7056,
+    "block-animation": 7056,
     "stand-animation": 7053,
     "walk-animation": 7052,
     "run-animation": 7043,
     "equipment-slot": "WEAPON",
     "weapon-interface": "GODSWORD_SWORD",
-	"req-attack": 75,
+    "req-attack": 75,
     "attack-slash": 132,
     "attack-crush": 80,
     "bonus-strength": 132,
@@ -101919,7 +101916,7 @@
     "weight": 2.0,
     "block-animation": 1156,
     "equipment-slot": "SHIELD",
-	"req-defence": 75,
+    "req-defence": 75,
     "req-prayer": 70,
     "defence-stab": 63,
     "defence-slash": 65,
@@ -102236,8 +102233,8 @@
     "weight": 4.5,
     "equipment-slot": "WEAPON",
     "weapon-interface": "WARHAMMER",
-	"req-attack": 50,
-	"req-strength": 50,
+    "req-attack": 50,
+    "req-strength": 50,
     "attack-crush": 81,
     "bonus-strength": 79
   },
@@ -102722,7 +102719,7 @@
     "weight": 1.0,
     "equipment-slot": "WEAPON",
     "weapon-interface": "LONGSWORD",
-	"req-attack": 78,
+    "req-attack": 78,
     "attack-stab": 106,
     "attack-slash": 121,
     "attack-crush": -2,
@@ -102739,7 +102736,7 @@
     "name": "Vesta's longsword",
     "stackable": true,
     "unnoted-id": 22613,
-     "low-alch": 120000,
+    "low-alch": 120000,
     "high-alch": 180000,
     "base-value": 300000,
     "street-value": 8780431,
@@ -102756,8 +102753,8 @@
     "weight": 1.0,
     "equipment-slot": "WEAPON",
     "weapon-interface": "MAGIC_STAFF",
-	"req-attack": 75,
-	"req-magic": 75,
+    "req-attack": 75,
+    "req-magic": 75,
     "attack-stab": 55,
     "attack-slash": 70,
     "attack-magic": 17,
@@ -102791,8 +102788,8 @@
     "run-animation": 1210,
     "equipment-slot": "WEAPON",
     "weapon-interface": "MAGIC_STAFF",
-	"req-attack": 75,
-	"req-magic": 75,
+    "req-attack": 75,
+    "req-magic": 75,
     "attack-stab": 55,
     "attack-slash": 70,
     "attack-magic": 25,
@@ -102989,7 +102986,7 @@
     "street-value": 3102320,
     "equipment-slot": "WEAPON",
     "weapon-interface": "DART",
-	"req-ranged": 75,
+    "req-ranged": 75,
     "attack-ranged": 60
   },
   {
@@ -103012,7 +103009,7 @@
     "street-value": 3102320,
     "equipment-slot": "WEAPON",
     "weapon-interface": "BLOWPIPE",
-	"req-ranged": 75,
+    "req-ranged": 75,
     "attack-ranged": 60,
     "ranged-strength": 40
   },
@@ -105680,7 +105677,7 @@
   },
   {
     "id": 13221,
-	"tradeable": false,
+    "tradeable": false,
     "name": "Music cape",
     "low-alch": 39600,
     "high-alch": 59400,
@@ -105689,20 +105686,20 @@
   {
     "id": 13222,
     "name": "Music cape(t)",
-	"tradeable": false,
+    "tradeable": false,
     "low-alch": 39600,
     "high-alch": 59400,
     "base-value": 99000
   },
   {
     "id": 13223,
-	"tradeable": false,
+    "tradeable": false,
     "name": "Music hood",
     "equipment-slot": "HELM"
   },
   {
     "id": 13224,
-	"tradeable": false,
+    "tradeable": false,
     "name": "Music cape",
     "low-alch": 39600,
     "high-alch": 59400,
@@ -109577,7 +109574,7 @@
   {
     "id": 13679,
     "name": "Cabbage cape",
-	"tradeable": false,
+    "tradeable": false,
     "destroy-message": "You can get a replacement from Diango.",
     "low-alch": 40,
     "high-alch": 60,
@@ -115037,7 +115034,7 @@
   },
   {
     "id": 20272,
-	"tradeable": false,
+    "tradeable": false,
     "name": "Cabbage round shield",
     "noted-id": 20273,
     "low-alch": 1200,
@@ -115055,7 +115052,7 @@
   },
   {
     "id": 20273,
-	"tradeable": false,
+    "tradeable": false,
     "name": "Cabbage round shield",
     "stackable": true,
     "unnoted-id": 20272,
@@ -115456,8 +115453,8 @@
     "street-value": 31770372,
     "weight": 11.0,
     "equipment-slot": "WEAPON",
-	"weapon-interface": "GODSWORD_SWORD",
-	"req-attack": 75,
+    "weapon-interface": "GODSWORD_SWORD",
+    "req-attack": 75,
     "attack-slash": 132,
     "attack-crush": 80,
     "bonus-strength": 132,
@@ -115474,8 +115471,8 @@
     "street-value": 3155661,
     "weight": 10.0,
     "equipment-slot": "WEAPON",
-	"weapon-interface": "GODSWORD_SWORD",
-	"req-attack": 75,
+    "weapon-interface": "GODSWORD_SWORD",
+    "req-attack": 75,
     "attack-slash": 132,
     "attack-crush": 80,
     "bonus-strength": 132,
@@ -115492,8 +115489,8 @@
     "street-value": 46344698,
     "weight": 10.0,
     "equipment-slot": "WEAPON",
-	"weapon-interface": "GODSWORD_SWORD",
-	"req-attack": 75,
+    "weapon-interface": "GODSWORD_SWORD",
+    "req-attack": 75,
     "attack-slash": 132,
     "attack-crush": 80,
     "bonus-strength": 132,
@@ -115510,8 +115507,8 @@
     "street-value": 3446582,
     "weight": 10.0,
     "equipment-slot": "WEAPON",
-	"weapon-interface": "GODSWORD_SWORD",
-	"req-attack": 75,
+    "weapon-interface": "GODSWORD_SWORD",
+    "req-attack": 75,
     "attack-slash": 132,
     "attack-crush": 80,
     "bonus-strength": 132,
@@ -116508,8 +116505,8 @@
     "street-value": 33510,
     "weight": 4.5,
     "equipment-slot": "WEAPON",
-	"req-attack": 50,
-	"req-strength": 50,
+    "req-attack": 50,
+    "req-strength": 50,
     "attack-crush": 81,
     "bonus-strength": 79
   },
@@ -120707,7 +120704,7 @@
   },
   {
     "id": 21295,
-	"tradeable": false,
+    "tradeable": false,
     "name": "Infernal cape",
     "low-alch": 32000,
     "high-alch": 48000,
@@ -120729,7 +120726,7 @@
   },
   {
     "id": 21297,
-	"tradeable": false,
+    "tradeable": false,
     "name": "Infernal cape",
     "weight": 1.8,
     "equipment-slot": "CAPE",
@@ -121931,7 +121928,7 @@
     "base-value": 12500,
     "weight": 2.0,
     "equipment-slot": "BOOTS",
-	"req-defence": 50,
+    "req-defence": 50,
     "attack-magic": -3,
     "attack-ranged": -1,
     "defence-stab": 12,
@@ -121962,7 +121959,7 @@
     "walk-animation": 819,
     "equipment-slot": "WEAPON",
     "weapon-interface": "LONGSWORD",
-	"req-attack": 50,
+    "req-attack": 50,
     "attack-stab": 56,
     "attack-slash": 65,
     "attack-crush": -2,
@@ -122598,7 +122595,7 @@
   {
     "id": 21776,
     "name": "Imbued saradomin max cape",
-	"tradeable": false,
+    "tradeable": false,
     "low-alch": 39600,
     "high-alch": 59400,
     "base-value": 99000,
@@ -122614,14 +122611,14 @@
   {
     "id": 21778,
     "name": "Imbued saradomin max hood",
-	"tradeable": false,
+    "tradeable": false,
     "weight": 0.4,
     "equipment-slot": "HELM"
   },
   {
     "id": 21780,
     "name": "Imbued zamorak max cape",
-	"tradeable": false,
+    "tradeable": false,
     "low-alch": 39600,
     "high-alch": 59400,
     "base-value": 99000,
@@ -122638,13 +122635,13 @@
     "id": 21782,
     "name": "Imbued zamorak max hood",
     "weight": 0.4,
-	"tradeable": false,
+    "tradeable": false,
     "equipment-slot": "HELM"
   },
   {
     "id": 21784,
     "name": "Imbued guthix max cape",
-	"tradeable": false,
+    "tradeable": false,
     "low-alch": 39600,
     "high-alch": 59400,
     "base-value": 99000,
@@ -122661,7 +122658,7 @@
     "id": 21786,
     "name": "Imbued guthix max hood",
     "weight": 0.4,
-	"tradeable": false,
+    "tradeable": false,
     "equipment-slot": "HELM"
   },
   {
@@ -122671,7 +122668,7 @@
   {
     "id": 21791,
     "name": "Imbued saradomin cape",
-	"tradeable": false,
+    "tradeable": false,
     "low-alch": 32000,
     "high-alch": 48000,
     "base-value": 80000,
@@ -122687,7 +122684,7 @@
   {
     "id": 21793,
     "name": "Imbued guthix cape",
-	"tradeable": false,
+    "tradeable": false,
     "low-alch": 32000,
     "high-alch": 48000,
     "base-value": 80000,
@@ -122703,7 +122700,7 @@
   {
     "id": 21795,
     "name": "Imbued zamorak cape",
-	"tradeable": false,
+    "tradeable": false,
     "low-alch": 32000,
     "high-alch": 48000,
     "base-value": 80000,
@@ -123237,7 +123234,7 @@
     "equipment-slot": "WEAPON",
     "weapon-interface": "CROSSBOW",
     "attack-ranged": 94,
-     "allowed": [
+    "allowed": [
       "BRONZE_BOLTS",
       "IRON_BOLTS",
       "STEEL_BOLTS",
@@ -123246,7 +123243,7 @@
       "RUNITE_BOLTS",
       "DRAGON_BOLTS",
       "BROAD_TIPPED_BOLTS"
-      ]
+    ]
   },
   {
     "id": 21903,
@@ -124196,7 +124193,7 @@
   },
   {
     "id": 22109,
-	"stackable": false,
+    "stackable": false,
     "name": "Ava's assembler",
     "destroy-message": "I can obtain a replacement for this from Ava in Draynor Manor. She will need 999 coins to buy the lower-level version.",
     "low-alch": 20400,
@@ -124422,7 +124419,7 @@
     "name": "Justiciar faceguard",
     "low-alch": 800000,
     "high-alch": 1200000,
-    "base-value":2000000
+    "base-value": 2000000
   },
   {
     "id": 22327,
@@ -124464,7 +124461,7 @@
     "equipment-slot": "LEGS",
     "req-defence": 75,
     "attack-stab": 0,
-    "attack-slash":0,
+    "attack-slash": 0,
     "attack-crush": 0,
     "attack-mage": -31,
     "attack-ranged": -17,
@@ -124770,7 +124767,7 @@
       "RUNITE_BOLTS",
       "DRAGON_BOLTS",
       "BROAD_TIPPED_BOLTS"
-      ]
+    ]
   },
   {
     "id": 26383,
@@ -124780,11 +124777,11 @@
     "base-value": 200000
   },
   {
-  "id": 26385,
-  "name": "Torva platebody",
-  "low-alch": 240000,
-  "high-alch": 360000,
-  "base-value": 600000
+    "id": 26385,
+    "name": "Torva platebody",
+    "low-alch": 240000,
+    "high-alch": 360000,
+    "base-value": 600000
   },
   {
     "id": 26387,
@@ -124824,8 +124821,8 @@
     "equipment-slot": "WEAPON",
     "two-handed": "true",
     "weapon-interface": "SHORTBOW",
-     "ranged-type": "THROWN",
-     "allowed": [
+    "ranged-type": "THROWN",
+    "allowed": [
       "MEILYR"
     ],
     "weight": 1.5,
@@ -124850,8 +124847,8 @@
     "equipment-slot": "WEAPON",
     "two-handed": "true",
     "weapon-interface": "SHORTBOW",
-     "ranged-type": "THROWN",
-     "allowed": [
+    "ranged-type": "THROWN",
+    "allowed": [
       "HEFIN"
     ],
     "weight": 1.5,
@@ -124876,8 +124873,8 @@
     "equipment-slot": "WEAPON",
     "two-handed": "true",
     "weapon-interface": "SHORTBOW",
-     "ranged-type": "THROWN",
-     "allowed": [
+    "ranged-type": "THROWN",
+    "allowed": [
       "MEILYR"
     ],
     "weight": 1.5,
@@ -124902,8 +124899,8 @@
     "equipment-slot": "WEAPON",
     "two-handed": "true",
     "weapon-interface": "SHORTBOW",
-     "ranged-type": "THROWN",
-     "allowed": [
+    "ranged-type": "THROWN",
+    "allowed": [
       "IORWERTH"
     ],
     "weight": 1.5,
@@ -124928,8 +124925,8 @@
     "equipment-slot": "WEAPON",
     "two-handed": "true",
     "weapon-interface": "SHORTBOW",
-     "ranged-type": "THROWN",
-     "allowed": [
+    "ranged-type": "THROWN",
+    "allowed": [
       "CADARN"
     ],
     "weight": 1.5,
@@ -124954,8 +124951,8 @@
     "equipment-slot": "WEAPON",
     "two-handed": "true",
     "weapon-interface": "SHORTBOW",
-     "ranged-type": "THROWN",
-     "allowed": [
+    "ranged-type": "THROWN",
+    "allowed": [
       "CRWYS"
     ],
     "weight": 1.5,
@@ -124980,8 +124977,8 @@
     "equipment-slot": "WEAPON",
     "two-handed": "true",
     "weapon-interface": "SHORTBOW",
-     "ranged-type": "THROWN",
-     "allowed": [
+    "ranged-type": "THROWN",
+    "allowed": [
       "MEILYR"
     ],
     "weight": 1.5,
@@ -125006,8 +125003,8 @@
     "equipment-slot": "WEAPON",
     "two-handed": "true",
     "weapon-interface": "SHORTBOW",
-     "ranged-type": "THROWN",
-     "allowed": [
+    "ranged-type": "THROWN",
+    "allowed": [
       "AMLODD"
     ],
     "weight": 1.5,
@@ -125032,8 +125029,8 @@
     "equipment-slot": "WEAPON",
     "two-handed": "true",
     "weapon-interface": "SHORTBOW",
-     "ranged-type": "THROWN",
-     "allowed": [
+    "ranged-type": "THROWN",
+    "allowed": [
       "TRAHEAERN"
     ],
     "weight": 1.5,
@@ -125083,7 +125080,6 @@
     "attack-magic": -18,
     "attack-ranged": 31,
     "defence-stab": 46,
-    "defence-slash": 38,
     "defence-slash": 48,
     "defence-magic": 44,
     "defence-ranged": 68,
@@ -125161,35 +125157,35 @@
     "low-alch": 80000,
     "high-alch": 120000,
     "base-value": 200000
-    },
-    {
+  },
+  {
     "id": 26410,
     "name": "Torva platebody",
-      "stackable": true,
-      "unnoted-id": 26384,
-      "low-alch": 240000,
+    "stackable": true,
+    "unnoted-id": 26384,
+    "low-alch": 240000,
     "high-alch": 360000,
     "base-value": 600000
-    },
-    {
+  },
+  {
     "id": 26411,
     "name": "Torva platelegs",
-      "stackable": true,
-      "unnoted-id": 26386,
-      "low-alch": 160000,
+    "stackable": true,
+    "unnoted-id": 26386,
+    "low-alch": 160000,
     "high-alch": 240000,
     "base-value": 400000
-    },
-    {
+  },
+  {
     "id": 26403,
     "name": "Zaryte vambraces",
-      "stackable": true,
-      "unnoted-id": 26235,
-      "low-alch": 80000,
+    "stackable": true,
+    "unnoted-id": 26235,
+    "low-alch": 80000,
     "high-alch": 120000,
     "base-value": 200000
-    },
-    {
+  },
+  {
     "id": 26405,
     "name": "Zaryte crossbow",
     "stackable": true,
@@ -125198,7 +125194,7 @@
     "high-alch": 120000,
     "base-value": 200000
   },
-    {
+  {
     "id": 26384,
     "name": "Torva platebody",
     "noted-id": 26410,
@@ -125220,8 +125216,8 @@
     "defence-ranged": 142,
     "bonus-strength": 6,
     "bonus-prayer": 1
-    },
-    {
+  },
+  {
     "id": 26386,
     "name": "Torva platelegs",
     "noted-id": 26411,
@@ -125276,7 +125272,7 @@
     "low-alch": 500000,
     "high-alch": 750000,
     "base-value": 1250000,
-     "block-animation": 7056,
+    "block-animation": 7056,
     "stand-animation": 7053,
     "walk-animation": 7052,
     "run-animation": 7043,
@@ -125372,7 +125368,7 @@
     "defence-crush": 0,
     "defence-magic": 20,
     "defence-ranged": 0,
-	"tradeable": false
+    "tradeable": false
   },
   {
     "id": 22547,
@@ -125380,7 +125376,7 @@
     "equipment-slot": "WEAPON",
     "weapon-interface": "SHORTBOW",
     "ranged-type": "THROWN",
-     "allowed": [
+    "allowed": [
       "CRAWS_BOW"
     ],
     "two-handed": true,
@@ -125407,7 +125403,7 @@
     "equipment-slot": "WEAPON",
     "weapon-interface": "SHORTBOW",
     "ranged-type": "THROWN",
-     "allowed": [
+    "allowed": [
       "CRAWS_BOW"
     ],
     "two-handed": true,
@@ -125427,7 +125423,7 @@
     "defence-magic": 0,
     "defence-ranged": 0,
     "ranged-strength": 60,
-	"tradeable": false
+    "tradeable": false
   },
   {
     "id": 22542,
@@ -125482,7 +125478,7 @@
     "defence-ranged": 0,
     "bonus-strength": 66,
     "bonus-prayer": 2,
-	"tradeable": false
+    "tradeable": false
   },
   {
     "id": 24422,
@@ -125606,97 +125602,97 @@
     "base-value": 4000000
   },
   {
-"id": 24511,
-"name": "Harmonised orb",
-"noted-id": 24512,
-"low-alch": 1600000,
-"high-alch": 2400000,
-"base-value": 4000000
-},
-{
-"id": 24512,
-"name": "Harmonised orb",
-"unnoted-id": 24511,
-"stackable": true,
-"low-alch": 1600000,
-"high-alch": 2400000,
-"base-value": 4000000
-},
-{
-"id": 24517,
-"name": "Eldritch orb",
-"noted-id": 24518,
-"low-alch": 1600000,
-"high-alch": 2400000,
-"base-value": 4000000
-},
-{
-"id": 24518,
-"name": "Eldritch orb",
-"unnoted-id": 24517,
-"stackable": true,
-"low-alch": 1600000,
-"high-alch": 2400000,
-"base-value": 4000000
-},
-{
-"id": 24419,
-"name": "Inquisitor's great helm",
-"noted-id": 24500,
-"equipment-slot": "HELM",
-"weight": 2.72,
-"req-strength": 70,
-"req-defence": 30,
-"low-alch": 200000,
-"high-alch": 300000,
-"base-value": 500000,
-"attack-stab": -2,
-"attack-slash": -2,
-"attack-crush": 8,
-"attack-magic": -5,
-"attack-ranged": -5,
-"defence-stab": 19,
-"defence-slash": 10,
-"defence-crush": 21,
-"defence-magic": 0,
-"defence-ranged": 12,
-"bonus-strength": 4,
-"bonus-prayer": 1
-},
-{
-"id": 24500,
-"name": "Inquisitor's great helm",
-"unnoted-id": 24419,
-"stackable": true,
-"low-alch": 200000,
-"high-alch": 300000,
-"base-value": 500000
-},
-{
-"id": 24420,
-"name": "Inquisitor's hauberk",
-"noted-id": 24502,
-"equipment-slot": "BODY",
-"weight": 9.97,
-"req-strength": 70,
-"req-defence": 30,
-"low-alch": 400000,
-"high-alch": 600000,
-"base-value": 1000000,
-"attack-stab": -3,
-"attack-slash": -3,
-"attack-crush": 12,
-"attack-magic": -11,
-"attack-ranged": -10,
-"defence-stab": 67,
-"defence-slash": 55,
-"defence-crush": 71,
-"defence-magic": 0,
-"defence-ranged": 35,
-"bonus-strength": 4,
-"bonus-prayer": 2
-},
-{
+    "id": 24511,
+    "name": "Harmonised orb",
+    "noted-id": 24512,
+    "low-alch": 1600000,
+    "high-alch": 2400000,
+    "base-value": 4000000
+  },
+  {
+    "id": 24512,
+    "name": "Harmonised orb",
+    "unnoted-id": 24511,
+    "stackable": true,
+    "low-alch": 1600000,
+    "high-alch": 2400000,
+    "base-value": 4000000
+  },
+  {
+    "id": 24517,
+    "name": "Eldritch orb",
+    "noted-id": 24518,
+    "low-alch": 1600000,
+    "high-alch": 2400000,
+    "base-value": 4000000
+  },
+  {
+    "id": 24518,
+    "name": "Eldritch orb",
+    "unnoted-id": 24517,
+    "stackable": true,
+    "low-alch": 1600000,
+    "high-alch": 2400000,
+    "base-value": 4000000
+  },
+  {
+    "id": 24419,
+    "name": "Inquisitor's great helm",
+    "noted-id": 24500,
+    "equipment-slot": "HELM",
+    "weight": 2.72,
+    "req-strength": 70,
+    "req-defence": 30,
+    "low-alch": 200000,
+    "high-alch": 300000,
+    "base-value": 500000,
+    "attack-stab": -2,
+    "attack-slash": -2,
+    "attack-crush": 8,
+    "attack-magic": -5,
+    "attack-ranged": -5,
+    "defence-stab": 19,
+    "defence-slash": 10,
+    "defence-crush": 21,
+    "defence-magic": 0,
+    "defence-ranged": 12,
+    "bonus-strength": 4,
+    "bonus-prayer": 1
+  },
+  {
+    "id": 24500,
+    "name": "Inquisitor's great helm",
+    "unnoted-id": 24419,
+    "stackable": true,
+    "low-alch": 200000,
+    "high-alch": 300000,
+    "base-value": 500000
+  },
+  {
+    "id": 24420,
+    "name": "Inquisitor's hauberk",
+    "noted-id": 24502,
+    "equipment-slot": "BODY",
+    "weight": 9.97,
+    "req-strength": 70,
+    "req-defence": 30,
+    "low-alch": 400000,
+    "high-alch": 600000,
+    "base-value": 1000000,
+    "attack-stab": -3,
+    "attack-slash": -3,
+    "attack-crush": 12,
+    "attack-magic": -11,
+    "attack-ranged": -10,
+    "defence-stab": 67,
+    "defence-slash": 55,
+    "defence-crush": 71,
+    "defence-magic": 0,
+    "defence-ranged": 35,
+    "bonus-strength": 4,
+    "bonus-prayer": 2
+  },
+  {
     "id": 24502,
     "name": "Inquisitor's hauberk",
     "unnoted-id": 24420,
@@ -125704,174 +125700,169 @@
     "low-alch": 400000,
     "high-alch": 600000,
     "base-value": 1000000
-    },
-    {
-"id": 24421,
-"name": "Inquisitor's plateskirt",
-"noted-id": 24504,
-"equipment-slot": "LEGS",
-"weight": 9.07,
-"req-strength": 70,
-"req-strength": 30,
-"low-alch": 300000,
-"high-alch": 450000,
-"base-value": 750000,
-"atack-stab": -3,
-"attack-slash": -3,
-"attack-crush": 12,
-"attack-magic": -9,
-"attack-ranged": -5,
-"defence-stab": 42,
-"defence-slash": 30,
-"defence-crush": 49,
-"defence-magic": 0,
-"defence-ranged": 22,
-"bonus-strength": 2,
-"bonus-prayer": 2
-},
-{
-"id": 24504,
-"name": "Inquisitor's plateskirt",
-"unnoted-id": 24421,
-"stackable": true,
-"low-alch": 300000,
-"high-alch": 450000,
-"base-value": 750000
-},
-{
-"id": 24417,
-"name": "Inquisitor's mace",
-"noted-id": 24498,
-"equipment-slot": "WEAPON",
-"weapon-interface": "INQUISITOR_MACE",
-"weight": 1.81,
-"req-attack": 80,
-"low-alch": 2000000,
-"high-alch": 3000000,
-"base-value": 5000000,
-"attack-stab": 52,
-"attack-slash": -4,
-"attack-crush": 95,
-"attack-magic": 0,
-"attack-ranged": 0,
-"defence-stab": 0,
-"defence-slash": 0,
-"defence-crush": 0,
-"defence-magic": 0,
-"defence-ranged": 0,
-"bonus-strength": 89,
-"bonus-prayer": 2
-},
-{
-"id": 24498,
-"name": "Inquisitor's mace",
-"unnoted-id": 24417,
-"stackable": true,
-"low-alch": 2000000,
-"high-alch": 3000000,
-"base-value": 5000000
-},
+  },
   {
-"id": 22975,
-"name": "Brimstone ring",
-"noted-id": 22976,
-"equipment-slot": "RING",
-"weight": 0.004,
-"low-alch": 4000,
-"high-alch": 6000,
-"base-value": 10000,
-"attack-stab": 4,
-"attack-slash": 4,
-"attack-crush": 4,
-"attack-magic": 6,
-"attack-ranged": 4,
-"defence-stab": 4,
-"defence-slash": 4,
-"defence-crush": 4,
-"defence-magic": 6,
-"defence-ranged": 4,
-"bonus-prayer": 4
-},
-{
-"id": 22976,
-"name": "Brimstone ring",
-"unnoted-id": 22975,
-"stackable": true,
-"low-alch": 4000,
-"high-alch": 6000,
-"base-value": 10000
-},
-{
-"id": 22986,
-"name": "Bonecrusher necklace",
-"equipment-slot": "AMULET",
-"req-prayer": 70,
-"weight": 0.025,
-"low-alch": 32000,
-"high-alch": 48000,
-"base-value": 80000,
-"attack-stab": 10,
-"attack-slash": 10,
-"attack-crush": 10,
-"attack-magic": 10,
-"attack-ranged": 10,
-"defence-stab": 2,
-"defence-slash": 2,
-"defence-crush": 2,
-"defence-magic": 2,
-"defence-ranged": 2,
-"bonus-strength": 2,
-"bonus-prayer": 12
-},
-{
-"id": 22981,
-"name": "Ferocious gloves",
-"equipment-slot": "GLOVES",
-"req-attack": 80,
-"req-defence": 80,
-"weight": 0.22,
-"low-alch": 40000,
-"high-alch": 60000,
-"base-value": 100000,
-"attack-stab": 16,
-"attack-slash": 16,
-"attack-crush": 16,
-"attack-magic": -16,
-"attack-ranged": -16,
-"defence-stab": 0,
-"defence-slash": 0,
-"defence-crush": 0,
-"defence-magic": 0,
-"defence-ranged": 0,
-"bonus-strength": 14
-},
-{
+    "id": 24421,
+    "name": "Inquisitor's plateskirt",
+    "noted-id": 24504,
+    "equipment-slot": "LEGS",
+    "weight": 9.07,
+    "req-strength": 30,
+    "low-alch": 300000,
+    "high-alch": 450000,
+    "base-value": 750000,
+    "atack-stab": -3,
+    "attack-slash": -3,
+    "attack-crush": 12,
+    "attack-magic": -9,
+    "attack-ranged": -5,
+    "defence-stab": 42,
+    "defence-slash": 30,
+    "defence-crush": 49,
+    "defence-magic": 0,
+    "defence-ranged": 22,
+    "bonus-strength": 2,
+    "bonus-prayer": 2
+  },
+  {
+    "id": 24504,
+    "name": "Inquisitor's plateskirt",
+    "unnoted-id": 24421,
+    "stackable": true,
+    "low-alch": 300000,
+    "high-alch": 450000,
+    "base-value": 750000
+  },
+  {
+    "id": 24417,
+    "name": "Inquisitor's mace",
+    "noted-id": 24498,
+    "equipment-slot": "WEAPON",
+    "weapon-interface": "INQUISITOR_MACE",
+    "weight": 1.81,
+    "req-attack": 80,
+    "low-alch": 2000000,
+    "high-alch": 3000000,
+    "base-value": 5000000,
+    "attack-stab": 52,
+    "attack-slash": -4,
+    "attack-crush": 95,
+    "attack-magic": 0,
+    "attack-ranged": 0,
+    "defence-stab": 0,
+    "defence-slash": 0,
+    "defence-crush": 0,
+    "defence-magic": 0,
+    "defence-ranged": 0,
+    "bonus-strength": 89,
+    "bonus-prayer": 2
+  },
+  {
+    "id": 24498,
+    "name": "Inquisitor's mace",
+    "unnoted-id": 24417,
+    "stackable": true,
+    "low-alch": 2000000,
+    "high-alch": 3000000,
+    "base-value": 5000000
+  },
+  {
+    "id": 22975,
+    "name": "Brimstone ring",
+    "noted-id": 22976,
+    "equipment-slot": "RING",
+    "weight": 0.004,
+    "low-alch": 4000,
+    "high-alch": 6000,
+    "base-value": 10000,
+    "attack-stab": 4,
+    "attack-slash": 4,
+    "attack-crush": 4,
+    "attack-magic": 6,
+    "attack-ranged": 4,
+    "defence-stab": 4,
+    "defence-slash": 4,
+    "defence-crush": 4,
+    "defence-magic": 6,
+    "defence-ranged": 4,
+    "bonus-prayer": 4
+  },
+  {
+    "id": 22976,
+    "name": "Brimstone ring",
+    "unnoted-id": 22975,
+    "stackable": true,
+    "low-alch": 4000,
+    "high-alch": 6000,
+    "base-value": 10000
+  },
+  {
+    "id": 22986,
+    "name": "Bonecrusher necklace",
+    "equipment-slot": "AMULET",
+    "req-prayer": 70,
+    "weight": 0.025,
+    "low-alch": 32000,
+    "high-alch": 48000,
+    "base-value": 80000,
+    "attack-stab": 10,
+    "attack-slash": 10,
+    "attack-crush": 10,
+    "attack-magic": 10,
+    "attack-ranged": 10,
+    "defence-stab": 2,
+    "defence-slash": 2,
+    "defence-crush": 2,
+    "defence-magic": 2,
+    "defence-ranged": 2,
+    "bonus-strength": 2,
+    "bonus-prayer": 12
+  },
+  {
+    "id": 22981,
+    "name": "Ferocious gloves",
+    "equipment-slot": "GLOVES",
+    "req-attack": 80,
+    "req-defence": 80,
+    "weight": 0.22,
+    "low-alch": 40000,
+    "high-alch": 60000,
+    "base-value": 100000,
+    "attack-stab": 16,
+    "attack-slash": 16,
+    "attack-crush": 16,
+    "attack-magic": -16,
+    "attack-ranged": -16,
+    "defence-stab": 0,
+    "defence-slash": 0,
+    "defence-crush": 0,
+    "defence-magic": 0,
+    "defence-ranged": 0,
+    "bonus-strength": 14
+  },
+  {
     "id": 22978,
     "name": "Dragon hunter lance",
     "two-handed": true,
     "noted-id": 22979,
-    "low-alch": 20000,
-    "high-alch": 30000,
-    "base-value": 50000,
+    "low-alch": 120000,
+    "high-alch": 180000,
+    "base-value": 300000,
     "street-value": 33510,
-    "weight": 3.0,
+    "weight": 3,
     "stand-animation": 813,
     "walk-animation": 1205,
     "run-animation": 2563,
     "attack-animations": {
-    "HUNTER_LANCE_LUNGE": 8288,
-    "HUNTER_LANCE_SWIPE": 8289,
-    "HUNTER_LANCE_POUND": 8290,
-    "HUNTER_LANCE_BLOCK": 8288
-  },
+      "HUNTER_LANCE_LUNGE": 8288,
+      "HUNTER_LANCE_SWIPE": 8289,
+      "HUNTER_LANCE_POUND": 8290,
+      "HUNTER_LANCE_BLOCK": 8288
+    },
     "block-animation": 420,
     "equipment-slot": "WEAPON",
     "weapon-interface": "HUNTER_LANCE",
     "req-attack": 78,
-    "weight": 3,
-    "low-alch": 120000,
-    "high-alch": 180000,
-    "base-value": 300000,
     "attack-stab": 85,
     "attack-slash": 65,
     "attack-crush": 65,
@@ -125884,403 +125875,403 @@
     "defence-ranged": 0,
     "bonus-strength": 70
   },
-{
-"id": 22979,
-"name": "Dragon hunter lance",
-"unnoted-id": 22978,
-"stackable": true,
-"low-alch": 120000,
-"high-alch": 180000,
-"base-value": 300000
-},
-{
-"id": 23685,
-"name": "Divine super combat potion(4)",
-"noted-id": 23686,
-"low-alch": 100,
-"high-alch": 150,
-"base-value": 250
-},
-{
-"id": 23686,
-"name": "Divine super combat potion(4)",
-"unnoted-id": 23685,
-"stackable": true,
-"low-alch": 100,
-"high-alch": 150,
-"base-value": 250
-},
-{
-"id": 23688,
-"name": "Divine super combat potion(3)",
-"noted-id": 23689,
-"low-alch": 100,
-"high-alch": 150,
-"base-value": 250
-},
-{
-"id": 23689,
-"name": "Divine super combat potion(3)",
-"unnoted-id": 23688,
-"stackable": true,
-"low-alch": 100,
-"high-alch": 150,
-"base-value": 250
-},
-{
-"id": 23691,
-"name": "Divine super combat potion(2)",
-"noted-id": 23692,
-"low-alch": 100,
-"high-alch": 150,
-"base-value": 250
-},
-{
-"id": 23692,
-"name": "Divine super combat potion(2)",
-"unnoted-id": 23691,
-"stackable": true,
-"low-alch": 100,
-"high-alch": 150,
-"base-value": 250
-},
-{
-"id": 23694,
-"name": "Divine super combat potion(1)",
-"noted-id": 23695,
-"low-alch": 100,
-"high-alch": 150,
-"base-value": 250
-},
-{
-"id": 23695,
-"name": "Divine super combat potion(1)",
-"unnoted-id": 23694,
-"stackable": true,
-"low-alch": 100,
-"high-alch": 150,
-"base-value": 250
-},
-{
-"id": 24623,
-"name": "Divine battlemage potion(4)",
-"noted-id": 24624,
-"low-alch": 288,
-"high-alch": 432,
-"base-value": 720
-},
-{
-"id": 24624,
-"name": "Divine battlemage potion(4)",
-"unnoted-id": 24623,
-"stackable": true,
-"low-alch": 288,
-"high-alch": 432,
-"base-value": 720
-},
-{
-"id": 24626,
-"name": "Divine battlemage potion(3)",
-"noted-id": 24627,
-"low-alch": 288,
-"high-alch": 432,
-"base-value": 720
-},
-{
-"id": 24627,
-"name": "Divine battlemage potion(3)",
-"unnoted-id": 24626,
-"stackable": true,
-"low-alch": 288,
-"high-alch": 432,
-"base-value": 720
-},
-{
-"id": 24629,
-"name": "Divine battlemage potion(2)",
-"noted-id": 24630,
-"low-alch": 288,
-"high-alch": 432,
-"base-value": 720
-},
-{
-"id": 24630,
-"name": "Divine battlemage potion(2)",
-"unnoted-id": 24629,
-"stackable": true,
-"low-alch": 288,
-"high-alch": 432,
-"base-value": 720
-},
-{
-"id": 24632,
-"name": "Divine battlemage potion(1)",
-"noted-id": 24633,
-"low-alch": 288,
-"high-alch": 432,
-"base-value": 720
-},
-{
-"id": 24633,
-"name": "Divine battlemage potion(1)",
-"unnoted-id": 24632,
-"stackable": true,
-"low-alch": 288,
-"high-alch": 432,
-"base-value": 720
-},
-{
-"id": 24635,
-"name": "Divine bastion potion(4)",
-"noted-id": 24636,
-"low-alch": 288,
-"high-alch": 432,
-"base-value": 720
-},
-{
-"id": 24636,
-"name": "Divine bastion potion(4)",
-"unnoted-id": 24635,
-"stackable": true,
-"low-alch": 288,
-"high-alch": 432,
-"base-value": 720
-},
-{
-"id": 24638,
-"name": "Divine bastion potion(3)",
-"noted-id": 24639,
-"low-alch": 288,
-"high-alch": 432,
-"base-value": 720
-},
-{
-"id": 24639,
-"name": "Divine bastion potion(3)",
-"unnoted-id": 24638,
-"stackable": true,
-"low-alch": 288,
-"high-alch": 432,
-"base-value": 720
-},
-{
-"id": 24641,
-"name": "Divine bastion potion(2)",
-"noted-id": 24642,
-"low-alch": 288,
-"high-alch": 432,
-"base-value": 720
-},
-{
-"id": 24642,
-"name": "Divine bastion potion(2)",
-"unnoted-id": 24641,
-"stackable": true,
-"low-alch": 288,
-"high-alch": 432,
-"base-value": 720
-},
-{
-"id": 24644,
-"name": "Divine bastion potion(1)",
-"noted-id": 24645,
-"low-alch": 288,
-"high-alch": 432,
-"base-value": 720
-},
-{
-"id": 24645,
-"name": "Divine bastion potion(1)",
-"unnoted-id": 24644,
-"stackable": true,
-"low-alch": 288,
-"high-alch": 432,
-"base-value": 720
-},
-{
-"id": 26219,
-"name": "Osmumten's fang",
-"equipment-slot": "WEAPON",
-"weapon-interface": "OSMUM_SWORD",
-"stand-animation": 809,
-"block-animation": 4177,
-"req-attack": 82,
-"attack-stab": 105,
-"attack-slash": 75,
-"attack-crush": 0,
-"attack-magic": 0,
-"attack-ranged": 0,
-"defence-stab": 0,
-"defence-slash": 0,
-"defence-crush": 0,
-"defence-magic": 0,
-"defence-ranged": 0,
-"bonus-strength": 103,
-"bonus-prayer": 0,
-"noted-id": 27245
-},
-{
-"id": 27246,
-"name": "Osmumten's fang",
-"equipment-slot": "WEAPON",
-"weapon-interface": "OSMUM_SWORD",
-"stand-animation": 809,
-"block-animation": 4177,
-"req-attack": 82,
-"attack-stab": 105,
-"attack-slash": 75,
-"attack-crush": 0,
-"attack-magic": 0,
-"attack-ranged": 0,
-"defence-stab": 0,
-"defence-slash": 0,
-"defence-crush": 0,
-"defence-magic": 0,
-"defence-ranged": 0,
-"bonus-strength": 103,
-"bonus-prayer": 0,
-"noted-id": 27245
-},
-{
-"id": 27275,
-"name": "Tumeken's shadow",
-"equipment-slot": "WEAPON",
+  {
+    "id": 22979,
+    "name": "Dragon hunter lance",
+    "unnoted-id": 22978,
+    "stackable": true,
+    "low-alch": 120000,
+    "high-alch": 180000,
+    "base-value": 300000
+  },
+  {
+    "id": 23685,
+    "name": "Divine super combat potion(4)",
+    "noted-id": 23686,
+    "low-alch": 100,
+    "high-alch": 150,
+    "base-value": 250
+  },
+  {
+    "id": 23686,
+    "name": "Divine super combat potion(4)",
+    "unnoted-id": 23685,
+    "stackable": true,
+    "low-alch": 100,
+    "high-alch": 150,
+    "base-value": 250
+  },
+  {
+    "id": 23688,
+    "name": "Divine super combat potion(3)",
+    "noted-id": 23689,
+    "low-alch": 100,
+    "high-alch": 150,
+    "base-value": 250
+  },
+  {
+    "id": 23689,
+    "name": "Divine super combat potion(3)",
+    "unnoted-id": 23688,
+    "stackable": true,
+    "low-alch": 100,
+    "high-alch": 150,
+    "base-value": 250
+  },
+  {
+    "id": 23691,
+    "name": "Divine super combat potion(2)",
+    "noted-id": 23692,
+    "low-alch": 100,
+    "high-alch": 150,
+    "base-value": 250
+  },
+  {
+    "id": 23692,
+    "name": "Divine super combat potion(2)",
+    "unnoted-id": 23691,
+    "stackable": true,
+    "low-alch": 100,
+    "high-alch": 150,
+    "base-value": 250
+  },
+  {
+    "id": 23694,
+    "name": "Divine super combat potion(1)",
+    "noted-id": 23695,
+    "low-alch": 100,
+    "high-alch": 150,
+    "base-value": 250
+  },
+  {
+    "id": 23695,
+    "name": "Divine super combat potion(1)",
+    "unnoted-id": 23694,
+    "stackable": true,
+    "low-alch": 100,
+    "high-alch": 150,
+    "base-value": 250
+  },
+  {
+    "id": 24623,
+    "name": "Divine battlemage potion(4)",
+    "noted-id": 24624,
+    "low-alch": 288,
+    "high-alch": 432,
+    "base-value": 720
+  },
+  {
+    "id": 24624,
+    "name": "Divine battlemage potion(4)",
+    "unnoted-id": 24623,
+    "stackable": true,
+    "low-alch": 288,
+    "high-alch": 432,
+    "base-value": 720
+  },
+  {
+    "id": 24626,
+    "name": "Divine battlemage potion(3)",
+    "noted-id": 24627,
+    "low-alch": 288,
+    "high-alch": 432,
+    "base-value": 720
+  },
+  {
+    "id": 24627,
+    "name": "Divine battlemage potion(3)",
+    "unnoted-id": 24626,
+    "stackable": true,
+    "low-alch": 288,
+    "high-alch": 432,
+    "base-value": 720
+  },
+  {
+    "id": 24629,
+    "name": "Divine battlemage potion(2)",
+    "noted-id": 24630,
+    "low-alch": 288,
+    "high-alch": 432,
+    "base-value": 720
+  },
+  {
+    "id": 24630,
+    "name": "Divine battlemage potion(2)",
+    "unnoted-id": 24629,
+    "stackable": true,
+    "low-alch": 288,
+    "high-alch": 432,
+    "base-value": 720
+  },
+  {
+    "id": 24632,
+    "name": "Divine battlemage potion(1)",
+    "noted-id": 24633,
+    "low-alch": 288,
+    "high-alch": 432,
+    "base-value": 720
+  },
+  {
+    "id": 24633,
+    "name": "Divine battlemage potion(1)",
+    "unnoted-id": 24632,
+    "stackable": true,
+    "low-alch": 288,
+    "high-alch": 432,
+    "base-value": 720
+  },
+  {
+    "id": 24635,
+    "name": "Divine bastion potion(4)",
+    "noted-id": 24636,
+    "low-alch": 288,
+    "high-alch": 432,
+    "base-value": 720
+  },
+  {
+    "id": 24636,
+    "name": "Divine bastion potion(4)",
+    "unnoted-id": 24635,
+    "stackable": true,
+    "low-alch": 288,
+    "high-alch": 432,
+    "base-value": 720
+  },
+  {
+    "id": 24638,
+    "name": "Divine bastion potion(3)",
+    "noted-id": 24639,
+    "low-alch": 288,
+    "high-alch": 432,
+    "base-value": 720
+  },
+  {
+    "id": 24639,
+    "name": "Divine bastion potion(3)",
+    "unnoted-id": 24638,
+    "stackable": true,
+    "low-alch": 288,
+    "high-alch": 432,
+    "base-value": 720
+  },
+  {
+    "id": 24641,
+    "name": "Divine bastion potion(2)",
+    "noted-id": 24642,
+    "low-alch": 288,
+    "high-alch": 432,
+    "base-value": 720
+  },
+  {
+    "id": 24642,
+    "name": "Divine bastion potion(2)",
+    "unnoted-id": 24641,
+    "stackable": true,
+    "low-alch": 288,
+    "high-alch": 432,
+    "base-value": 720
+  },
+  {
+    "id": 24644,
+    "name": "Divine bastion potion(1)",
+    "noted-id": 24645,
+    "low-alch": 288,
+    "high-alch": 432,
+    "base-value": 720
+  },
+  {
+    "id": 24645,
+    "name": "Divine bastion potion(1)",
+    "unnoted-id": 24644,
+    "stackable": true,
+    "low-alch": 288,
+    "high-alch": 432,
+    "base-value": 720
+  },
+  {
+    "id": 26219,
+    "name": "Osmumten's fang",
+    "equipment-slot": "WEAPON",
+    "weapon-interface": "OSMUM_SWORD",
+    "stand-animation": 809,
+    "block-animation": 4177,
+    "req-attack": 82,
+    "attack-stab": 105,
+    "attack-slash": 75,
+    "attack-crush": 0,
+    "attack-magic": 0,
+    "attack-ranged": 0,
+    "defence-stab": 0,
+    "defence-slash": 0,
+    "defence-crush": 0,
+    "defence-magic": 0,
+    "defence-ranged": 0,
+    "bonus-strength": 103,
+    "bonus-prayer": 0,
+    "noted-id": 27245
+  },
+  {
+    "id": 27246,
+    "name": "Osmumten's fang",
+    "equipment-slot": "WEAPON",
+    "weapon-interface": "OSMUM_SWORD",
+    "stand-animation": 809,
+    "block-animation": 4177,
+    "req-attack": 82,
+    "attack-stab": 105,
+    "attack-slash": 75,
+    "attack-crush": 0,
+    "attack-magic": 0,
+    "attack-ranged": 0,
+    "defence-stab": 0,
+    "defence-slash": 0,
+    "defence-crush": 0,
+    "defence-magic": 0,
+    "defence-ranged": 0,
+    "bonus-strength": 103,
+    "bonus-prayer": 0,
+    "noted-id": 27245
+  },
+  {
+    "id": 27275,
+    "name": "Tumeken's shadow",
+    "equipment-slot": "WEAPON",
     "weapon-interface": "SHADOW",
     "stand-animation": 9494,
     "walk-animation": 1703,
     "run-animation": 1707
-},
-{
-"id": 27226,
-"name": "Masori mask",
-"equipment-slot": "HELM",
-"noted-id": 27227
-},
-{
-"id": 27229,
-"name": "Masori body",
-"equipment-slot": "BODY",
-"noted-id": 27230
-},
-{
-"id": 27232,
-"name": "Masori chaps",
-"equipment-slot": "LEGS",
-"noted-id": 27233
-},
-{
-"id": 27227,
-"name": "Masori mask",
-"unnoted-id": 27226,
-"stackable": true
-},
-{
-"id": 27230,
-"name": "Masori body",
-"equipment-slot": "BODY",
-"unnoted-id": 27229,
-"stackable": true
-},
-{
-"id": 27233,
-"name": "Masori chaps",
-"unnoted-id": 27232,
-"stackable": true
-},
-{
-"id": 25438,
-"name": "Zealot's helm",
-"equipment-slot": "HAT",
-"stackable": false
-},
-{
-"id": 25434,
-"name": "Zealot's robe top",
-"equipment-slot": "BODY",
-"stackable": false
-},
-{
-"id": 25436,
-"name": "Zealot's robe bottom",
-"equipment-slot": "LEGS",
-"stackable": false
-},
-{
-"id": 25440,
-"name": "Zealot's boots",
-"equipment-slot": "BOOTS",
-"stackable": false
-},
-{
-"id": 25766,
-"name": "Fiendish ashes",
-"stackable": false,
-"noted-id": 25767
-},
-{
-"id": 25767,
-"name": "Fiendish ashes",
-"stackable": false,
-"unnoted-id": 25766
-},
-{
-"id": 25769,
-"name": "Vile ashes",
-"stackable": false,
-"noted-id": 25770
-},
-{
-"id": 25770,
-"name": "Vile ashes",
-"stackable": false,
-"unnoted-id": 25769
-},
-{
-"id": 25772,
-"name": "Malicious ashes",
-"stackable": false,
-"noted-id": 25773
-},
-{
-"id": 25773,
-"name": "Malicious ashes",
-"stackable": false,
-"unnoted-id": 25772
-},
-{
-"id": 25775,
-"name": "Abyssal ashes",
-"stackable": false,
-"noted-id": 25776
-},
-{
-"id": 25776,
-"name": "Abyssal ashes",
-"stackable": false,
-"unnoted-id": 25775
-},
-{
-"id": 25778,
-"name": "Infernal ashes",
-"stackable": false,
-"noted-id": 25779
-},
-{
-"id": 25779,
-"name": "Infernal ashes",
-"stackable": false,
-"unnoted-id": 25778
-},
-{
-"id": 25781,
-"name": "Ash sanctifier",
-"destroy-message": "Your death runes will fall out. You can get another ash sanctifier from Tyss at the Dark Altar."
-},
-{
-  "id": 22879,
-  "name": "Snape grass seed",
-  "stackable": true
-},
+  },
+  {
+    "id": 27226,
+    "name": "Masori mask",
+    "equipment-slot": "HELM",
+    "noted-id": 27227
+  },
+  {
+    "id": 27229,
+    "name": "Masori body",
+    "equipment-slot": "BODY",
+    "noted-id": 27230
+  },
+  {
+    "id": 27232,
+    "name": "Masori chaps",
+    "equipment-slot": "LEGS",
+    "noted-id": 27233
+  },
+  {
+    "id": 27227,
+    "name": "Masori mask",
+    "unnoted-id": 27226,
+    "stackable": true
+  },
+  {
+    "id": 27230,
+    "name": "Masori body",
+    "equipment-slot": "BODY",
+    "unnoted-id": 27229,
+    "stackable": true
+  },
+  {
+    "id": 27233,
+    "name": "Masori chaps",
+    "unnoted-id": 27232,
+    "stackable": true
+  },
+  {
+    "id": 25438,
+    "name": "Zealot's helm",
+    "equipment-slot": "HAT",
+    "stackable": false
+  },
+  {
+    "id": 25434,
+    "name": "Zealot's robe top",
+    "equipment-slot": "BODY",
+    "stackable": false
+  },
+  {
+    "id": 25436,
+    "name": "Zealot's robe bottom",
+    "equipment-slot": "LEGS",
+    "stackable": false
+  },
+  {
+    "id": 25440,
+    "name": "Zealot's boots",
+    "equipment-slot": "BOOTS",
+    "stackable": false
+  },
+  {
+    "id": 25766,
+    "name": "Fiendish ashes",
+    "stackable": false,
+    "noted-id": 25767
+  },
+  {
+    "id": 25767,
+    "name": "Fiendish ashes",
+    "stackable": false,
+    "unnoted-id": 25766
+  },
+  {
+    "id": 25769,
+    "name": "Vile ashes",
+    "stackable": false,
+    "noted-id": 25770
+  },
+  {
+    "id": 25770,
+    "name": "Vile ashes",
+    "stackable": false,
+    "unnoted-id": 25769
+  },
+  {
+    "id": 25772,
+    "name": "Malicious ashes",
+    "stackable": false,
+    "noted-id": 25773
+  },
+  {
+    "id": 25773,
+    "name": "Malicious ashes",
+    "stackable": false,
+    "unnoted-id": 25772
+  },
+  {
+    "id": 25775,
+    "name": "Abyssal ashes",
+    "stackable": false,
+    "noted-id": 25776
+  },
+  {
+    "id": 25776,
+    "name": "Abyssal ashes",
+    "stackable": false,
+    "unnoted-id": 25775
+  },
+  {
+    "id": 25778,
+    "name": "Infernal ashes",
+    "stackable": false,
+    "noted-id": 25779
+  },
+  {
+    "id": 25779,
+    "name": "Infernal ashes",
+    "stackable": false,
+    "unnoted-id": 25778
+  },
+  {
+    "id": 25781,
+    "name": "Ash sanctifier",
+    "destroy-message": "Your death runes will fall out. You can get another ash sanctifier from Tyss at the Dark Altar."
+  },
+  {
+    "id": 22879,
+    "name": "Snape grass seed",
+    "stackable": true
+  },
   {
     "id": 22812,
     "name": "Dragon knife",
@@ -145791,5 +145782,62 @@
     "name": "Esoteric emblem (tier 2)",
     "destroyable": true,
     "base-value": 501
+  },
+  {
+    "id": 28003,
+    "name": "Araxyte fang",
+    "examine": "The fang of a powerful araxyte.",
+    "base-value": 50000,
+    "stackable": false,
+    "noted": false
+  },
+  {
+    "id": 28004,
+    "name": "Noxious blade",
+    "examine": "A sharp blade from Araxxor.",
+    "base-value": 200000,
+    "stackable": false,
+    "noted": false
+  },
+  {
+    "id": 28005,
+    "name": "Noxious point",
+    "examine": "A deadly point from Araxxor.",
+    "base-value": 200000,
+    "stackable": false,
+    "noted": false
+  },
+  {
+    "id": 28006,
+    "name": "Noxious pommel",
+    "examine": "The pommel of a noxious weapon.",
+    "base-value": 200000,
+    "stackable": false,
+    "noted": false
+  },
+  {
+    "id": 28007,
+    "name": "Noxious halberd",
+    "examine": "A deadly halberd forged from Araxxor parts.",
+    "base-value": 2000000,
+    "stackable": false,
+    "noted": false,
+    "two-handed": true
+  },
+  {
+    "id": 28008,
+    "name": "Amulet of rancour",
+    "examine": "A powerful amulet filled with araxyte venom.",
+    "base-value": 1000000,
+    "stackable": false,
+    "noted": false
+  },
+  {
+    "id": 28009,
+    "name": "Araxyte venom sack",
+    "examine": "Filled with concentrated araxyte venom.",
+    "base-value": 10000,
+    "stackable": true,
+    "noted": false
   }
 ]

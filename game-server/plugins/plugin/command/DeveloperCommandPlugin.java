@@ -45,6 +45,10 @@ import com.osroyale.util.MessageColor;
 import com.osroyale.util.RandomUtils;
 import com.osroyale.util.Utility;
 import com.osroyale.util.parser.impl.*;
+import org.jire.tarnishps.defs.NpcDropFileLoader;
+import org.jire.tarnishps.defs.NpcSpawnFileLoader;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.nio.file.Path;
@@ -54,6 +58,8 @@ import java.util.*;
 import static com.osroyale.game.world.entity.combat.attack.FormulaFactory.*;
 
 public class DeveloperCommandPlugin extends CommandExtension {
+
+    private static final Logger logger = LoggerFactory.getLogger(DeveloperCommandPlugin.class);
 
     @Override
     protected void register() {
@@ -845,7 +851,8 @@ public class DeveloperCommandPlugin extends CommandExtension {
                             player.send(new SendMessage("Combat projectiles have been successfully loaded."));
                             World.getNpcs().forEach(Npc::unregister);
                             NpcDefinition.createParser().run();
-                            new NpcSpawnParser().run();
+                            logger.info("Reloading NPC spawns (command=COMBAT)");
+                            NpcSpawnFileLoader.load();
                             new NpcForceChatParser().run();
                             player.send(new SendMessage("Npc spawns have been successfully loaded."));
                             ItemDefinition.createParser().run();
@@ -861,9 +868,10 @@ public class DeveloperCommandPlugin extends CommandExtension {
 
                             World.schedule(3, () -> {
                                 NpcDefinition.createParser().run();
-                                new NpcSpawnParser().run();
+                                logger.info("Reloading NPC spawns & drops (command=SPAWN)");
+                                NpcSpawnFileLoader.load();
                                 new NpcForceChatParser().run();
-                                new NpcDropParser().run();
+                                NpcDropFileLoader.load();
                                 player.send(new SendMessage("Npc spawns have been successfully loaded."));
                             });
                             break;

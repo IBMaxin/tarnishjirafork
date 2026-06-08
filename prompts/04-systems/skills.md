@@ -101,7 +101,7 @@ Skills are server-side calculations. Client displays XP and levels. No client im
 
 ## Verify
 
-- [ ] All 23 skills have implementation directories
+- [ ] All 18 skills have implementation directories
 - [ ] Each skill extends `SkillAction` or equivalent
 - [ ] Each skill has wiring to an object/NPC click plugin
 - [ ] Skill modifiers match intended XP rates

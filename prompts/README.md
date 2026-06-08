@@ -52,7 +52,7 @@ Inline scripts (bash/python one-liners) use bash — those are executed by the A
 | # | Prompt | Purpose |
 |---|--------|---------|
 | 14 | [combat.md](04-systems/combat.md) | Combat formulas, equipment, modifiers |
-| 15 | [skills.md](04-systems/skills.md) | All 23 skills — implementation audit |
+| 15 | [skills.md](04-systems/skills.md) | All 18 skills — implementation audit |
 | 16 | [activities.md](04-systems/activities.md) | 15 minigames — complete vs stub |
 | 17 | [economy.md](04-systems/economy.md) | Currencies, shops, drops, sinks |
 | 18 | [plugins.md](04-systems/plugins.md) | 133 plugins — coverage map |

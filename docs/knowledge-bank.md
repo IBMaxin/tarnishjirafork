@@ -307,8 +307,8 @@ Cleanest data file — 0 errors found.
 |-------|------|---------|
 | `GsonParser` | `util/parser/GsonParser.java` | Base class for all old JSON parsers |
 | `StoreParser` | `util/parser/impl/StoreParser.java` | Loads `stores.json` |
-| `NpcSpawnParser` | `util/parser/impl/NpcSpawnParser.java` | Loads `npc_spawns.json` (old, replaced by NpcSpawnFileLoader) |
-| `NpcDropParser` | `util/parser/impl/NpcDropParser.java` | Loads `npc_drops.json` (old, replaced by NpcDropFileLoader) |
+| ~~`NpcSpawnParser`~~ | ~~`util/parser/impl/NpcSpawnParser.java`~~ | Removed — replaced by `NpcSpawnFileLoader` |
+| ~~`NpcDropParser`~~ | ~~`util/parser/impl/NpcDropParser.java`~~ | Removed — replaced by `NpcDropFileLoader` |
 | `ItemDefinition` | `game/world/items/ItemDefinition.java` | Item definition + `createParser()` |
 | `NpcDefinition` | `game/world/entity/mob/npc/definition/NpcDefinition.java` | NPC definition + `createParser()` |
 | `ItemDefLoader` | (Kotlin, in plugins/) | Per-file item loader |
@@ -426,7 +426,7 @@ Access: `player.right == OWNER`.
 | `::alltome` | | Teleport all non-bot players to you |
 | `::fight` | | Spawn/command two NPCs to fight |
 | `::pnpc` | | Transform yourself into an NPC |
-| `::spawnnpc` | | Spawn NPC under your feet and append to `npc_spawns.json` |
+| `::spawnnpc` | | Spawn NPC and write per-file to `data/def/npc-spawns-json/{id}.json` |
 | `::item` / `::pickup` | | Spawn item into inventory |
 | `::find` / `::give` | | Search item definitions by name and open result interface |
 | `::pos` / `::mypos` / `::coords` | | Print your current position |

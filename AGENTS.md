@@ -11,7 +11,7 @@ AI agent instructions for this codebase. Read this first before making any chang
 
 ## Quick Start
 
-> **AI Agent Prompt Pack:** 24 self-contained prompts for audit/test/dev: **[prompts/](prompts/README.md)**
+> **AI Agent Prompt Pack:** 35 self-contained prompts for audit/test/dev: **[prompts/](prompts/README.md)**
 
 Commands shown for both Windows (PowerShell) and WSL/Linux (Bash). Use whichever matches your terminal.
 
@@ -114,7 +114,7 @@ tarnishjirafork/
 │   ├── src/main/java/com/osroyale/
 │   │   ├── content/       # Game content: skills, activities, shops, trading
 │   │   │   ├── activity/  # Minigames: Barrows, FightCaves, Zulrah, Inferno, etc.
-│   │   │   ├── skill/     # All 23 skills (see below)
+│   │   │   ├── skill/     # All 18 skills (see below)
 │   │   │   ├── store/     # Shop system
 │   │   │   ├── combat/    # Combat system
 │   │   │   ├── teleport/  # Teleport destinations

@@ -3,14 +3,14 @@ package com.osroyale;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.osroyale.game.world.entity.mob.player.PlayerRight;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public final class ProfileRightsTest {
 

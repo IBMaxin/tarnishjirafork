@@ -3,6 +3,7 @@ plugins {
     application
     id("org.zeroturnaround.gradle.jrebel")
     id("com.gradleup.shadow")
+    jacoco
 }
 
 application {
@@ -56,6 +57,19 @@ dependencies {
     testImplementation(libs.junit4)
     testImplementation(libs.junit.jupiter)
     testRuntimeOnly(libs.junit.vintage)
+    testImplementation(libs.mockito.core)
+}
+
+tasks.named<Test>("test") {
+    finalizedBy(tasks.named("jacocoTestReport"))
+}
+
+tasks.named<JacocoReport>("jacocoTestReport") {
+    dependsOn(tasks.named("test"))
+    reports {
+        html.required = true
+        xml.required = true
+    }
 }
 
 tasks.named<Test>("test") {

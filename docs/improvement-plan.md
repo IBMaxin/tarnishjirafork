@@ -20,15 +20,27 @@ Phase 0 test armor and the core migration (Steps 1–5) are all done:
 
 ---
 
+## Tier 1 — Modernisation (Completed)
+
+| Item | Status | Details |
+|------|--------|---------|
+| Gradle build cache | Done | `org.gradle.caching=true` added to `gradle.properties` |
+| GitHub Actions CI | Done | `.github/workflows/ci.yml` — JDK 21, gradle cache, `./gradlew check`, test artifact upload |
+| Clean repo | Done | `build/` and `.gradle/` deleted from filesystem; `.gitignore` already covered them |
+| Version catalog | Done | `gradle/libs.versions.toml` — 55 version keys, 64 library entries unifying server & client |
+| Server → catalog | Done | `game-server/build.gradle.kts` rewritten to use `libs.*` references |
+| Client → catalog | Done | `game-client/build.gradle.kts` rewritten to use `libs.*` references |
+| jsr305 fix | Done | Added explicit `compileOnly(libs.jsr305)` to client (guava bump dropped transitive `@Nonnull`) |
+
+**Build verified:** Server compiles, client compiles, 51/51 tests run (3 pre-existing NpcLoadersParityTest failures).
+
 ## What's Deferred
 
-All original Phases 1–5 are deferred until after the migration is complete:
+Remaining tiers:
 
-- **Phase 1 (CI):** Would be noisy with data failures — wait until one system
-- **Phase 2 (DevEx):** Gradle perf, templates, JRebel — nice but not blocking
-- **Phase 3 (Refactoring):** Event merge, Player extraction, combat formulas — big code changes, do after data is clean
-- **Phase 4 (Docs):** Add migration-specific docs instead
-- **Phase 5 (Long-term):** Integration tests, benchmarks — future
+- **Tier 2 (High-impact):** Remove monolithic JSON files, refactor PluginContext event dispatch, migrate all tests to JUnit 5 only
+- **Tier 3 (Structural):** Extract secrets from settings.toml, prune unused deps (JGroups, PF4J, Sentry), upgrade client to JDK 21
+- **Tier 4 (Deep):** Player refactor, networking integration tests, hot-reload plugins
 
 ---
 

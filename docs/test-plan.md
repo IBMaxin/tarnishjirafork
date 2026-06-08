@@ -1,13 +1,11 @@
-# Offline Test TODO Plan
+# Offline Test Plan
 
-This plan is for tests we can realistically run without logging into the game client. The goal is to catch broken data, broken startup loaders, bad config drift, profile/rights mistakes, and client launch prerequisites before doing manual in-game smoke testing.
+This plan catalogs what offline tests exist and what still needs to be built. The goal is to catch broken data, broken startup loaders, bad config drift, profile/rights mistakes, and client launch prerequisites before doing manual in-game smoke testing.
 
-→ Also see: game-scope.md for what's in the game, knowledge-bank.md for technical reference.
-
-→ **Project map:** `AGENTS.md`
+→ **Single source of truth for new work:** [improvement-plan.md](improvement-plan.md)
 → **Game scope:** [game-scope.md](game-scope.md)
-→ **Docs index:** [README.md](README.md)
-→ **Prompt pack:** [../prompts/README.md](../prompts/README.md) — 24 audit prompts
+→ **Knowledge bank:** [knowledge-bank.md](knowledge-bank.md)
+→ **Prompt pack:** [../prompts/README.md](../prompts/README.md) — 35 audit prompts
 → **Workflows:** [workflows/README.md](workflows/README.md)
 
 ## What Offline Tests Can Prove
@@ -30,492 +28,83 @@ Offline tests cannot fully prove:
 - Interfaces render correctly.
 - Runtime permissions behave correctly after packets arrive from the client.
 
-## Current Baseline
-
-Already present:
-
-- `game-server/src/test/java/com/osroyale/ProfileRightsTest.java`
-- `game-server` has JUnit 4.13.2 test dependency.
-- `.\gradlew.bat :game-server:test` has passed before.
-- Server boot logs previously showed:
-  - `Startup service finished`
-  - `Loaded: 133 plugins`
-  - `Server built successfully`
-- Server cache exists under `game-server/data/cache`.
-- Local client cache exists under `%USERPROFILE%\.tarnish\cache`.
-
-## Priority 0: Keep Basic Build/Test Green
-
-These are command-level checks and should be the first gate.
-
-### TODO: Server Compile Check
-
-Command:
-
-```powershell
-.\gradlew.bat :game-server:classes
-```
-
-Proves:
-
-- Server Java/Kotlin/plugin source still compiles.
-- Generated or migrated code has not broken the main server artifact.
-
-### TODO: Client Compile Check
-
-Command:
-
-```powershell
-.\gradlew.bat :game-client:classes
-```
-
-Proves:
-
-- Client source still compiles with Java 11.
-- Local-cache client changes still compile.
-
-### TODO: Current Unit Test Gate
-
-Command:
-
-```powershell
-.\gradlew.bat :game-server:test
-```
-
-Proves:
-
-- Current profile-right expectations are still true.
-- Any new offline tests added under `game-server/src/test/java` pass.
-
-## Priority 1: Data Parse Tests
-
-The server has roughly 30k JSON files under `game-server/data`, mostly item and monster definitions. A basic parse test gives excellent value.
-
-### TODO: Add `DataJsonParseTest`
-
-Candidate file:
-
-```text
-game-server/src/test/java/com/osroyale/DataJsonParseTest.java
-```
-
-Test behavior:
-
-- Walk `data`.
-- Parse every `.json` file with Gson/JsonParser.
-- Fail with the exact relative path when a file is malformed.
-- Optionally skip empty known-placeholder files if any are found.
-
-Proves:
-
-- No malformed JSON exists in server data.
-- Manual edits to profiles, stores, drops, spawns, and definitions did not corrupt JSON.
-
-Notes:
-
-- This should be simple and fast enough for normal test runs.
-- Because there are many JSON files, failure messages should include only the broken file path and parser error.
-
-### TODO: Add Important File Presence Test
-
-Candidate file:
-
-```text
-game-server/src/test/java/com/osroyale/RequiredDataFilesTest.java
-```
-
-Required files:
-
-- `data/cache/main_file_cache.dat`
-- `data/cache/main_file_cache.idx0`
-- `data/cache/main_file_cache.idx1`
-- `data/cache/main_file_cache.idx2`
-- `data/cache/main_file_cache.idx3`
-- `data/cache/main_file_cache.idx4`
-- `data/cache/main_file_cache.idx5`
-- `data/def/item/item_definitions.json`
-- `data/def/npc/npc_definitions.json`
-- `data/def/npc/npc_spawns.json` (old, reference — active: `npc-spawns-json/`)
-- `data/def/npc/npc_drops.json` (old, reference — active: `npc-drops-json/`)
-- `data/def/store/stores.json`
-- `data/def/combat/projectile_definitions.json`
-- `data/io/message_sizes.json`
-- `data/content/skills/agility.json`
-- `data/profile/world_profile_list.json`
-
-Proves:
-
-- The server has the minimum files needed for startup and basic content loading.
-
-## Priority 2: Server Loader Smoke Tests
-
-These tests should exercise the actual parsers where possible instead of only checking raw JSON.
-
-### TODO: Add Parser Smoke Test
-
-Candidate file:
-
-```text
-game-server/src/test/java/com/osroyale/ParserSmokeTest.java
-```
-
-Useful parser calls:
-
-- `ItemDefinition.createParser().run()`
-- `NpcDefinition.createParser().run()`
-- `new CombatProjectileParser().run()`
-- `NpcSpawnFileLoader.INSTANCE.load()` ← per-file (active in Starter.java)
-- `NpcDropFileLoader.INSTANCE.load()` ← per-file (active in Starter.java)
-- `new NpcForceChatParser().run()`
-- `new StoreParser().run()`
-- `new GlobalObjectParser().run()`
-- `new PacketSizeParser().run()`
-- `ObjectExamines.loadObjectExamines()`
-
-Proves:
-
-- Core server data can be loaded through the same parser classes used at startup.
-- JSON may parse structurally and still fail when converted into game objects; this catches that second layer.
-
-Risk:
-
-- Some parsers may swallow errors and only log them. If so, we may need small, focused assertions after parser runs.
-
-### TODO: Add Definition Loader Tests
-
-Candidate file:
-
-```text
-game-server/src/test/java/com/osroyale/DefinitionLoaderTest.java
-```
-
-Useful loader calls:
-
-- `org.jire.tarnishps.defs.ItemDefLoader.load()`
-- `org.jire.tarnishps.defs.MonsterDefLoader.load()`
-
-Proves:
-
-- The newer item/monster JSON directories are readable.
-- Definition ids and file names can be loaded into the newer Kotlin definition maps.
-
-Potential assertions:
-
-- Loaded item definitions count is greater than zero.
-- Loaded monster definitions count is greater than zero.
-- A few common ids exist, such as shrimp, coins, and low-level NPCs, if the loader exposes lookup maps.
-
-## Priority 3: Cross-Reference Data Tests
-
-These tests catch content definitions that point to missing or invalid ids.
-
-### TODO: Add Store Item Reference Test
-
-Candidate file:
-
-```text
-game-server/src/test/java/com/osroyale/StoreDataTest.java
-```
-
-Test behavior:
-
-- Load known item ids from item definitions.
-- Load `data/def/store/stores.json`.
-- Assert every store item id exists in item definitions.
-- Assert item amounts/prices are not negative.
-
-Proves:
-
-- Shops do not contain impossible item ids or obviously bad quantities.
-
-### TODO: Add NPC Spawn Reference Test
-
-Candidate file:
-
-```text
-game-server/src/test/java/com/osroyale/NpcSpawnDataTest.java
-```
-
-Test behavior:
-
-- Load known NPC ids.
-- Load `data/def/npc/npc_spawns.json` (old, reference only — active loader reads from `npc-spawns-json/`).
-- Assert each spawn references a known NPC id.
-- Assert positions have sane x/y/height values.
-
-Proves:
-
-- NPC spawn data references definitions the server knows about.
-
-### TODO: Add NPC Drop Reference Test
-
-Candidate file:
-
-```text
-game-server/src/test/java/com/osroyale/NpcDropDataTest.java
-```
-
-Test behavior:
-
-- Load known NPC ids and item ids.
-- Load `data/def/npc/npc_drops.json` (old, reference only — active loader reads from `npc-drops-json/`).
-- Assert each drop table references known NPC ids.
-- Assert dropped item ids exist.
-- Assert drop amounts and weights are positive where required.
-
-Proves:
-
-- Drop tables are not full of dead references.
-
-## Priority 4: Profile and Account Safety Tests
-
-The current `ProfileRightsTest` is a good start. We can expand it carefully.
-
-### TODO: Expand Profile Rights Coverage
-
-Candidate file:
-
-```text
-game-server/src/test/java/com/osroyale/ProfileRightsTest.java
-```
-
-Add checks:
-
-- Every profile in `world_profile_list.json` has a corresponding save file or is intentionally exempt.
-- Every profile save with elevated rights has a matching world profile rank.
-- No account except explicit allowed owners has `OWNER`.
-- `Oak` remains `ADMINISTRATOR`.
-- `Zezima` remains `OWNER`.
-
-Proves:
-
-- Staff account edits do not drift between the save file and world profile list.
-- Accidental owner grants are caught.
-
-### TODO: Add Profile JSON Shape Test
-
-Candidate file:
-
-```text
-game-server/src/test/java/com/osroyale/ProfileJsonShapeTest.java
-```
-
-Test behavior:
-
-- Walk `data/profile/save/*.json`, excluding subdirectories like trading post data.
-- Assert each profile has:
-  - `username`
-  - `password`
-  - `player-rights`
-  - position fields, if consistently present
-  - inventory/equipment/bank fields, if consistently present
-- Assert `player-rights` maps to `PlayerRight.valueOf`.
-
-Proves:
-
-- Profile files are minimally loadable.
-- Rights values are valid enum names.
-
-## Priority 5: Local Config and Secret Safety Tests
-
-The local `settings.toml` currently has external-service credentials/tokens present, while website integration and highscores are disabled. We can test the safe local posture.
-
-### TODO: Add Local Settings Test
-
-Candidate file:
-
-```text
-game-server/src/test/java/com/osroyale/LocalSettingsTest.java
-```
-
-Test behavior:
-
-- Parse `settings.toml`.
-- Assert `server.server_port` is `43594`.
-- Assert `server.website_integration` is `false` for local dev.
-- Assert `services.highscores_enabled` is `false` for local dev.
-- Assert `network.resource_leak_detection` is one of the accepted values.
-- Assert `game.max_players`, `game.max_npcs`, and definition limits are positive.
-
-Proves:
-
-- Local tests do not accidentally depend on forum/highscore/database integrations.
-- Important numeric config values remain sane.
-
-Follow-up cleanup:
-
-- Move real external tokens/passwords out of committed config if this repo is going to be shared.
-
-## Priority 6: Client Local-Cache Launch Prerequisites
-
-These tests check the client-side assumptions that made local dev playable.
-
-### TODO: Add Client Cache Prerequisite Test
-
-Candidate file:
-
-```text
-game-client/src/test/java/com/osroyale/ClientCachePrerequisiteTest.java
-```
-
-Test behavior:
-
-- Check `%USERPROFILE%\.tarnish\cache`.
-- Assert the cache dir exists.
-- Assert required `main_file_cache.*` files exist.
-- Assert `main_file_cache.dat` is non-empty.
-- Assert idx files exist; allow `idx3` to be zero because this cache currently has an empty `idx3`.
-
-Proves:
-
-- A local client run has the cache files needed before launch.
-
-Risk:
-
-- This test is machine-specific. It may be better as a manual smoke command or a Gradle task excluded from CI.
-
-### TODO: Add Client Config Test
-
-Candidate file:
-
-```text
-game-client/src/test/java/com/osroyale/ClientConfigurationTest.java
-```
-
-Test behavior:
-
-- Assert `Configuration.USE_UPDATE_SERVER` defaults to `false`.
-- Assert setting `-Dtarnish.updateServer=true` can still enable update-server mode if that behavior remains intended.
-
-Proves:
-
-- The client defaults to local-cache dev mode.
-- SwiftFUP mode remains explicitly opt-in.
-
-## Priority 7: Plugin Discovery Test
-
-The server uses ClassGraph in `PluginManager.load("plugin")` and previously loaded 133 plugins.
-
-### TODO: Add Plugin Count Smoke Test
-
-Candidate file:
-
-```text
-game-server/src/test/java/com/osroyale/PluginDiscoveryTest.java
-```
-
-Test behavior:
-
-- Invoke `PluginManager.load("plugin")` in a fresh test JVM.
-- Assert plugin count is at least a conservative floor, such as `100`.
-- Prefer a floor instead of exact `133` to avoid churn when plugins are added or removed intentionally.
-
-Proves:
-
-- Plugin classes are discoverable from the test/runtime classpath.
-- Plugin constructors and `onInit` methods do not immediately crash during offline loading.
-
-Risk:
-
-- Plugins may mutate static global registries and make repeated test runs order-sensitive.
-- This test may need isolation or to run last.
-
-## Priority 8: Full Server Boot Smoke Harness
-
-This is the highest-value offline check, but it is more of an integration smoke test than a normal unit test.
-
-### TODO: Add Manual Boot Smoke Script
-
-Candidate file:
-
-```text
-scripts/server-boot-smoke.ps1
-```
-
-Behavior:
-
-- Start `.\gradlew.bat :game-server:run`.
-- Capture stdout/stderr to `build/server-boot-smoke.*.log`.
-- Wait until the log contains `Server built successfully`.
-- Assert the log contains `Startup service finished`.
-- Assert the log contains `Loaded: 133 plugins` or at least `Loaded:`.
-- Check `Test-NetConnection localhost -Port 43594`.
-- Stop the spawned Java/Gradle process cleanly.
-
-Proves:
-
-- The server can boot from a clean command.
-- The game port opens.
-- Startup loader/plugin chain completes.
-
-Risk:
-
-- Process cleanup must be careful on Windows.
-- This is slower and more brittle than unit tests, but it proves the most without a client.
-
-## Suggested Implementation Order
-
-1. Add `DataJsonParseTest`.
-2. Add `RequiredDataFilesTest`.
-3. Expand `ProfileRightsTest`.
-4. Add `LocalSettingsTest`.
-5. Add parser smoke tests for the safest parser classes.
-6. Add cross-reference tests for stores, NPC spawns, and NPC drops.
-7. Add client configuration/cache prerequisite tests if we are comfortable with machine-specific tests.
-8. Add the PowerShell server boot smoke script.
-9. Decide which checks belong in normal `:game-server:test` versus manual smoke only.
-
-## Proposed Test Commands
-
-Fast server gate:
-
-```powershell
-.\gradlew.bat :game-server:test
-```
-
-Compile everything:
-
-```powershell
-.\gradlew.bat :game-server:classes :game-client:classes
-```
-
-Manual server boot:
-
-```powershell
-.\gradlew.bat :game-server:run
-```
-
-Manual port check while server is running:
-
-```powershell
-Test-NetConnection localhost -Port 43594
-```
-
-Manual local client cache check:
-
-```powershell
-Get-ChildItem "$env:USERPROFILE\.tarnish\cache\main_file_cache.*"
-```
-
-## Definition of Done
-
-Offline testing is in a strong place when:
-
-- `:game-server:test` validates JSON parse health, required files, staff/profile rights, and config sanity.
-- `:game-server:classes` and `:game-client:classes` both pass.
-- A manual boot smoke script can prove server startup and port listening.
-- The plan clearly marks client-login-only behavior as manual/integration territory.
-
-## In-Game Smoke Test
-
-Once logged in as Admin (Oak):
-
-1. Login as Oak, confirm admin crown
-2. Try owner command → confirm blocked (Oak is not owner)
-3. `::spawnitem 315` — eat shrimp, verify healing
-4. `::teleport` home, donor zone
-5. Kill low-level NPC, check drops
-6. Open shop, buy item, sell item
-7. Try one skill: fish, mine, woodcut, cook
-8. Enter and exit one minigame
-9. Logout, restart server, login — verify persistence
+## Current Baseline (2026-06-08)
+
+**17 test files, 106 tests, 0 failures, 9% JaCoCo coverage on 1,192 source files.**
+
+Existing tests:
+
+| Test File | What It Covers | Status |
+|-----------|---------------|--------|
+| `RequiredDataFilesTest` | Cache files, def JSONs, skill data, profile list present | ✅ |
+| `DataJsonParseTest` | Every `.json` under `data/` parses without error | ✅ |
+| `ParserSmokeTest` | Core parsers (ItemDef, NpcDef, Store, CombatProjectile, etc.) load without error | ✅ |
+| `CrossReferenceTest` | Store items, NPC spawns, NPC drops cross-reference valid IDs | ✅ |
+| `NpcFileLoaderTest` | `NpcDropFileLoader` and `NpcSpawnFileLoader` smoke test | ✅ |
+| `NpcSpawnSaveTest` | Spawn file round-trip (write then read) | ✅ |
+| `ProfileRightsTest` | Profile rights validation (migrated to JUnit 5) | ✅ |
+| `ReconciliationTest` | Gap map for items/NPCs/drops/spawns between old and new systems | ✅ |
+| `AraxxorDataTest` | Araxxor-specific data integrity (updated for per-file JSONs) | ✅ |
+| `HitTest` | `modifyDamage()`, `setAs()`, `isAccurate()`, `setAccurate()` | ✅ |
+| `CombatHitTest` | `copyAndModify()`, getter values, multi-hit construction | ✅ |
+| `PlayerRightTest` | `isAdministrator()`, `isDonator()`, enum from-id lookup | ✅ |
+| `CommandTest` | Command equals, name hashing, precedence ordering | ✅ |
+| `PluginDiscoveryTest` | `PluginManager.load("plugin")` loads ≥100 plugins | ✅ |
+| `PluginContextDispatchTest` | 31 event-type routing tests, full subtype coverage | ✅ |
+| `CommandExtensionErrorLoggingTest` | Command error logging (basic) | ⚠️ Needs expansion |
+| `SlayerTest` | Slayer shop slot guard + totalPoints accumulation | ✅ |
+
+Server boot logs show:
+- `Startup service finished`
+- `Loaded: 133 plugins`
+- `Server built successfully`
+- `Loaded 3436 NPC spawns` and `Loaded 1780 NPC drop tables` (per-file system)
+
+---
+
+## What Still Needs Tests
+
+For the detailed implementation plan, see **[improvement-plan.md](improvement-plan.md)** §Testing Phases. Summary:
+
+### High Priority (Phase F — Feature Integrity Tests)
+
+| Test | What It Catches |
+|------|----------------|
+| `FeatureShopIntegrityTest` | Invalid shop items/prices, dead references, missing currencies |
+| `DonatorFeatureIntegrityTest` | Donator shop/reward wiring breakage |
+| `NpcSpawnFeatureIntegrityTest` | Broken spawn positions, orphaned NPC ids |
+| `NpcDropFeatureIntegrityTest` | Orphaned drop items, invalid drop types |
+| `CommandFeatureIntegrityTest` | Missing expected commands, registration drift |
+| `CommandAccessIntegrityTest` | Dangerous commands in wrong rank plugins |
+| `TeleportFeatureIntegrityTest` | Bad teleport destinations, broken unlock checks |
+
+### Medium Priority (Phase G — Live Hardening)
+
+| Test | What It Catches |
+|------|----------------|
+| `LogEvent` forum decoupling test | Logs suppressed when `LOG_PLAYER=false` |
+| `DEV_COMMANDS_ENABLED` gating | Staff commands gated behind config flag |
+| `PlayerRight` staff-as-donator matrix | Correct bonus thresholds for each rank |
+| Boss entrance slayer checks | Missing slayer gates on bosses |
+
+### Lower Priority
+
+| Test | What It Catches |
+|------|----------------|
+| `LocalSettingsTest` | Config drift (port, integration flags, limits) |
+| `ProfileJsonShapeTest` | Profile file structure validity |
+| Client cache prerequisite test | Missing client cache files before launch |
+| Client configuration test | Update-server mode defaults |
+| `AchievementFeatureIntegrityTest` | Invalid achievement keys/amounts |
+| `CollectionLogFeatureIntegrityTest` | Collection log dead references |
+| `MysteryBoxFeatureIntegrityTest` | Mystery box reward validity |
+
+---
+
+## Data Systems Note
+
+The monolithic JSON files listed in older versions of this plan (`npc_drops.json`, `npc_spawns.json`) have been **deleted**. The active system uses per-file directories:
+- `data/def/npc-drops-json/{npcId}.json` — 1,778 files
+- `data/def/npc-spawns-json/{npcId}.json` — 926 files
+
+Tests referencing those monolithic files have been updated accordingly.

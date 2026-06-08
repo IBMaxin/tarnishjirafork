@@ -18,7 +18,7 @@
 | Server port | 43594 |
 | Startup signals | `Startup service finished` → `Loaded: 133 plugins` → `Server built successfully` |
 | Game testing | Manual in-game after changes (login with client) |
-| Pre-live plan | `pre-live-fix-plan.md` (Phase 1 in progress) |
+| Improvement plan | `docs/improvement-plan.md` |
 | Unzip.java | Removed: dead code, no callers |
 
 ---
@@ -37,9 +37,9 @@ The codebase has **two parallel definition systems** that write to the same in-m
 |--------|------------------------|----------------------|--------|
 | Items | `data/def/item/item_definitions.json` (145K lines, ~26K items) | `data/def/items-json/` (~27K files) | Both loaded, merged at runtime |
 | NPCs | `data/def/npc/npc_definitions.json` (118K lines, ~11K NPCs) | `data/def/monsters-json/` (3,246 files) | Both loaded, merged at runtime |
-| Drops | `data/def/npc/npc_drops.json` (107K lines) | `data/def/npc-drops-json/` (1,778 files) | ✅ Per-file active in Starter.java |
+| Drops | ❌ Deleted | `data/def/npc-drops-json/` (1,778 files) | ✅ Per-file active in Starter.java |
 | Equipment | `data/def/equipment/equipment_definitions.json` (66K lines) | `data/def/equipment-json/` | Old monolith active; per-file directory exists as migration/reference data |
-| Spawns | `data/def/npc/npc_spawns.json` (35K lines) | `data/def/npc-spawns-json/` (926 files) | ✅ Per-file active in Starter.java |
+| Spawns | ❌ Deleted | `data/def/npc-spawns-json/` (926 files) | ✅ Per-file active in Starter.java |
 | Stores | `data/def/store/stores.json` (4.5K lines) | ❌ None yet | Only old system (small, keep as-is) |
 
 **All paths are relative to `game-server/`.**
@@ -168,6 +168,8 @@ Richer than old format — has `drops` array, `attack_type` array, `attributes`,
 ## 4. Data Files — Per-File Status
 
 ### NPC Drops (active: `data/def/npc-drops-json/`)
+
+The monolithic `npc_drops.json` and `NpcDropParser.java` have been **deleted**. Only the per-file system is active.
 
 One drop table per file:
 ```json

@@ -6,7 +6,6 @@
 |------|---------|
 | `AGENTS.md` | Project map, build commands, common patterns — **read first** |
 | `README.md` | Repository overview (from upstream) |
-| `.cursorrules` | AI tool hints |
 | `code_index.json` | Instant file → class name lookup (2,663 entries) |
 | `generate_index.sh` | Regenerate code_index.json |
 | `rag_index.py` | Semantic code search (FAISS, optional) |
@@ -17,10 +16,10 @@
 
 | Doc | Content |
 |-----|---------|
-| [game-scope.md](game-scope.md) | Game inventory — what exists, activities, skills, economy, commands |
+| [game-scope.md](game-scope.md) | Game inventory — activities, skills (18), economy, commands |
 | [feature-inventory.md](feature-inventory.md) | Fuller code-grounded inventory of bosses, shops, donor systems, broadcasts, custom systems |
+| [improvement-plan.md](improvement-plan.md) | **Single source of truth:** completed work, testing phases, feature integrity test plan, live hardening, go-live gate |
 | [test-plan.md](test-plan.md) | Offline test strategy, current baseline, test expansion plan |
-| [feature-integrity-test-suite.md](feature-integrity-test-suite.md) | Plan for offline tests covering shops, drops, spawns, commands, broadcasts, donor systems |
 
 ### Workflows
 
@@ -41,16 +40,18 @@ Step-by-step recipes for the highest-churn systems. Each is a self-contained "ho
 
 ## Prompt Pack
 
-24 self-contained AI agent prompts for audit, test, and development. Located in `prompts/`.
+35 self-contained AI agent prompts for audit, test, and development. Located in `prompts/`.
 
 | Section | Prompts |
 |---------|---------|
-| 00 Cross-Cutting | [client-server-boundary.md](../prompts/00-cross-cutting/client-server-boundary.md) |
+| 00 Cross-Cutting | client-server-boundary |
 | 01 Build & Verify | compile, test, server-smoke |
 | 02 Data Audit | JSON parse, item consistency, NPC consistency, profile rights |
 | 03 Security | command audit, privilege escalation, packet injection, economy risks, config leak |
 | 04 Systems | combat, skills, activities, economy, plugins, networking |
 | 05 Content Dev | add item, add NPC, add shop, add command, add skill action |
+| 06 Client | client overview, client cache, client security |
+| 07 Deep Systems | bot system, discord, database, consumables, teleport, dialogue, gambling, clan channel |
 
 Full index: [prompts/README.md](../prompts/README.md)
 
@@ -67,4 +68,4 @@ Full index: [prompts/README.md](../prompts/README.md)
 | Add a new item | `docs/workflows/items.md` |
 | Audit security | `prompts/03-security/` |
 | Run the server | `AGENTS.md` §Quick Start |
-| Write a test | `docs/test-plan.md` |
+| Write a test | `docs/improvement-plan.md` §Testing Phases |

@@ -19,9 +19,13 @@ Game inventory — what exists, what's verified. Source presence ≠ runtime fun
 |----------|-----------|
 | Barrows | `content/activity/impl/barrows/` |
 | Battleground | `content/activity/impl/battleground/` |
+| Cerberus | `content/activity/impl/cerberus/` |
+| Chaos Fanatic | `content/activity/impl/chaosfanatic/` |
+| Crazy Archaeologist | `content/activity/impl/crazyarchaeologist/` |
 | Duel Arena | `content/activity/impl/duelarena/` |
 | Fight Caves | `content/activity/impl/fightcaves/` |
 | God Wars | `content/activity/impl/godwars/` |
+| Hydra | `content/activity/impl/hydra/` |
 | Inferno | `content/activity/inferno/` (separate from impl/) |
 | Kraken | `content/activity/impl/kraken/` |
 | Last Man Standing | `content/activity/impl/` + `content/lms/` |
@@ -29,6 +33,10 @@ Game inventory — what exists, what's verified. Source presence ≠ runtime fun
 | Pest Control | `content/activity/impl/pestcontrol/` |
 | Recipe for Disaster | `content/activity/impl/recipefordisaster/` |
 | Shooting Stars | `content/shootingstar/` |
+| Skotizo | `content/activity/impl/skotizo/` |
+| Venenatis | `content/activity/impl/venenatis/` |
+| Vet'ion | `content/activity/impl/vetion/` |
+| Vorkath | `content/activity/impl/vorkath/` |
 | Warrior Guild | `content/activity/impl/warriorguild/` |
 | Wintertodt | `content/wintertodt/` + `plugins/click/object/wintertodt/` |
 | Zulrah | `content/activity/impl/zulrah/` |
@@ -37,7 +45,7 @@ Game inventory — what exists, what's verified. Source presence ≠ runtime fun
 
 ## Skills
 
-All 23 skills have implementation directories under `content/skill/impl/`:
+18 skills have implementation directories under `content/skill/impl/`:
 
 `Agility` `Construction` `Cooking` `Crafting` `Farming` `Firemaking` `Fishing` `Fletching` `Herblore` `Hunter` `Magic` `Mining` `Prayer` `Runecrafting` `Slayer` `Smithing` `Thieving` `Woodcutting`
 

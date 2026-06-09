@@ -27,10 +27,11 @@ dependencies {
     annotationProcessor(libs.lombok)
 
     implementation(libs.slf4j.api)
-    runtimeOnly(libs.slf4j.simple)
+    implementation(libs.log4j.api)
+    runtimeOnly(libs.logback)
+    runtimeOnly(libs.log4j.to.slf4j)
 
     implementation(libs.netty.all)
-    implementation(libs.joda.time)
     implementation(libs.quartz)
     implementation(libs.jcabi.jdbc)
     implementation(libs.gson)
@@ -41,7 +42,6 @@ dependencies {
     implementation(libs.mysql.connector)
     implementation(libs.postgresql)
     implementation(libs.hikari)
-    implementation(libs.log4j.core)
     implementation(libs.ant)
     implementation(libs.jctools)
     implementation(libs.classgraph)
@@ -57,6 +57,7 @@ dependencies {
     testImplementation(libs.junit4)
     testImplementation(libs.junit.jupiter)
     testRuntimeOnly(libs.junit.vintage)
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     testImplementation(libs.mockito.core)
 }
 

@@ -250,7 +250,7 @@ public final class LoginSession extends Session {
                     });
             return response;
         } catch (Exception ex) {
-            ex.printStackTrace();
+            logger.error("Error during forum authentication for player={}", username, ex);
         }
         return LoginResponse.LOGIN_SERVER_OFFLINE;
     }

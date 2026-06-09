@@ -144,7 +144,7 @@ tarnishjirafork/
 │   │   ├── content/       # Content data (skills, clan, game configs)
 │   │   └── profile/       # Player save files
 │   └── settings.toml      # Server configuration
-├── game-client/           # Client (JDK 11, Gradle)
+├── game-client/           # Client (JDK 21, Gradle)
 │   └── src/main/java/     # Client source (~1,200 files)
 ├── build/                 # Build output (ignored)
 ├── code_index.json        # AI file lookup index — CHECK THIS FIRST
@@ -209,9 +209,10 @@ Barrows, Duel Arena, Fight Caves, God Wars, Inferno, Kraken, Last Man Standing, 
 ## Build Notes
 
 - Server: JDK 21
-- Client: JDK 11
-- Gradle wrapper is included (`./gradlew` on WSL, `.\gradlew.bat` on Windows)
-- Kotlin 2.1.21 for plugins
+- Client: JDK 21 (upgraded from 11)
+- Gradle **9.5.1** (wrapper: `./gradlew` on WSL, `.\gradlew.bat` on Windows)
+- Kotlin **2.4.0** for plugins
+- Shadow plugin **9.4.2** for fat JARs
 - No Gradle daemon by default — use `--no-daemon` for CI
 - Build cache: enable with `org.gradle.caching=true` in gradle.properties
 
@@ -221,6 +222,31 @@ Barrows, Duel Arena, Fight Caves, God Wars, Inferno, Kraken, Last Man Standing, 
 - Run: `.\gradlew.bat :game-server:test` (Windows) or `./gradlew :game-server:test` (WSL)
 - Currently: profile rights validation tests only
 - Adding tests alongside code changes is expected
+
+### E2E Tests (test-automation module)
+
+E2E tests connect to a running server via Netty and execute in-game actions.
+
+**Files:**
+```
+test-automation/src/main/kotlin/org/jire/tarnishps/test/e2e/
+├── GameClient.kt      # Netty client — RSA handshake, login, packet send/receive
+├── BotPlayer.kt       # High-level API — teleportTo(), sendCommand(), clickObject(), waitForMessage()
+test-automation/src/test/kotlin/org/jire/tarnishps/test/e2e/
+├── E2ETest.kt         # Base test class — connect/login lifecycle, auto-cleanup
+├── TeleportE2ETest.kt # First scenario — teleport + verify via command response
+```
+
+**Run:**
+```powershell
+.\gradlew.bat :test-automation:test -Pe2e
+```
+
+**Prerequisites:**
+- Server must be running on localhost:43594
+- Test account `Oak` (ADMINISTRATOR) with password `1` exists in `data/profile/save/Oak.json`
+
+**Account note:** E2E tests use `Oak` (not `Zezima`) to avoid "Account already online" conflicts when you're logged in playing.
 
 ## Key Data File Sizes (for context)
 

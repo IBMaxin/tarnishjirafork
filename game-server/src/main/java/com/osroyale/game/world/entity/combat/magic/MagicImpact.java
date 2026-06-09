@@ -1,5 +1,8 @@
 package com.osroyale.game.world.entity.combat.magic;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.osroyale.game.world.entity.combat.CombatImpact;
 import com.osroyale.game.world.entity.combat.CombatType;
 import com.osroyale.game.world.entity.combat.CombatUtil;
@@ -18,7 +21,9 @@ import com.osroyale.util.RandomUtils;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+
 public enum MagicImpact {
+
     TELEBLOCK((attacker, defender, hit, extra) -> teleblock(defender)),
 
     BIND((attacker, defender, hit, extra) -> freeze(defender, 5)),
@@ -69,9 +74,9 @@ public enum MagicImpact {
     ICE_BLITZ((attacker, defender, hit, extra) -> freeze(defender, 15)),
     ICE_BARRAGE((attacker, defender, hit, extra) -> CombatUtil.areaAction(defender, other -> iceBarrage(attacker, defender, other, extra))),
 
-    KBD_FREEZE((attacker, defender, hit, extra) -> freeze(defender, 5)),
-    KBD_POISON((attacker, defender, hit, extra) -> poison(attacker, defender, hit, PoisonType.DEFAULT_NPC)),
-    KBD_SHOCK((attacker, defender, hit, extra) -> kbdShock(defender)),
+    KBD_FREEZE((attacker, defender, hit, extra) -> { freeze(defender, 5); LogManager.getLogger(MagicImpact.class).info("KBD → {} | frozen for 5 ticks", defender.getName()); }),
+    KBD_POISON((attacker, defender, hit, extra) -> { poison(attacker, defender, hit, PoisonType.DEFAULT_NPC); LogManager.getLogger(MagicImpact.class).info("KBD → {} | poison: DEFAULT_NPC", defender.getName()); }),
+    KBD_SHOCK((attacker, defender, hit, extra) -> { kbdShock(defender); LogManager.getLogger(MagicImpact.class).info("KBD → {} | shock applied", defender.getName()); }),
 
     AHRIM_BLAST((attacker, defender, hit, extra) -> {
 //        if (hit.isAccurate() && Math.random() < 0.20) {
@@ -79,6 +84,7 @@ public enum MagicImpact {
 //            defender.skills.refresh(Skill.STRENGTH);
 //        }
     });
+    private static final Logger logger = LogManager.getLogger();
 
     private final CombatImpact effect;
 

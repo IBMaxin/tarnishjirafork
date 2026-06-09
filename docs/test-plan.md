@@ -31,6 +31,7 @@ Offline tests cannot fully prove:
 ## Current Baseline (2026-06-08)
 
 **17 test files, 106 tests, 0 failures, 9% JaCoCo coverage on 1,192 source files.**
+**Plus E2E test-automation module:** 3 E2E tests (gated behind `-Pe2e`), 3 test source files (GameClient, BotPlayer, E2ETest, TeleportE2ETest).
 
 Existing tests:
 

@@ -11,10 +11,10 @@
 |----------|-------|
 | Type | OSRS private server fork (personal, ~5 players) |
 | Server JDK | 21 |
-| Client JDK | 11 |
+| Client JDK | 21 (upgraded from 11) |
 | IDE | IntelliJ IDEA on Windows |
 | Build | Gradle (wrapper: `gradlew.bat`) |
-| Test accounts | `Zezima` (OWNER), `Oak` (ADMIN) |
+| Test accounts | `Zezima` (OWNER), `Oak` (ADMIN). E2E tests use `Oak` to avoid conflicts with live Zezima sessions. |
 | Server port | 43594 |
 | Startup signals | `Startup service finished` → `Loaded: 133 plugins` → `Server built successfully` |
 | Game testing | Manual in-game after changes (login with client) |
@@ -478,3 +478,15 @@ Access: `isManager(player)`. Inherited by Admin and Owner.
 - No loose files outside intended directory structure. Scripts go in `scripts/<purpose>/`.
 - Keep old files after migration swaps until verified in-game.
 - Scripts that write files should always include a `--dry-run` mode.
+
+````
+This is the description of what the code block changes:
+<changeDescription>
+Update knowledge bank to note E2E tests use Oak
+</changeDescription>
+
+This is the code block that represents the suggested code change:
+```markdown
+| Test accounts | `Zezima` (OWNER), `Oak` (ADMIN). E2E tests use `Oak` to avoid conflicts with live Zezima sessions. |
+```
+

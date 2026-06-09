@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run Server",
+      "request": "launch",
+      "mainClass": "com.osroyale.Main",
+      "projectName": "game-server",
+      "vmArgs": [
+        "--enable-preview",
+        "-XX:+UseZGC",
+        "-Xmx8g",
+        "-Xms4g",
+        "-XX:MaxGCPauseMillis=100"
+      ],
+      "preLaunchTask": "build-server"
+    },
+    {
+      "type": "java",
+      "name": "Run Client",
+      "request": "launch",
+      "mainClass": "com.osroyale.Client",
+      "projectName": "game-client",
+      "vmArgs": [
+        "-Xmx2g",
+        "-Xms1g"
+      ],
+      "preLaunchTask": "build-client"
+    }
+  ]
+}

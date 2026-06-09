@@ -1,0 +1,20 @@
+# Test Accounts
+
+# Owner account — full server access
+[zezima]
+rights = "OWNER"
+
+# Admin account — management access
+[oak]
+rights = "ADMINISTRATOR"
+
+# Player account — standard user
+[player1]
+rights = "PLAYER"
+
+# Donator accounts
+[donator1]
+rights = "DONATOR"
+
+[king_donator]
+rights = "KING_DONATOR"

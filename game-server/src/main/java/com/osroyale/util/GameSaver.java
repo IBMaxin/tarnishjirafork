@@ -14,10 +14,15 @@ import java.io.FileWriter;
 import java.util.HashMap;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * Created by Daniel on 2017-11-05.
  */
 public final class GameSaver {
+
+    private static final Logger logger = LoggerFactory.getLogger(GameSaver.class);
 
     public static int MAX_PLAYERS;
     public static long PERSONAL_ITEM_WORTH = 0;
@@ -28,7 +33,7 @@ public final class GameSaver {
             try (FileWriter fw = new FileWriter("./data/content/game/world.json")) {
                 fw.write(GsonUtils.JSON_PRETTY_NO_NULLS.get().toJson(toJson()));
             } catch (final Exception e) {
-                e.printStackTrace();
+                logger.error("Failed to save world.json", e);
             }
         });
     }

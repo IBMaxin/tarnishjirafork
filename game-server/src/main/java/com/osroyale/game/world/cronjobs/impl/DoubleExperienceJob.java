@@ -5,7 +5,6 @@ import com.osroyale.Starter;
 import com.osroyale.game.world.World;
 import com.osroyale.game.world.cronjobs.Job;
 import com.osroyale.net.discord.DiscordPlugin;
-import org.joda.time.DateTime;
 
 import java.time.DayOfWeek;
 
@@ -17,8 +16,8 @@ public class DoubleExperienceJob extends Job {
 
     @Override
     public void execute() {
-        final DateTime time = Starter.currentDateTime();
-        final DayOfWeek day = DayOfWeek.of(time.getDayOfWeek());
+        final var time = Starter.currentDateTime();
+        final DayOfWeek day = time.getDayOfWeek();
         final boolean enable = (day == DayOfWeek.SATURDAY || day == DayOfWeek.SUNDAY);
 
         if (enable && !Config.DOUBLE_EXPERIENCE) {

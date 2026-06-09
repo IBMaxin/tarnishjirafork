@@ -1,5 +1,5 @@
-import com.github.jengelman.gradle.plugins.shadow.ShadowApplicationPlugin.SHADOW_INSTALL_TASK_NAME
-import com.github.jengelman.gradle.plugins.shadow.ShadowApplicationPlugin.SHADOW_SCRIPTS_TASK_NAME
+import com.github.jengelman.gradle.plugins.shadow.ShadowApplicationPlugin.Companion.SHADOW_INSTALL_TASK_NAME
+import com.github.jengelman.gradle.plugins.shadow.ShadowApplicationPlugin.Companion.SHADOW_SCRIPTS_TASK_NAME
 
 plugins {
     java
@@ -12,7 +12,6 @@ version = "1.0"
 
 dependencies {
     annotationProcessor(libs.lombok)
-    annotationProcessor(libs.pf4j)
 
     compileOnly("javax.annotation:javax.annotation-api:1.3.2")
     compileOnly(libs.jsr305)
@@ -31,7 +30,6 @@ dependencies {
     implementation(libs.rxrelay)
     implementation(libs.okhttp)
     implementation(libs.rxjava)
-    implementation(libs.jgroups)
     implementation(libs.jna)
     implementation(libs.jna.platform)
     implementation(libs.runelite.discord)
@@ -44,9 +42,6 @@ dependencies {
     implementation(libs.jetbrains.annotations)
     implementation(libs.java.semver)
     implementation(libs.slf4j.api)
-    implementation(libs.pf4j) {
-        exclude(group = "org.slf4j")
-    }
 
     implementation(libs.jogl.rl)
     implementation(libs.jogl.gldesktop.dbg)
@@ -59,13 +54,10 @@ dependencies {
 
     testImplementation(libs.guice.grapher)
     testImplementation(libs.guice.testlib)
-    testImplementation(libs.hamcrest)
     testImplementation(libs.junit4)
     testImplementation(libs.mockito.core)
-    testImplementation(libs.mockito.inline)
     testImplementation(libs.okhttp)
     testImplementation(libs.slf4j.api)
-    implementation(libs.sentry.logback)
 
     implementation(platform("org.lwjgl:lwjgl-bom:${libs.versions.lwjgl.get()}"))
     implementation(libs.lwjgl)
@@ -87,6 +79,8 @@ dependencies {
     implementation(libs.netty.io.uring)
     implementation(libs.netty.epoll)
     implementation(libs.netty.kqueue)
+
+    // Dropwizard Metrics for JGroups monitoring (kept even though JGroups is removed, as it may be used by the event bus)
 }
 
 application {
@@ -100,7 +94,7 @@ application {
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(11))
+        languageVersion.set(JavaLanguageVersion.of(21))
     }
 }
 

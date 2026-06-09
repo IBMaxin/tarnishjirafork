@@ -1,0 +1,14 @@
+[
+  {
+    "id": 5862,
+    "radius": "5",
+    "facing": "NORTH",
+    "convert-id": true,
+    "instance": 0,
+    "position": {
+      "x": 3086,
+      "y": 3494,
+      "height": 0
+    }
+  }
+]

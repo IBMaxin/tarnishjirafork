@@ -156,6 +156,9 @@ public class Notifier
 			case FORCE:
 				clientUI.forceFocus();
 				break;
+			case OFF:
+				// No focus change required
+				break;
 		}
 
 		if (runeLiteConfig.enableTrayNotifications())
@@ -170,6 +173,10 @@ public class Notifier
 				break;
 			case CUSTOM:
 				executorService.submit(this::playCustomSound);
+				break;
+			case OFF:
+				// No sound to play
+				break;
 		}
 
 		if (runeLiteConfig.enableGameMessageNotification() && client.getGameState() == GameState.LOGGED_IN)
@@ -242,6 +249,9 @@ public class Notifier
 						return;
 					}
 					break;
+				case DISABLED:
+					// No flashing when disabled
+					return;
 			}
 		}
 

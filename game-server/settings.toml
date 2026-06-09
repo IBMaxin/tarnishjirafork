@@ -1,25 +1,45 @@
+# ═══════════════════════════════════════════════════════════
+# Tarnish Server — Configuration
+# ═══════════════════════════════════════════════════════════
+#
+# This file controls server behaviour. For local development,
+# the defaults below work out of the box.
+#
+# Quick reference:
+#   server.port         → which port players connect to (43594)
+#   server.debug        → verbose logging (set true for dev)
+#   world.type          → LOCAL / TEST / LIVE
+#   game.*_modifier     → XP multipliers (3000 = 30x)
+#
+# ═══════════════════════════════════════════════════════════
+
+# ── Server Identity ───────────────────────────────────────
 [server]
 server_name = "Tarnish"
-server_port = 43594
-server_debug = false
-server_cycle_debug = false
-parallel_game_engine = false
-website_integration = false
+server_port = 43594                    # Players connect here
+server_debug = true                    # Verbose logging — set false for production
+server_cycle_debug = false             # Logs per-cycle timing (noisy)
+parallel_game_engine = false           # Experimental: runs game tasks on multiple threads
+website_integration = false            # Disable forum auth — keeps login simple for local dev
 
+# ── World ─────────────────────────────────────────────────
 [world]
-type = "LIVE"
+type = "LOCAL"                         # LOCAL / TEST / LIVE (LIVE enables PostgreSQL + player count)
 
+# ── Services (all disabled for local dev) ─────────────────
 [services]
 highscores_enabled = false
 vote_enabled = false
 donations_enabled = false
 
+# ── Client Version ────────────────────────────────────────
 [client]
 client_version = 12
 
+# ── Game Rules ────────────────────────────────────────────
 [game]
-skull_time = 720
-log_player = true
+skull_time = 720                       # Ticks a skull lasts (~20 minutes)
+log_player = true                      # Log player actions (safe to leave on)
 npc_bits = 16
 npc_walking_radius = 5
 max_players = 2048
@@ -27,6 +47,9 @@ max_npcs = 32000
 max_bots = 10
 npc_definition_limit = 32767
 item_definition_limit = 28473
+
+# XP modifiers (multiply base OSRS rates).
+# Value = rate × 10, so 3000 = 30x, 1250 = 12.5x
 combat_modifier = 1250.0
 agility_modifier = 3000.0
 cooking_modifier = 3000.0
@@ -46,24 +69,34 @@ smithing_modifier = 3000.0
 fishing_modifier = 3000.0
 farming_modifier = 3000.0
 
+# ── Network ───────────────────────────────────────────────
 [network]
-connection_limit = 3
+connection_limit = 3                   # Max concurrent connections per IP
 failed_login_attempts = 5
-failed_login_timeout = 1
-login_threshold = 200
-logout_threshold = 200
-client_packet_threshold = 30
-server_packet_threshold = 1000
-idle_timeout = 30
-display_packets = true
-resource_leak_detection = "DISABLED"
+failed_login_timeout = 1               # Minutes before retry after failed attempts
+login_threshold = 200                  # Max logins per tick
+logout_threshold = 200                 # Max logouts per tick
+client_packet_threshold = 30           # Max incoming packets per tick per player
+server_packet_threshold = 1000         # Max outgoing packets per tick per player
+idle_timeout = 30                      # Seconds before idle connection drops
+display_packets = true                 # Log raw packet info (dev debugging)
+resource_leak_detection = "DISABLED"   # Netty leak detection: DISABLED / SIMPLE / PARANOID
+
+# Dev-only RSA keys — required for the login handshake.
+# The server will reject all login attempts without valid RSA keys.
+# Replace with your own for production.
 rsa_modulus = "102353038900255891527619367941460634639078944277149869534765441701765061915480193910291695742706042386340616731973380032288127455494356031646220980795852675234525031620306539656965685802100384909448780766960597664159328648803794286947984198753216591499378109000984639229430631686267432671373106838769133939913"
 rsa_exponent = "53925997225795133719229887783247543425130183971584110428703113302718248056511827143879975621403130102964053208695986070996181590716154529757425030836016240047551059410105065493557574944899978363674428788471686009398071320688429363476724786245628722544641599881866860779098693203875115492310538964714249216129"
-support_haproxy = false
-ip_tos = "00010000" # binary string for ToS (left 6 bits are DSCP flag, 7th bit is to enable TCP ECN, last bit MUST be 0)
+support_haproxy = false                # Set true if behind HAProxy load balancer
+ip_tos = "00010000"                    # IP Type of Service (binary). Only relevant for production QoS.
+
+# ── Production-only sections (kept empty for local dev) ───
+# The server reads these at startup. They're harmless when empty
+# because website_integration = false gates all the code that uses them.
+# For production: fill in the blanks and enable website_integration.
 
 [website]
-website_url = "https://osroyale.com"
+website_url = ""
 forum_db_url = ""
 forum_db_user = ""
 forum_db_pass = ""

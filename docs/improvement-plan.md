@@ -1,271 +1,464 @@
 # Tarnish PS Fork — Improvement Plan
 
-> **Status:** Active — 106 tests, 0 failures, 9% coverage, 17 test files on 1,192 sources.
+> **Status:** Active — **115 tests, 0 failures**, 20 test files on 1,192 sources.
 > **Last updated:** 2026-06-08
 > **Context:** Personal fork, playable, manual in-game testing after changes.
-> **Environment:** Windows, IntelliJ IDEA, JDK 21 (server) / JDK 11 (client), Gradle.
+> **Environment:** Windows, IntelliJ IDEA, JDK 21 (server + client), Gradle 9.5.1.
 > **Accounts:** `Zezima` (OWNER), `Oak` (ADMIN).
 
 ---
 
 ## Completed Work (Summary)
 
-Phase 0 test armor and the core migration (Steps 1–6) are all done:
+### Build Tooling Upgrades (Highest Impact — Done)
+- **Client JDK upgrade:** JDK 11 → **21** — matches server
+- **Gradle upgrade:** 8.14.2 → **9.5.1** — eliminates 33 deprecation warnings
+- **Kotlin upgrade:** 2.1.21 → **2.4.0** — latest stable
+- **Shadow plugin:** 8.3.6 → **9.4.2** — compatible with Gradle 9.x
+- **Build tooling:** Added `junit-platform-launcher` dependency (required by Gradle 9.x)
+- **Gradle build cache:** `org.gradle.caching=true` in `gradle.properties`
+- **Version catalog:** `gradle/libs.versions.toml` — 55 version keys, 64 library entries unifying server & client
+- **Server + client build files:** Rewritten to use `libs.*` references
+- **jsr305 fix:** Explicit `compileOnly(libs.jsr305)` for client (guava bump dropped transitive `@Nonnull`)
 
-- **Phase 0:** Six data-integrity test classes — `RequiredDataFilesTest`, `DataJsonParseTest`, `CrossReferenceTest`, `ParserSmokeTest`, `NpcFileLoaderTest`, `NpcSpawnSaveTest`.
-- **Phase A–B:** Infrastructure + pure unit tests — Mockito 5.x, JaCoCo, JUnit 5 migration, `HitTest`, `CombatHitTest`, `PlayerRightTest`, `CommandTest`.
-- **Phase C1–C2:** Plugin system tests — `PluginDiscoveryTest` (≥100 plugins loaded), `PluginContextDispatchTest` (31 event-type routing tests).
+### GitHub Actions CI (Done)
+- `.github/workflows/ci.yml` — JDK 21, gradle cache, `./gradlew check`, test artifact upload
+
+### Monolithic JSON → Per-File Migration (Done)
 - **Step 1 (Reconciliation):** Gap map produced for items, NPCs, drops, spawns.
 - **Step 2 (Split):** Python scripts split monolithic `npc_drops.json` (1,778 files) and `npc_spawns.json` (926 files) into per-file directories.
 - **Step 3 (Loaders):** `NpcDropFileLoader.kt` and `NpcSpawnFileLoader.kt` written in `org.jire.tarnishps.defs`.
-- **Step 4 (Parity):** Parity confirmed between old parser and new loader output; `NpcLoadersParityTest` deleted after confirmation.
+- **Step 4 (Parity):** Parity confirmed between old parser and new loader output; `NpcLoadersParityTest` deleted.
 - **Step 5 (Swap):** `Starter.java` now uses per-file loaders. Server boots, mobs spawn, drops work — verified in-game.
-- **Step 6 (Cleanup):** All old monolithic JSONs and parser classes deleted. Tests updated. See Tier 2.1.
-- **Slayer fixes:** Shop slot guard (`||` fix) and `totalPoints` accumulation fix applied; `SlayerTest` added.
+- **Step 6 (Cleanup):** All old monolithic JSONs and parser classes deleted. Tests updated.
+- **Production rewire:** `NpcDropTable.main()`, `DeveloperCommandPlugin`, `NpcDropsParser` swapped to per-file loaders.
+- **Admin spawnnpc:** Rewritten to write per-file JSON via Gson + try-with-resources.
+
+### Test Infrastructure (Done)
+- **Phase 0:** Six data-integrity test classes — `RequiredDataFilesTest`, `DataJsonParseTest`, `CrossReferenceTest`, `ParserSmokeTest`, `NpcFileLoaderTest`, `NpcSpawnSaveTest`.
+- **Phase A:** Mockito 5.x, JaCoCo, JUnit 5 migration.
+- **Phase B:** Pure unit tests — `HitTest`, `CombatHitTest`, `PlayerRightTest`, `CommandTest`.
+- **Phase C1–C2:** Plugin system tests — `PluginDiscoveryTest` (≥100 plugins), `PluginContextDispatchTest` (31 event-type routing tests).
+- **Phase D:** Slayer bug fixes — shop slot guard (`&&` → `||`), `totalPoints` accumulation; `SlayerTest` added.
+
+### Bug Fixes (Done)
+- **G6b — Cerberus entrance fallthrough:** Added missing `break;` after `case 23104` if-else block. Previously, entering Cerberus would fall through to web-cutting logic (`case 733`).
+- **G6a — Kraken entrance cleanup:** Removed redundant inner `break;` inside `else` block. Outer `break;` after if-else handles both branches.
+
+### Feature Integrity Tests (Done)
+- **F1 — `FeatureRequiredDataTest`:** Validates 5 per-file data directories exist with minimum file counts (items-json ≥25K, monsters-json ≥10K, npc-drops-json ≥1.5K, npc-spawns-json ≥800, equipment-json ≥2.5K).
+- **F2a — `FeatureShopIntegrityTest`:** 5 tests validating all 36 shops — item IDs exist in definitions, amounts positive, names unique, currencies recognized, sell types valid.
+- **F2b — `DonatorFeatureIntegrityTest`:** 3 tests — donator stores exist, use DONATOR_POINTS currency, have items.
+
+### Setup & Onboarding (Done)
+- Simplified `settings.toml` with comments
+- Beginner-friendly README with prerequisites table
+- Visual setup guide (`SETUP.md`)
+- Quick-start scripts with Java pre-flight check
+- VS Code configs (launch, tasks, extensions)
 
 ---
 
-## Tier 1 — Modernisation (Completed)
+## Priority-Ordered Work Queue
 
-| Item | Status | Details |
-|------|--------|---------|
-| Gradle build cache | Done | `org.gradle.caching=true` added to `gradle.properties` |
-| GitHub Actions CI | Done | `.github/workflows/ci.yml` — JDK 21, gradle cache, `./gradlew check`, test artifact upload |
-| Clean repo | Done | `build/` and `.gradle/` deleted from filesystem; `.gitignore` already covered them |
-| Version catalog | Done | `gradle/libs.versions.toml` — 55 version keys, 64 library entries unifying server & client |
-| Server → catalog | Done | `game-server/build.gradle.kts` rewritten to use `libs.*` references |
-| Client → catalog | Done | `game-client/build.gradle.kts` rewritten to use `libs.*` references |
-| jsr305 fix | Done | Added explicit `compileOnly(libs.jsr305)` to client (guava bump dropped transitive `@Nonnull`) |
-
-## Tier 2.1 — Monolithic JSON Cleanup (Completed)
-
-| Item | Status | Details |
-|------|--------|---------|
-| Production rewire | Done | `NpcDropTable.main()`, `DeveloperCommandPlugin`, `NpcDropsParser` swapped to `NpcDropFileLoader`/`NpcSpawnFileLoader` with SLF4J logging |
-| Admin spawnnpc | Done | Rewrote to write per-file JSON at `data/def/npc-spawns-json/{id}.json` via Gson + try-with-resources |
-| Delete old files | Done | `npc_drops.json`, `npc_spawns.json`, `NpcDropParser.java`, `NpcSpawnParser.java` removed |
-| Delete parity test | Done | `NpcLoadersParityTest.java` removed (parity confirmed) |
-| Update tests | Done | `RequiredDataFilesTest`, `DataJsonParseTest`, `CrossReferenceTest`, `AraxxorDataTest` updated to use per-file JSONs |
-| New tests | Done | `NpcFileLoaderTest` (loader smoke test), `NpcSpawnSaveTest` (spawn file round-trip) |
-
-**Build verified:** All 106 tests pass, server boots with `Loaded 3436 NPC spawns` and `Loaded 1780 NPC drop tables`.
+Items ranked by **impact × urgency**. High-impact items catch bugs or prevent crashes. Medium items improve safety and dev experience. Low items are polish.
 
 ---
 
-## What's Deferred (Longer Term)
+### 🔴 P0 — Bugs & Crashes
 
-- **Tier 2.2 (High-impact):** Refactor PluginContext event dispatch, migrate all tests to JUnit 5 only
-- **Tier 3 (Structural):** Extract secrets from settings.toml, prune unused deps (JGroups, PF4J, Sentry), upgrade client to JDK 21
-- **Tier 4 (Deep):** Player refactor, networking integration tests, hot-reload plugins
+| # | Item | Files | Impact | Status |
+|---|------|-------|--------|--------|
+| G6b | **Cerberus entrance falls through to Webs** — `case 23104` missing `break;` after if-else block | `ObjectFirstClickPlugin.java` | Players entering Cerberus also trigger web-cutting logic | ✅ **Fixed** |
+| G6a | **Kraken entrance** — redundant inner `break;` in `else` block | `ObjectFirstClickPlugin.java` | Works but fragile pattern | ✅ **Cleaned up** |
+| G1 | **LogEvent decouple from FORUM_INTEGRATION** — change gate from `!Config.FORUM_INTEGRATION \|\| !Config.LOG_PLAYER` to `!Config.LOG_PLAYER` | `LogEvent.java` | Player event logs incorrectly suppressed when forum integration is off | ⏸️ **Deferred** (no forums set up) |
 
----
+### 🟠 P1 — Security & Access Control
 
-## Testing Phases
+| # | Item | Files | Impact | Status |
+|---|------|-------|--------|--------|
+| G2 | **DEV_COMMANDS_ENABLED flag** — add `Config.DEV_COMMANDS_ENABLED` bound to `settings.toml` `server.dev_commands_enabled = false`; gate admin/owner commands | `Config.java`, `AdminCommandPlugin.java`, `OwnerCommandPlugin.java`, `settings.toml` | Prevents accidental dev command exposure on live server | ⏸️ **Deferred** |
+| G4 | **PlayerRight staff-as-donator spillover** — `isExtreme`/`isElite`/`isKing` short-circuit via `isAdministrator`; confirm intentional or remove | `PlayerRight.java` | Staff get unintended donator perks (drop rate, blood money, presets) | ⏸️ **Deferred** (staff can set own rank) |
+| G5 | **Donation claiming config** — confirm `donations_enabled = false` means bonds are in-game only; `::setCredits`/`::points` are only mint paths | `settings.toml` | Economy integrity | ⏸️ **Deferred** (private fork, intentional) |
 
-Current baseline: 17 test files, 106 tests, 0 failures, 9% JaCoCo coverage on 1,192 sources.
+### 🟡 P2 — Feature Integrity Tests (Safety Net)
 
-### Phase A — Infrastructure (Completed)
+These tests catch broken content wiring before logging into the client. Write before making content changes.
 
-| # | Task | Status |
-|---|------|--------|
-| A1 | Wire Mockito 5.x into `game-server/build.gradle.kts` test dependencies | Done |
-| A2 | Add JaCoCo plugin for coverage visibility | Done |
-| A3 | Migrate `ProfileRightsTest` from JUnit 4 → JUnit 5 | Done |
-
-### Phase B — Pure Unit Tests (no Player/World dependency) (Completed)
-
-| # | Task | Status |
-|---|------|--------|
-| B1 | `HitTest` — `modifyDamage()`, `setAs()`, `isAccurate()`, `setAccurate()` | Done |
-| B2 | `CombatHitTest` — `copyAndModify()`, getter values, multi-hit construction | Done |
-| B3 | `PlayerRightTest` — `isAdministrator()`, `isDonator()` enum from-id lookup | Done |
-| B4 | `CommandTest` — equals, name hashing, precedence ordering | Done |
-
-### Phase C — Plugin System Tests
-
-| # | Task | Status |
-|---|------|--------|
-| C1 | `PluginDiscoveryTest` — `PluginManager.load("plugin")`, assert ≥100 loaded | Done |
-| C2 | `PluginContextDispatchTest` — verify each event type routes to correct handler (31 tests, full subtype coverage) | Done |
-| C3 | Expand `CommandExtensionErrorLoggingTest` — command lookup, exception handling, duplicate detection, canAccess gating | Pending |
-
-### Phase D — Slayer Bug Fix
-
-| # | Task | Status |
-|---|------|--------|
-| D1 | Fix shop slot guard: `&&` → `||` in `Slayer.java` | Done |
-| D2 | Fix `totalPoints` never incremented — add `totalPoints += rewardPoints` at `Slayer.java:176` | Done |
-| D3 | Add `totalPoints` accumulation test to `SlayerTest` | Done |
-
-### Phase E — PluginContext Dispatch Refactor (Deferred → Tier 2.2)
-
-| # | Task | Status |
-|---|------|--------|
-| E1 | Replace 13-branch `instanceof` chain with `Map<Class, BiFunction>` dispatch | Pending |
-| E2 | Verify with existing + new PluginContext tests | Pending |
+| # | Test Class | What It Asserts | Status |
+|---|-----------|-----------------|--------|
+| F1 | `FeatureRequiredDataTest` | Per-file directories exist with minimum file counts | ✅ **Done** |
+| F2a | `FeatureShopIntegrityTest` | Shop item IDs valid, amounts positive, names unique, currencies recognized | ✅ **Done** |
+| F2b | `DonatorFeatureIntegrityTest` | Donator stores exist, use DONATOR_POINTS, have items | ✅ **Done** |
+| F3a | `NpcSpawnFeatureIntegrityTest` | Spawn NPC IDs resolve, positions sane, facing maps to Direction | ⬜ Not started |
+| F3b | `NpcDropFeatureIntegrityTest` | Drop item IDs valid, min≤max, chance type recognized | ⬜ Not started |
+| F3c | `DropViewerFeatureIntegrityTest` | Known bosses have drop tables, viewer search works | ⬜ Not started |
+| F4a | `CommandFeatureIntegrityTest` | Expected commands exist per rank tier | ⬜ Not started |
+| F4b | `CommandAccessIntegrityTest` | Dangerous commands absent from lower-rank plugins | ⬜ Not started |
+| F5 | Progression tests | Achievement/CollectionLog/MysteryBox integrity | ⬜ Not started |
+| F6 | `TeleportFeatureIntegrityTest` | Teleport positions sane, unlock items exist | ⬜ Not started |
 
 ---
 
-## Phase F — Feature Integrity Tests (Next Priority)
+### 🟠 P1.5 — Game Action Automation Framework (Phase H)
 
-These tests catch broken content wiring before logging into the client. Candidate files under `game-server/src/test/java/com/osroyale/`.
+A modular, extensible automation system that logs in as real players and executes in-game actions (teleport, kill NPCs, train skills, trade, etc.) with built-in validation, debugging, and CI integration.
 
-### F1: Required Feature Data
+#### Architecture
 
-`FeatureRequiredDataTest`:
-- `data/def/npc-spawns-json/` exists with ≥900 files
-- `data/def/npc-drops-json/` exists with ≥1,700 files
-- `data/def/items-json/` exists with ≥26,000 files
-- `data/def/monsters-json/` exists with ≥3,200 files
-- `data/def/store/stores.json` exists
+```
+test-automation/
+├── core/                    # Framework core
+│   ├── TestRunner.kt        # Central orchestrator
+│   ├── ActionDSL.kt         # Fluent API for game actions
+│   ├── TestClient.kt        # Login/authentication manager
+│   ├── TestPlayer.kt        # Wraps Player with debug/trace
+│   └── validators/          # Assertion helpers
+│       ├── PositionValidator.kt
+│       ├── InventoryValidator.kt
+│       ├── MessageValidator.kt
+│       └── CombatValidator.kt
+├── modules/                 # Test scenarios by domain
+│   ├── bosses/              # Boss mechanics (Cerberus, Zulrah, Kraken, etc.)
+│   │   ├── CerberusTest.kt
+│   │   ├── ZulrahTest.kt
+│   │   └── KrakenTest.kt
+│   ├── combat/              # Combat system tests
+│   │   ├── PrayerTest.kt
+│   │   └── SpecialAttackTest.kt
+│   ├── skills/              # Skill training validation
+│   │   ├── SlayerTest.kt
+│   │   └── WoodcuttingTest.kt
+│   ├── economy/             # Shops, trading, drops
+│   │   ├── ShopTest.kt
+│   │   └── DropTableTest.kt
+│   └── mobility/            # Teleport, movement, object clicks
+│       ├── TeleportTest.kt
+│       └── ObjectClickTest.kt
+├── config/
+│   ├── accounts.toml        # Test account credentials
+│   └── scenarios.toml       # Scenario definitions
+└── ci/
+    └── Jenkinsfile           # Pipeline definition
+```
 
-### F2: Store and Currency Integrity
+#### Action Coverage
 
-`FeatureShopIntegrityTest`:
-- Every shop item id exists in item definitions
-- Item amounts are positive
-- Buy/sell prices are non-negative where present
-- Shop names are unique
-- Currency names are recognized by the store system
-- Priority shops asserted by name: Donator Store, Ironman Donator Store, Tarnish Vote Store, Prestige Rewards Store, LMS Store, Pest Control Store, Stardust Store, blood money shops
+| Category | Actions | Example |
+|----------|---------|---------|
+| **Mobility** | Teleport, walkTo, follow, randomWalk | `teleport(3222, 3222)` |
+| **Combat** | Attack, barrage, setPrayer, setCombatStyle | `attack(NPCs.ZULRAH).until { npcDead() }` |
+| **NPC** | ClickNpc, tradeNpc, getSlayerTask, completeTask | `clickNpc(NPCs.BANKER, option="Bank")` |
+| **Object** | ClickObject, climbStairs, enterCave | `clickObject(23104)` |
+| **Item** | Equip, drop, pickUp, useItemOn | `equip(Items.WHIP)` |
+| **Shop** | Buy, sell, browse | `purchaseFrom(Shops.VARROCK, item=1153, amount=5)` |
+| **Skill** | Train, untilLevel, setAxe, setPickaxe | `train(Skills.WOODCUTTING).at(Trees.YEW).untilLevel(90)` |
+| **Boss** | StartFight, phase, forcePhaseTransition | `startBossFight(Bosses.ZULRAH) { phase(1) { ... } }` |
+| **Multi-agent** | Coordinated attacks, tank/dps roles | `coordinated { tank.aggro(boss); dps.attack() }` |
 
-`DonatorFeatureIntegrityTest`:
-- Donator Store and Ironman Donator Store exist and use `DONATOR_POINTS`
-- Donator ranks have ascending money thresholds
-- Donator rank helpers return expected thresholds
+#### Key Features
 
-### F3: NPC Spawn and Drop Integrity
+- **Fluent DSL:** `action { teleportTo("Varrock").clickNpc(NPCs.BANKER).validate { messageContains("Welcome") } }`
+- **Debug Mode:** Step-by-step playback, packet logging, screenshots on failure
+- **Failure Recovery:** `withRetry(maxAttempts=3) { attemptGodwarsRun { if (died()) resupply() } }`
+- **State Assertions:** Validate position, inventory, messages, damage dealt, loot received
+- **CI Integration:** `./gradlew :test-automation:run -Pmodules=bosses`
 
-`NpcSpawnFeatureIntegrityTest`:
-- Every per-file spawn entry has a positive NPC id
-- Every NPC id resolves (directly or through `oldtonew.txt`)
-- Position x, y, height are within sane ranges
-- `facing` maps to `Direction`, `radius` is non-negative
-- Regression guard: Al Kharid warrior migration (`3103` or `3292` or documented allowlist)
+#### Atomic Implementation Steps
 
-`NpcDropFeatureIntegrityTest`:
-- Every drop file has a valid NPC id
-- Every dropped item id exists in item definitions
-- Minimum and maximum quantities are positive, `minimum <= maximum`
-- Drop chance type is one of: `ALWAYS`, `COMMON`, `UNCOMMON`, `RARE`, `VERY_RARE`
+Each step is self-contained, testable, and builds on the previous. Steps marked ⭐ are the minimum viable core.
 
-`DropViewerFeatureIntegrityTest`:
-- Known bosses (Vorkath, Zulrah, barrows brothers) have drop tables
-- Drop viewer can search without null failures for known set
+##### ⭐ H1 — TestClient + Player Wrapper (30 min)
 
-### F4: Command and Permission Integrity
+**Files to create:**
+```
+test-automation/core/TestClient.kt
+test-automation/core/TestPlayer.kt
+test-automation/config/accounts.toml
+```
 
-`CommandFeatureIntegrityTest`:
-- Player commands: `home`, `players`, `staff`, `drops`, `vote`, `donate`, `trivia`
-- Donator commands: `yell`, `donatorzone`
-- Manager commands: `broadcast`
-- Admin commands: `item`, `spawnnpc`, `tele`, `bank`
-- Owner commands: `setrank`, `giveitem`, `ban`, `resetplayer`
+**What it does:**
+- `TestClient.login(account)` — creates a `Player` with given credentials, sets position, inventory, rights
+- `TestPlayer` — wraps `Player` with debug logging, state snapshots before/after each action
+- `accounts.toml` — defines test accounts: `[zezima]` `rights = "OWNER"` `[oak]` `rights = "ADMIN"`
 
-`CommandAccessIntegrityTest`:
-- Player command plugin accessible to normal players
-- Donator/Helper/Mod/Admin/Manager/Developer/Owner plugins require their rank floors
-- Dangerous commands (`item`, `giveitem`, `spawnnpc`, `setrank`, `ban`, `resetplayer`, `broadcast`) do NOT appear in lower-rank plugins
-
-### F5: Progression System Integrity
-
-- `AchievementFeatureIntegrityTest` — unique keys, positive amounts, valid categories
-- `CollectionLogFeatureIntegrityTest` — valid item/NPC ids, boss entries have display ids
-- `MysteryBoxFeatureIntegrityTest` — every reward item exists, amounts positive
-
-### F6: Teleport and Zone Integrity
-
-`TeleportFeatureIntegrityTest`:
-- Every Teleport enum destination has non-null position within sane coordinate ranges
-- Required item ids for teleport unlocks exist
-- Key destinations: Home, Vorkath, Zulrah, Donator zones, boss teleports
-
----
-
-## Phase G — Live Hardening
-
-### G1: LogEvent — Decouple from Forum Integration
-
-File: `game-server/src/main/java/com/osroyale/game/event/impl/log/LogEvent.java`
-
-- Change gate from `!Config.FORUM_INTEGRATION || !Config.LOG_PLAYER` to `!Config.LOG_PLAYER`
-- Add comment: "Player event logs are independent of forum integration."
-- Add unit test: `LogEvent` suppressed when `LOG_PLAYER=false`, proceeds when `LOG_PLAYER=true`
-
-### G2: Config.DEV_COMMANDS Flag
-
-Gate dev commands via a config flag:
-- `Config.java` — add `DEV_COMMANDS_ENABLED` bound to `settings.toml` `server.dev_commands_enabled = false`
-- `AdminCommandPlugin.java` — gate `canAccess` behind `DEV_COMMANDS_ENABLED`
-- `OwnerCommandPlugin.java` — split: moderation commands always-on (`::ban`, `::unban`, `::ipmute`, `::save`, `::resetplayer`); gated commands behind flag (`::giveitem`, `::setrank`, `::kill`, etc.)
-- See open questions on granularity
-
-### G3: Remove Stray System.out.println
-
-Grep `game-server/plugins/**` and `game-server/src/main/java/**` and replace any remaining `System.out.println` with `logger.debug` or remove.
-
-### G4: PlayerRight Staff-as-Donator Spillover
-
-File: `game-server/src/main/java/com/osroyale/game/world/entity/mob/player/PlayerRight.java`
-
-- Confirm whether staff (Admin/Manager/Developer/Owner) intentionally count as donator tiers for drop-rate, presets, blood-money, and deposit-amount checks
-- If unintentional: change `isExtreme`/`isElite`/`isKing` to drop the `isAdministrator` short-circuit
-- Add unit tests asserting the matrix
-
-### G5: Donation Claiming Config
-
-File: `game-server/settings.toml` — `donations_enabled = false`. Confirm whether bonds are in-game rewards only and `::setCredits`/`::points` are the only mint paths.
-
-### G6: Boss Entrance Gaps
-
-File: `game-server/plugins/plugin/click/object/ObjectFirstClickPlugin.java`
-
-- Vorkath, Kraken, Cerberus gated by slayer — Zulrah is not. Confirm whether intentional.
-- **Bug:** Kraken entrance (line ~813) has no `break;` — falls through to Zulrah case. Add `break;`.
+**Acceptance:** `val p = TestClient.login("zezima"); assert(p.right == PlayerRight.OWNER)`
 
 ---
 
-## Go-Live Gate (Smoke Checklist)
+##### ⭐ H2 — ActionDSL + Position Validator (30 min)
 
-- [ ] `:game-server:test` all 106+ tests green
-- [ ] Manual boot smoke: `Loaded: 133 plugins`, `Startup service finished`
-- [ ] Port 43594 listening
-- [ ] Login as regular player → staff commands denied
-- [ ] Login as dev account with `dev_commands_enabled = true` → commands work
-- [ ] Donor bond redemption path
-- [ ] Slayer: assign → cancel → reassign → kill → points increment → `totalPoints` increments
-- [ ] Slayer shop: invalid slot no crash; valid slot deducts points and adds item
-- [ ] Boss entrances: gated bosses block without task, allow with task
-- [ ] Shop buy/sell, trade, drop/pickup
-- [ ] Logout/restart persistence: position, inventory, bank, slayer task, points, totalPoints
+**Files to create:**
+```
+test-automation/core/ActionDSL.kt
+test-automation/core/validators/PositionValidator.kt
+```
 
----
+**What it does:**
+- `ActionDSL` — fluent builder: `action { teleport(x, y, z).validate { at(x, y, z) } }`
+- `teleport(x, y, z)` — calls `player.move(Position(x, y, z))`
+- `PositionValidator` — asserts `player.position == expected`, reports diff on failure
 
-## Open Questions
-
-1. **Owner-command split (G2):** single `DEV_COMMANDS_ENABLED` flag, or finer split (moderation always-on, items/teleports gated)?
-2. **Zulrah slayer check (G6):** is it intentional that Zulrah doesn't require a task? Audit Vorkath and other boss entrances.
-3. **PlayerRight staff-as-donator (G4):** keep current behavior, or drop the staff short-circuit in `isExtreme`/`isElite`/`isKing`?
-4. **LogReader bootstrap:** who creates `backup/logs/referrals.txt` on first run — `LogReader`, donation subsystem, or `Starter`?
+**Acceptance:** `action { teleport(3222, 3222).validate { at(3222, 3222) } }` passes
 
 ---
 
-## Name Index + Tooling
+##### ⭐ H3 — Object Click + Message Validator (30 min)
 
-Generate a `name_index.json` from all per-file directories:
+**Files to create:**
+```
+test-automation/core/validators/MessageValidator.kt
+test-automation/modules/mobility/ObjectClickTest.kt
+```
 
-```json
-{
-  "twisted bow": 20997,
-  "zulrah": 2042,
-  "dragon scimitar": 4587
+**What it does:**
+- `clickObject(id)` — dispatches `ObjectFirstClickEvent` through the plugin system
+- `MessageValidator` — captures `SendMessage` packets, asserts content
+- `ObjectClickTest.kt` — first real test: Cerberus entrance fallthrough
+
+**Acceptance:** `action { clickObject(23104).validate { messageContains("need a slayer task") } }` passes
+
+---
+
+##### H4 — NPC Click + Inventory Validator (30 min)
+
+**Files to create:**
+```
+test-automation/core/validators/InventoryValidator.kt
+test-automation/modules/mobility/NpcClickTest.kt
+```
+
+**What it does:**
+- `clickNpc(id, option)` — dispatches `NpcClickEvent` with type matching option index
+- `InventoryValidator` — asserts item presence, quantity, slot
+- `NpcClickTest.kt` — bank booth, shop keeper interactions
+
+**Acceptance:** `action { clickNpc(NPCs.BANKER, option="Bank").validate { inventoryContains(995) } }`
+
+---
+
+##### H5 — Combat Actions + Combat Validator (1 hr)
+
+**Files to create:**
+```
+test-automation/core/validators/CombatValidator.kt
+test-automation/modules/combat/CombatTest.kt
+```
+
+**What it does:**
+- `attack(npc)` — dispatches combat initiation event
+- `setPrayer(id)` — activates/deactivates prayer
+- `setCombatStyle(style)` — switches attack style
+- `CombatValidator` — asserts damage dealt, damage taken, prayer drain, special attack energy
+
+**Acceptance:** `action { attack(NPCs.COW).validate { damageDealt(min=1) } }`
+
+---
+
+##### H6 — Slayer Task Actions + Slayer Validator (1 hr)
+
+**Files to create:**
+```
+test-automation/core/validators/SlayerValidator.kt
+test-automation/modules/skills/SlayerTest.kt
+```
+
+**What it does:**
+- `getSlayerTask(master)` — assigns task from slayer master
+- `completeTask()` — simulates task completion, validates points
+- `SlayerValidator` — asserts task name, kill count, points, totalPoints
+
+**Acceptance:** `action { getSlayerTask(Masters.NIEVE).validate { taskAssigned() } }`
+
+---
+
+##### H7 — Shop Actions + Economy Validator (1 hr)
+
+**Files to create:**
+```
+test-automation/core/validators/EconomyValidator.kt
+test-automation/modules/economy/ShopTest.kt
+```
+
+**What it does:**
+- `purchaseFrom(shop, item, amount)` — buys item from shop, validates currency deduction
+- `sellTo(shop, item, amount)` — sells item to shop, validates currency gain
+- `EconomyValidator` — asserts gold/point changes, item transfer
+
+**Acceptance:** `action { purchaseFrom(Shops.GENERAL, item=1931, amount=1).validate { goldDecreased(by=3) } }`
+
+---
+
+##### H8 — Item Actions (30 min)
+
+**Files to create:**
+```
+test-automation/modules/economy/ItemTest.kt
+```
+
+**What it does:**
+- `equip(item, slot)` — equips item from inventory
+- `drop(item)` — drops item to ground
+- `pickUp(item)` — picks up item from ground
+- `useItemOn(item, target)` — item-on-item, item-on-object, item-on-npc
+
+**Acceptance:** `action { equip(Items.RUNE_SCIMITAR).validate { slotContains(Equipment.WEAPON, Items.RUNE_SCIMITAR) } }`
+
+---
+
+##### H9 — Boss Scenario Runner (2 hr)
+
+**Files to create:**
+```
+test-automation/modules/bosses/CerberusTest.kt
+test-automation/modules/bosses/KrakenTest.kt
+test-automation/modules/bosses/ZulrahTest.kt
+test-automation/core/BossScenario.kt
+```
+
+**What it does:**
+- `BossScenario` — reusable template: entrance → fight → loot validation
+- `startBossFight(boss)` — clicks entrance object, waits for activity creation
+- `phase(n)` — asserts current boss phase
+- `forcePhaseTransition(damage)` — deals damage to trigger next phase
+
+**Acceptance:** `scenario { boss(Bosses.CERBERUS).entrance(23104).validate { activityStarted() } }`
+
+---
+
+##### H10 — Multi-Agent Coordinator (2 hr)
+
+**Files to create:**
+```
+test-automation/core/Coordinator.kt
+test-automation/modules/bosses/GodwarsTest.kt
+```
+
+**What it does:**
+- `Coordinator` — manages multiple `TestPlayer` instances in same scenario
+- `coordinated { tank.aggro(boss); dps.attackFromSafeSpot() }` — parallel actions
+- `GodwarsTest.kt` — tank + DPS vs General Graardor
+
+**Acceptance:** Two players can enter Godwars together, tank holds aggro while DPS deals damage
+
+---
+
+##### H11 — Failure Recovery + Retry (1 hr)
+
+**Files to create:**
+```
+test-automation/core/RetryDSL.kt
+```
+
+**What it does:**
+- `withRetry(maxAttempts, onFailure)` — wraps action block with retry logic
+- `onFailure` callback: `{ player -> resupplyFromBank(player); teleportBack(player) }`
+- Logs each attempt with duration and failure reason
+
+**Acceptance:** `withRetry(3) { attemptGodwarsRun() }` retries on death instead of failing
+
+---
+
+##### H12 — Debug Mode + Tracing (1 hr)
+
+**Files to create:**
+```
+test-automation/core/DebugTracer.kt
+```
+
+**What it does:**
+- `debugMode = true` — enables per-action tracing
+- Captures: player position before/after, packets sent/received, state diffs
+- On failure: writes trace log to `test-automation/reports/{test-name}/trace.log`
+- `stepThrough = true` — pauses between actions for manual inspection
+
+**Acceptance:** Failing test produces `trace.log` with full action history
+
+---
+
+##### H13 — CI Pipeline (30 min)
+
+**Files to create:**
+```
+test-automation/ci/run-tests.sh
+test-automation/ci/Jenkinsfile
+```
+
+**What it does:**
+- `run-tests.sh` — starts server, waits for boot, runs test suite, stops server
+- `Jenkinsfile` — pipeline: checkout → build → start server → run tests → archive reports
+- Supports `-Pmodules=bosses` to run a subset
+
+**Acceptance:** `./test-automation/ci/run-tests.sh bosses` exits 0 with all boss tests green
+
+---
+
+##### H14 — Documentation + Module Template (30 min)
+
+**Files to create:**
+```
+test-automation/README.md
+test-automation/CONTRIBUTING.md
+test-automation/scripts/create-module.sh
+```
+
+**What it does:**
+- `README.md` — setup, writing tests, running, CI
+- `CONTRIBUTING.md` — module structure, naming conventions, best practices
+- `create-module.sh` — scaffolds a new module: `./create-module.sh slayer` generates `modules/slayer/` with template test
+
+**Acceptance:** `./create-module.sh fishing` creates `modules/fishing/FishingTest.kt` with compilable template
+
+---
+
+### E2E Automation Framework (Phase H — In Progress)
+- **H1 — GameClient + BotPlayer + E2ETest base:** Netty-based game client with RSA handshake, login, packet send/receive. `BotPlayer` high-level API (teleportTo, sendCommand, clickObject, waitForMessage). `E2ETest` base class with connect/login lifecycle and auto-cleanup. ✅ **Built**
+- **H1a — Login credentials bugfix:** `GameClient.handleHandshakeResponse()` hardcoded `"Zezima"/"1"` — fixed to use credentials passed to `login()`. ✅ **Fixed**
+- **H1b — Teleport command name fix:** `BotPlayer.teleportTo()` sent `::teleport` (nonexistent) — fixed to `::tele` (actual admin command). ✅ **Fixed**
+- **H1c — Switch to Oak:** `TeleportE2ETest` now uses `Oak` (ADMINISTRATOR) by default from `E2ETest` base class, avoiding "Account already online" conflicts with live Zezima sessions. ✅ **Done**
+- **H1d — Test JVM system property forwarding:** `build.gradle.kts` now forwards `-Pe2e` / `-De2e=true` to test JVM for `@EnabledIfSystemProperty` gating. ✅ **Done**
+- **H2 — TeleportE2ETest:** First scenario — teleport + verify via command response. Gated behind `-Pe2e`. ✅ **Built**
+- **H3–H14:** ⬜ Not started (see work queue below)
+
+---
+
+#### Dependency Map
+
+```
+H1 ──→ H2 ──→ H3 ──→ H4 ──→ H5 ──→ H6 ──→ H7 ──→ H8 ──→ H9 ──→ H10
+                                                              │
+                                                              └──→ H11 ──→ H12 ──→ H13 ──→ H14
+```
+
+- **H1–H3** (⭐) = minimum viable core — can test object clicks and teleports
+- **H4–H8** = domain modules — add NPC, combat, slayer, shop, item coverage
+- **H9–H10** = advanced scenarios — bosses, multi-agent
+- **H11–H12** = hardening — retry, debug tracing
+- **H13–H14** = delivery — CI, docs
+
+#### Quick Start (After H1–H3)
+
+```kotlin
+class CerberusEntranceTest : BaseTest() {
+    @Test
+    fun `entrance without task shows error`() = action {
+        teleport(1240, 1243)
+            .clickObject(23104)
+            .validate {
+                messageContains("need a slayer task")
+                at(1240, 1243) // didn't teleport
+            }
+    }
+
+    @Test
+    fun `entrance with task teleports`() = action {
+        teleport(1240, 1243)
+            .setSlayerTask(SlayerTask.CERBERUS)
+            .clickObject(23104)
+            .validate {
+                at(1240, 1243, 0) // inside cave
+                activityStarted("Cerberus")
+            }
+    }
 }
 ```
-
-Add a `find-item` script:
-
-```bash
-find-item "twisted"   → items-json/20997.json (Twisted Bow, cost: 1,100,000,000)
-```
-
-This makes the per-file system discoverable — you don't need to memorize IDs.

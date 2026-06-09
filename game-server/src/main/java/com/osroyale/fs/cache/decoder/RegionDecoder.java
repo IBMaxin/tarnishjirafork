@@ -92,7 +92,7 @@ public final class RegionDecoder implements Runnable {
 
             decoded.getAndIncrement();
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.error("Error decoding region at x={} y={}", x, y, e);
             errors.getAndIncrement();
         }
     }

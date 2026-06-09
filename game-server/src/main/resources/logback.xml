@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{MMM d, yyyy h:mm:ss} %logger{36} [%t]%n%level: %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ERROR_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>data/error.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{MMM d, yyyy h:mm:ss} %logger{36} [%t]%n%level: %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="INFO_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>data/info.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{MMM d, yyyy h:mm:ss} %logger{36} [%t]%n%level: %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="WARN_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>data/warning.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{MMM d, yyyy h:mm:ss} %logger{36} [%t]%n%level: %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="DEBUG">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="ERROR_FILE" level="ERROR"/>
+        <appender-ref ref="INFO_FILE" level="INFO"/>
+        <appender-ref ref="WARN_FILE" level="WARN"/>
+    </root>
+</configuration>

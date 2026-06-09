@@ -419,8 +419,7 @@ public final class Config {
             HISCORE_DB_USER = parser.getString("hiscore_db.hiscore_db_user");
             HISCORE_DB_PASS = parser.getString("hiscore_db.hiscore_db_pass");
         } catch (Exception ex) {
-            ex.printStackTrace();
-            throw new ExceptionInInitializerError("Failed to parse config file.");
+            throw new ExceptionInInitializerError("Failed to parse config file (settings.toml): " + ex.getMessage());
         }
     }
 

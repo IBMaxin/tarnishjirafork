@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "vscjava.vscode-java-pack",
+    "fwcd.kotlin",
+    "naco-siren.gradle-language",
+    "vscjava.vscode-gradle",
+    "sumneko.lua",
+    "bierner.markdown-mermaid"
+  ]
+}

@@ -17,12 +17,14 @@ import com.osroyale.game.world.entity.skill.Skill;
 import com.osroyale.game.world.items.Item;
 import com.osroyale.game.world.items.ground.GroundItem;
 import com.osroyale.game.world.position.Position;
-import com.osroyale.net.discord.DiscordPlugin;
+import com.osroyale.util.Utility;
 import com.osroyale.net.packet.out.SendMessage;
 import com.osroyale.net.packet.out.SendScreenshot;
 import com.osroyale.util.Items;
 import com.osroyale.util.RandomGen;
-import com.osroyale.util.Utility;
+import com.osroyale.net.discord.DiscordPlugin;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import plugin.itemon.item.LootingBagPlugin;
 
 import java.util.Arrays;
@@ -37,7 +39,9 @@ import java.util.Map;
  * @author <a href="http://www.rune-server.org/members/stand+up/">Stand Up</a>
  * @since 29-1-2017.
  */
-public final class NpcDropManager {
+    public final class NpcDropManager {
+    private static final Logger logger = LogManager.getLogger();
+
 
     /**
      * The collection of npc ids by their representative drop tables.
@@ -139,10 +143,17 @@ public final class NpcDropManager {
 
             if (!item.isStackable()) {
                 Item single = item.createWithAmount(1);
-                for (int i = 0; i < item.getAmount(); i++)
+                for (int i = 0; i < item.getAmount(); i++) {
                     GroundItem.create(killer, single, dropPosition);
+                    if (npc.id == 239) {
+                        logger.info("KBD → {} | drop: {} x1", killer.getName(), single.getName());
+                    }
+                }
             } else {
                 GroundItem.create(killer, item, dropPosition);
+                if (npc.id == 239) {
+                    logger.info("KBD → {} | drop: {} x{}", killer.getName(), item.getName(), item.getAmount());
+                }
             }
         }
     }
@@ -217,10 +228,13 @@ public final class NpcDropManager {
                     Pets.onReward(player, item.getId());
                 } else {
                     GroundItem.create(player, item, dropPos);
+                        if (npc.id == 239) {
+                            logger.info("KBD → {} | drop: {} x{}", player.getName(), item.getName(), item.getAmount());
+                        }
+                    }
                 }
             }
-        }
-        WeightedCollection<NpcDrop> rc = new WeightedCollection<>();
+            WeightedCollection<NpcDrop> rc = new WeightedCollection<>();
         for (NpcDrop drop : drops) {
             double drOffset = 1 + (PlayerRight.getDropRateBonus(player) / 100.0); // dr bonus is in percent, conversion is 1 + (percent / 100.0)
             int weightMultiplier = 1;
@@ -250,8 +264,11 @@ public final class NpcDropManager {
                 Pets.onReward(player, item.getId());
             } else {
                 GroundItem.create(player, item, dropPos);
-            }
-            CollectionLog.checkItemDrop(player, npc.id, item.getId(), item.getAmount());
+                    if (npc.id == 239) {
+                        logger.info("KBD → {} | drop: {} x{}", player.getName(), item.getName(), item.getAmount());
+                    }
+                }
+                CollectionLog.checkItemDrop(player, npc.id, item.getId(), item.getAmount());
             return selectedDrop;
         }
 

@@ -47,11 +47,11 @@ import org.jire.tarnishps.OldToNew;
 import org.jire.tarnishps.defs.NpcDropFileLoader;
 import org.jire.tarnishps.defs.NpcSpawnFileLoader;
 import org.jire.tarnishps.objectexamines.ObjectExamines;
-import org.joda.time.DateTime;
-import org.joda.time.DateTimeZone;
 import plugin.click.item.ClueScrollPlugin;
 
 import java.io.IOException;
+import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
 import java.util.concurrent.TimeUnit;
 
 public final class Starter implements Runnable {
@@ -78,7 +78,7 @@ public final class Starter implements Runnable {
             new AnimationDefinitionDecoder(fs).run();
             CacheNpcDefinition.unpackConfig(fs.getArchive(FileSystem.CONFIG_ARCHIVE));
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error("Failed to load cache or definitions during sequential startup", e);
         }
         ItemDefinition.createParser().run();
         NpcDefinition.createParser().run();
@@ -195,12 +195,15 @@ public final class Starter implements Runnable {
         }).start();
     }
 
-    public static DateTime currentDateTime() {
-        return new DateTime(timeZone());
+    /**
+     * Returns the current date/time in the server time zone (UTC).
+     */
+    public static ZonedDateTime currentDateTime() {
+        return ZonedDateTime.now(ZoneOffset.UTC);
     }
 
-    public static DateTimeZone timeZone() {
-        return DateTimeZone.UTC;
+    public static ZoneOffset timeZone() {
+        return ZoneOffset.UTC;
     }
 
     public LoginExecutorService getLoginExecutorService() {

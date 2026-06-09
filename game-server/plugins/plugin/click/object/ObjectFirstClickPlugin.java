@@ -816,7 +816,6 @@ public class ObjectFirstClickPlugin extends PluginContext {
                     KrakenActivity.create(player);
                 } else {
                     player.send(new SendMessage("You need a slayer task to enter this cave."));
-                    break;
                 }
                 break;
             case 10068: //Zulrah Entrance
@@ -831,6 +830,7 @@ public class ObjectFirstClickPlugin extends PluginContext {
                     player.send(new SendMessage("You need a slayer task to enter this cave."));
                     break;
                 }
+                break;
             /* Webs */
             case 733: {
                 Item weapon = player.equipment.getWeapon();

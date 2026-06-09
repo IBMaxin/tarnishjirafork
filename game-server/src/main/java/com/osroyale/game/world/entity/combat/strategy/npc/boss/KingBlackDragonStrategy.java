@@ -11,6 +11,9 @@ import com.osroyale.game.world.entity.combat.strategy.CombatStrategy;
 import com.osroyale.game.world.entity.combat.strategy.npc.MultiStrategy;
 import com.osroyale.game.world.entity.combat.strategy.npc.NpcMeleeStrategy;
 import com.osroyale.game.world.entity.combat.strategy.npc.impl.DragonfireStrategy;
+import javax.annotation.Nullable;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import com.osroyale.game.world.entity.mob.Mob;
 import com.osroyale.game.world.entity.mob.npc.Npc;
 
@@ -20,6 +23,7 @@ import static com.osroyale.game.world.entity.combat.projectile.CombatProjectile.
 
 /** @author Michael | Chex */
 public class KingBlackDragonStrategy extends MultiStrategy {
+    private static final Logger logger = LogManager.getLogger();
     private static final StabMelee STAB = new StabMelee();
     private static final CrushMelee CRUSH = new CrushMelee();
     private static final Dragonfire DRAGONFIRE = new Dragonfire();
@@ -58,6 +62,16 @@ public class KingBlackDragonStrategy extends MultiStrategy {
 
     @Override
     public void finishOutgoing(Npc attacker, Mob defender) {
+        // Log which KBD attack was used
+        String attackName = "UNKNOWN";
+        if (currentStrategy == DRAGONFIRE) attackName = "Dragonfire";
+        else if (currentStrategy == FREEZE) attackName = "Freeze";
+        else if (currentStrategy == SHOCK) attackName = "Shock";
+        else if (currentStrategy == POISON) attackName = "Poison";
+        else if (currentStrategy == CRUSH) attackName = "CrushMelee";
+        else if (currentStrategy == STAB) attackName = "StabMelee";
+        logger.info("KBD → {} | {} attack", defender.getName(), attackName);
+        
         currentStrategy.finishOutgoing(attacker, defender);
         if (STAB.withinDistance(attacker, defender)) {
             currentStrategy = randomStrategy(FULL_STRATEGIES);

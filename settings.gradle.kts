@@ -15,12 +15,13 @@ dependencyResolutionManagement {
     }
 
     pluginManagement.plugins.apply {
-        kotlin("jvm").version("2.1.21")
+        kotlin("jvm").version("2.4.0")
 
         id("org.zeroturnaround.gradle.jrebel") version "1.2.1"
-        id("com.gradleup.shadow") version "8.3.6"
+        id("com.gradleup.shadow") version "9.4.2"
     }
 }
 
 include("game-server")
 include("game-client")
+include("test-automation")

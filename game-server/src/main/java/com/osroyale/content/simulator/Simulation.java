@@ -14,7 +14,11 @@ import com.osroyale.net.packet.out.SendString;
 import com.osroyale.util.RandomGen;
 import com.osroyale.util.Utility;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Daniel on 2018-02-03.
@@ -24,7 +28,6 @@ public enum Simulation implements SimulationFunction {
         @Override
         public void execute(Player player, int id, int amount) {
             Map<Integer, Integer> items = new HashMap<>();
-            int count = 0;
             long value = 0;
 
             for (int index = 0; index < amount; index++) {
@@ -38,7 +41,6 @@ public enum Simulation implements SimulationFunction {
                 } else {
                     items.put(money.getId(), money.getAmount());
                 }
-                count++;
 
                 Item piece = new Item(Utility.randomElement(BarrowsUtility.BARROWS));
                 value += piece.getValue() * piece.getAmount();
@@ -48,24 +50,14 @@ public enum Simulation implements SimulationFunction {
                 } else {
                     items.put(piece.getId(), piece.getAmount());
                 }
-                count++;
             }
 
-            Iterator it = items.entrySet().iterator();
+            Iterator<Map.Entry<Integer, Integer>> it = items.entrySet().iterator();
             while (it.hasNext()) {
-                Map.Entry pair = (Map.Entry) it.next();
-                int mapValue = (int) pair.getValue();
-
-
-
-                Item item = new Item((int) pair.getKey(), (int) pair.getValue());
-
-
-
+                Map.Entry<Integer, Integer> pair = it.next();
                 System.out.println(pair.getKey() + " = " + pair.getValue());
-//                player.send(new SendItemOnInterfaceSlot(26816, item, count));
+                // player.send(new SendItemOnInterfaceSlot(26816, new Item(pair.getKey(), pair.getValue()), 0));
                 it.remove();
-                count++;
             }
 
             int scroll = (items.size() / 6 + (items.size() % 6 > 0 ? 1 : 0)) * 44;

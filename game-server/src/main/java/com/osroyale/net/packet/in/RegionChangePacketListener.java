@@ -23,7 +23,10 @@ public class RegionChangePacketListener implements PacketListener {
     public void handlePacket(Player player, GamePacket packet) {
         switch (packet.getOpcode()) {
             case ClientPackets.ENTER_REGION:
-                int a = packet.readInt();
+                int a = 0;
+                if (packet.getSize() >= 4) {
+                    a = packet.readInt();
+                }
                 if (player.debug && PlayerRight.isDeveloper(player)) {
                     player.send(new SendMessage("[REGION] Entered new region: " + a, MessageColor.DEVELOPER));
                 }
@@ -33,6 +36,7 @@ public class RegionChangePacketListener implements PacketListener {
                 break;
 
             case ClientPackets.LOADED_REGION:
+                // LOADED_REGION has no payload; safe to set flag directly
                 player.getEvents().setLoadRegion(true);
                 break;
         }
